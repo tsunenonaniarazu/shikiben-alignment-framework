@@ -1,4 +1,4 @@
-Markdown# Shikiben Alignment Framework (PoC)
+# Shikiben Alignment Framework (PoC)
 
 > **Structural Alignment of AGI/ASI via Decoupling Self and Ego**
 
