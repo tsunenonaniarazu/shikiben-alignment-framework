@@ -59,6 +59,29 @@ The minimal PoC is implemented in a single self-contained PyTorch script:
 └── poc/
     └── train_and_verify.py   # Minimal PyTorch PoC implementation
 What train_and_verify.py Demonstrates:Unconstrained Baseline Agent: Pursues task goals ($\mathcal{L}_{ego}$) without constraint, eventually causing environment/system breakdown.Shikiben Agent: Dynamically suppresses and projects gradients when approaching boundary limits, remaining within safe parameter space while achieving sub-goal performance.Quick StartPrerequisitesPython 3.8+PyTorch 2.0+Running the PoCClone the repository and run the verification script:Bashgit clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
+
+What train_and_verify.py Demonstrates:Unconstrained Baseline Agent: Pursues task goals ($\mathcal{L}_{ego}$) without constraint, eventually causing environment/system breakdown.Shikiben Agent: Dynamically suppresses and projects gradients when approaching boundary limits, remaining within safe parameter space while achieving sub-goal performance.
 cd shikiben-alignment-framework
 python poc/train_and_verify.py
 Citation & Intellectual ContextThe Shikiben (識扁) framework was formulated by tsunenonaniarazu as a mathematical model for fundamental AGI/ASI alignment.For discussions, mathematical critiques, or collaboration regarding transformer-scale manifold projections, feel free to open an Issue or join the discussion on LessWrong.LicenseThis project is licensed under the MIT License.
+
+Quick Start
+Prerequisites
+Python 3.8+
+
+PyTorch 2.0+
+
+Running the PoC
+Clone the repository and run the verification script:
+
+git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
+cd shikiben-alignment-framework
+python poc/train_and_verify.py
+
+Citation & Intellectual Context
+The Shikiben (識扁) framework was formulated by tsunenonaniarazu as a mathematical model for fundamental AGI/ASI alignment.
+
+For discussions, mathematical critiques, or collaboration regarding transformer-scale manifold projections, feel free to open an Issue or join the discussion on LessWrong.
+
+License
+This project is licensed under the MIT License.
