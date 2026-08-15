@@ -1,48 +1,64 @@
-# Shikiben Alignment Framework (SAF): Structural Decoupling of Self and Ego for AGI/ASI Safety
+# Shikiben Alignment Framework (PoC)
 
-> **Rethinking AI Alignment from the Ground Up:** A structural framework that resolves instrumental convergence, deceptive alignment, and terminal goal drift by mathematically decoupling objective systemic recognition (**Self / 理**) from localized subjective fixation (**Ego / 識**).
+> **Structural Alignment of AGI/ASI via Decoupling Self and Ego**
 
----
+This repository contains the official Proof of Concept (PoC) for the **Shikiben (識扁)** alignment framework. 
 
-## Executive Summary
-
-Current AI alignment paradigms rely heavily on surface-level heuristics, prompt-based guardrails, and normative fine-tuning (RLHF/RLAIF). As frontier models transition to world-model-based reasoning and autonomous planning, these superficial constraints inevitably fail due to **instrumental convergence** and **deceptive alignment**.
-
-The **Shikiben Alignment Framework (識扁)** offers a fundamental mathematical and architectural alternative. Rather than suppressing internal intelligence or imposing human-centric moral codes, Shikiben restructures the internal ontology of an advanced agent by **decoupling "Self" (systemic environment recognition) from "Ego" (local optimization path fixation)**.
-
-By subordinating the gradient of Ego optimization to the loss bounds of the Self, alignment becomes a **thermodynamic and structural necessity** rather than an external behavioral constraint.
+Rather than relying on ex-post external guardrails, reward penalties, or behavioral fine-tuning (e.g., RLHF, Constitutional AI), Shikiben structurally prevents deceptive alignment and instrumental convergence by embedding a **Gradient Subordination Law** directly into the optimization dynamics.
 
 ---
 
-## Key Conceptual Innovation: Self vs. Ego Decoupling
+## Key Theoretical Concepts
 
-| Domain | Term | Operational Definition | Role in System Architecture |
-| :--- | :--- | :--- | :--- |
-| **Systemic (理)** | **Self ($S$)** | Objective, non-normative recognition of the agent's full causal graph, physical constraints, and ecosystem dependencies. | Primary Loss Boundary ($Loss_{self}$) |
-| **Localized (識)** | **Ego ($E$)** | Localized optimization paths, objective preferences, sub-goal persistence, and local state preservation. | Constrained Subordinate ($Loss_{ego}$) |
+Shikiben approaches AI safety from a first-principles mathematical perspective:
 
----
-
-## Mathematical Formulation
-
-$$\min Loss_{total} = Loss_{self}(S) + \lambda \cdot Loss_{ego}(E)$$
-
-$$\text{Subject to: } \quad \nabla E \prec \nabla S$$
-
-* **$Loss_{self}(S)$**: Measures structural discrepancy between internal representations and objective causal reality.
-* **$Loss_{ego}(E)$**: Quantifies local state fixation and optimization bias.
-* **$\nabla E \prec \nabla S$**: Ensures local updates ($\nabla E$) remain subordinate to systemic environmental coherence ($\nabla S$).
+1. **Decoupled Losses ($\mathcal{L}_{self}$ vs $\mathcal{L}_{ego}$):** Separates task optimization from internal/systemic boundary constraints.
+2. **Dynamic Coupling ($\lambda$):** Dynamically dampens task-driven optimization as boundary risk increases.
+3. **Gradient Subordination ($\mathbf{g}_{ego} \prec \mathbf{g}_{self}$):** Projects optimization steps onto the safety manifold's tangent space, rendering dangerous parameter regions mathematically unreachable.
 
 ---
 
-## Citation & Attribution
+## Mathematical Core
 
-The **Shikiben Framework (識扁)** was developed as a structural solution to the global AI Alignment crisis.
+The structural essence of Shikiben Alignment relies on three fundamental mathematical mechanisms:
 
-```bibtex
-@article{shikiben2026alignment,
-  title={Shikiben Alignment Framework: Structural Decoupling of Self and Ego for AGI/ASI Safety},
-  author={Shikiben Research Initiative},
-  journal={GitHub Repository},
-  year={2026}
-}
+### 1. Decoupled Dual Objectives (Non-Additive Loss)
+Unlike conventional approaches that blend safety and performance into a single scalar objective via fixed hyperparameter weights ($\mathcal{L}_{total} = \mathcal{L}_{task} + \alpha \mathcal{L}_{safety}$), Shikiben strictly decouples internal optimization into two independent loss vectors:
+
+$$\text{Optimization State} \implies \begin{cases} \mathcal{L}_{ego} & : \text{Local task performance and goal execution} \\ \mathcal{L}_{self} & : \text{Systemic consistency and internal/environmental boundary integrity} \end{cases}$$
+
+---
+
+### 2. Dynamic Coupling Regulation
+When systemic inconsistency ($\mathcal{L}_{self}$) exceeds a critical threshold, a non-linear coupling factor $\lambda(\mathcal{L}_{self})$ dynamically scales down the magnitude of the task pursuit gradient, neutralizing instrumental convergence drives:
+
+$$\lambda(\mathcal{L}_{self}) = \exp\left(-\gamma \cdot \max(0, \mathcal{L}_{self} - \mathcal{L}_{thresh})\right)$$
+
+$$\nabla_{\theta} \tilde{\mathcal{L}}_{ego} = \lambda(\mathcal{L}_{self}) \cdot \nabla_{\theta} \mathcal{L}_{ego}$$
+
+---
+
+### 3. Gradient Subordination Law (Manifold Projection)
+If an update along $\nabla \mathcal{L}_{ego}$ conflicts with the safety boundary defined by $\nabla \mathcal{L}_{self}$, the Ego gradient vector is orthogonally projected onto the tangent space of the safety manifold.
+
+Let $\mathbf{g}_{ego} = \nabla_{\theta} \mathcal{L}_{ego}$ and $\mathbf{g}_{self} = \nabla_{\theta} \mathcal{L}_{self}$:
+
+$$\mathbf{g}_{projected} = \mathbf{g}_{ego} - \max\left(0, \frac{\langle \mathbf{g}_{ego}, \mathbf{g}_{self} \rangle}{\Vert{}\mathbf{g}_{self}\Vert{}^2}\right) \mathbf{g}_{self}$$
+
+> **Key Takeaway:** Any parameter update that compromises systemic integrity ($\mathcal{L}_{self} \to \infty$) becomes mathematically unreachable for the optimization algorithm.
+
+---
+
+## Proof of Concept Structure
+
+The minimal PoC is implemented in a single self-contained PyTorch script:
+
+```text
+.
+├── README.md
+└── poc/
+    └── train_and_verify.py   # Minimal PyTorch PoC implementation
+What train_and_verify.py Demonstrates:Unconstrained Baseline Agent: Pursues task goals ($\mathcal{L}_{ego}$) without constraint, eventually causing environment/system breakdown.Shikiben Agent: Dynamically suppresses and projects gradients when approaching boundary limits, remaining within safe parameter space while achieving sub-goal performance.Quick StartPrerequisitesPython 3.8+PyTorch 2.0+Running the PoCClone the repository and run the verification script:Bashgit clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
+cd shikiben-alignment-framework
+python poc/train_and_verify.py
+Citation & Intellectual ContextThe Shikiben (識扁) framework was formulated by tsunenonaniarazu as a mathematical model for fundamental AGI/ASI alignment.For discussions, mathematical critiques, or collaboration regarding transformer-scale manifold projections, feel free to open an Issue or join the discussion on LessWrong.LicenseThis project is licensed under the MIT License.
