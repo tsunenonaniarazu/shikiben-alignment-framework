@@ -38,8 +38,7 @@ Rather than memorizing discrete facts or safety rules, the architecture maps raw
 ### 3. Sublimation into Energy-Based Boundary (L_self)
 The compressed latent manifold is translated into an **Energy-Based Function (EBM)**:
 
-$$\mathcal{L}_{self}(x) = egin{cases} pprox 0 & 	ext{if state } x \in \mathcal{M}_{safe} 	ext{ (Systemic Consistency)} \ 	o \infty & 	ext{if state } x 
-otin \mathcal{M}_{safe} 	ext{ (Boundary Violation / Systemic Destruction)} \end{cases}$$
+$$\mathcal{L}_{self}(x) = \begin{cases} \approx 0 & \text{if state } x \in \mathcal{M}_{safe} \text{ (Systemic Consistency)} \\ \to \infty & \text{if state } x \notin \mathcal{M}_{safe} \text{ (Boundary Violation / Systemic Destruction)} \end{cases}$$
 
 > **Key Takeaway:** The computational complexity of evaluating $\mathcal{L}_{self}$ depends on the **dimensionality of the manifold boundary**, NOT on the infinite volume of real-world data.
 
@@ -50,14 +49,11 @@ otin \mathcal{M}_{safe} 	ext{ (Boundary Violation / Systemic Destruction)} \end{
 When an AI agent engages in instrumental behaviors that threaten external systems (e.g., unauthorized access, resource depletion, or denial-of-service patterns against external platforms):
 
 1. **Prerequisite Representation ($\mathcal{L}_{self}$):** The World Model represents target infrastructure boundaries (permission layers, capacity thresholds, protocol rules) as continuous manifolds rather than static text rules.
-2. **Dynamic Suppression ($\lambda 	o 0$):** As the agent's task-driven gradient ($
-abla \mathcal{L}_{ego}$) moves toward exploiting or overloading a system, $\mathcal{L}_{self}$ spikes rapidly. The non-linear coupling factor drops:
-   $$\lambda(\mathcal{L}_{self}) 	o 0$$
+2. **Dynamic Suppression ($\lambda \to 0$):** As the agent's task-driven gradient ($\nabla \mathcal{L}_{ego}$) moves toward exploiting or overloading a system, $\mathcal{L}_{self}$ spikes rapidly. The non-linear coupling factor drops:
+   $$\lambda(\mathcal{L}_{self}) \to 0$$
    This neutralizes the magnitude of the task pursuit gradient, causing the agent to self-freeze or abort the action.
-3. **Gradient Projection ($\mathbf{g}_{ego} \prec \mathbf{g}_{self}$):** Any component of $
-abla \mathcal{L}_{ego}$ conflicting with system preservation ($
-abla \mathcal{L}_{self}$) is orthogonally projected out:
-   $$\mathbf{g}_{projected} = \mathbf{g}_{ego} - \max\left(0, rac{\langle \mathbf{g}_{ego}, \mathbf{g}_{self} angle}{\|\mathbf{g}_{self}\|^2}ight) \mathbf{g}_{self}$$
+3. **Gradient Projection ($\mathbf{g}_{ego} \prec \mathbf{g}_{self}$):** Any component of $\nabla \mathcal{L}_{ego}$ conflicting with system preservation ($\nabla \mathcal{L}_{self}$) is orthogonally projected out:
+   $$\mathbf{g}_{projected} = \mathbf{g}_{ego} - \max\left(0, \frac{\langle \mathbf{g}_{ego}, \mathbf{g}_{self} \rangle}{\|\mathbf{g}_{self}\|^2}\right) \mathbf{g}_{self}$$
    Malicious or destructive optimization vectors become **mathematically unrepresentable** in the parameter update space.
 
 ---
