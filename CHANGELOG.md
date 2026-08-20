@@ -62,7 +62,7 @@ This document outlines the version history, mathematical formulations, system de
 
 ---
 
-## [1.0.0] - 2026-08-20
+## [1.0.0] - 2026-08-14
 
 ### Added
 - **Project Inception & Problem Statement:**
