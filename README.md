@@ -99,3 +99,6 @@ For discussions, mathematical critiques, or collaboration regarding transformer-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## 💻 Implementation & Simulation
+For instructions on running the PyTorch toy model simulation, please refer to the [Simulation Guide](./simulation/).
