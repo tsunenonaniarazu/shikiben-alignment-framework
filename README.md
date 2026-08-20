@@ -100,5 +100,13 @@ For discussions, mathematical critiques, or collaboration regarding transformer-
 
 This project is licensed under the [MIT License](LICENSE).
 
+---
+
 ## 💻 Implementation & Simulation
 For instructions on running the PyTorch toy model simulation, please refer to the [Simulation Guide](./simulation/).
+
+---
+
+Disclaimer: 
+
+This white paper introduces a theoretical governance framework. Implementation in production AGI systems requires further engineering validation.
