@@ -7,3 +7,8 @@ Make sure you have Python 3.8+ and PyTorch installed.
 
 ```bash
 pip install -r simulation/requirements.txt
+
+## Execution
+
+```bash
+python shikiben_simulation.py
