@@ -4,6 +4,28 @@ This document outlines the version history, mathematical formulations, system de
 
 ---
 
+## [2.4.0] - 2026-08-23
+
+### Added
+- **Virtue Phase Interpolation ($\lambda$):** Introduced the continuous scalar field $\lambda(\text{Virtue}) \in [0, 1]$ mapping system rigidity (Ego $E$) via a sigmoid operator. Enables smooth $C^\infty$ transitions between the Rigid Phase ($\lambda \to 0$) and the Fluid/Virtue Phase ($\lambda \to 1$).
+- **Two-Stage Orthogonal Projection ($\mathbf{P}_{\text{rei}}$):** Implemented the composite projection operator $\mathbf{P}_{\text{rei}} = \mathbf{P}_{\text{Taidou}} \circ \mathbf{P}_{\partial \Omega}$ to decouple normal boundary forces ($\mathbf{n}\mathbf{n}^T$) while preserving tangential velocity components.
+- **Taidou Return Gradient ($\mathbf{g}_{\text{Taidou}}$):** Added a quadratic centering potential field $\Psi_{\text{Taidou}}$ that continuously pulls system dynamics back toward the safe manifold axis ($\mathcal{M}_{\text{safe}}$).
+- **Multi-Agent Resonance Potential ($\mathbf{S}_{\text{jin}}$):** Incorporated a pairwise repulsive/resonant potential to handle multi-agent collision avoidance without gradient blowups.
+- **Formal Mathematical Proofs:** Added formal proofs for:
+  - Strict non-collision condition ($\mathbf{n}^T \cdot \dot{\mathbf{x}} = \mathbf{0}$ at boundary $\partial \Omega$).
+  - Lyapunov asymptotic stability ($\dot{V} \le 0$) under Taidou return forces.
+  - Minimal thermodynamic dissipation ($P(\mathbf{x}) \le \epsilon$).
+
+### Changed
+- **Unified Equation of Motion:** Refactored the core state trajectory update equation to explicitly integrate all four virtue operators (Rei, Gi, Jin, Taidou) under phase modulation.
+- **Boundary Handling:** Replaced traditional penalty-based potential barriers with geometric tangential sliding, eliminating boundary gradient spikes and operational freezing.
+
+### Fixed
+- **System Freezing:** Fixed a critical bug in earlier boundary penalty models where zeroing out velocities caused permanent gradient locking near constraint edges.
+- **Numerical Instability:** Fixed gradient spike issues during high-speed boundary approach by substituting hard constraints with orthogonal boundary projections.
+
+---
+
 ## [3.0.0-draft] - 2026-08-20 (Planned)
 
 ### Added
