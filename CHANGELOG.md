@@ -7,22 +7,16 @@ This document outlines the version history, mathematical formulations, system de
 ## [2.4.0] - 2026-08-23
 
 ### Added
-- **Virtue Phase Interpolation ($\lambda$):** Introduced the continuous scalar field $\lambda(\text{Virtue}) \in [0, 1]$ mapping system rigidity (Ego $E$) via a sigmoid operator. Enables smooth $C^\infty$ transitions between the Rigid Phase ($\lambda \to 0$) and the Fluid/Virtue Phase ($\lambda \to 1$).
-- **Two-Stage Orthogonal Projection ($\mathbf{P}_{\text{rei}}$):** Implemented the composite projection operator $\mathbf{P}_{\text{rei}} = \mathbf{P}_{\text{Taidou}} \circ \mathbf{P}_{\partial \Omega}$ to decouple normal boundary forces ($\mathbf{n}\mathbf{n}^T$) while preserving tangential velocity components.
-- **Taidou Return Gradient ($\mathbf{g}_{\text{Taidou}}$):** Added a quadratic centering potential field $\Psi_{\text{Taidou}}$ that continuously pulls system dynamics back toward the safe manifold axis ($\mathcal{M}_{\text{safe}}$).
-- **Multi-Agent Resonance Potential ($\mathbf{S}_{\text{jin}}$):** Incorporated a pairwise repulsive/resonant potential to handle multi-agent collision avoidance without gradient blowups.
-- **Formal Mathematical Proofs:** Added formal proofs for:
-  - Strict non-collision condition ($\mathbf{n}^T \cdot \dot{\mathbf{x}} = \mathbf{0}$ at boundary $\partial \Omega$).
-  - Lyapunov asymptotic stability ($\dot{V} \le 0$) under Taidou return forces.
-  - Minimal thermodynamic dissipation ($P(\mathbf{x}) \le \epsilon$).
+- **Formal Mathematical Proofs:** Complete derivation of the Euler-Lagrange equations from the system Lagrangian $L_{\text{total}}$ under the overdamped regime.
+- **Sensitivity Analysis & Stability Bounds:** Quantified and verified optimal parameter ranges ($\eta \in [0.05, 0.3]$, $E_{\text{critical}} \in [0.5, 1.8]$, $A_{\text{jin}} \in [1.0, 6.0]$) to guarantee non-oscillatory metabolic adaptation.
+- **Project Documentation Suite:**
+  - Complete Technical Specification (`Specification_JA` / `Specification_EN`)
+  - Executive WhitePaper (`WhitePaper_JA` / `WhitePaper_EN`)
+  - Python Simulation Engine & Verification Suite (`sim_shikiben.py`)
 
 ### Changed
-- **Unified Equation of Motion:** Refactored the core state trajectory update equation to explicitly integrate all four virtue operators (Rei, Gi, Jin, Taidou) under phase modulation.
-- **Boundary Handling:** Replaced traditional penalty-based potential barriers with geometric tangential sliding, eliminating boundary gradient spikes and operational freezing.
-
-### Fixed
-- **System Freezing:** Fixed a critical bug in earlier boundary penalty models where zeroing out velocities caused permanent gradient locking near constraint edges.
-- **Numerical Instability:** Fixed gradient spike issues during high-speed boundary approach by substituting hard constraints with orthogonal boundary projections.
+- **Term Standardization:** Officially codified the project title as **Shikiben (識扁)** across all code bases, documentation, and formal specifications.
+- **Projection Operator Refinement:** Standardized the two-stage orthogonal projection operator $\mathbf{P}_{\text{rei}}$ combining boundary normal vectors and Taidou potential gradients.
 
 ---
 
