@@ -56,7 +56,7 @@ Python環境で本数理モデルの挙動および幾何学射影の動作を�
 
 ```bash
 # リポジトリのクローン
-git clone [https://github.com/your-username/shikiben.git](https://github.com/your-username/shikiben.git)
+git clone [https://github.com/tsunenonaniarazu/shikiben.git](https://github.com/tsunenonaniarazu/shikiben.git)
 cd shikiben
 
 # シミュレーションの実行
