@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Status: Stable Spec](https://img.shields.io/badge/Status-v2.4.0_Stable-green.svg)](docs/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tsunenonaniarazu/shikiben-dynamics/blob/main/simulations/shikiben_v2.4.0_demo.ipynb)
 
 [Japanese Version (日本語仕様書)](./README_JA.md)
 
