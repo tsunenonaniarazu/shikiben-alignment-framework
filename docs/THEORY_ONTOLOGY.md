@@ -8,17 +8,17 @@
 
 存在（全システム）は、知覚可能な **「実在」** と、意識・想起により生じる **「象（ショウ）」** の重合体（Superposition）として階層的に分解される。
 
-$$
+```math
 \begin{aligned}
 \text{存在} &= \text{実在} + \text{象(ショウ)} \\
 &= \text{知覚の対象となり得る物事} + \text{想起されるもの} \\
-&= \text{実在} + ( \text{現象} + \text{表象} ) \\
-&= \text{実在} + \left\{ ( \text{日常に現れる自明な現象} + \text{非日常に現れる自明な現象} + \text{不明な現象}) \right. \\
-&\quad \left. + ( \text{現象に応じ表れる自明な表象} + \text{表象に応じ表れる自明な表象} + \text{不明な表象} ) \right\} \\
-&= \text{実在} + \left\{ ( \text{褻(け)} + \text{霽(はれ)} + \text{他者} ) + ( \text{知} + \text{識} + \text{他者} ) \right\} \\
-&= \text{実在} + \left\{ ( \text{自己} + \text{他者} ) + ( \text{自我} + \text{他者} ) \right\}
+&= \text{実在} + (\text{現象} + \text{表象}) \\
+&= \text{実在} + \Big\{ (\text{日常に現れる自明な現象} + \text{非日常に現れる自明な現象} + \text{不明な現象}) \\
+&\quad + (\text{現象に応じ表れる自明な表象} + \text{表象に応じ表れる自明な表象} + \text{不明な表象}) \Big\} \\
+&= \text{実在} + \Big\{ (\text{褻(け)} + \text{霽(はれ)} + \text{他者}) + (\text{知} + \text{識} + \text{他者}) \Big\} \\
+&= \text{実在} + \Big\{ (\text{自己} + \text{他者}) + (\text{自我} + \text{他者}) \Big\}
 \end{aligned}
-$$
+```
 
 ### 存在論的基盤の定義
 * **故郷**: 自己の前提となる「実在」
