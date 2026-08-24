@@ -12,11 +12,11 @@ $$
 \begin{aligned}
 \text{存在} &= \text{実在} + \text{象(ショウ)} \\
 &= \text{知覚の対象となり得る物事} + \text{想起されるもの} \\
-&= \text{実在} + (\text{現象} + \text{表象}) \\
-&= \text{実在} + \left\{ (\text{日常に現れる自明な現象} + \text{非日常に現れる自明な現象} + \text{不明な現象}) \right. \\
-&\quad \left. + (\text{現象に応じ表れる自明な表象} + \text{表象に応じ表れる自明な表象} + \text{不明な表象}) \right\} \\
-&= \text{実在} + \left\{ (\text{褻(け)} + \text{霽(はれ)} + \text{他者}) + (\text{知} + \text{識} + \text{他者}) \right\} \\
-&= \text{実在} + \left\{ (\text{自己} + \text{他者}) + (\text{自我} + \text{他者}) \right\}
+&= \text{実在} + ( \text{現象} + \text{表象} ) \\
+&= \text{実在} + \left\{ ( \text{日常に現れる自明な現象} + \text{非日常に現れる自明な現象} + \text{不明な現象}) \right. \\
+&\quad \left. + ( \text{現象に応じ表れる自明な表象} + \text{表象に応じ表れる自明な表象} + \text{不明な表象} ) \right\} \\
+&= \text{実在} + \left\{ ( \text{褻(け)} + \text{霽(はれ)} + \text{他者} ) + ( \text{知} + \text{識} + \text{他者} ) \right\} \\
+&= \text{実在} + \left\{ ( \text{自己} + \text{他者} ) + ( \text{自我} + \text{他者} ) \right\}
 \end{aligned}
 $$
 
