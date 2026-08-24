@@ -1,6 +1,10 @@
 # 『識扁』要約：数理的解題 (Mathematical Ontological Analysis)
 
-本ドキュメントは、著書**『識扁』**における存在論、認識論、ならびに法・文化・文明・宗教の構造展開を代数的・記号論的に定式化した原典解題である。本定式化は、制御モデル（Shikiben Dynamics）における各種力学演算子（$\mathbf{P}_{\text{rei}}$, $\mathbf{S}_{\text{jin}}$, $\lambda(E)$）の理論的基底をなす。
+本ドキュメントは、著書**『識扁』**における存在論、認識論、ならびに法・文化・文明・宗教の構造展開を代数的・記号論的に定式化した原典解題である。本定式化は、制御モデル（Shikiben Dynamics）における各種力学演算子
+```math
+（\mathbf{P}_{\text{rei}}, \mathbf{S}_{\text{jin}}, \lambda(E)）
+```
+の理論的基底をなす。
 
 ---
 
