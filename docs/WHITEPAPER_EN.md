@@ -151,3 +151,13 @@ Shikiben Ver. 2.4 translates deep philosophical intuition into rigorous, modern 
 Future development focuses on middleware integration for open-source robotics ecosystems (e.g., ROS2), Proof of Concept (PoC) implementations for LLM alignment guardrails, and hardware validation across multi-agent environments.
 
 ---
+
+## Appendix A: Connection to Ontological Algebraic Analysis
+
+The dynamical control operators ($\mathbf{P}_{\text{rei}}$, $\mathbf{S}_{\text{jin}}$, $L_{\text{ego}}$, etc.) formulated in this WhitePaper correspond one-to-one with the algebraic decomposition of Existence (*Authentic Reality* vs. *Sho*) and the expansion of *Shiki* into Law, Culture, Civilization, and Religion in the original treatise.
+
+For the complete algebraic and ontological reduction, please refer to:
+
+* 📖 **["Shikiben" Summary: Mathematical & Ontological Analysis (docs/THEORY_ONTOLOGY_EN.md)](THEORY_ONTOLOGY_EN.md)**
+
+---
