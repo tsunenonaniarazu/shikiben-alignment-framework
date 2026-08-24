@@ -1,6 +1,10 @@
 # "Shikiben" Summary: Mathematical & Ontological Analysis
 
-This document provides a formal algebraic and semiotic reduction of the foundational epistemology, ontology, and societal structures (Law, Culture, Civilization, Religion) established in the treatise **"Shikiben" (識扁)**. This mathematical expansion forms the philosophical bedrock for the dynamical operators ($\mathbf{P}_{\text{rei}}$, $\mathbf{S}_{\text{jin}}$, $\lambda(E)$) implemented in the Shikiben Dynamics control framework.
+This document provides a formal algebraic and semiotic reduction of the foundational epistemology, ontology, and societal structures (Law, Culture, Civilization, Religion) established in the treatise **"Shikiben" (識扁)**. This mathematical expansion forms the philosophical bedrock for the dynamical operators 
+```math
+(\mathbf{P}_{\mathrm{rei}}, \mathbf{S}_{\mathrm{jin}}, \lambda(E))
+```
+implemented in the Shikiben Dynamics control framework.
 
 ---
 
