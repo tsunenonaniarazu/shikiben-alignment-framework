@@ -8,7 +8,7 @@ This document provides a formal algebraic and semiotic reduction of the foundati
 
 Existence (the total state space) is hierarchically decomposed as a superposition of **Authentic Reality** (perceptible matter/nature) and **Ego-Distortion / Phenomenon-Representation (象 - Sho)**.
 
-$$
+```math
 \begin{aligned}
 \text{Existence} &= \text{Authentic Reality} + \text{Ego-Distortion (Sho)} \\
 &= \text{Perceptible Entities} + \text{Conceived / Recalled Representations} \\
@@ -18,7 +18,7 @@ $$
 &= \text{Authentic Reality} + \left\{ (\text{Profane/Ke} + \text{Sacred/Hare} + \text{The Other}) + (\text{Intellect/Chi} + \text{Cognition/Shiki} + \text{The Other}) \right\} \\
 &= \text{Authentic Reality} + \left\{ (\text{Self} + \text{The Other}) + (\text{Ego} + \text{The Other}) \right\}
 \end{aligned}
-$$
+```
 
 ### Ontological Baseline Definitions
 * **Home (故郷)**: The Authentic Reality that forms the precondition of the Self.
