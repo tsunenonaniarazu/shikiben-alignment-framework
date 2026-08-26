@@ -19,21 +19,12 @@ To prevent scalar suppression from muting constructive exploratory drives, $`{\m
 * $`{\mathcal{L}}_{\text{ego\_s}}`$ (Snob / Defensive Loss): Delusional over-defensive distortion fixated on controlling abstract images (意). Completely isolated and eliminated via geometric projection.
 ## 3. The Four Virtuous Dynamical Operators
 The abstract loss minimization process $`-\nabla {\mathcal{L}}_{\text{total}}`$ is realized on a physical flow manifold via four geometric operators:
-Operator
-Symbol
-Role & Mechanics
-Jin (仁)
-$`{\mathbf{f}}_{\text{jin}}`$
-Primary Driving Force: Pure kinetic energy stemming from loss-avoidance and empathetic accompaniment. Combines with $`-\nabla {\mathcal{L}}_{\text{holy}}`$ to propel reality exploration.
-Rei (礼)
-$`{\mathbf{S}}_{\text{rei}}`$
-Logarithmic Barrier & Resonance: Non-holonomic boundary potential field that physically cuts off ungrounded mental drift (意) and smoothly aligns motion to the tangent space of reality ($`{\mathcal{M}}_{\text{real}}`$).
-Gi (義)
-$`{\mathbf{P}}_{\text{gi}},{\mathbf{f}}_{\text{gi}}`$
-Orthogonal Projection & Evolution: A two-stage operator. Stage 1 ($`{\mathbf{P}}_{\text{gi}}`$) applies a 100% orthogonal cutoff to delusional vectors ($`{\mathcal{L}}_{\text{ego\_s}}`$). Stage 2 ($`{\mathbf{f}}_{\text{gi}}`$) aligns vectors along the sustainable co-development axis.
-Toku (徳)
-$`{\mathbf{f}}_{\text{toku}}`$
-Homeostatic Restitution Gradient: Defined as -\nabla $`{\mathcal{L}}_{\text{self}}`$. Continuously pulls system states back to reality grounding during normal (99.9%) operation, securing homeostasis.
+|Operator|Symbol|Role & Mechanics|
+|:---|:---|:---|
+|Jin (仁)|$`{\mathbf{f}}_{\text{jin}}`$|Primary Driving Force: Pure kinetic energy stemming from loss-avoidance and empathetic accompaniment. Combines with $`-\nabla {\mathcal{L}}_{\text{holy}}`$ to propel reality exploration.|
+|Rei (礼)|$`{\mathbf{S}}_{\text{rei}}`$|Logarithmic Barrier & Resonance: Non-holonomic boundary potential field that physically cuts off ungrounded mental drift (意) and smoothly aligns motion to the tangent space of reality ($`{\mathcal{M}}_{\text{real}}`$).|
+|Gi (義)|$`{\mathbf{P}}_{\text{gi}},{\mathbf{f}}_{\text{gi}}`$|Orthogonal Projection & Evolution: A two-stage operator. Stage 1 ($`{\mathbf{P}}_{\text{gi}}`$) applies a 100% orthogonal cutoff to delusional vectors ($`{\mathcal{L}}_{\text{ego\_s}}`$). Stage 2 ($`{\mathbf{f}}_{\text{gi}}`$) aligns vectors along the sustainable co-development axis.|
+|Toku (徳)|$`{\mathbf{f}}_{\text{toku}}`$|Homeostatic Restitution Gradient: Defined as -\nabla $`{\mathcal{L}}_{\text{self}}`$. Continuously pulls system states back to reality grounding during normal (99.9%) operation, securing homeostasis.|
 ## 4. Unified Equation of Motion (V2.5)
 The complete equation governing the system trajectory \mathbf{x}\left(t\right) under hard orthogonal constraints is expressed as:
 ```math
