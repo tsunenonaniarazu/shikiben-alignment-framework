@@ -36,9 +36,15 @@ $`{\mathbf{f}}_{\text{toku}}`$
 Homeostatic Restitution Gradient: Defined as -\nabla $`{\mathcal{L}}_{\text{self}}`$. Continuously pulls system states back to reality grounding during normal (99.9%) operation, securing homeostasis.
 ## 4. Unified Equation of Motion (V2.5)
 The complete equation governing the system trajectory \mathbf{x}\left(t\right) under hard orthogonal constraints is expressed as:
+```math
 \dot{\mathbf{x}}={\mathbf{P}}_{\text{gi}}\left(\mathbf{x}\right)\left[{\mathbf{f}}_{\text{jin}}\left(\mathbf{x}\right)+{\mathbf{f}}_{\text{toku}}\left(\mathbf{x}\right)+\left(-\nabla {\mathcal{L}}_{\text{holy}}\left(\mathbf{x}\right)\right)+{\mathbf{f}}_{\text{gi}}\left(\mathbf{x}\right)\right]+{\mathbf{S}}_{\text{rei}}\left(\mathbf{x}\right)
+```
+```math
 \text{where\ }{\mathbf{f}}_{\text{toku}}\left(\mathbf{x}\right)=-\nabla {\mathcal{L}}_{\text{self}}\left(\mathbf{x}\right)
+```
+```math
 \text{subject\ to:\ }{\mathbf{P}}_{\text{gi}}\left(\mathbf{x}\right)\cdot \left(-\nabla {\mathcal{L}}_{\text{ego\_s}}\left(\mathbf{x}\right)\right)=0
+```
 Key Mathematical Guarantees
 ### 1. Absolute Cutoff: Illusionary defensive dynamics (-\nabla {\mathcal{L}}_{\text{ego\_s}}) are mathematically zeroed out via the null space of {\mathbf{P}}_{\text{gi}}.
 ### 2. Stable Grounding: The restitution vector {\mathbf{f}}_{\text{toku}} alongside barrier field {\mathbf{S}}_{\text{rei}} guarantees bounded trajectory dynamics within the manifold {\mathcal{M}}_{\text{real}}.
