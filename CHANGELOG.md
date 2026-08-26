@@ -28,7 +28,7 @@ $$\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{
 ```
 
 ### Fixed
-- **Scalar Suppression Leakage**: Resolved state distortion issues caused by scalar multiplication where illusionary vectors ($\mathcal{L}_{\text{ego\_s}}$) were insufficiently suppressed; replaced with 100% mathematical orthogonal cutoff ($\mathbf{P}_{\text{gi}}$).
+- **Scalar Suppression Leakage**: Resolved state distortion issues caused by scalar multiplication where illusionary vectors ($`\mathcal{L}_{\text{ego\_s}}`$) were insufficiently suppressed; replaced with 100% mathematical orthogonal cutoff ($`\mathbf{P}_{\text{gi}}`$).
 - **Loss Ambiguity**: Fixed the conflation between constructive exploratory dynamics and defensive ego distortion by establishing explicit functional partitioning.
 
 ---
