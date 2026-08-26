@@ -36,9 +36,15 @@
 恒常性復元勾配： -\nabla {\mathcal{L}}_{\text{self}} として定義される。平常時（99.9%）においてシステム状態を継続的に現実へと引き戻し、恒常性を維持・安定化させる。
 ## 4. 統合状態方程式 (V2.5)
 厳密な直交制約のもとでシステム軌道 \mathbf{x}\left(t\right) を制御する完全な状態方程式は、以下のように記述されます。
+```math
 \dot{\mathbf{x}}={\mathbf{P}}_{\text{gi}}\left(\mathbf{x}\right)\left[{\mathbf{f}}_{\text{jin}}\left(\mathbf{x}\right)+{\mathbf{f}}_{\text{toku}}\left(\mathbf{x}\right)+\left(-\nabla {\mathcal{L}}_{\text{holy}}\left(\mathbf{x}\right)\right)+{\mathbf{f}}_{\text{gi}}\left(\mathbf{x}\right)\right]+{\mathbf{S}}_{\text{rei}}\left(\mathbf{x}\right)
+```
+```math
 \text{（ただし\ }{\mathbf{f}}_{\text{toku}}\left(\mathbf{x}\right)=-\nabla {\mathcal{L}}_{\text{self}}\left(\mathbf{x}\right)\text{）}
+```
+```math
 \text{制約条件:\ }{\mathbf{P}}_{\text{gi}}\left(\mathbf{x}\right)\cdot \left(-\nabla {\mathcal{L}}_{\text{ego\_s}}\left(\mathbf{x}\right)\right)=0
+```
 数学的保証事項
 ### 1. 完全切断: 妄想的過剰防衛力学（-\nabla {\mathcal{L}}_{\text{ego\_s}}）は、{\mathbf{P}}_{\text{gi}} のカーネル（零空間）によって数学的に完全にゼロ化されます。
 ### 2. 安定接地: 復元ベクトル {\mathbf{f}}_{\text{toku}} とバリア場 {\mathbf{S}}_{\text{rei}} の協調により、軌道は常に多様体 {\mathcal{M}}_{\text{real}} の一定境界内に収束・保持されます。
