@@ -62,16 +62,3 @@ shikiben-v2.5/
     ├── run_simulation.py     # 相転移ダイナミクス再現スクリプト
     └── analyze_results.py    # ログ解析スクリプト
 ```
-
----
-
-## クイックスタート (Quick Start)
-
-### 1.セットアップ
-
-#### リポジトリのクローン
-git clone [https://github.com/tsunenonaniarazu/shikiben-v2.5.git](https://github.com/your-username/shikiben-v2.5.git)
-cd shikiben-v2.5
-
-#### 依存ライブラリのインストール
-pip install -r requirements.txt
