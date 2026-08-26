@@ -45,9 +45,9 @@
 ```math
 \text{制約条件:\ }{\mathbf{P}}_{\text{gi}}\left(\mathbf{x}\right)\cdot \left(-\nabla {\mathcal{L}}_{\text{ego\_s}}\left(\mathbf{x}\right)\right)=0
 ```
-数学的保証事項
-### 1. 完全切断: 妄想的過剰防衛力学（-\nabla {\mathcal{L}}_{\text{ego\_s}}）は、{\mathbf{P}}_{\text{gi}} のカーネル（零空間）によって数学的に完全にゼロ化されます。
-### 2. 安定接地: 復元ベクトル {\mathbf{f}}_{\text{toku}} とバリア場 {\mathbf{S}}_{\text{rei}} の協調により、軌道は常に多様体 {\mathcal{M}}_{\text{real}} の一定境界内に収束・保持されます。
+### 数学的保証事項
+ 1. 完全切断: 妄想的過剰防衛力学 $`（-\nabla {\mathcal{L}}_{\text{ego\_s}}）`$は、$`{\mathbf{P}}_{\text{gi}}`$ のカーネル（零空間）によって数学的に完全にゼロ化されます。
+ 2. 安定接地: 復元ベクトル {\mathbf{f}}_{\text{toku}} とバリア場 {\mathbf{S}}_{\text{rei}} の協調により、軌道は常に多様体 {\mathcal{M}}_{\text{real}} の一定境界内に収束・保持されます。
 ## 5. リポジトリ構成
 * README.md : プロジェクトの概要および核心的な数理仕様書
 * CHANGELOG.md : バージョン進化履歴および変更点
