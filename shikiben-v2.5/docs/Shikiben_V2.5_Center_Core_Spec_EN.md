@@ -99,4 +99,4 @@ In V2.5, the original goal of $\lambda$—controlling ego inflation—is fully r
 ---
 
 > **[Conclusion]**  
-> $`\lambda`$ was not eliminated; rather, it underwent a complete structural evolution—sublimating from a primitive numerical penalty ($`\lambda`$) into an invariant geometric framework governed by Gi (`$\mathbf{P}_{\text{gi}}`$) and Rei ($`\mathbf{S}_{\text{rei}}`$).
+> $`\lambda`$ was not eliminated; rather, it underwent a complete structural evolution—sublimating from a primitive numerical penalty ($`\lambda`$) into an invariant geometric framework governed by Gi ($`\mathbf{P}_{\text{gi}}`$) and Rei ($`\mathbf{S}_{\text{rei}}`$).
