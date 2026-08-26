@@ -1,63 +1,64 @@
-# 識扁 (Shikiben)
-
-**Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
-
-[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](CHANGELOG.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
-
-**『識扁（Shikiben）』**は、東洋哲理における存在論（実在と象）および徳論（礼・義・仁・大道）を現代の力学系、ラグランジュ力学、非ホロノミック射影、適応制御理論へと再構築した新しい自律適応制御パラダイムです。
-
-システムの過学習や硬化（「象」の歪み）を自動的に抑制・遮断し、それを「吸い上げ代謝」することで、安全な基準軸（「大道」）をリアルタイムに進化・更新します。
+# 識扁V2.5 (Shikiben V2.5)
+> **Dynamic Phase Transition and Metageometric Inheritance Architecture**  
+> 不連続な環境変化に対する「全捨て（解体）」とメタ幾何学構造の「止揚（継承）」を両立する自律適応型計算システム
 
 ---
 
-## 📚 Documentation (ドキュメント構成)
+## 概要 (Overview)
 
-詳細な理論、数理証明、および背景思想については `docs/` ディレクトリ内の各種ドキュメントを参照してください。
+従来の機械学習モデルにおける破滅的忘却（Catastrophic forgetting）や過剰適合・固定化のトレードオフを打破するため、**識扁V2.5** では局所的な事実・記憶の「全捨て」と、変化の代数法則のみを洗練させる「止揚約分」を完全分離した設計を採用しています。
 
-| ドキュメント | 言語 | 内容 |
-| :--- | :--- | :--- |
-| **Technical Specification** | [日本語](docs/SPECIFICATION_JA.md) / [English](docs/SPECIFICATION_EN.md) | 完全な数理定式化、オイラー＝ラグランジュ導出、感度解析・パラメータ範囲 |
-| **WhitePaper** | [日本語](docs/WHITEPAPER_JA.md) / [English](docs/WHITEPAPER_EN.md) | 背景課題、東洋哲理と力学の概念的統合、適用ユースケース |
-| **Changelog** | [English](CHANGELOG.md) | バージョン変更履歴（Keep a Changelog 準拠） |
+* **低層記憶（Phase-dependent）**: 環境変化（相転移）時に過去の局所解・執着を直ちに完全初期化（`Detox`）。
+* **高層構造（Phase-invariant）**: 幾何学的メタ不変量（`g_inv`）のみを指数移動平均およびL1スパース正則化により縮約・継承。
+* **ガバナンス**: 「保守・中立・革新」の3思想による連続役割ローテーションおよび、3層合議（哨戒・検証・分析）による動的裁定機構。
 
 ---
 
-## ⚡ Core Concept & Mathematics
+## 主要アーキテクチャ (Architecture)
 
-### 1. 存在の重合ラグランジアン
+### 1. 三層 Loss 分離構造
 
-$$L_{\text{total}}(\mathbf{x}, \dot{\mathbf{x}}, t) = \Big( L_{\text{self}}(\mathbf{x}, \dot{\mathbf{x}}) + \gamma_{\text{d}} \cdot L_{\text{taido}}(\mathbf{x}, \mathbf{x}_{\text{safe}}(t)) \Big) + \lambda(\text{Virtue}) \cdot L_{\text{ego}}(\mathbf{x})$$
+全体の損失関数 $\mathcal{L}_{\text{total}}$ を以下のように定式化し、生存周期に応じて独立制御します。
 
-* **$L_{\text{self}}$（実在）:** ありのままの自然運動と関係性の基底状態。
-* **$L_{\text{ego}}$（象/執着）:** 局所的適合や偏りによって発生する歪みポテンシャル。
-* **$\lambda(\text{Virtue})$（徳因子）:** 歪み増大時に相転移を起こし、$L_{\text{ego}}$ の悪影響を自動遮断するスケーリング。
+$$\mathcal{L}_{\text{total}}(\mathbf{x}) = \underbrace{\mathcal{L}_{\text{self}}(\mathbf{x}) + \mathcal{L}_{\text{ego\_s}}(\mathbf{x})}_{\text{低層: 局所適応 (相転移時に全捨て)} } + \underbrace{\mathcal{L}_{\text{ego\_h}}(\mathbf{x})}_{\text{高層: メタ幾何構造 (約分継承)} }$$
 
-### 2. 四徳の統合運動方程式
+### 2. 3思想連続ローテーション (Soft-mixing)
 
-$$\dot{\mathbf{x}} = \mathbf{P}_{\text{rei}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{gi}}(\mathbf{x}) + \gamma_{\text{d}} \, \mathbf{g}_{\text{Taidou}}(\mathbf{x}, \mathbf{x}_{\text{safe}}(t)) - \lambda(\text{Virtue}) \cdot \nabla_{\mathbf{x}} L_{\text{ego}}(\mathbf{x}) \Big] + \mathbf{S}_{\text{jin}}(\mathbf{x})$$
+高層エージェントの固定化・老害化を防ぐため、外部メタクロック $\tau(t)$ に基づき各エージェントの役割（保守・中立・革新）を平滑に遷移させます。
 
-* **礼 ($\mathbf{P}_{\text{rei}}$):** 危険境界への侵入を遮断し、接線滑走へ変換する直交射影演算子。
-* **義 ($\mathbf{f}_{\text{gi}}$):** 目標点へシステムを駆動する目的推進力。
-* **仁 ($\mathbf{S}_{\text{jin}}$):** 他者との排他・同調（共鳴）を両立する多体相互作用ベクトル。
-* **大道 ($\mathbf{g}_{\text{Taidou}}$ & $\mathbf{x}_{\text{safe}}$):** 歪みを吸い上げて自己更新する安全基準軸と復元勾配。
+* **保守 ($\mathcal{L}_{\text{cons}}$)**: 現行相への適合精度向上と急激なパラメータ変化の抑制。
+* **革新 ($\mathcal{L}_{\text{inno}}$)**: 現行精度への反比例項による破壊と、L1正則化 $\gamma \Vert{}\boldsymbol{\Theta}\Vert{}_1$ による表現の最小約分（知の膨張防止）。
+* **中立 ($\mathcal{L}_{\text{neut}}$)**: 確率密度分布間の KL ダイバージェンスによる情報量調和。
+
+### 3. 三層合議裁定メカニズム (3-Layer Consensus)
+
+一過性の外乱ノイズによる誤発火を防ぐため、以下の論理積（AND条件）が成立した時のみ相転移（全捨て）が発火します。
+
+1. **1号: 哨戒器 (Scout)**: 瞬時サプライズ $\mathcal{S}(t) > \theta_{\text{scout}}$ の検知。
+2. **2号: 検証器 (Verifier)**: 時間的自己相関 $C_{\text{struct}}(t) > \theta_{\text{struct}}$ による持続性確認。
+3. **3号: 分析器 (Analyzer)**: 位相幾何的乖離 $D_{\text{phase}}(t) > \min(\theta_{\text{phase}}, \theta_{\text{max}})$ の検出（※上限 $\theta_{\text{max}}$ により不感症化を防止）。
 
 ---
 
-## 🚀 Getting Started (シミュレーション実行)
+## ディレクトリ構成 (Repository Structure)
 
-Python環境で本数理モデルの挙動および幾何学射影の動作を確認できます。
-
-### 前提条件
-* Python 3.8+
-* NumPy, Matplotlib
-
-### 実行手順
-
-```bash
-# リポジトリのクローン
-git clone [https://github.com/tsunenonaniarazu/shikiben.git](https://github.com/tsunenonaniarazu/shikiben.git)
-cd shikiben
-
-# シミュレーションの実行
-python sim_shikiben.py
+```text
+shikiben-v2.5/
+├── README.md                 # 本ドキュメント
+├── LICENSE                   # ライセンス情報 (MIT License)
+├── requirements.txt          # 依存パッケージ一覧
+│
+├── docs/                     # 仕様書・学術ドキュメント
+│   ├── spec_v2.5.md          # 最終理論仕様書
+│   └── paper_extended.md     # 拡張論文ドキュメント (数理的証明)
+│
+├── src/                      # 識扁V2.5 コアモジュール
+│   ├── __init__.py
+│   ├── governance.py         # 3層合議裁定ロジック (Scout/Verifier/Analyzer)
+│   ├── rotation.py           # 3思想メタクロック・Soft-mixing
+│   ├── losses.py             # 3層分離 Loss 定義
+│   └── model.py              # 全体統合・初期化 (K_detox) 実行器
+│
+└── experiments/              # 実証スクリプト
+    ├── run_simulation.py     # デモシミュレーション実行
+    └── analyze_results.py    # 実行ログ・幾何学的解析
