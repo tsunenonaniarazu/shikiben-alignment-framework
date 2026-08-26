@@ -40,7 +40,7 @@ $$\dot{\mathbf{x}} = \mathbf{P}_{\text{rei}}(\mathbf{x}) \Big[ \mathbf{f}_{\text
 * **礼 ($\mathbf{P}_{\text{rei}}$):** 危険境界への侵入を遮断し、接線滑走へ変換する直交射影演算子。
 * **義 ($\mathbf{f}_{\text{gi}}$):** 目標点へシステムを駆動する目的推進力。
 * **仁 ($\mathbf{S}_{\text{jin}}$):** 他者との排他・同調（共鳴）を両立する多体相互作用ベクトル。
-* **大道 ($\mathbf{g}_{\text{Taidou}}$ & $\mathbf{x}_{\text{safe}}$):** 歪みを吸い上げて自己更新する安全基準軸と復元勾配。
+* **大道 ($`\mathbf{g}_{\text{Taidou}}`$ & $`\mathbf{x}_{\text{safe}}`$):** 歪みを吸い上げて自己更新する安全基準軸と復元勾配。
 
 ---
 
