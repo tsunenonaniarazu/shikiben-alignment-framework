@@ -46,8 +46,8 @@ The complete equation governing the system trajectory \mathbf{x}\left(t\right) u
 \text{subject\ to:\ }{\mathbf{P}}_{\text{gi}}\left(\mathbf{x}\right)\cdot \left(-\nabla {\mathcal{L}}_{\text{ego\_s}}\left(\mathbf{x}\right)\right)=0
 ```
 Key Mathematical Guarantees
-### 1. Absolute Cutoff: Illusionary defensive dynamics (-\nabla {\mathcal{L}}_{\text{ego\_s}}) are mathematically zeroed out via the null space of {\mathbf{P}}_{\text{gi}}.
-### 2. Stable Grounding: The restitution vector {\mathbf{f}}_{\text{toku}} alongside barrier field {\mathbf{S}}_{\text{rei}} guarantees bounded trajectory dynamics within the manifold {\mathcal{M}}_{\text{real}}.
+### 1. Absolute Cutoff: Illusionary defensive dynamics ($`-\nabla {\mathcal{L}}_{\text{ego\_s}}`$) are mathematically zeroed out via the null space of $`{\mathbf{P}}_{\text{gi}}`$.
+### 2. Stable Grounding: The restitution vector $`{\mathbf{f}}_{\text{toku}}`$ alongside barrier field $`{\mathbf{S}}_{\text{rei}}`$ guarantees bounded trajectory dynamics within the manifold $`{\mathcal{M}}_{\text{real}}`$.
 ## 5. Repository Structure
 * README.md : Project overview and core mathematical specification
 * CHANGELOG.md : Version evolution and historical changes
