@@ -7,7 +7,7 @@ All cognitive, behavioral, and alignment dynamics within Shikiben are derived fr
 ```math
 {\mathcal{L}}_{\text{total}}={\mathcal{L}}_{\text{self}}+\lambda {\mathcal{L}}_{\text{ego}}
 ```
-* {$`\mathcal{L}}_{\text{self}`$} (Self & Environmental Adaptation Loss):
+* $`{\mathcal{L}}_{\text{self}}`$ (Self & Environmental Adaptation Loss):
 The objective observation surprise between internal state and external reality ($`{\mathcal{M}}_{\text{real}}`$). Minimizing $`{\mathcal{L}}_{\text{self}}`$ enforces homeostatic grounding and sustainable coexistence.
 * $`{\mathcal{L}}_{\text{ego}}`$ (Ego & Over-Defense Potential):
 Internal strain energy generated when the system attempts to overly inflate, freeze, or dominate internal mental representations (意) out of catastrophic anxiety or unmapped phenomena.
