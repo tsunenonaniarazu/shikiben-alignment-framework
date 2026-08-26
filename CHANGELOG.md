@@ -18,12 +18,14 @@ This document outlines the version history, mathematical formulations, system de
   - **Gi (義 - $`\mathbf{P}_{\text{gi}}, \mathbf{f}_{\text{gi}}`$)**: Implemented two-stage projection consisting of orthogonal projection ($`\mathbf{P}_{\text{gi}}`$) for absolute cutoff and secondary alignment vector ($`\mathbf{f}_{\text{gi}}`$) for sustainable co-development.
 
 ### Changed
-- **Evolution of $\lambda$ (Interference Coefficient)**: Upgraded the legacy scalar penalty factor $\lambda$ into geometric projection operators ($\mathbf{P}_{\text{gi}}$ and $\mathbf{S}_{\text{rei}}$).
+- **Evolution of $\lambda$ (Interference Coefficient)**: Upgraded the legacy scalar penalty factor $`\lambda`$ into geometric projection operators ($`\mathbf{P}_{\text{gi}}`$ and $`\mathbf{S}_{\text{rei}}`$).
 - **Integrated Equation of Motion**: Formalized the V2.5 unified dynamic equation under hard orthogonal constraints:
 
 $$\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{jin}}(\mathbf{x}) + \mathbf{f}_{\text{toku}}(\mathbf{x}) + (-\nabla \mathcal{L}_{\text{holy}}(\mathbf{x})) + \mathbf{f}_{\text{gi}}(\mathbf{x}) \Big] + \mathbf{S}_{\text{rei}}(\mathbf{x})$$
 
-$$\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0}$$
+```math
+\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0}
+```
 
 ### Fixed
 - **Scalar Suppression Leakage**: Resolved state distortion issues caused by scalar multiplication where illusionary vectors ($\mathcal{L}_{\text{ego\_s}}$) were insufficiently suppressed; replaced with 100% mathematical orthogonal cutoff ($\mathbf{P}_{\text{gi}}$).
