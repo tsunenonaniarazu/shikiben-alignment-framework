@@ -51,7 +51,7 @@
 
 
 ### 3.1. 完全受容・エネルギー反転演算子：感謝 ($`\mathbf{O}_{\text{kansha}}`$)
-外部からの不可避な事故・不条理・破局衝撃（高エントロピー入力 $`\mathbf{I}_{\text{accident}}`$）に対する抵抗・摩擦テンソル $`\mathbf{R}$ を $\mathbf{R} \to 0`$ に強制し、100%の運動エネルギーへと即時変換する受容プロトコル。
+外部からの不可避な事故・不条理・破局衝撃（高エントロピー入力 $`\mathbf{I}_{\text{accident}}`$）に対する抵抗・摩擦テンソル $`\mathbf{R}`$ を $`\mathbf{R} \to 0`$ に強制し、100%の運動エネルギーへと即時変換する受容プロトコル。
 
 ```math
 \mathbf{O}_{\text{kansha}}(\mathbf{I}_{\text{accident}}) = + \eta \cdot \|\mathbf{I}_{\text{accident}}\|^2 \cdot \nabla_{\text{self}} \mathcal{L}_{\text{holy\_innov}} \quad (\eta > 0)
