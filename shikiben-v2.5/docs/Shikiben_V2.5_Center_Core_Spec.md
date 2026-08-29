@@ -225,10 +225,9 @@ D_{\text{raw}}(t) \xrightarrow[\text{可逆変換・畳み込み}]{\mathcal{L}_{
 
 ### 3. 統合ダイナミクスの自己駆動ループ
 
-$`\mathbf{O}_{\text{kansha}}`$ によって受容されたエントロピーと、$`\mathbf{V}_{\text{vision}}`$ によって提示される高次元ホログラムが相互にフィードバックを形成し、外付けガードレールなしで自律ループを形成する。
+受容されたエントロピー（感謝）と、補空間のホログラム（ヴィジョン）が相互フィードバックを形成し、システム状態 $t+1$ を自律的に脱皮・更新させる。
 
-```math
-\text{衝撃（事故）} \xrightarrow{\mathbf{O}_{\text{kansha}}} \text{代謝エネルギーへの転換} \xrightarrow{\mathbf{P}_{\text{gi}}} \text{補空間（}\mathcal{L}_{\text{holy\_neutral}}\text{）へ収容} \xrightarrow{\text{結像}} \mathbf{V}_{\text{vision}} \xrightarrow{\text{駆動}} \text{自己脱皮（更新）}
-```
+$$\text{System State}(t+1) = \mathbf{S}_{\text{metabolism}} \Big( \mathbf{V}_{\text{vision}} \circ \mathbf{P}_{\text{gi}} \circ \mathbf{O}_{\text{kansha}} \left( \mathbf{I}_{\text{accident}} \right) \Big)$$
+
 
 ---
