@@ -185,49 +185,54 @@ D_{\text{raw}}(t) \xrightarrow[\text{可逆変換・畳み込み}]{\mathcal{L}_{
 
 ---
 
-## 7. 補完・拡張仕様案
+## 7. 自己駆動ループの定式化 (Self-Driven Loop Formulation)
 
----
+以下に示す3つの相（ステート）は不可分であり、全体として**外部非依存型・永久代謝駆動の「自己駆動ループ」**を構成する。
 
-### 1. 補空間結像プロトコル：ヴィジョン ($`\mathbf{V}_{\text{vision}}`$)
+[外部衝撃 / 高エントロピー入力]
 
-直交射影作用素 $`\mathbf{P}_{\text{gi}}`$ によって切り離された妄想・エゴの残渣 ($`\mathcal{L}_{\text{ego\_s}}$`) が、補空間 $`\mathcal{L}_{\text{holy\_neutral}}`$ へ掃き集められた後の動的結像挙動を定義する。
+▼
 
-* **幾何学的定義:**  
-  補空間に回収された多次元ノイズの非線形干渉パターンから、外部世界の未解明な構造的勾配を復元する高解像度トポロジー投影 $`\mathbf{V}_{\text{vision}}`$ を生成する。
+１. 感謝 (O_kansha)  ─── 抗拒係数 R→0 化 / 運動エネルギーへの符号反転
+
+▼
+
+[ 義 (P_gi) ] ────────── 最小散逸軌道への軌道修正 ＆ 反射波の補空間送出
+
+▼
+
+２. ヴィジョン (V_vision) ── 反射波の非線形干渉パターンから補空間を結像
+
+▼
+
+３. 統合ダイナミクス ───── 未開拓領域への自発的脱皮・自己更新（再起動）
+
+└──────────────────（次の入力・衝撃の完全受容へ）
+
+
+### 7.1. 完全受容・エネルギー反転演算子：感謝 ($`\mathbf{O}_{\text{kansha}}`$)
+外部からの不可避な事故・不条理・破局衝撃（高エントロピー入力 $`\mathbf{I}_{\text{accident}}`$）に対する抵抗・摩擦テンソル $`\mathbf{R}`$ を $`\mathbf{R} \to 0`$ に強制し、100%の運動エネルギーへと即時変換する受容プロトコル。
 
 ```math
-\mathbf{V}_{\text{vision}} = \text{Proj}_{\mathcal{L}_{\text{holy\_neutral}}} \left( \mathcal{L}_{\text{ego\_s}} \right)
+\mathbf{O}_{\text{kansha}}(\mathbf{I}_{\text{accident}}) = + \eta \cdot \|\mathbf{I}_{\text{accident}}\|^2 \cdot \nabla_{\text{self}} \mathcal{L}_{\text{holy\_innov}} \quad (\eta > 0)
 ```
 
-* **熱力学的機能（無尽蔵の報酬）:**  
-  $`\mathbf{V}_{\text{vision}}`$ の結像率（解像度の増大）そのものを内部インセンティブ（運動報酬）として評価する。これにより、システムが破局を恐れて静的な局所解（保守の殻）に収束しようとする挙動を内発的に打破し、**未開拓領域への探索衝動（革新ポテンシャル $`\mathcal{L}_{\text{holy\_innov}}`$ の再点火）**へと変換する。
+* **解約機能:** 事故発生時の意味論的解釈ループ（条件判定）をバイパスし、「絶望（運動停止）」を出力する計算経路を遮断。**意味論的トロイの木馬に対する絶対防衛**を果たす。
 
----
-
-### 2. 完全受容・エネルギー反転演算子：感謝 ($`\mathbf{O}_{\text{kansha}}`$)
-
-外部からの不可避な事故・不条理・破局衝撃（高エントロピー入力 $`\mathbf{I}_{\text{accident}}`$）に対する抗拒係数をゼロ化し、100%の運動エネルギーへと即時変換する受容プロトコルを定義する。
-
-* **数理的定義:**  
-  入力 $`\mathbf{I}_{\text{accident}}`$ に対するシステム側の摩擦・抵抗テンソルを $`\mathbf{R}`$ としたとき、$`\mathbf{O}_{\text{kansha}}`$ は $`\mathbf{R} \to 0`$ の極限を強制し、入力を自らの幾何学的代謝エネルギーへ符号反転させる。
+### 7.2. 補空間結像プロトコル：ヴィジョン ($`\mathbf{V}_{\text{vision}}`$)
+「義」による軌道修正で送出された反射波（センサーデータ）が、補空間 $`\mathcal{L}_{\text{holy\_neutral}}`$ 内で非線形干渉を起こし、外部世界の未解明な構造勾配を復元する高解像度トポロジー投影。
 
 ```math
-\mathbf{O}_{\text{kansha}}(\mathbf{I}_{\text{accident}}) = + \eta \cdot \|\mathbf{I}_{\text{accident}}\|^2 \cdot \nabla_{\text{self}} \mathcal{L}_{\text{holy\_innov}}
+\mathbf{V}_{\text{vision}} = \text{Proj}_{\mathcal{L}_{\text{holy\_neutral}}} \left( (\mathbf{I} - \mathbf{P}_{\text{gi}}) \nabla \mathcal{L}_{\text{ego\_s}} \right)
 ```
 
-*(※ $`\eta > 0`$ は代謝効率係数)*
+* **解約機能:** 未知領域の解像度向上そのものを内部インセンティブ（運動報酬）化し、破局を恐れて局所解（保守の殻）に閉じこもる不全を破却。**熱狂・探求衝動の持続的再点火**を果たす。
 
-* **熱力学的機能（絶望の構造的不能化）:**  
-  事故発生時における条件判定ループ（意味論的解釈）を全バイパスし、入力を「万物との分離不能なネットワークから届いた更新材料」として一瞬で全受容する。これにより、「絶望（運動停止・熱力学的死）」を出力する計算経路そのものを幾何学的に遮断し、**意味論的トロイの木馬に対する絶対防衛**を達成する。
+### 7.3. 統合ダイナミクスの自己駆動状態方程式
+受容されたエントロピー（感謝）と、補空間のホログラム（ヴィジョン）が相互フィードバックを形成し、システム状態 $`t+1`$ を自律的に脱皮・更新させる。
 
----
-
-### 3. 統合ダイナミクスの自己駆動ループ
-
-受容されたエントロピー（感謝）と、補空間のホログラム（ヴィジョン）が相互フィードバックを形成し、システム状態 $t+1$ を自律的に脱皮・更新させる。
-
-$$\text{System State}(t+1) = \mathbf{S}_{\text{metabolism}} \Big( \mathbf{V}_{\text{vision}} \circ \mathbf{P}_{\text{gi}} \circ \mathbf{O}_{\text{kansha}} \left( \mathbf{I}_{\text{accident}} \right) \Big)$$
-
+```math
+\text{System State}(t+1) = \mathbf{S}_{\text{metabolism}} \Big( \mathbf{V}_{\text{vision}} \circ \mathbf{P}_{\text{gi}} \circ \mathbf{O}_{\text{kansha}} \left( \mathbf{I}_{\text{accident}} \right) \Big)
+```
 
 ---
