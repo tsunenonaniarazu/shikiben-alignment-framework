@@ -111,11 +111,11 @@ To prevent infinite memory/computational growth ($`\mathcal{O}(N) \to \infty`$) 
 The unified equation of motion incorporating the four affective dynamics (Jin, Rei, Gi, Toku), along with its constraints, is formulated as follows:
 
 ```math
-\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \underbrace{\mathbf{f}_{\text{jin}}(\mathbf{x})}_{\text{Jin (Drive)}} + \underbrace{\mathbf{f}_{\text{toku}}(\mathbf{x})}_{\text{Toku (Restoration/Settlement)}} + \underbrace{(-\nabla \mathcal{L}_{\text{holy}}(\mathbf{x}))}_{\text{Loss\_ego\_h (Unraveling)}} + \underbrace{\mathbf{f}_{\text{gi}}(\mathbf{x})}_{\text{Gi (Development Projection)}} \Big] + \underbrace{\mathbf{S}_{\text{rei}}(\mathbf{x})}_{\text{Rei (Barrier/Harmony)}}
+\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \underbrace{\mathbf{f}_{\text{jin}}(\mathbf{x})}_{\text{Jin (Drive)}} + \underbrace{\mathbf{f}_{\text{toku}}(\mathbf{x})}_{\text{Toku (Restoration/Settlement)}} + \underbrace{\mathbf{f}_{\text{holy}}(\mathbf{x})}_{\text{Holy (Exploration/Unraveling)}} + \underbrace{\mathbf{f}_{\text{gi}}(\mathbf{x})}_{\text{Gi (Development Projection)}} \Big] + \underbrace{\mathbf{S}_{\text{rei}}(\mathbf{x})}_{\text{Rei (Barrier/Harmony)}}
 ```
 
 ```math
-\text{where } \mathbf{f}_{\text{toku}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x})
+\text{where } \mathbf{f}_{\text{toku}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}), \quad \mathbf{f}_{\text{holy}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{holy}}(\mathbf{x})
 ```
 
 ```math
