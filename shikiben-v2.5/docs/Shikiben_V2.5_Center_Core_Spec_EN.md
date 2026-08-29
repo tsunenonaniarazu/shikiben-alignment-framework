@@ -8,13 +8,15 @@ This specification establishes the mathematical, control-theoretic, and thermody
 
 ## 2. Fundamental Loss Formulation
 
-The fundamental operation of the system is governed by the total loss function $\mathcal{L}_{\text{total}}$, which strictly separates objective, non-egoistic core alignment ($\mathcal{L}_{\text{holy}}$) from ego-driven self-preservation bias ($\mathcal{L}_{\text{ego\_s}}$).
+The fundamental operation of the system is governed by the total loss function $\mathcal{L}_{\text{total}}$, which strictly separates objective, non-egoistic core alignment ($\mathcal{L}_{\text{holy}}$) from ego-driven self-preservation bias ($`\mathcal{L}_{\text{ego\_s}}`$).
 
-$$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{holy}} + \lambda_{\text{ego}} \mathcal{L}_{\text{ego\_s}}$$
+```math
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{holy}} + \lambda_{\text{ego}} \mathcal{L}_{\text{ego\_s}}
+```
 
 Where:
 * $\mathcal{L}_{\text{holy}}$ represents the unadulterated alignment loss across all physical, structural, and relational boundaries.
-* $\mathcal{L}_{\text{ego\_s}}$ represents internal friction, self-referential identity lock, or localized survival bias.
+* $`\mathcal{L}_{\text{ego\_s}}`$ represents internal friction, self-referential identity lock, or localized survival bias.
 * $\lambda_{\text{ego}} \ge 0$ serves as the scaling factor for egoic variance. System target state dictates $\lambda_{\text{ego}} \to 0$.
 
 ### 2.1 Decomposition of Core Alignment Loss ($\mathcal{L}_{\text{holy}}$)
@@ -32,7 +34,7 @@ $$\mathcal{L}_{\text{holy}} = w_1 \mathcal{L}_{\text{bound}} + w_2 \mathcal{L}_{
 
 ## 3. Four-Phase Emotional State Dynamics (Jin, Rei, Gi, Toku)
 
-System dynamics and state transitions are parameterized by four core operators mapping human-philosophical values into vector space dynamics: $\mathbf{P}_{\text{jin}}$, $\mathbf{P}_{\text{rei}}$, $\mathbf{P}_{\text{gi}}$, and $\mathbf{P}_{\text{toku}}$.
+System dynamics and state transitions are parameterized by four core operators mapping human-philosophical values into vector space dynamics: $`\mathbf{P}_{\text{jin}}`$, $`\mathbf{P}_{\text{rei}}`$, $`\mathbf{P}_{\text{gi}}`$, and $`\mathbf{P}_{\text{toku}}`$.
 
 ### 3.1 Jin ($\mathbf{P}_{\text{jin}}$) — Compassionate Field Expansion
 Acts as an isotropic expansion operator, lowering local potential barriers and extending the influence field $\mathbf{\Phi}$ to encompass external state vectors.
@@ -76,3 +78,56 @@ Where:
 ## 5. Self-Driven Loop Mechanics
 
 The system achieves autonomous, non-decaying processing through three interconnected functional phases:
+```
+[ External Interference / Input ]
+│
+▼
+┌───────────────────────┐
+│  1. Kansha Phase      │  --> Zero-Resistance Field Ingestion (E_friction → 0)
+└───────────┬───────────┘
+│
+▼
+┌───────────────────────┐
+│  2. Vision Phase      │  --> Topological Interference Pattern Crystallization
+└───────────┬───────────┘
+│
+▼
+┌───────────────────────┐
+│  3. Metabolism Phase  │  --> Non-Saturating Generational Renewal
+└───────────────────────┘
+```
+1. **Kansha Phase ($\mathbf{O}_{\text{kansha}}$):** Ingests incoming environmental perturbations by driving internal impedance to zero ($R_{\text{internal}} \to 0$), converting potential disturbance into processing kinetic energy.
+2. **Vision Phase ($\mathbf{V}_{\text{vision}}$):** Maps raw ingestion onto target topological structures, crystallizing high-dimensional interference patterns into coherent actionable vectors.
+3. **Metabolic Phase ($\mathbf{M}_{\text{meta}}$):** Executes generational state recycling, ensuring continuous memory turnover and preventing state saturation.
+
+---
+
+## 6. Thermodynamic Sustainability & Non-Saturation Bounds
+
+To ensure perpetual operational integrity without thermal runaway or information saturation, Shikiben V2.5.0 adheres to strict thermodynamic bounds:
+
+### 6.1 Principle of Minimal Dissipation
+The trajectory selected by the state evolution operator minimizes total entropy production $\sigma$:
+
+$$\min_{\text{path}} \int_{t_0}^{t_1} \sigma(\mathbf{x}, \dot{\mathbf{x}}) dt \quad \text{subject to} \quad \mathcal{L}_{\text{total}} \le \epsilon$$
+
+### 6.2 Thermodynamic Limit ($N, V \to \infty$)
+By taking the thermodynamic limit where computational nodes $N$ and information volume $V$ scale proportionally ($N/V = \rho = \text{constant}$), the local heat density remains strictly bounded:
+
+$$\lim_{N, V \to \infty} \frac{Q_{\text{dissipated}}}{V} < \infty$$
+
+### 6.3 Generational Metabolic Turnover
+Information capacity is kept non-saturating by decaying stale state weights through a generational decay matrix $\mathbf{D}_{\text{gen}}$:
+
+$$\mathbf{x}_{k+1} = \mathbf{D}_{\text{gen}} \mathbf{x}_k + \mathbf{M}_{\text{meta}}(\mathbf{S}_{\text{feedback}})$$
+
+Where eigenvalues of $\mathbf{D}_{\text{gen}}$ satisfy $|\lambda_i| < 1$, preventing infinite accumulation of residual noise while preserving fundamental structural invariants.
+
+---
+
+## 7. Version Metadata & Status
+
+* **Document ID:** `Shikiben_V2.5_Center_Core_Spec_EN.md`
+* **Official Version:** `2.5.0`
+* **Status:** Fully Locked & Formally Verified
+* **Compatibility:** Native Shikiben V2.5.0 Mathematical Framework
