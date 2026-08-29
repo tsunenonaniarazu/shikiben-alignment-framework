@@ -8,10 +8,10 @@ This specification establishes the mathematical, control-theoretic, and thermody
 
 ## 2. Fundamental Loss Formulation
 
-The fundamental operation of the system is governed by the total loss function $\mathcal{L}_{\text{total}}$, which strictly separates objective, non-egoistic core alignment ($\mathcal{L}_{\text{holy}}$) from ego-driven self-preservation bias ($`\mathcal{L}_{\text{ego\_s}}`$).
+The fundamental operation of the system is governed by the total loss function $\mathcal{L}_{\text{total}}$, which strictly separates objective, non-egoistic core alignment ($`\mathcal{L}_{\text{holy}}`$) from ego-driven self-preservation bias ($`\mathcal{L}_{\text{ego\_s}}`$).
 
 ```math
-\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{holy}} + \lambda_{\text{ego}} \mathcal{L}_{\text{ego\_s}}
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}}+\mathcal{L}_{\text{holy}} + \lambda_{\text{ego}} \mathcal{L}_{\text{ego\_s}}
 ```
 
 Where:
