@@ -45,7 +45,7 @@ L_total Bifurcation    ┤
   A structural tension arising from incomplete understanding when directly facing reality (Truth/Reason). It acts as an active exploratory potential, autonomously driving constructive inquiry.
 * **$`\mathcal{L}_{\text{ego\_s}}`$ (Snob Loss / Loss of the Vulgar):**  
   An over-defensive fixation on ungrounded cognitive constructs (Intent/Yi), seeking security through the dominance, possession, or assimilation of mental images out of fear. Gi (Justice) executes a 100% course correction via orthogonal projection onto a minimum dissipation path (healthy domain). The resulting orthogonal difference vector $`(\mathbf{I} - \mathbf{P}_{\text{gi}}) \nabla \mathcal{L}_{\text{ego\_s}}`$ (steering recoil component) is simultaneously projected onto the complementary space and reused as a reflective wave (sensor data) mapping the boundary topology outside the system.
-  ---
+  
 ### 2.2 Internal Boundary Dynamics of $`\mathcal{L}_{\text{holy}}`$
 
 The exploratory potential $`\mathcal{L}_{\text{holy}}`$ operates as three independent control modules ($`\mathcal{L}_{\text{holy\_conserv}}, \mathcal{L}_{\text{holy\_neutral}}, \mathcal{L}_{\text{holy\_innov}}`$) relative to the boundary $`\partial \Omega_{\text{self}}`$ of the reality-aligned domain $`\Omega_{\text{self}}`$.
@@ -70,8 +70,6 @@ The exploratory potential $`\mathcal{L}_{\text{holy}}`$ operates as three indepe
 * **Function:**
   1. Analyzes external topology data accumulated in $`\mathcal{L}_{\text{holy\_neutral}}`$.
   2. Safely updates and expands the boundary of $`\mathcal{L}_{\text{self}}`$ at a rate slow enough not to disrupt the system's homeostatic metabolic capacity.
-
----
 
 ### 2.3 Generational Metabolic Protocol & Non-Saturating Storage Architecture
 
