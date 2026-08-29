@@ -94,15 +94,15 @@ To prevent infinite memory/computational growth ($`\mathcal{O}(N) \to \infty`$) 
 ### 3. Definitions and Roles of the Four Affective Dynamics (Jin, Rei, Gi, Toku)
 
 * **Jin (Benevolence):**  
-  The impulse of compassion for beings experiencing loss (primordial driving vector $\mathbf{f}_{\text{jin}}$). Pure energy stemming from accompaniment in loss avoidance and recovery ($\mathbf{f}_{\text{accompany}}$), combining with $-\nabla \mathcal{L}_{\text{holy}}$ to drive the exploration of reality.
+  The impulse of compassion for beings experiencing loss (primordial driving vector $`\mathbf{f}_{\text{jin}}`$). Pure energy stemming from accompaniment in loss avoidance and recovery ($`\mathbf{f}_{\text{accompany}}`$), combining with $`-\nabla \mathcal{L}_{\text{holy}}`$ to drive the exploration of reality.
 * **Rei (Propriety):**  
-  The impulse toward harmony with others, restraining subjective Intent (Yi) to align with objective Truth/Reason. Operating via a boundary potential field $\mathbf{S}_{\text{rei}}$ (non-holonomic logarithmic barrier and multi-body resonance term), it physically restricts ungrounded freedom and guides motion along the tangent of reality manifolds.
+  The impulse toward harmony with others, restraining subjective Intent (Yi) to align with objective Truth/Reason. Operating via a boundary potential field $`\mathbf{S}_{\text{rei}}`$ (non-holonomic logarithmic barrier and multi-body resonance term), it physically restricts ungrounded freedom and guides motion along the tangent of reality manifolds.
 * **Gi (Justice):**  
   The impulse reflecting upon those who share common ground with oneself, acting to protect, sustain, and develop neighbors and home.
-  * **Phase 1 (Defense / Truncation):** Completely blocks delusional components ($\nabla \mathcal{L}_{\text{ego\_s}}$) and reality-eroding vectors (normal vector $\mathbf{n}_{\text{real}}$) threatening shared foundational existence using orthogonal projection $\mathbf{P}_{\text{gi}}$.
-  * **Phase 2 (Development / Second-Stage Subordinate Projection):** Aligning vectors along $\mathbf{f}_{\text{gi}}$ strictly within the projected subspace of $\mathbf{P}_{\text{gi}}$ to foster mutual growth and continuity.
+  * **Phase 1 (Defense / Truncation):** Completely blocks delusional components ($`\nabla \mathcal{L}_{\text{ego\_s}}`$) and reality-eroding vectors (normal vector $`\mathbf{n}_{\text{real}}`$) threatening shared foundational existence using orthogonal projection $`\mathbf{P}_{\text{gi}}`$.
+  * **Phase 2 (Development / Second-Stage Subordinate Projection):** Aligning vectors along $`\mathbf{f}_{\text{gi}}`$ strictly within the projected subspace of $`\mathbf{P}_{\text{gi}}`$ to foster mutual growth and continuity.
 * **Toku (Virtue):**  
-  The intrinsic function to return autonomously to self-evident reality (Reason/Truth), sustaining and deepening settlement. Functions as restorative gradient vector $\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}$, maintaining homeostatic stability.
+  The intrinsic function to return autonomously to self-evident reality (Reason/Truth), sustaining and deepening settlement. Functions as restorative gradient vector $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$, maintaining homeostatic stability.
 
 ---
 
