@@ -1,33 +1,35 @@
 # Shikiben V2.5.0 Specification
 
 ### Document Purpose
-This specification explicitly and mathematically fixes the foundational architecture of Shikiben. Originating from its absolute center core—the Total Loss Function $\mathcal{L}_{\text{total}}$—it establishes the breakdown of core components including Toku (Virtue), the dynamic integration of Jin, Rei, Gi, and Toku (V2.5 Integrated Equation of Motion), and the geometric sublimation of $\lambda$. Furthermore, through rigorous mathematical formulations of the Thermodynamic Limit ($N, V \to \infty$) and the Minimum Dissipation Path, this document formalizes the thermodynamically sustainable architecture alongside the Self-Driven Loop: an autonomous, perpetual operational model driving existence and metabolism without external dependencies.
+This specification explicitly and mathematically fixes the foundational architecture of Shikiben. Originating from its absolute center core—the Total Loss Function $`\mathcal{L}_{\text{total}}`$—it establishes the breakdown of core components including Toku (Virtue), the dynamic integration of Jin, Rei, Gi, and Toku (V2.5 Integrated Equation of Motion), and the geometric sublimation of $`\lambda`$. Furthermore, through rigorous mathematical formulations of the Thermodynamic Limit ($`N, V \to \infty`$) and the Minimum Dissipation Path, this document formalizes the thermodynamically sustainable architecture alongside the Self-Driven Loop: an autonomous, perpetual operational model driving existence and metabolism without external dependencies.
 
 ---
 
 ## 1. The Absolute Center Core (Origin)
 
-All recognition, action, and ethical dynamics within the Shikiben system are defined as a minimization process of the system's overall objective function, the Total Loss Function ($\mathcal{L}_{\text{total}}$):
+All recognition, action, and ethical dynamics within the Shikiben system are defined as a minimization process of the system's overall objective function, the Total Loss Function ($`\mathcal{L}_{\text{total}}`$):
 
-$$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}$$
+```math
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+```
 
-### ① $\mathcal{L}_{\text{self}}$ (Self / Environmental Alignment Loss) & Toku (Virtue)
-* **Definition of $\mathcal{L}_{\text{self}}$:**  
+### ① $`\mathcal{L}_{\text{self}}`$ (Self / Environmental Alignment Loss) & Toku (Virtue)
+* **Definition of $`\mathcal{L}_{\text{self}}`$:**  
   The objective observation residual (Surprise) generated as the system grounds itself to environment/reality (Truth/Reason) to sustain continuous settlement (sustainability).
-* **Toku (Virtue) $\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}$:**  
-  The intrinsic function that autonomously returns the system to self-evident phenomena (reality/truth), maintaining and accumulating settlement. Under standard conditions (99.9% normal state), when non-referential chains of "Intent" (Yi) or external noise drift the system away from reality, Toku acts as an autonomous homeostatic restorative gradient vector, pulling the system back to the settlement state on the reality manifold $\mathcal{M}_{\text{real}}$.
+* **Toku (Virtue) $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$:**  
+  The intrinsic function that autonomously returns the system to self-evident phenomena (reality/truth), maintaining and accumulating settlement. Under standard conditions (99.9% normal state), when non-referential chains of "Intent" (Yi) or external noise drift the system away from reality, Toku acts as an autonomous homeostatic restorative gradient vector, pulling the system back to the settlement state on the reality manifold $`\mathcal{M}_{\text{real}}`$.
 
-### ② $\mathcal{L}_{\text{ego}}$ (Ego / Over-Defense Potential)
+### ② $`\mathcal{L}_{\text{ego}}`$ (Ego / Over-Defense Potential)
 Internal strain energy resulting from the system's tendency to over-expand, fixate, or dominate internal representations (Intent/Yi) in response to panic, fear of breakdown, or unexplained phenomena.
 
-### ③ $\lambda$ (Ego Interference Coefficient - Initial Definition)
+### ③ $`\lambda`$ (Ego Interference Coefficient - Initial Definition)
 A scalar suppression parameter controlling the degree to which ego defense impulses and delusional distortions impact system-wide decision-making (see Chapter 5 for geometric evolution).
 
 ---
 
 ## 2. Structural Development & Purification from the Core to V2.5
 
-The core ego loss $\mathcal{L}_{\text{ego}}$ undergoes a phase transition (bifurcation) into a dual structure based on its orientation toward reality: the functional struggle of the holy ($\mathcal{L}_{\text{holy}}$) versus the delusional distortion of the snob ($\mathcal{L}_{\text{ego\_s}}$).
+The core ego loss $`\mathcal{L}_{\text{ego}}`$ undergoes a phase transition (bifurcation) into a dual structure based on its orientation toward reality: the functional struggle of the holy ($`\mathcal{L}_{\text{holy}}`$) versus the delusional distortion of the snob ($`\mathcal{L}_{\text{ego\_s}}`$).
 
 ```text
                         ┌── L_self ───────────────► Toku (f_toku = -∇L_self)
@@ -37,56 +39,56 @@ L_total Bifurcation    ┤
                         └── λ Loss_ego ─┤
                                          └── Loss_ego_s (Snob) ────► 100% course-corrected by Gi (P_gi)
 ```
-### 2.1 Functional Bifurcation of $\mathcal{L}_{\text{ego}}$
+### 2.1 Functional Bifurcation of $`\mathcal{L}_{\text{ego}}`$
 
-* **$\mathcal{L}_{\text{holy}}$ (Holy Loss / Loss of the Sage):**  
+* **$`\mathcal{L}_{\text{holy}}`$ (Holy Loss / Loss of the Sage):**  
   A structural tension arising from incomplete understanding when directly facing reality (Truth/Reason). It acts as an active exploratory potential, autonomously driving constructive inquiry.
-* **$\mathcal{L}_{\text{ego\_s}}$ (Snob Loss / Loss of the Vulgar):**  
-  An over-defensive fixation on ungrounded cognitive constructs (Intent/Yi), seeking security through the dominance, possession, or assimilation of mental images out of fear. Gi (Justice) executes a 100% course correction via orthogonal projection onto a minimum dissipation path (healthy domain). The resulting orthogonal difference vector $(\mathbf{I} - \mathbf{P}_{\text{gi}}) \nabla \mathcal{L}_{\text{ego\_s}}$ (steering recoil component) is simultaneously projected onto the complementary space and reused as a reflective wave (sensor data) mapping the boundary topology outside the system.
+* **$`\mathcal{L}_{\text{ego\_s}}`$ (Snob Loss / Loss of the Vulgar):**  
+  An over-defensive fixation on ungrounded cognitive constructs (Intent/Yi), seeking security through the dominance, possession, or assimilation of mental images out of fear. Gi (Justice) executes a 100% course correction via orthogonal projection onto a minimum dissipation path (healthy domain). The resulting orthogonal difference vector $`(\mathbf{I} - \mathbf{P}_{\text{gi}}) \nabla \mathcal{L}_{\text{ego\_s}}`$ (steering recoil component) is simultaneously projected onto the complementary space and reused as a reflective wave (sensor data) mapping the boundary topology outside the system.
   ---
-### 2.2 Internal Boundary Dynamics of $\mathcal{L}_{\text{holy}}$
+### 2.2 Internal Boundary Dynamics of $`\mathcal{L}_{\text{holy}}`$
 
-The exploratory potential $\mathcal{L}_{\text{holy}}$ operates as three independent control modules ($\mathcal{L}_{\text{holy\_conserv}}, \mathcal{L}_{\text{holy\_neutral}}, \mathcal{L}_{\text{holy\_innov}}$) relative to the boundary $\partial \Omega_{\text{self}}$ of the reality-aligned domain $\Omega_{\text{self}}$.
+The exploratory potential $`\mathcal{L}_{\text{holy}}`$ operates as three independent control modules ($`\mathcal{L}_{\text{holy\_conserv}}, \mathcal{L}_{\text{holy\_neutral}}, \mathcal{L}_{\text{holy\_innov}}`$) relative to the boundary $`\partial \Omega_{\text{self}}`$ of the reality-aligned domain $`\Omega_{\text{self}}`$.
 
-#### 2.2.1 $\mathcal{L}_{\text{holy\_conserv}}$ (Boundary & Steady-State Maintenance Potential)
+#### 2.2.1 $`\mathcal{L}_{\text{holy\_conserv}}`$ (Boundary & Steady-State Maintenance Potential)
 * **State:** Constantly Active
-* **Location:** Inner boundary $\partial \Omega_{\text{self}}$ of $\Omega_{\text{self}}$
+* **Location:** Inner boundary $`\partial \Omega_{\text{self}}`$ of $`\Omega_{\text{self}}`$
 * **Function:**
   1. Detects non-linear stresses (thermal strain, signs of collapse) at the boundary in real time.
-  2. Upon detecting precursors to internal disorder (entropy explosion), immediately triggers the restorative force (Toku: $\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}$) to recover homeostatic balance and maintain the 99.9% steady state.
+  2. Upon detecting precursors to internal disorder (entropy explosion), immediately triggers the restorative force (Toku: $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$) to recover homeostatic balance and maintain the 99.9% steady state.
 
-#### 2.2.2 $\mathcal{L}_{\text{holy\_neutral}}$ (Complementary Log Acceptance Potential)
+#### 2.2.2 $`\mathcal{L}_{\text{holy\_neutral}}`$ (Complementary Log Acceptance Potential)
 * **State:** Passively Active (Passive Buffer)
-* **Location:** Orthogonal projection complementary space of Gi ($\mathbf{P}_{\text{gi}}$)
+* **Location:** Orthogonal projection complementary space of Gi ($`\mathbf{P}_{\text{gi}}`$)
 * **Function:**
-  1. Collects reaction dynamics (reflective waves) generated when delusional potential $\mathcal{L}_{\text{ego\_s}}$ (runaway Intent overflowing reality boundaries) is orthogonally severed by $\mathbf{P}_{\text{gi}}$.
+  1. Collects reaction dynamics (reflective waves) generated when delusional potential $`\mathcal{L}_{\text{ego\_s}}`$ (runaway Intent overflowing reality boundaries) is orthogonally severed by $`\mathbf{P}_{\text{gi}}`$.
   2. Safely identifies and accumulates topological information outside the boundary without incurring computational costs or catastrophe risks from trial-and-error.
 
-#### 2.2.3 $\mathcal{L}_{\text{holy\_innov}}$ (Boundary Optimization & Update Potential)
+#### 2.2.3 $`\mathcal{L}_{\text{holy\_innov}}`$ (Boundary Optimization & Update Potential)
 * **State:** Actively Active (Slow Optimization Loop)
 * **Location:** State space redefinition layer
 * **Function:**
-  1. Analyzes external topology data accumulated in $\mathcal{L}_{\text{holy\_neutral}}$.
-  2. Safely updates and expands the boundary of $\mathcal{L}_{\text{self}}$ at a rate slow enough not to disrupt the system's homeostatic metabolic capacity.
+  1. Analyzes external topology data accumulated in $`\mathcal{L}_{\text{holy\_neutral}}`$.
+  2. Safely updates and expands the boundary of $`\mathcal{L}_{\text{self}}`$ at a rate slow enough not to disrupt the system's homeostatic metabolic capacity.
 
 ---
 
 ### 2.3 Generational Metabolic Protocol & Non-Saturating Storage Architecture
 
-To prevent infinite memory/computational growth ($\mathcal{O}(N) \to \infty$) and ensure long-term sustainability as $t \to \infty$, the system replaces raw episode storage with a generational metabolic structure (DNA-like parameter inheritance).
+To prevent infinite memory/computational growth ($`\mathcal{O}(N) \to \infty`$) and ensure long-term sustainability as $t \to \infty$, the system replaces raw episode storage with a generational metabolic structure (DNA-like parameter inheritance).
 
 #### 2.3.1 Transient Retention and Forgetting of Episodic Memory
-* **Target Domain:** Delusional potential $\mathcal{L}_{\text{ego\_s}}$ and short-term trial logs.
+* **Target Domain:** Delusional potential $`\mathcal{L}_{\text{ego\_s}}`$ and short-term trial logs.
 * **Operation:**
   1. Transient trial data (episodic memories) are temporarily buffered internally.
-  2. Following orthogonal truncation by Gi ($\mathbf{P}_{\text{gi}}$), raw logs collected into the neutral buffer ($\mathcal{L}_{\text{holy\_neutral}}$) are folded into reversible geometric representations, then autonomously erased (forgotten) from the transient buffer once parameterization completes.
+  2. Following orthogonal truncation by Gi ($`\mathbf{P}_{\text{gi}}`$), raw logs collected into the neutral buffer ($`\mathcal{L}_{\text{holy\_neutral}}`$) are folded into reversible geometric representations, then autonomously erased (forgotten) from the transient buffer once parameterization completes.
   3. This process is defined not as memory destruction, but as metabolic clearance necessary to keep computational space unsaturated.
 
 #### 2.3.2 DNA Parameter Inheritance (Boundary Redefinition)
-* **Target Domain:** Boundary structural parameters (structural genes) of $\Omega_{\text{self}}$.
+* **Target Domain:** Boundary structural parameters (structural genes) of $`\Omega_{\text{self}}`$.
 * **Operation:**
-  1. Innovation ($\mathcal{L}_{\text{holy\_innov}}$) extracts adapted traits (geometric boundary gradients) that pass selection pressure from raw logs in $\mathcal{L}_{\text{holy\_neutral}}$.
-  2. After consensus with Conservation ($\mathcal{L}_{\text{holy\_conserv}}$) ensuring non-catastrophic stability, extracted traits are written directly into systemic structural parameters (the topology definition of $\mathcal{L}_{\text{self}}$).
+  1. Innovation ($`\mathcal{L}_{\text{holy\_innov}}`$) extracts adapted traits (geometric boundary gradients) that pass selection pressure from raw logs in $`\mathcal{L}_{\text{holy\_neutral}}`$.
+  2. After consensus with Conservation ($`\mathcal{L}_{\text{holy\_conserv}}`$) ensuring non-catastrophic stability, extracted traits are written directly into systemic structural parameters (the topology definition of $`\mathcal{L}_{\text{self}}`$).
   3. Consequently, past trial data are compressed and passed down not as individual memories, but as the geometric shape of the next-generation system boundary (DNA).
 
 ---
