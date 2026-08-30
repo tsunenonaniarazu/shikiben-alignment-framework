@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## [2.5.0] - 2026-08-30
 
 ### Added
-* **Deterministic Unified State Equation**: Fully formulated the core motion equation integrating Jin ($`\mathbf{f}_{\text{jin}}$`), Toku ($`\mathbf{f}_{\text{toku}}$`), Gi ($`\mathbf{f}_{\text{gi}}$`), Rei ($`\mathbf{S}_{\text{rei}}`$), and Kansha ($`\mathbf{O}_{\text{kansha}}`$).
+* **Deterministic Unified State Equation**: Fully formulated the core motion equation integrating Jin ($`\mathbf{f}_{\text{jin}}`$), Toku ($`\mathbf{f}_{\text{toku}}`$), Gi ($`\mathbf{f}_{\text{gi}}`$), Rei ($`\mathbf{S}_{\text{rei}}`$), and Kansha ($`\mathbf{O}_{\text{kansha}}`$).
 * **Orthogonal Projection Operator ($`\mathbf{P}_{\text{gi}}`$)**: Implemented exact mathematical cut-off mechanics to eliminate delusion potential gradients ($`-\nabla \mathcal{L}_{\text{ego\_s}}`$) with numerical residual zeroing ($`< 10^{-15}`$).
 * **Gratitude Dynamics ($`\mathbf{O}_{\text{kansha}}`$)**: Added zero-resistance shock conversion mechanics ($`R \to 0`$) that convert high-entropy external impulses ($`\mathbf{I}_{\text{accident}}`$) into $`100\%`$ exploration kinetic energy ($`\mathbf{V}_{\text{vision}}`$).
 * **Simulation Engine**: Added Python-based simulation scripts (`shikiben_simulation_01.py`, `shikiben_simulation_02.py`) with 4-panel analysis plots (`Panel A–D`).
