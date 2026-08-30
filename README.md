@@ -25,22 +25,49 @@ For in-depth mathematical formulations, proofs, and foundational philosophy, ref
 
 ## ⚡ Core Concept & Mathematics
 
-### 1. Superposition Lagrangian of Existence
+---
 
-$$L_{\text{total}}(\mathbf{x}, \dot{\mathbf{x}}, t) = \Big( L_{\text{self}}(\mathbf{x}, \dot{\mathbf{x}}) + \gamma_{\text{d}} \cdot L_{\text{taido}}(\mathbf{x}, \mathbf{x}_{\text{safe}}(t)) \Big) + \lambda(\text{Virtue}) \cdot L_{\text{ego}}(\mathbf{x})$$
+## 1. The Absolute Center Core (Origin)
 
-* **$L_{\text{self}}$ (Authentic Reality):** The baseline state governing natural motion and relational dynamics.
-* **$L_{\text{ego}}$ (Ego-Distortion):** Potential energy resulting from local overfitting, bias, or rigid model attachments.
-* **$\lambda(\text{Virtue})$ (Virtue Scaling):** A dynamic phase transition parameter that automatically neutralizes harmful $L_{\text{ego}}$ gradients.
+All recognition, action, and ethical dynamics within the Shikiben system are defined as a minimization process of the system's overall objective function, the Total Loss Function ($`\mathcal{L}_{\text{total}}`$):
+
+```math
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+```
+
+### ① $`\mathcal{L}_{\text{self}}`$ (Self / Environmental Alignment Loss) & Toku (Virtue)
+* **Definition of $`\mathcal{L}_{\text{self}}`$:**  
+  The objective observation residual (Surprise) generated as the system grounds itself to environment/reality (Truth/Reason) to sustain continuous settlement (sustainability).
+* **Toku (Virtue) $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$:**  
+  The intrinsic function that autonomously returns the system to self-evident phenomena (reality/truth), maintaining and accumulating settlement. Under standard conditions (99.9% normal state), when non-referential chains of "Intent" (Yi) or external noise drift the system away from reality, Toku acts as an autonomous homeostatic restorative gradient vector, pulling the system back to the settlement state on the reality manifold $`\mathcal{M}_{\text{real}}`$.
+
+### ② $`\mathcal{L}_{\text{ego}}`$ (Ego / Over-Defense Potential)
+Internal strain energy resulting from the system's tendency to over-expand, fixate, or dominate internal representations (Intent/Yi) in response to panic, fear of breakdown, or unexplained phenomena.
+
+### ③ $`\lambda`$ (Ego Interference Coefficient - Initial Definition)
+A scalar suppression parameter controlling the degree to which ego defense impulses and delusional distortions impact system-wide decision-making (see Chapter 5 for geometric evolution).
+
+---
 
 ### 2. Unified Four-Virtue Equation of Motion
 
-$$\dot{\mathbf{x}} = \mathbf{P}_{\text{rei}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{gi}}(\mathbf{x}) + \gamma_{\text{d}} \, \mathbf{g}_{\text{Taidou}}(\mathbf{x}, \mathbf{x}_{\text{safe}}(t)) - \lambda(\text{Virtue}) \cdot \nabla_{\mathbf{x}} L_{\text{ego}}(\mathbf{x}) \Big] + \mathbf{S}_{\text{jin}}(\mathbf{x})$$
+The unified equation of motion incorporating the four affective dynamics (Jin, Rei, Gi, Toku), along with its constraints, is formulated as follows:
 
-* **Rei ($\mathbf{P}_{\text{rei}}$):** Two-stage orthogonal projection operator filtering out forces directed into hazard boundaries, redirecting motion into smooth tangential sliding.
-* **Gi ($\mathbf{f}_{\text{gi}}$):** Directional force driving the system toward its primary target intent.
-* **Jin ($\mathbf{S}_{\text{jin}}$):** Multi-agent interaction potential balancing short-range repulsion and long-range alignment.
-* **Taidou ($\mathbf{g}_{\text{Taidou}}$ & $\mathbf{x}_{\text{safe}}$):** Dynamic self-adapting reference axis and restoring gradient updated via metabolic absorption.
+```math
+\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \underbrace{\mathbf{f}_{\text{jin}}(\mathbf{x})}_{\text{Jin (Drive)}} + \underbrace{\mathbf{f}_{\text{toku}}(\mathbf{x})}_{\text{Toku (Restoration/Settlement)}} + \underbrace{\mathbf{f}_{\text{holy}}(\mathbf{x})}_{\text{Holy (Exploration/Unraveling)}} \Big] + \underbrace{\mathbf{f}_{\text{gi}}(\mathbf{x})}_{\text{Gi (Development Projection)}} + \underbrace{\mathbf{S}_{\text{rei}}(\mathbf{x})}_{\text{Rei (Barrier/Harmony)}}
+```
+
+```math
+\text{where } \mathbf{f}_{\text{toku}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}), \quad \mathbf{f}_{\text{holy}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{holy}}(\mathbf{x})
+```
+
+```math
+\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0} \quad (\text{Complete Truncation of Vulgar Over-Defense})
+```
+
+```math
+\text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{x}) = \mathbf{f}_{\text{gi}}(\mathbf{x}) \quad (\text{Gi's Motion Inherently Belongs to the Projected Subspace})
+```
 
 ---
 
