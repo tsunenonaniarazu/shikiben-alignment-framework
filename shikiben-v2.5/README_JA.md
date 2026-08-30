@@ -72,7 +72,7 @@ cd shikiben
 
 ## 関連ドキュメント
 
-* [識扁 (Shikiben) V2.5.0 仕様書](docs/Shikiben_V2.5_Center_Core.md) - 完全な数理定式化と各概念の定義
+* [識扁 (Shikiben) V2.5.0 仕様書](docs/Shikiben_V2.5_Center_Core_Spec.md) - 完全な数理定式化と各概念の定義
 * [技術ホワイトペーパー (English)](docs/Shikiben_V2.5.0_Technical_Whitepaper.md) - 学術・技術層向け詳細解説書
 
 ---
