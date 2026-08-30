@@ -52,6 +52,35 @@ $$\text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{
 # リポジトリのクローン
 git clone [https://github.com/your-username/shikiben.git](https://github.com/your-username/shikiben.git)
 cd shikiben
+```
+
+---
+実行が完了すると、`shikiben_v250_simulation_results.png` が生成され、直交切断精度や衝撃エネルギーの反転動態が確認できます。
+
+---
+
+## 実証実験結果 (Panel Highlights)
+
+`shikiben_simulation.py` の実行により、以下の4つのコア力学が確認されます：
+
+* **Panel A (軌道比較)**: $\mathbf{P}_{\text{gi}}$ 非適用時の発散に対し、適用時は歪みが遮断され実在中心 $\Omega_{\text{self}}$ へ円滑に定住。
+* **Panel B (直交精度)**: 残留妄想成分がマシン精度限界（$10^{-15}$ 以下）に抑え込まれることを実証。
+* **Panel C (エネルギー反転)**: 外部衝撃発生時、抵抗モデルのフリーズに対し、感謝演算子適用モデルは100%の運動エネルギーを獲得。
+* **Panel D (最小散逸)**: 内部エントロピー生成率 $\dot{S}_{\text{internal}}$ が極小（$\approx 0.01$）に維持され、熱暴走を完全に回避。
+
+---
+
+## 関連ドキュメント
+
+* [識扁 (Shikiben) V2.5.0 仕様書](./Shikiben_V2.5.0_Spec.md) - 完全な数理定式化と各概念の定義
+* [技術ホワイトペーパー (English)](./Shikiben_V2.5.0_Technical_Whitepaper.md) - 学術・技術層向け詳細解説書
+
+---
+
+## ライセンス
+
+本プロジェクトは [MIT License](LICENSE) のもとで公開されています。
+---
 
 # 依存ライブラリのインストール
 pip install numpy matplotlib
