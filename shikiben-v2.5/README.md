@@ -42,5 +42,11 @@ Raw trial-and-error data is retained only within transient buffers and compresse
 
 ---
 
+## Quickstart (Running Numerical Simulations)
+This repository contains Python simulation scripts to verify and visualize the dynamics of V2.5.0.
 
+### Requirements
+* Python 3.8+
+* NumPy
+* Matplotlib
 
