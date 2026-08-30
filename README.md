@@ -18,7 +18,7 @@ For in-depth mathematical formulations, proofs, and foundational philosophy, ref
 | Document | Language | Content |
 | :--- | :--- | :--- |
 | **Technical Specification** | [English](docs/SPECIFICATION_EN.md) / [日本語](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec.md) | Complete mathematical formulation, Euler-Lagrange derivations, and stability parameter bounds. |
-| **WhitePaper** | [English](docs/WHITEPAPER_EN.md) / [日本語](shikiben-v2.5/docs/whitepaper_v2_5_0.md) | Background challenges, conceptual synthesis of philosophy and mechanics, and application use cases. |
+| **WhitePaper** | [English](docs/WHITEPAPER_EN.md) / [日本語](shikiben-v2.5/docs/Shikiben_V2_5_0_Whitepaper.md) | Background challenges, conceptual synthesis of philosophy and mechanics, and application use cases. |
 | **Changelog** | [English](CHANGELOG.md) | Full version history following the *Keep a Changelog* standard. |
 
 ---
