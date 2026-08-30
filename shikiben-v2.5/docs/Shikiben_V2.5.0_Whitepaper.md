@@ -22,7 +22,7 @@
 | :---- | :---- | :---- |
 | **仁（Jin）** | $`\mathbf{f}_{\text{jin}}`$ | 実在（理）への到達運動を推進する純粋な探索ベクトルフィールド。 |
 | **徳（Toku）** | $`\mathbf{f}_{\text{toku}}`$ \= $`-\nabla \mathbf{L}_{\text{self}}`$ | 実在多様体 Ω\_self へのホメオスタシス（恒常性）を回復する復元勾配。 |
-| **義（Gi）** | P\_gi | 妄想成分 \-grad(L\_ego\_s) を射影空間内で100%消去する直交射影演算子（P\_gi · grad(L\_ego\_s) \= 0）。 |
+| **義（Gi）** | $`\mathbf{P}_{\text{gi}}`$ | 妄想成分 $`-\nabla \mathbf{L}_\text{ego\_s}`$ を射影空間内で100%消去する直交射影演算子（$`\mathbf{P}_\text{gi} · \nabla \text{L}_\text{ego\_s} = 0`$）。 |
 | **礼（Rei）** | S\_rei | 自他境界における対数バリア演算子。過剰な「意」の膨張を切断し接線運動へ整流。 |
 | **感謝（Kansha）** | O\_kansha | 抵抗係数 R → 0 とし、外部衝撃 I\_accident を 100% ヴィジョン運動エネルギー V\_vision へ反転。 |
 
