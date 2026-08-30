@@ -18,3 +18,13 @@ The system dynamics operating on the state space $`\mathbf{x} \in \mathcal{M}_{\
 
 ```math
 \dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \underbrace{\mathbf{f}_{\text{jin}}(\mathbf{x})}_{\text{Jin (Propulsion)}} + \underbrace{\mathbf{f}_{\text{toku}}(\mathbf{x})}_{\text{Toku (Restoration/Settlement)}} + \underbrace{\mathbf{f}_{\text{holy}}(\mathbf{x})}_{\text{Loss\_ego\_h (Elucidation/Exploration)}}\Big] + \underbrace{\mathbf{f}_{\text{gi}}(\mathbf{x})}_{\text{Gi (Evolutionary Projection)}} + \underbrace{\mathbf{S}_{\text{rei}}(\mathbf{x})}_{\text{Rei (Barrier/Harmony)}}
+```
+```math
+\text{where } \mathbf{f}_{\text{toku}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}), \quad \mathbf{f}_{\text{holy}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{holy}}(\mathbf{x})
+```
+```math
+\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0} \quad (\text{Complete elimination of profane excessive self-defense})
+```
+```math
+\text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{x}) = \mathbf{f}_{\text{gi}}(\mathbf{x}) \quad (\text{The motion of Gi intrinsically belongs to the projected subspace})
+```
