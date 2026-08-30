@@ -25,6 +25,8 @@
 
 ## ⚡ Core Concept & Mathematics
 
+---
+
 ### 1. 識扁の絶対的中心核（起点）
 
 識扁体系のすべての認識・行動・倫理動態は、システム全体の目的関数である以下の総損失関数（Total Loss）の最小化運動として定義される。
@@ -50,12 +52,23 @@
 
 ### 2. 四徳の統合運動方程式
 
-$$\dot{\mathbf{x}} = \mathbf{P}_{\text{rei}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{gi}}(\mathbf{x}) + \gamma_{\text{d}} \, \mathbf{g}_{\text{Taidou}}(\mathbf{x}, \mathbf{x}_{\text{safe}}(t)) - \lambda(\text{Virtue}) \cdot \nabla_{\mathbf{x}} L_{\text{ego}}(\mathbf{x}) \Big] + \mathbf{S}_{\text{jin}}(\mathbf{x})$$
+「仁・礼・義・徳」の四者力学を明記した、最終運動方程式および拘束条件は以下の通りである。
 
-* **礼 ($\mathbf{P}_{\text{rei}}$):** 危険境界への侵入を遮断し、接線滑走へ変換する直交射影演算子。
-* **義 ($\mathbf{f}_{\text{gi}}$):** 目標点へシステムを駆動する目的推進力。
-* **仁 ($\mathbf{S}_{\text{jin}}$):** 他者との排他・同調（共鳴）を両立する多体相互作用ベクトル。
-* **大道 ($`\mathbf{g}_{\text{Taidou}}`$ & $`\mathbf{x}_{\text{safe}}`$):** 歪みを吸い上げて自己更新する安全基準軸と復元勾配。
+```math
+\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \underbrace{\mathbf{f}_{\text{jin}}(\mathbf{x})}_{\text{仁 (推進)}} + \underbrace{\mathbf{f}_{\text{toku}}(\mathbf{x})}_{\text{徳 (復元・定住)}} + \underbrace{\mathbf{f}_{\text{holy}}(\mathbf{x})}_{\text{Loss\_ego\_h (解明・探究)}}\Big] + \underbrace{\mathbf{f}_{\text{gi}}(\mathbf{x})}_{\text{義 (発展射影)}}  + \underbrace{\mathbf{S}_{\text{rei}}(\mathbf{x})}_{\text{礼 (バリア・和)}}
+```
+
+```math
+\text{where } \mathbf{f}_{\text{toku}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}), \quad \mathbf{f}_{\text{holy}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{holy}}(\mathbf{x})
+```
+
+```math
+\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0} \quad (\text{俗人的過剰防衛の完全切断})
+```
+
+```math
+\text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{x}) = \mathbf{f}_{\text{gi}}(\mathbf{x}) \quad (\text{義の運動は、本質的に射影部分空間に帰属する})
+```
 
 ---
 
