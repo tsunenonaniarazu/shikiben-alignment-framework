@@ -2,7 +2,7 @@
 
 本ドキュメントは、著書**『識扁』**における存在論、認識論、ならびに法・文化・文明・宗教の構造展開を代数的・記号論的に定式化した原典解題である。本定式化は、制御モデル（Shikiben Dynamics）における各種力学演算子
 ```math
-（\mathbf{P}_{\text{rei}}, \mathbf{S}_{\text{jin}}, \lambda(E)）
+（ \mathbf{S}_{\text{rei}} , \mathbf{P}_{\text{gi}}(\mathbf{x}) , \mathbf{f}_{\text{gi}}(\mathbf{x})  , \mathbf{f}_{\text{jin}} , \mathbf{f}_{\text{toku}}, \lambda(E) ）
 ```
 の理論的基底をなす。
 
@@ -92,7 +92,7 @@ $$
 本代数構造から導出された各作用素は、制御工学において以下のように実装される。
 
 * **「象」の積層** $\to$ エゴ場ポテンシャル $L_{\text{ego}}(\mathbf{x})$
-* **礼 $(\text{法})$** $\to$ 直交射影演算子 $\mathbf{P}_{\text{rei}}(\mathbf{x})$ （境界突入・破綻の絶対防護）
-* **義 $(\text{文化})$** $\to$ 目的到達ベクトル $\mathbf{f}_{\text{gi}}(\mathbf{x})$
-* **仁 $(\text{文明})$** $\to$ 多体協調ポテンシャル $\mathbf{S}_{\text{jin}}(\mathbf{x})$
-* **畏敬 $(\text{日常への回帰})$** $\to$ 大道中心軸への吸い上げ代謝 $\mathbf{x}_{\text{safe}}(t)$
+* **礼 $(\text{法})$** $\to$ 境界ポテンシャル場 $`\mathbf{S}_{\text{rei}}`$ (対数バリア・共鳴) 
+* **義 $(\text{文化})$** $\to$ 直交射影演算子 $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ （境界突入・破綻の絶対防護）+ 目的到達ベクトル $`\mathbf{f}_{\text{gi}}(\mathbf{x})`$（発展整流）
+* **仁 $(\text{文明})$** $\to$ 原初駆動ベクトル $`\mathbf{f}_{\text{jin}}`$ （$`\mathbf{f}_{\text{accompany}}`$ から生じる純粋エネルギー)
+* **徳 $(\text{日常への回帰})$** 復元勾配ベクトル $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（復元・ホメオスタシス）
