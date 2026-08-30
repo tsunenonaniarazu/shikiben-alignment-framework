@@ -2,7 +2,7 @@
 
 **Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
 
-[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
 
 **Shikiben (識扁)** is a novel adaptive control paradigm that reinterprets Eastern ontological concepts (*Authentic Reality* vs. *Ego-Distortion*) and virtue ethics (*Rei*, *Gi*, *Jin*, and *Taidou*) into modern geometric mechanics, Lagrangian dynamics, non-holonomic projections, and adaptive systems theory.
