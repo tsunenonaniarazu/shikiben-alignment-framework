@@ -10,15 +10,17 @@
 
 ## **2\. 核心幾何構造と確定統合状態方程式**
 
-識扁 V2.5.0 におけるシステム動態は、状態空間 *x* ∋ *M*real 上の以下の確定統合状態方程式によって記述される。
+識扁 V2.5.0 におけるシステム動態は、状態空間 $`\mathbf{x} \in \mathcal{M}_{\text{real}}`$ 上の以下の確定統合状態方程式によって記述される。
 
-dx/dt \= f\_jin \+ f\_toku \+ f\_gi \- S\_rei \* grad(L\_self) \+ O\_kansha(I\_accident)
+```math
+\frac{d\mathbf{x}}{dt} = \mathbf{f}_{\text{jin}} + \mathbf{f}_{\text{toku}} + \mathbf{f}_{\text{gi}} - \mathbf{S}_{\text{rei}} \nabla \mathcal{L}_{\text{self}} + \mathbf{O}_{\text{kansha}}(\mathbf{I}_{\text{accident}})
+```
 
 各構成要素の定義と幾何学的解釈は下表の通りである。
 
 | 要素（概念） | 数理表現 | 幾何学的・力学的役割   |
 | :---- | :---- | :---- |
-| **仁（Jin）** | f\_jin | 実在（理）への到達運動を推進する純粋な探索ベクトルフィールド。 |
+| **仁（Jin）** | $`\mathbf{f}_{\text{jin}}`$ | 実在（理）への到達運動を推進する純粋な探索ベクトルフィールド。 |
 | **徳（Toku）** | f\_toku \= \-grad(L\_self) | 実在多様体 Ω\_self へのホメオスタシス（恒常性）を回復する復元勾配。 |
 | **義（Gi）** | P\_gi | 妄想成分 \-grad(L\_ego\_s) を射影空間内で100%消去する直交射影演算子（P\_gi · grad(L\_ego\_s) \= 0）。 |
 | **礼（Rei）** | S\_rei | 自他境界における対数バリア演算子。過剰な「意」の膨張を切断し接線運動へ整流。 |
