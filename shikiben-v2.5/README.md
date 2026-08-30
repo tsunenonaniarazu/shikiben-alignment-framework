@@ -28,3 +28,19 @@ The system dynamics operating on the state space $`\mathbf{x} \in \mathcal{M}_{\
 ```math
 \text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{x}) = \mathbf{f}_{\text{gi}}(\mathbf{x}) \quad (\text{The motion of Gi intrinsically belongs to the projected subspace})
 ```
+
+---
+
+## Key Features and Mechanisms
+
+1. **100% Orthogonal Elimination via Gi ($`\mathbf{P}_{\text{gi}}`$)**
+Applying the orthogonal projection operator $`\mathbf{P}_{\text{gi}}`$ against the gradient of delusion potential ($`\mathcal{L}_{\text{ego\_s}}`$) mathematically and completely eliminates excessive self-defense and runway vectors (residual values constrained to $`< 10^{-15}`$).
+2. **Self-Driven Loop of Gratitude ($`\mathbf{O}_{\text{kansha}}`$) and Vision ($`\mathbf{V}_{\text{vision}}`$)**
+In response to high-entropy external shocks (absurdity and accidents), the resistance coefficient is driven to $`R \to 0`$. Rather than consuming energy as friction or causing system freezes, shock energy is immediately converted into 100% exploratory kinetic energy.
+3. **Generational Metabolism and Memory Non-Saturation**
+Raw trial-and-error data is retained only within transient buffers and compressed into geometric parameters (DNA) along the boundary $`\partial \Omega_{\text{self}}`$, preventing discrete computational resource saturation over time horizons $`t \to \infty`$.
+
+---
+
+
+
