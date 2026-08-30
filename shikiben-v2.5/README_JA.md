@@ -50,7 +50,7 @@ $$\text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{
 
 ```bash
 # リポジトリのクローン
-git clone [https://github.com/your-username/shikiben.git](https://github.com/your-username/shikiben.git)
+git clone [https://github.com/tsunenonaniarazu/shikiben.git](https://github.com/tunenonaniarazu/shikiben.git)
 cd shikiben
 ```
 
@@ -72,14 +72,14 @@ cd shikiben
 
 ## 関連ドキュメント
 
-* [識扁 (Shikiben) V2.5.0 仕様書](./Shikiben_V2.5.0_Spec.md) - 完全な数理定式化と各概念の定義
-* [技術ホワイトペーパー (English)](./Shikiben_V2.5.0_Technical_Whitepaper.md) - 学術・技術層向け詳細解説書
+* [識扁 (Shikiben) V2.5.0 仕様書](docs/Shikiben_V2.5.0_Spec.md) - 完全な数理定式化と各概念の定義
+* [技術ホワイトペーパー (English)](docs/Shikiben_V2.5.0_Technical_Whitepaper.md) - 学術・技術層向け詳細解説書
 
 ---
 
 ## ライセンス
 
-本プロジェクトは [MIT License](LICENSE) のもとで公開されています。
+このバージョンを含む本プロジェクトの成果物は、ルートディレクトリの [LICENSE](../LICENSE) に基づいて配布されています。
 ---
 
 # 依存ライブラリのインストール
