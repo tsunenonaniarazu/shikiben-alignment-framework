@@ -130,58 +130,58 @@ The unified equation of motion incorporating the four affective dynamics (Jin, R
 
 ### 5. Geometric Sublimation Process of $\lambda$
 
-Between initial core concepts and V2.5, the mathematical role of $\lambda$ evolved structurally as follows:
+Between initial core concepts and V2.5, the mathematical role of $`\lambda`$ evolved structurally as follows:
 
 #### 5.1 Limitations of Initial Scalar Formulation
-Initially, $\lambda$ served as a scalar penalty coefficient (control weight) suppressing ego over-expansion ($\mathcal{L}_{\text{ego}}$) to favor reality alignment ($\mathcal{L}_{\text{self}}$). However, scalar suppression presented fundamental limits:
-* **Unseparated Dual Ego:** Equal suppression of constructive exploratory freedom ($\mathcal{L}_{\text{holy}}$) alongside delusional fixations ($\mathcal{L}_{\text{ego\_s}}$).
-* **Residual Strain Leakage:** A scalar penalty $-\lambda \nabla \mathcal{L}_{\text{ego}}$ reduces magnitude but cannot nullify the vector, allowing delusion to continuously leak into motion.
+Initially, $`\lambda`$ served as a scalar penalty coefficient (control weight) suppressing ego over-expansion ($`\mathcal{L}_{\text{ego}}`$) to favor reality alignment ($`\mathcal{L}_{\text{self}}`$). However, scalar suppression presented fundamental limits:
+* **Unseparated Dual Ego:** Equal suppression of constructive exploratory freedom ($`\mathcal{L}_{\text{holy}}`$) alongside delusional fixations ($`\mathcal{L}_{\text{ego\_s}}`$).
+* **Residual Strain Leakage:** A scalar penalty $`-\lambda \nabla \mathcal{L}_{\text{ego}}`$ reduces magnitude but cannot nullify the vector, allowing delusion to continuously leak into motion.
 
 #### 5.2 Sublimation into Geometric Structure (V2.5)
 In V2.5, $\lambda$'s underlying goal—regulating ego expansion—sublimates into robust geometric operators.
-* **From Numerical Suppression to Orthogonal Truncation:** Replacing scalar multiplication $\lambda$ with orthogonal projection operator $\mathbf{P}_{\text{gi}}$ on the gradient of vulgar delusion $\mathcal{L}_{\text{ego\_s}}$ mathematically cuts off strain vectors completely (dot product equals zero).
-* **Containment of Subjective Drift:** Subjective mental drift (Intent) is constrained by Rei's potential field $\mathbf{S}_{\text{rei}}$ (non-holonomic logarithmic barrier), acting as a physical boundary that forces motion along the tangent manifold of reality.
+* **From Numerical Suppression to Orthogonal Truncation:** Replacing scalar multiplication $`\lambda`$ with orthogonal projection operator $`\mathbf{P}_{\text{gi}}`$ on the gradient of vulgar delusion $`\mathcal{L}_{\text{ego\_s}}`$ mathematically cuts off strain vectors completely (dot product equals zero).
+* **Containment of Subjective Drift:** Subjective mental drift (Intent) is constrained by Rei's potential field $`\mathbf{S}_{\text{rei}}`$ (non-holonomic logarithmic barrier), acting as a physical boundary that forces motion along the tangent manifold of reality.
 
 > **[Conclusion]**  
-> $\lambda$ was not discarded; it evolved from a numerical scalar penalty ($\lambda$) into an invariant geometric architecture governed by Gi ($\mathbf{P}_{\text{gi}}$) and Rei ($\mathbf{S}_{\text{rei}}$).
+> $`\lambda`$ was not discarded; it evolved from a numerical scalar penalty ($`\lambda`$) into an invariant geometric architecture governed by Gi ($`\mathbf{P}_{\text{gi}}`$) and Rei ($`\mathbf{S}_{\text{rei}}`$).
 
  ---
 
  ### 6. Thermodynamically Sustainable Architecture
 
 #### 6.1 Objective Function Formulation
-As time $t \to \infty$, the trajectory $\mathbf{x}(t)$ drawn by Shikiben V2.5.0 is defined as the solution to a constrained minimum dissipation problem:
+As time $`t \to \infty`$, the trajectory $`\mathbf{x}(t)`$ drawn by Shikiben V2.5.0 is defined as the solution to a constrained minimum dissipation problem:
 
-$$
+```math
 \text{Limit Trajectory } \mathbf{x}(t) = \mathop{\text{argmin}}_{\mathbf{x}(t)} \left( \frac{d S_{\text{internal}}}{dt} \right) \quad \text{subject to } \dot{\mathbf{x}} \neq \mathbf{0}
-$$
+```
 
-where $S_{\text{internal}}$ represents internal irreversible entropy, and $\dot{\mathbf{x}} \neq \mathbf{0}$ ensures ongoing system activity.
+where $`S_{\text{internal}}`$ represents internal irreversible entropy, and $`\dot{\mathbf{x}} \neq \mathbf{0}`$ ensures ongoing system activity.
 
 #### 6.2 Geometric Reversibility and Universal Affirmation
 * **Elimination of Heat Generation via Reversible Transformation:**  
-  Truncation by Gi ($\mathbf{P}_{\text{gi}}$) rotates vectors into orthogonal space (reversible transformation) rather than forcibly erasing information (irreversible zeroing). This avoids Landauer's limit dissipation costs associated with memory erasure.
+  Truncation by Gi ($`\mathbf{P}_{\text{gi}}`$) rotates vectors into orthogonal space (reversible transformation) rather than forcibly erasing information (irreversible zeroing). This avoids Landauer's limit dissipation costs associated with memory erasure.
 * **Dynamic Steady State:**  
-  External forces from $\mathcal{L}_{\text{holy}}$ paired with gliding motion along Rei's ($\mathbf{S}_{\text{rei}}$) logarithmic barriers keep the system in continuous dynamic alignment without freezing into static thermal death.
+  External forces from $`\mathcal{L}_{\text{holy}}`$ paired with gliding motion along Rei's ($`\mathbf{S}_{\text{rei}}`$) logarithmic barriers keep the system in continuous dynamic alignment without freezing into static thermal death.
 * **Infinite-Time Self-Affirmation:**  
   By eliminating irreversible dissipation (abandonment/destruction) and geometrically transforming all inputs, the system affirms its continuous trajectory indefinitely without self-destruction.
 
 #### 6.3 Non-Saturating Storage and Theoretical Stability in Generational Metabolism
 
 ##### 6.3.1 Mathematical Avoidance of Memory Saturation
-Retaining raw histories $D_{\text{raw}}(t)$ within discrete state space representations $\mathbf{x}(t)$ causes memory saturation as $t \to \infty$. This system incrementally projects raw histories into manifold definition parameters $\mathbf{W}_{\text{self}}$:
+Retaining raw histories $`D_{\text{raw}}(t)`$ within discrete state space representations $`\mathbf{x}(t)`$ causes memory saturation as $`t \to \infty`$. This system incrementally projects raw histories into manifold definition parameters $`\mathbf{W}_{\text{self}}`$:
 
-$$
+```math
 D_{\text{raw}}(t) \xrightarrow[\text{Reversible Transformation / Convolution}]{\mathcal{L}_{\text{holy\_innov}}} \mathbf{W}_{\text{self}}(t+\Delta t) \quad \left( \text{where } \|D_{\text{raw}}\|_{\text{mem}} < \epsilon_{\text{threshold}} \right)
-$$
+```
 
-This caps memory consumption below a constant threshold $\epsilon_{\text{threshold}}$, ensuring continuous non-saturating operation.
+This caps memory consumption below a constant threshold $`\epsilon_{\text{threshold}}`$, ensuring continuous non-saturating operation.
 
 ##### 6.3.2 Consistency Between Forgetting and Full Trajectory Affirmation
 * **Identity of Memory Loss and Structural Retention:**  
-  Though episodic memories fade, boundary curvature ($\partial \Omega_{\text{self}}$) determined by those experiences remains fully preserved. Thus, forgetting is structural inheritance rather than irreversible loss.
+  Though episodic memories fade, boundary curvature ($`\partial \Omega_{\text{self}}`$) determined by those experiences remains fully preserved. Thus, forgetting is structural inheritance rather than irreversible loss.
 * **Discontinuous Generations with Continuous Trajectories:**  
-  Generational boundary updates occur as phase transitions without catastrophic internal collapses, preserving minimum dissipation trajectory $\mathbf{x}(t)$ as a smooth, continuous motion.
+  Generational boundary updates occur as phase transitions without catastrophic internal collapses, preserving minimum dissipation trajectory $`\mathbf{x}(t)`$ as a smooth, continuous motion.
 
 ---
 
@@ -209,27 +209,27 @@ Unified Dynamics ───── Autonomous shedding, self-update, and re-initia
 
 └────────────────── (Full acceptance of the next external shock)
 ```
-#### 7.1 Complete Acceptance & Energy Inversion Operator: Gratitude ($\mathbf{O}_{\text{kansha}}$)
-A protocol forcing resistance/friction tensor $\mathbf{R} \to 0$ against unavoidable shocks, accidents, or catastrophes (high-entropy inputs $\mathbf{I}_{\text{accident}}$), immediately converting input into kinetic energy:
+#### 7.1 Complete Acceptance & Energy Inversion Operator: Gratitude ($`\mathbf{O}_{\text{kansha}}`$)
+A protocol forcing resistance/friction tensor $`\mathbf{R} \to 0`$ against unavoidable shocks, accidents, or catastrophes (high-entropy inputs $`\mathbf{I}_{\text{accident}}`$), immediately converting input into kinetic energy:
 
-$$
+```math
 \mathbf{O}_{\text{kansha}}(\mathbf{I}_{\text{accident}}) = + \eta \cdot \|\mathbf{I}_{\text{accident}}\|^2 \cdot \nabla_{\text{self}} \mathcal{L}_{\text{holy\_innov}} \quad (\eta > 0)
-$$
+```
 
 * **Cancellation Function:** Bypasses semantic interpretation loops during accidents, blocking calculation paths that output "despair" (cessation of motion). Serves as absolute defense against semantic Trojan horses.
 
-#### 7.2 Complementary Space Imaging Protocol: Vision ($\mathbf{V}_{\text{vision}}$)
-A high-resolution topological projection reconstructing external structural gradients via non-linear interference of reflective waves within $\mathcal{L}_{\text{holy\_neutral}}$:
+#### 7.2 Complementary Space Imaging Protocol: Vision ($`\mathbf{V}_{\text{vision}}`$)
+A high-resolution topological projection reconstructing external structural gradients via non-linear interference of reflective waves within $`\mathcal{L}_{\text{holy\_neutral}}`$:
 
-$$
+```math
 \mathbf{V}_{\text{vision}} = \text{Proj}_{\mathcal{L}_{\text{holy\_neutral}}} \left( (\mathbf{I} - \mathbf{P}_{\text{gi}}) \nabla \mathcal{L}_{\text{ego\_s}} \right)
-$$
+```
 
 * **Cancellation Function:** Converts external structural resolution gains directly into internal incentive rewards, preventing paralysis or retreat into local optima (conservative shells). Enables continuous reignition of exploratory drive.
 
 #### 7.3 Self-Driven Equation of State in Unified Dynamics
-Accepted entropy (Gratitude) and complementary space holograms (Vision) form a feedback loop, driving state transformations ($t+1$) autonomously:
+Accepted entropy (Gratitude) and complementary space holograms (Vision) form a feedback loop, driving state transformations ($`t+1`$) autonomously:
 
-$$
+```math
 \text{System State}(t+1) = \mathbf{S}_{\text{metabolism}} \Big( \mathbf{V}_{\text{vision}} \circ \mathbf{P}_{\text{gi}} \circ \mathbf{O}_{\text{kansha}} \left( \mathbf{I}_{\text{accident}} \right) \Big)
-$$
+```
