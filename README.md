@@ -56,7 +56,7 @@ Verify the mathematical model, metabolic convergence, and projection mechanics u
 
 ```bash
 # Clone the repository
-git clone [https://github.com/your-username/shikiben.git](https://github.com/your-username/shikiben.git)
+git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben^alignment^framework.git)
 cd shikiben
 
 # Run the simulation engine
