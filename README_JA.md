@@ -2,7 +2,7 @@
 
 **Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
 
-[![Version](https://img.shields.io/badge/version-2.4.0-blue.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
 
 **『識扁（Shikiben）』**は、東洋哲理における存在論（実在と象）および徳論（礼・義・仁・大道）を現代の力学系、ラグランジュ力学、非ホロノミック射影、適応制御理論へと再構築した新しい自律適応制御パラダイムです。
