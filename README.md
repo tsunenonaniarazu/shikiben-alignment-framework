@@ -5,9 +5,9 @@
 [![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
 
-**Shikiben (識扁)** is a novel adaptive control paradigm that reinterprets Eastern ontological concepts (*Authentic Reality* vs. *Ego-Distortion*) and virtue ethics (*Rei*, *Gi*, *Jin*, and *Taidou*) into modern geometric mechanics, Lagrangian dynamics, non-holonomic projections, and adaptive systems theory.
+**Shikiben V2.5.0** is an autonomous self-driven mathematical architecture designed to achieve absolute mathematical elimination of excessive self-defense mechanisms (delusions and fixations) and complete dynamic energy conversion of external shock.
 
-It automatically suppresses and insulates systems from overfitting and rigidity (distortion caused by "Ego") while "metabolizing" that information to evolve a safe reference axis ("Taidou") in real time.
+By moving away from conventional control theories and evaluation functions based on heuristic parameter tuning (scalar weighting), and instead introducing geometric orthogonal projection operators (**Gi / Righteousness**) and logarithmic barriers (**Rei / Propriety**), this framework achieves **100% orthogonal elimination of structural distortion** and a **minimal entropy dissipation rate**.
 
 ---
 
