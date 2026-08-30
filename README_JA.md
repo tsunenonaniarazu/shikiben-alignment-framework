@@ -17,8 +17,8 @@
 
 | ドキュメント | 言語 | 内容 |
 | :--- | :--- | :--- |
-| **Technical Specification** | [日本語](docs/SPECIFICATION_JA.md) / [English](docs/SPECIFICATION_EN.md) | 完全な数理定式化、オイラー＝ラグランジュ導出、感度解析・パラメータ範囲 |
-| **WhitePaper** | [日本語](docs/WHITEPAPER_JA.md) / [English](docs/WHITEPAPER_EN.md) | 背景課題、東洋哲理と力学の概念的統合、適用ユースケース |
+| **Technical Specification** | [日本語](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec.md) / [English](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec_EN.md) | 完全な数理定式化、オイラー＝ラグランジュ導出、感度解析・パラメータ範囲 |
+| **WhitePaper** | [日本語](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper.md) / [English](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper_EN.md) | 背景課題、東洋哲理と力学の概念的統合、適用ユースケース |
 | **Changelog** | [English](CHANGELOG.md) | バージョン変更履歴（Keep a Changelog 準拠） |
 
 ---
