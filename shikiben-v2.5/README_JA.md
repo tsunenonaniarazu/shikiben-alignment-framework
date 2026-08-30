@@ -86,7 +86,7 @@ cd shikiben-v2.5/simulations/
 ## 関連ドキュメント
 
 * [識扁 (Shikiben) V2.5.0 仕様書](docs/Shikiben_V2.5_Center_Core_Spec.md) - 完全な数理定式化と各概念の定義
-* [技術ホワイトペーパー ](docs/Whitepaper_v2_5_ja.md) - 学術・技術層向け詳細解説書
+* [技術ホワイトペーパー ](docs/whitepaper_v2_5_ja.md) - 学術・技術層向け詳細解説書
 
 ---
 
