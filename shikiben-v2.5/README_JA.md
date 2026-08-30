@@ -58,12 +58,14 @@
 
 ```bash
 # リポジトリのクローン
-git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tunenonaniarazu/shikiben-alignment-framework.git)
+git clone
+ [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git]
+ (https://github.com/tunenonaniarazu/shikiben-alignment-framework.git)
 cd shikiben-v2.5/simulations/
 ```
 #### Run the simulation engine
-shikiben_simulation_01.py
-shikiben_simulation_02.py
+* shikiben_simulation_01.py
+* shikiben_simulation_02.py
 
 ---
 実行が完了すると、`shikiben_v250_simulation_results.png` が生成され、直交切断精度や衝撃エネルギーの反転動態が確認できます。
@@ -91,12 +93,12 @@ shikiben_simulation_02.py
 ## ライセンス
 
 このバージョンを含む本プロジェクトの成果物は、ルートディレクトリの [LICENSE](../LICENSE) に基づいて配布されています。
+
 ---
 
-# 依存ライブラリのインストール
+## 依存ライブラリのインストール
 pip install numpy matplotlib
 
-# シミュレーションの実行
-python shikiben_simulation_01.py
-python shikiben_simulation_02.py
-python shikiben_simulation_02.py
+## シミュレーションの実行
+* python shikiben_simulation_01.py
+* python shikiben_simulation_02.py
