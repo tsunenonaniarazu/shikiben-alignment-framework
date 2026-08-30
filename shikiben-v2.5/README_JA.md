@@ -64,7 +64,6 @@ cd shikiben-v2.5/simulations/
 #### Run the simulation engine
 shikiben_simulation_01.py
 shikiben_simulation_02.py
-shikiben_simulation_03.py
 
 ---
 実行が完了すると、`shikiben_v250_simulation_results.png` が生成され、直交切断精度や衝撃エネルギーの反転動態が確認できます。
