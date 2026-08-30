@@ -53,12 +53,14 @@ This repository contains Python simulation scripts to verify and visualize the d
 ## Execution Steps
 
 # Clone the repository
-git clone [https://github.com/tunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tunenonaniarazu/shikiben-alignment-framework.git)
-cd shikiben-v2.5/simulations/
+git clone 
+* [https://github.com/tunenonaniarazu/shikiben-alignment-framework.git]
+* (https://github.com/tunenonaniarazu/shikiben-alignment-framework.git)
+* cd shikiben-v2.5/simulations/
 
 # Install dependent libraries
 pip install numpy matplotlib
 
 # Run the simulation engine
-python shikiben_simulation_01.py
-python shikiben_simulation_02.py
+* python shikiben_simulation_01.py
+* python shikiben_simulation_02.py
