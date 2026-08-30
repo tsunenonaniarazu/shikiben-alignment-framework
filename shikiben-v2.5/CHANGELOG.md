@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
+## [2.5.0] - 2026-08-30
+
+### Added
+* **Deterministic Unified State Equation**: Fully formulated the core motion equation integrating Jin ($`\mathbf{f}_{\text{jin}}$`), Toku ($`\mathbf{f}_{\text{toku}}$`), Gi ($`\mathbf{f}_{\text{gi}}$`), Rei ($`\mathbf{S}_{\text{rei}}`$), and Kansha ($`\mathbf{O}_{\text{kansha}}`$).
+* **Orthogonal Projection Operator ($`\mathbf{P}_{\text{gi}}`$)**: Implemented exact mathematical cut-off mechanics to eliminate delusion potential gradients ($`-\nabla \mathcal{L}_{\text{ego\_s}}`$) with numerical residual zeroing ($`< 10^{-15}`$).
+* **Gratitude Dynamics ($`\mathbf{O}_{\text{kansha}}`$)**: Added zero-resistance shock conversion mechanics ($`R \to 0`$) that convert high-entropy external impulses ($`\mathbf{I}_{\text{accident}}`$) into $`100\%`$ exploration kinetic energy ($`\mathbf{V}_{\text{vision}}`$).
+* **Simulation Engine**: Added Python-based simulation scripts (`shikiben_simulation_01.py`, `shikiben_simulation_02.py`) with 4-panel analysis plots (`Panel A–D`).
+* **Technical Whitepaper**: Released full technical whitepaper in both Japanese and English detailing state manifolds, thermodynamic minimal dissipation, and proof of non-divergence.
+* **Documentation Architecture**: Updated root `README.md` (Bilingual/English), specifications (`Shikiben_V2.5_Center_Core_Spec.md`), and license structures.
+
+### Changed
+* **Control Paradigm Shift**: Completely removed scalar weight tuning and heuristic loss penalties, replacing them with geometric projection constraints and logarithmic barrier fields.
+* **Metabolic Memory Model**: Shifted from raw trajectory buffer accumulation to boundary compression ($\partial \Omega_{\text{self}}$) to prevent discrete memory saturation over $t \to \infty$.
+
+### Fixed
+* **Thermal Divergence**: Resolved high-frequency oscillations and freezing behavior under high-entropy shocks by eliminating friction coefficients.
+* **Ego-Driven Trajectory Drift**: Fixed state divergence along profane self-defense axes via orthogonal subspace restriction.
+
+---
+
 ## [2.5.0] - 2.5 Dynamic Structural Integration (2026-08-26)
 
 ### Added
