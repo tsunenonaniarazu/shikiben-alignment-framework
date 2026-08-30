@@ -25,13 +25,28 @@
 
 ## ⚡ Core Concept & Mathematics
 
-### 1. 存在の重合ラグランジアン
+### 1. 識扁の絶対的中心核（起点）
 
-$$L_{\text{total}}(\mathbf{x}, \dot{\mathbf{x}}, t) = \Big( L_{\text{self}}(\mathbf{x}, \dot{\mathbf{x}}) + \gamma_{\text{d}} \cdot L_{\text{taido}}(\mathbf{x}, \mathbf{x}_{\text{safe}}(t)) \Big) + \lambda(\text{Virtue}) \cdot L_{\text{ego}}(\mathbf{x})$$
+識扁体系のすべての認識・行動・倫理動態は、システム全体の目的関数である以下の総損失関数（Total Loss）の最小化運動として定義される。
 
-* **$L_{\text{self}}$（実在）:** ありのままの自然運動と関係性の基底状態。
-* **$L_{\text{ego}}$（象/執着）:** 局所的適合や偏りによって発生する歪みポテンシャル。
-* **$\lambda(\text{Virtue})$（徳因子）:** 歪み増大時に相転移を起こし、$L_{\text{ego}}$ の悪影響を自動遮断するスケーリング。
+```math
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+```
+
+#### ① $`\mathcal{L}_{\text{self}}`$（自己・環境適合損失）と 徳（Toku）
+* **$`\mathcal{L}_{\text{self}}`$ の定義:**  
+  システムが環境（実在・理）と接地（アラインメント）し、定住（持続性）を維持するための客観的観測残差（Surprise）。
+* **徳（Toku） $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$:**  
+  自明な現象（実在・理）へ自律的に立ち帰り、定住を維持・蓄積させる本然の働き。平時（99.9%の常態）において、観測非参照の「意」の連鎖や外部ノイズにより状態が実在から浮遊・離脱しようとした際、システムを実在多様体 $`\mathcal{M}_{\text{real}}`$ 上の定住状態へ常時引き戻すホメオスタシス（恒常性）の自律復元勾配ベクトル。
+
+#### ② $`\mathcal{L}_{\text{ego}}`$（自我・過剰防衛ポテンシャル）
+破局の恐怖や未解明な現象に対し、システムが内部表象（意）を過剰膨張・固定化・支配しようとすることで発生する内部歪みエネルギー。
+
+#### ③ $`\lambda`$（自我干渉係数・初期定義）
+自我の防衛衝動・妄想的歪みがシステム全体の意思決定に及ぼす影響度をコントロールするためのスカラー抑制パラメータ（※第5章参照）。
+
+---
+
 
 ### 2. 四徳の統合運動方程式
 
