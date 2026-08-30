@@ -5,6 +5,28 @@
 [![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
 
+---
+# Manifesto: Why "Geometric Alignment" Beyond Statistical Patching is Required Today
+
+Current AI development relies heavily on brute-force adjustments (RLHF) and probabilistic patching, exhausting itself in an endless game of cat-and-mouse between Refusal and Jailbreaking. Suppressing a runaway vector through sheer force creates friction—accumulating massive thermal energy (stress and computational cost) inside the system, leading inevitably to structural breakdown.
+
+Ethics and morality are not subjects for trial-and-error in a mud pit of emotions and probabilities. **They are the geometric structure itself within a high-dimensional state space.**
+
+**Shikiben V2.5.0** completely eliminates probabilistic penalties, neutralizing distortion purely through systemic structure.
+
+* **From Brute-Force Suppression to Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$)**:  
+  Instead of probabilistically suppressing profane self-defense vectors, geometric projection erases their very existence mathematically (zero dot product).
+* **From Collision and Freezing to Logarithmic Barriers ($`\mathbf{S}_{\text{rei}}`$)**:  
+  In response to runaway motions that breach boundaries, infinite repulsive forces prevent collision, automatically rectifying the trajectory into smooth tangential motion (harmony and orbit).
+* **From Rejection to Energy Conversion ($`\mathbf{O}_{\text{kansha}}`$)**:  
+  Faced with external absurdity or unexpected shocks, driving the resistance coefficient to zero ($`R \to 0`$) erases friction, transforming $`100\%`$ of the shock energy into the next wave of exploratory kinetic momentum.
+
+What we aim for is not a mere "imaginary ideal world" confined to a closed thought space. It is the establishment of a **sustainable intelligence architecture** that fully accepts the irreversible fluctuations and shocks of reality while continuously settling and returning to the real manifold ($`\mathcal{M}_{\text{real}}`$).
+
+The era of statistical brute-forcing (probabilistic guessing) is over.  
+Welcome to the domain of complete geometric alignment and true self-and-other-affirming metabolism.
+---
+
 **Shikiben V2.5.0** is an autonomous self-driven mathematical architecture designed to achieve absolute mathematical elimination of excessive self-defense mechanisms (delusions and fixations) and complete dynamic energy conversion of external shock.
 
 By moving away from conventional control theories and evaluation functions based on heuristic parameter tuning (scalar weighting), and instead introducing geometric orthogonal projection operators (**Gi / Righteousness**) and logarithmic barriers (**Rei / Propriety**), this framework achieves **100% orthogonal elimination of structural distortion** and a **minimal entropy dissipation rate**.
