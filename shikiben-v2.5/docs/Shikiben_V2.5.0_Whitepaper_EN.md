@@ -1,4 +1,3 @@
----
 # Technical Whitepaper: Shikiben V2.5.0
 **Subtitle: Orthogonal Projection Dynamics and Self-Driven Metabolism on Self-and-Other-Affirming State Manifolds**
 
