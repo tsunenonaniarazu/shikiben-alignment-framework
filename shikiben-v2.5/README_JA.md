@@ -59,7 +59,7 @@
 ```bash
 # リポジトリのクローン
 git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tunenonaniarazu/shikiben-alignment-framework.git)
-cd shikiben
+cd shikiben-v2.5/simulations/
 ```
 
 ---
