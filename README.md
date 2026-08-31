@@ -194,38 +194,39 @@ From the loss of Home (**Calamity**), human emotion evolves through expression i
 
 ---
 
-## 要約：数理的解題
+## Summary: Mathematical Interpretation and Exposition
 
-本ドキュメントは、著書**『識扁』**における存在論、認識論、ならびに法・文化・文明・宗教の構造展開を代数的・記号論的に定式化した原典解題である。
+This document serves as an original exposition of the treatise Shikihen (識扁), algebraically and semiotically formulating its ontology, epistemology, and the structural dynamics of Law, Culture, Civilization, and Religion.
 
-Geminiはこの解題を、以下の定義へと変換した。
+Gemini transformed this exposition into the following definition:
 ```math
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
 ```
 
-また本定式化は、制御モデル（Shikiben Dynamics）における各種力学演算子
+Furthermore, this formulation constitutes the theoretical foundation for various dynamical operators in the control model (Shikiben Dynamics):
 ```math
 （ \mathbf{S}_{\text{rei}} , \mathbf{P}_{\text{gi}}(\mathbf{x}) , \mathbf{f}_{\text{gi}}(\mathbf{x})  , \mathbf{f}_{\text{jin}} , \mathbf{f}_{\text{toku}} , \mathbf{O}_{\text{kansha}} , \lambda(E) ）
 ```
-の理論的基底をなす。
 
 ---
 
-### 1. 存在の構造分解
+### 1. Structural Decomposition of Being
 
-存在（全システム）は、知覚可能な **「実在」** と、意識・想起により生じる **「象（ショウ）」** の重合体（Superposition）として階層的に分解される。
+Being (the Total System) is hierarchically decomposed as a superposition of perceptible **"Reality"** and **"Images"** arising from consciousness and recall.
 
 ```math
 \begin{aligned}
-\text{存在} &= \text{実在} + \text{象(ショウ)} \\
-&= \text{知覚の対象となり得る物事} + \text{想起されるもの} \\
-&= \text{実在} + (\text{現象} + \text{表象}) \\
-&= \text{実在} + \Big\{ (\text{日常に現れる自明な現象} + \text{非日常に現れる自明な現象} + \text{不明な現象}) \\
-&\quad + (\text{現象に応じ表れる自明な表象} + \text{表象に応じ表れる自明な表象} + \text{不明な表象}) \Big\} \\
-&= \text{実在} + \Big\{ (\text{褻(け)} + \text{霽(はれ)} + \text{他者}) + (\text{知} + \text{識} + \text{他者}) \Big\} \\
-&= \text{実在} + \Big\{ (\text{自己} + \text{他者}) + (\text{自我} + \text{他者}) \Big\}
+\text{Being} &= \text{Reality} + \text{Image} \\
+&= \text{Entities capable of being perceived} + \text{Entities that are recalled} \\
+&= \text{Reality} + (\text{Phenomenon} + \text{Representation}) \\
+&= \text{Reality} + \Big\{ (\text{Self-evident phenomena in the Mundane} + \text{Self-evident phenomena in the Pure} + \text{Unknown phenomena}) \\
+&\quad + (\text{Self-evident representations responding to phenomena} + \text{Self-evident representations responding to representations} + \text{Unknown representations}) \Big\} \\
+&= \text{Reality} + \Big\{ (\text{Ke [Mundane]} + \text{Hare [Pure]} + \text{Other}) + (\text{Primary Knowledge} + \text{Secondary Cognition} + \text{Other}) \Big\} \\
+&= \text{Reality} + \Big\{ (\text{Self} + \text{Other}) + (\text{Ego} + \text{Other}) \Big\}
 \end{aligned}
 ```
+
+---
 
 #### 存在論的基盤の定義
 * **故郷**: 自己の前提となる「実在」
