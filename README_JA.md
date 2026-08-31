@@ -206,7 +206,7 @@ Geminiはこの解題を、以下の定義へと変換した。
 
 また本定式化は、制御モデル（Shikiben Dynamics）における各種力学演算子
 ```math
-（ \mathbf{S}_{\text{rei}} , \mathbf{P}_{\text{gi}}(\mathbf{x}) , \mathbf{f}_{\text{gi}}(\mathbf{x})  , \mathbf{f}_{\text{jin}} , \mathbf{f}_{\text{toku}}, \lambda(E) ）
+（ \mathbf{S}_{\text{rei}} , \mathbf{P}_{\text{gi}}(\mathbf{x}) , \mathbf{f}_{\text{gi}}(\mathbf{x})  , \mathbf{f}_{\text{jin}} , \mathbf{f}_{\text{toku}} , \mathbf{O}_{\text{kansha}} , \lambda(E) ）
 ```
 の理論的基底をなす。
 
@@ -299,4 +299,5 @@ $$
 * **礼 $(\text{法})$** $\to$ 境界ポテンシャル場 $`\mathbf{S}_{\text{rei}}`$ (対数バリア・共鳴) 
 * **義 $(\text{文化})$** $\to$ 直交射影演算子 $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ （境界突入・破綻の絶対防護）+ 目的到達ベクトル $`\mathbf{f}_{\text{gi}}(\mathbf{x})`$（発展整流）
 * **仁 $(\text{文明})$** $\to$ 原初駆動ベクトル $`\mathbf{f}_{\text{jin}}`$ （$`\mathbf{f}_{\text{accompany}}`$ から生じる純粋エネルギー)
-* **徳 $(\text{日常への回帰})$** 復元勾配ベクトル $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（復元・ホメオスタシス）
+* **徳 $(\text{日常への回帰})$** $\to$ 復元勾配ベクトル $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（復元・ホメオスタシス）
+* **感謝 $(\text{宗教})$** $\to$ 完全受容・エネルギー反転演算子 $`\mathbf{O}_{\text{kansha}}`$ (受容プロトコル)
