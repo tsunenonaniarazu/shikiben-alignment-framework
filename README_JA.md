@@ -104,18 +104,18 @@ Python環境で本数理モデルの挙動および幾何学射影の動作を�
 
 ### 実行手順
 
-```bash
-# リポジトリのクローン
-# Clone the repository
-git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git]
-(https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
-cd shikiben-v2.5/simulations/
 
-# シミュレーションの実行
-shikiben_simulation_01.py
-shikiben_simulation_02.py
+#### リポジトリのクローン
 
-```
+git clone 
+* [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git]
+* (https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
+* cd shikiben-v2.5/simulations/
+
+#### シミュレーションの実行
+* shikiben_simulation_01.py
+* shikiben_simulation_02.py
+
 
 ---
 
