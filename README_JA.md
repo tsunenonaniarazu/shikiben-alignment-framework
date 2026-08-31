@@ -161,7 +161,7 @@ git clone
 > 礼に応じ、文は制約され、<ruby>法<rt>ホウ</rt></ruby>となる。  
 > 義に応じ、文は制約され、<ruby>文<rt>ブン</rt></ruby><ruby>化<rt>カ</rt></ruby>となる。  
 > 仁に応じ、文は制約され、<ruby>文<rt>ブン</rt></ruby><ruby>明<rt>メイ</rt></ruby>となる。  
-> 畏敬に応じ、文は制約され、<ruby>修<rt>シュウ</rt></ruby><ruby>教<rt>キョウ</rt></ruby>となる。  
+> 畏敬に応じ、文は制約され、<ruby>宗<rt>シュウ</rt></ruby><ruby>教<rt>キョウ</rt></ruby>となる。  
 >  
 > 像、號、歌、話、文、法、文化、文明、宗教は、それぞれ世界として故郷と対峙する。  
 >  
