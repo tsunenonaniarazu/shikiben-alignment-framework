@@ -277,28 +277,28 @@ $$
 \end{aligned}
 $$
 
-#### 3.4 宗教 (Religion) — 畏敬（Awe & Revere）の代数化
+#### 3.4 Religion (宗教) — Algebraization of Awe & Reverence (畏敬)
 $$
 \begin{aligned}
-\text{宗教} &= (\text{文明の敗北に対する絶望})(\text{像} + \text{號} + \text{歌} + \text{話} + \text{文}) \\
-&\to (\text{非日常を畏れ、日常への回帰を敬う情})(\text{像} + \text{號} + \text{歌} + \text{話} + \text{文}) \\
-&= (\text{畏敬})(\text{像} + \text{號} + \text{歌} + \text{話} + \text{象形文字文}) + (\text{畏敬})(\text{像} + \text{號} + \text{歌} + \text{話} + \text{表音文字文}) \\
-&= (\text{凡ゆる現象に先を見通す兆しを見出す宗教}) + (\text{凡ゆる存在がロゴスにより成立すると考える宗教}) \\
-&= (\text{道を原理とする宗教}) + (\text{イデアを原理とする宗教}) \\
-&= \text{汎神教} + \text{一神教}
+\text{Religion} &= (\text{Dispair over the defeat of civilization})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text}) \\
+&\to (\text{Emotion fearing the Pure and revering the return to the Mundane})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text}) \\
+&= (\text{Reverence})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Ideographic Text}) + (\text{Reverence})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Phonetic Text}) \\
+&= (\text{Religion finding portents discerning future in all phenomena}) + (\text{Religion considering all existence to be established by Logos}) \\
+&= (\text{Religion governed by Tao as its principle}) + (\text{Religion governed by Idea as its principle}) \\
+&= \text{Polytheism}*\text{Pantheism + Monotheism}
 \end{aligned}
 $$
 
 ---
 
-### 4. 制御工学モデル（v2.5.0）への還元対照
+### 4. Reduction & Correspondence to the Control Engineering Model (v2.5.0)
 
-本代数構造から導出された各作用素は、制御工学において以下のように実装される。
+Each operator derived from this algebraic structure is implemented in control engineering as follows:
 
-* **「象」の積層** $\to$ エゴ場ポテンシャル $L_{\text{ego}}(\mathbf{x})$
-* **礼 $(\text{法})$** $\to$ 境界ポテンシャル場 $`\mathbf{S}_{\text{rei}}`$ (対数バリア・共鳴) 
-* **義 $(\text{文化})$** $\to$ 直交射影演算子 $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ （境界突入・破綻の絶対防護）+ 目的到達ベクトル $`\mathbf{f}_{\text{gi}}(\mathbf{x})`$（発展整流）
-* **仁 $(\text{文明})$** $\to$ 原初駆動ベクトル $`\mathbf{f}_{\text{jin}}`$ （$`\mathbf{f}_{\text{accompany}}`$ から生じる純粋エネルギー)
-* **徳 $(\text{日常への回帰})$** $\to$ 復元勾配ベクトル $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（復元・ホメオスタシス）
-* **感謝 $(\text{宗教})$** $\to$ 完全受容・エネルギー反転演算子 $`\mathbf{O}_{\text{kansha}}`$ (受容プロトコル)
+* **Superposition of "Images"** $\to$ Ego-field potential $L_{\text{ego}}(\mathbf{x})$
+* **Propriety ($\text{Law}$)** $\to$ Boundary potential field $`\mathbf{S}_{\text{rei}}`$ (Logarithmic barrier / Resonance)
+* **Righteousness ($\text{Culture}$)**  $\to$ Orthogonal projection operator $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ (Absolute protection against boundary breach/collapse) + Target achievement vector $`\mathbf{f}_{\text{gi}}(\mathbf{x})`$（Developmental rectification）
+* **Benevolence ($\text{Civilization}$)** $\to$ Primordial driving vector $`\mathbf{f}_{\text{jin}}`$ （$`\mathbf{f}_{\text{accompany}}`$
+* **Virtue ($\text{Return to the Mundane}$)** $\to$ Restorative gradient vector $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（Restoration / Homeostasis）
+* **Gratitude ($\text{Religion}$)** $\to$ Absolute acceptance & energy inversion operator $`\mathbf{O}_{\text{kansha}}`$ (Acceptance protocol)
 
