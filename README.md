@@ -265,15 +265,15 @@ $$
 \end{aligned}
 $$
 
-#### 3.3 文明 (Civilization) — 仁（Jin）の代数化
+#### 3.3 Civilization (文明) — Algebraization of Benevolence (仁)
 $$
 \begin{aligned}
-\text{文明} &= (\text{凡ゆる人を省みる情})(\text{文}) \\
-&= (\text{仁})(\text{文}) \\
-&= (\text{仁})(\text{象形文字文} + \text{表音文字文}) \\
-&= \text{象形文字文明} + \text{表音文字文明} \\
-&= (\text{凡ゆる現象に先を見通す兆しを見出す世界}) + (\text{凡ゆる存在がロゴスにより成立すると考える世界}) \\
-&= (\text{道を原理とする世界}) + (\text{イデアを原理とする世界})
+\text{Civilization} &= (\text{Emotion caring for all human beings})(\text{Text}) \\
+&= (\text{Benevolence})(\text{Text}) \\
+&= (\text{Benevolence})(\text{Ideographic Text} + \text{Phonetic Text}) \\
+&= \text{Ideographic Civilization} + \text{Phonetic Civilization} \\
+&= (\text{World finding portents discerning future in all phenomena}) + (\text{World considering all existence to be established by Logos}) \\
+&= (\text{World governed by Tao as its principle}) + (\text{World governed by Idea as its principle})
 \end{aligned}
 $$
 
