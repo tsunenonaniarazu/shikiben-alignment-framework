@@ -154,7 +154,7 @@ git clone
 > ここで、同じ嘆き悲しむ人を<ruby>省<rt>ひとかえり</rt></ruby>みる<ruby>情<rt>ジョウ</rt></ruby>を知る。これを<ruby>仁<rt>ジン</rt></ruby>と呼ぶ。  
 > <ruby>或<rt>あるい</rt></ruby>は、<ruby>象<rt>ゾウ</rt></ruby>を作り、<ruby>慰<rt>なぐさ</rt></ruby>めとする。  
 > 號は<ruby>歌<rt>カ</rt></ruby>に<ruby>転<rt>テン</rt></ruby>じ、故郷を<ruby>任<rt>ニン</rt></ruby><ruby>意<rt>イ</rt></ruby>に想起する<ruby>術<rt>すべ</rt></ruby>を知る。ここで、故郷を<ruby>共<rt>とも</rt></ruby>にする人を省みる情を知る。これを<ruby>義<rt>ギ</rt></ruby>と呼ぶ。  
-> 歌は<ruby>話<rt>タニン</rt></ruby>に転じ、自我が<ruby>他<rt>もと</rt></ruby><ruby>人<rt>レイ</rt></ruby>と相違する事を知る。ここで、他人との和を求める情を知る。これを礼と呼ぶ。  
+> 歌は<ruby>話<rt>ワ</rt></ruby>に転じ、自我が<ruby>他<rt>もと</rt></ruby><ruby>人<rt>レイ</rt></ruby>と相違する事を知る。ここで、他人との和を求める情を知る。これを礼と呼ぶ。  
 >  
 > 話と像は<ruby>文<rt>ブン</rt></ruby>に転じ、自我の他者としての<ruby>現<rt>あらわ</rt></ruby>れが<ruby>明<rt>メイ</rt></ruby><ruby>示<rt>ジ</rt></ruby>される。これは、<ruby>争<rt>あらそ</rt></ruby>いの<ruby>本<rt>もと</rt></ruby>となる。  
 > ここで、情に応じ、文は制約される。  
