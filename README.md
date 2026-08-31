@@ -228,20 +228,20 @@ Being (the Total System) is hierarchically decomposed as a superposition of perc
 
 ---
 
-#### 存在論的基盤の定義
-* **故郷**: 自己の前提となる「実在」
-* **世界**: 自我の前提となる「表象」
+#### Definitions of Ontological Foundations
+* **Home** (故郷): "Reality" serving as the premise of the Self.
+* **World** (世界): "Representation" serving as the premise of the Ego.
 
 ---
 
-### 2. 識（虚構）の代数と四徳の構造展開
+### 2. Algebra of Secondary Cognition (Fiction) and Structural Expansion of the Four Virtues
 
-**「識（Shiki）」** とは、人間が生成する虚構（モデル・記号・認知の固定化）の総称であり、次のように展開される。
+**"Secondary Cognition"** (識 / Shiki) refers to the totality of human-generated fictions (models, signs, and the ossification of cognition), expanded as follows:
 
 $$
 \begin{aligned}
-\text{識（虚構）} &= \text{像} + \text{號(ゴウ)} + \text{歌} + \text{話} + \text{文} + \text{法} + \text{文化} + \text{文明} + \text{宗教} \\
-&= (\text{像} + \text{號} + \text{歌} + \text{話} + \text{文})(1 + \text{礼} + \text{義} + \text{仁} + \text{畏敬})
+\text{Secondary Cognition(Fiction)} &= \text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text} + \text{Law} + \text{Culture} + \text{Civilization} + \text{Religion} \\
+&= (\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text})(1 + \text{Propriety} + \text{Righteousness} + \text{Benevolence} + \text{Reverence})
 \end{aligned}
 $$
 
