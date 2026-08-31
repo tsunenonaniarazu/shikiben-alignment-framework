@@ -257,11 +257,11 @@ $$
 \end{aligned}
 $$
 
-#### 3.2 文化 (Culture) — 義（Gi）の代数化
+#### 3.2 Culture (文化) — Algebraization of Righteousness (義)
 $$
 \begin{aligned}
-\text{文化} &= (\text{自己の相似する人を省みる情})(\text{像} + \text{歌} + \text{話} + \text{文}) \\
-&= (\text{義})(\text{像} + \text{歌} + \text{話} + \text{文})
+\text{Culture} &= (\text{Emotion caring those who resonate with oneself})(\text{Image} + \text{Song} + \text{Discourse} + \text{Text}) \\
+&= (\text{Righteousness})(\text{Image} + \text{Song} + \text{Discourse} + \text{Text})
 \end{aligned}
 $$
 
