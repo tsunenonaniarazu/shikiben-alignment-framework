@@ -247,12 +247,12 @@ $$
 
 ---
 
-### 3. 各社会構造の代数分解
+### 3. Algebraic Decomposition of Social Structures
 
-#### 3.1 法 (Law) — 礼（Rei）の代数化
+#### 3.1 Law (法) — Algebraization of Propriety (礼)
 $$
 \begin{aligned}
-\text{法} &= (\text{故郷を共にする人との綻びを結び直す事を求める情})(\text{像} + \text{話} + \text{文}) \\
+\text{Law} &= (\text{故郷を共にする人との綻びを結び直す事を求める情})(\text{像} + \text{話} + \text{文}) \\
 &= (\text{礼})(\text{像} + \text{話} + \text{文})
 \end{aligned}
 $$
