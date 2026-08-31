@@ -113,9 +113,9 @@ git clone
 * cd shikiben-v2.5/simulations/
 
 #### シミュレーションの実行
-* shikiben_simulation_01.py
-* shikiben_simulation_02.py
-* 01_geometric_alignment_demo.py
+* 01_shikiben_simulation_01.py
+* 02_shikiben_simulation_02.py
+* 03_geometric_alignment_demo.py
 
 ---
 
