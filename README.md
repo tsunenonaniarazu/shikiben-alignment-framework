@@ -252,8 +252,8 @@ $$
 #### 3.1 Law (法) — Algebraization of Propriety (礼)
 $$
 \begin{aligned}
-\text{Law} &= (\text{故郷を共にする人との綻びを結び直す事を求める情})(\text{像} + \text{話} + \text{文}) \\
-&= (\text{礼})(\text{像} + \text{話} + \text{文})
+\text{Law} &= (\text{Emotion seeking to mend ruptured bond with those sharing the same Home})(\text{Image} + \text{Discourse} + \text{Text}) \\
+&= (\text{Propriety})(\text{Image} + \text{Discourse} + \text{Text})
 \end{aligned}
 $$
 
