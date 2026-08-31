@@ -115,7 +115,7 @@ git clone
 #### シミュレーションの実行
 * shikiben_simulation_01.py
 * shikiben_simulation_02.py
-
+* 01_geometric_alignment_demo.py
 
 ---
 
