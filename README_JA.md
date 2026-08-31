@@ -218,12 +218,12 @@ Geminiはこの解題を、以下の定義へと変換した。
 
 ```math
 \begin{aligned}
-\text{存在} &= \text{実在} + \text{象(ショウ)} \\
+\text{存在} &= \text{実在} + \text{象} \\
 &= \text{知覚の対象となり得る物事} + \text{想起されるもの} \\
 &= \text{実在} + (\text{現象} + \text{表象}) \\
 &= \text{実在} + \Big\{ (\text{日常に現れる自明な現象} + \text{非日常に現れる自明な現象} + \text{不明な現象}) \\
 &\quad + (\text{現象に応じ表れる自明な表象} + \text{表象に応じ表れる自明な表象} + \text{不明な表象}) \Big\} \\
-&= \text{実在} + \Big\{ (\text{褻(け)} + \text{霽(はれ)} + \text{他者}) + (\text{知} + \text{識} + \text{他者}) \Big\} \\
+&= \text{実在} + \Big\{ (\text{褻} + \text{霽} + \text{他者}) + (\text{知} + \text{識} + \text{他者}) \Big\} \\
 &= \text{実在} + \Big\{ (\text{自己} + \text{他者}) + (\text{自我} + \text{他者}) \Big\}
 \end{aligned}
 ```
@@ -240,7 +240,7 @@ Geminiはこの解題を、以下の定義へと変換した。
 
 $$
 \begin{aligned}
-\text{識（虚構）} &= \text{像} + \text{號(ゴウ)} + \text{歌} + \text{話} + \text{文} + \text{法} + \text{文化} + \text{文明} + \text{宗教} \\
+\text{識（虚構）} &= \text{像} + \text{號} + \text{歌} + \text{話} + \text{文} + \text{法} + \text{文化} + \text{文明} + \text{宗教} \\
 &= (\text{像} + \text{號} + \text{歌} + \text{話} + \text{文})(1 + \text{礼} + \text{義} + \text{仁} + \text{畏敬})
 \end{aligned}
 $$
