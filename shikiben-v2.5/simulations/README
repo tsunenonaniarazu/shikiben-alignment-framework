@@ -1,5 +1,0 @@
-|　Script Name　|　Verification details　|
-|　:---　|　:---　|
-|　01_shikiben_simulation_01.py　|　Numerical verification of 2D $P_{\mathrm{gi}}$ orthogonal cut, shock energy conversion ($O_{\mathrm{kansha}}$), and minimal entropy generation　|
-|　02_shikiben_simulation_02.py　| |
-|　03_geometric_alignment_demo.py　|　Visual Proof of Geometric Rectification vs. RLHF in 2D　|
