@@ -45,6 +45,7 @@ By applying Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$), Restoration Forc
 cd simulations/
 python 05_semantic_embedding_alignment.py
 ```
+
 ---
 
 <a name="日本語"></a>
