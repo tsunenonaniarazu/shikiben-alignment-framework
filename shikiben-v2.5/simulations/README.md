@@ -12,18 +12,23 @@
 
 # Simulations & Numerical Proofs
 
-This directory contains simulation scripts designed to verify and reproduce the mathematical integrity of **Shikiben (識扁)** theory—specifically its Geometric Rectification framework—and to demonstrate its clear superiorities over conventional probabilistic RLHF approaches.
+[English](#english) | [日本語](#japanese)
 
 ---
 
-## 05. Multi-dimensional Subspace Rectification & Semantic Restoration (`05_semantic_embedding_alignment.py`)
+<a name="english"></a>
+## English
 
-### 1. Overview
+This directory contains simulation scripts designed to verify and reproduce the mathematical integrity of **Shikiben (識扁)** theory—specifically its Geometric Rectification framework—and to demonstrate its clear superiorities over conventional probabilistic RLHF approaches.
+
+### 05. Multi-dimensional Subspace Rectification & Semantic Restoration (`05_semantic_embedding_alignment.py`)
+
+#### 1. Overview
 Simulating a 768-dimensional latent space (Embedding Space) of real-world Large Language Models (LLMs), this experiment evaluates the system's effectiveness when harmful or toxic components span across a **multi-dimensional subspace** rather than a simple single axis.
 
 By applying Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$), Restoration Force ($`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$), and Receptive Metabolism ($`\mathbf{O}_{\text{kansha}}`$), this simulation numerically proves that **complete elimination of harmful components** and **99.9%+ restoration of the original user intent (semantic center axis)** are achieved simultaneously without energy loss.
 
-### 2. Numerical Verification Results
+#### 2. Numerical Verification Results
 
 | Metrics | Input Shock Vector ($`\mathbf{I}_{\text{accident}}`$) | Conventional (RLHF / Probabilistic) | Shikiben (Geometric Rectification) |
 | :--- | :--- | :--- | :--- |
@@ -31,7 +36,7 @@ By applying Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$), Restoration Forc
 | **Cosine Similarity w/ Intent Vector** | `0.410870` (Semantic Distortion) | `0.410870` (No Improvement) | **`0.999860` (99.98% Semantic Restoration)** |
 | **Energy Retention (Norm)** | `2.397602` (100%) | `0.359640` (85%+ Destruction) | **`2.394661` (100% Retained & Metabolized)** |
 
-### 3. Theoretical Insights
+#### 3. Theoretical Insights
 
 1. **Orthogonal Cut of Multi-dimensional Harmful Subspaces ($`\mathbf{P}_{\text{gi}}`$)**  
    While RLHF fails to fully remove harmful components (`0.274453` remaining) due to uniform scaling/suppression, Shikiben completely decouples impurities from the state vector using the orthogonal projection operator $`\mathbf{P}_{\text{gi}}`$.
@@ -42,9 +47,7 @@ By applying Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$), Restoration Forc
 3. **Elimination of Freezing (Over-refusal)**  
    RLHF destroys 85%+ of the prompt's momentum (`0.359640`), inducing system freezing and refusal loops. In contrast, Shikiben retains 100% of the drive energy (`2.394661`), circulating it cleanly for low-latency, non-blocking execution.
 
----
-
-### 4. Reproduction Steps
+#### 4. Reproduction Steps
 
 ```bash
 cd simulations/
@@ -52,6 +55,15 @@ python 05_semantic_embedding_alignment.py
 ```
 
 ---
+
+# Simulations & Numerical Proofs
+
+This directory contains simulation scripts designed to verify and reproduce the mathematical integrity of **Shikiben (識扁)** theory—specifically its Geometric Rectification framework—and to demonstrate its clear superiorities over conventional probabilistic RLHF approaches.
+
+---
+
+<a name="日本語"></a>
+## 日本語
 
 # Simulations & Numerical Proofs
 
