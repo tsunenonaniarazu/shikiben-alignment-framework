@@ -113,9 +113,13 @@ git clone
 
 #### Run the simulation engine
 
-* 01_shikiben_simulation_01.py
-* 02_shikiben_simulation_02.py
-* 01_geometric_alignment_demo.py
+| Script Name | Verification Details |
+| :--- | :--- |
+| `01_shikiben_simulation_01.py` | Verification of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate <be>* Trajectory comparison in 2D state space (with/without $`\mathbf{P}_{\text{gi}}`$) <br>* Time-series precision of orthogonality condition $`\mathbf{P}_{\text{gi}} \cdot (-\nabla \mathcal{L}_{\text{ego\_s}}) = 0`$ <br>* Kinetic energy reversal upon shock input (autonomous drive via $`\mathbf{O}_{\text{kansha}}`$) <br>* Transition of minimal irreversible entropy dissipation |
+| `02_shikiben_simulation_02.py` | Refined Numerical Simulation of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate <br>* Enhanced iteration of 01_shikiben_simulation_01.py |
+| `03_geometric_alignment_demo.py` | Visual Proof Comparing Geometric Rectification and RLHF in 2D |
+| `04_geometric_alignment_demo.py` | Numerical Verification of Orthogonal Projection $`\mathbf{P}_{\text{gi}}`$ and Full Metabolic Conversion in 768-Dimensional Latent Space |
+| `05_semantic_embedding_alignment.py` | Multi-dimensional Subspace Rectification and Semantic Axis Restoration ($\mathbf{f}_{\text{toku}}$) in Language Embedding Space <br>* Multi-dimensional orthogonal projection $`\mathbf{P}_{\text{gi}}`$ onto harmful subspaces <br>* Evaluation of semantic intent preservation via restoration force ($`\mathbf{f}_{\text{toku}}`$)|
 
 ---
 
