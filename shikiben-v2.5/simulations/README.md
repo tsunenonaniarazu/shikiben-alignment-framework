@@ -8,7 +8,7 @@
 
 ---
 
-<a name="english"></a>
+<a id="english"></a>
 ## English
 
 This directory contains simulation scripts designed to verify and reproduce the mathematical integrity of **Shikiben (識扁)** theory—specifically its Geometric Rectification framework—and to demonstrate its clear superiorities over conventional probabilistic RLHF approaches.
