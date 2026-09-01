@@ -48,7 +48,6 @@ python 05_semantic_embedding_alignment.py
 
 ---
 
-<a name="日本語"></a>
 ## 日本語
 
 本ディレクトリは、**識扁（Shikiben）** 理論に基づく幾何学的整流（Geometric Rectification）の数学的完全性、および従来の確率的抑制（RLHF）に対する優位性を検証・再現するためのシミュレーションコード群を格納しています。
