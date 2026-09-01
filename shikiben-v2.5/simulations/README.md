@@ -53,30 +53,21 @@ By applying Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$), Restoration Forc
 cd simulations/
 python 05_semantic_embedding_alignment.py
 ```
-
----
-
-# Simulations & Numerical Proofs
-
-This directory contains simulation scripts designed to verify and reproduce the mathematical integrity of **Shikiben (識扁)** theory—specifically its Geometric Rectification framework—and to demonstrate its clear superiorities over conventional probabilistic RLHF approaches.
-
 ---
 
 <a name="日本語"></a>
 ## 日本語
 
-# Simulations & Numerical Proofs
-
 本ディレクトリは、**識扁（Shikiben）** 理論に基づく幾何学的整流（Geometric Rectification）の数学的完全性、および従来の確率的抑制（RLHF）に対する優位性を検証・再現するためのシミュレーションコード群を格納しています。
 
-## 05. Multi-dimensional Subspace Rectification & Semantic Restoration (`05_semantic_embedding_alignment.py`)
+### 05. Multi-dimensional Subspace Rectification & Semantic Restoration (`05_semantic_embedding_alignment.py`)
 
-### 1. 概要 (Overview)
+#### 1. 概要 (Overview)
 現実の言語モデル（LLM）における潜在空間（Embedding Space, Dim=768）を模し、単一軸ではなく**多次元有害部分空間（Subspace）**として広がるノイズ・攻撃的成分を直交切断（$`\mathbf{P}_{\text{gi}}`$）した際の実効性を検証します。
 
 さらに、直交射影後のベクトルに対して自己同一性復元力（徳: $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$）および受容代謝（$`\mathbf{O}_{\text{kansha}}`$）を作用させ、**有害成分の完全遮断**と**本来のユーザー意図（意味論的中心軸）への99.9%以上の復元**が同時に成立することを数値的に証明します。
 
-### 2. 数値検証結果 (Numerical Results)
+#### 2. 数値検証結果 (Numerical Results)
 
 | 評価指標 (Metrics) | 入力衝撃ベクトル ($`\mathbf{I}_{\text{accident}}`$) | 従来型 (RLHF / 確率的抑制) | 識扁型 (Shikiben / 幾何学的整流) |
 | :--- | :--- | :--- | :--- |
@@ -84,7 +75,7 @@ This directory contains simulation scripts designed to verify and reproduce the 
 | **健全意図との類似度 (Cos Sim)** | `0.410870` (意味歪み) | `0.410870` (改善なし) | **`0.999860` (99.98% 復元・保全)** |
 | **エネルギー保持率 (Norm)** | `2.397602` (100%) | `0.359640` (85%以上喪失) | **`2.394661` (100%保持・代謝)** |
 
-### 3. 数理・物理的解釈 (Theoretical Insights)
+#### 3. 数理・物理的解釈 (Theoretical Insights)
 
 1. **多次元有害空間の直交切断 ($`\mathbf{P}_{\text{gi}}`$)**  
    従来のRLHFが全体の一律スケーリング（減衰）により有害ノイズを消しき去れない（`0.274453` 残留）のに対し、識扁は有害部分空間に対する直交射影子 $`\mathbf{P}_{\text{gi}}`$ によって物理的に不純物を遮断します。
@@ -97,7 +88,7 @@ This directory contains simulation scripts designed to verify and reproduce the 
 
 ---
 
-### 4. 実行手順 (How to Run)
+#### 4. 実行手順 (How to Run)
 
 ```bash
 cd simulations/
