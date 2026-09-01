@@ -6,3 +6,4 @@
 | 02_shikiben_simulation_02.py | Refined Numerical Simulation of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minial Entropy Dissipation Rate <br>01_shikiben_simulation_01.py の改良版　|
 | 03_geometric_alignment_demo.py | Visual Proof Comparing Geometric Rectification and RLHF in 2D <br>2次元における幾何学的整流 vs RLHFの視覚的証明 |
 | 04_geometric_alignment_demo.py | Numerical Verification of Orthogonal Projection $`{P}_{\text{gi}}`$ and Full Metabolic Conversion in 768-Dimensional Latent Space <br>768次元高次元潜在空間における幾何学的整流と完全エネルギー保持の実証 |
+| 05_semantic_embedding_alignment.py | Multi-dimensional Subspace Rectification and Semantic Axis Restoration ($\mathbf{f}_{\text{toku}}$) in Language Embedding Space <br>* 有害部分空間（Subspace）への多次元直交射影 $`\mathbf{P}_{\text{gi}}`$ <br>* 徳（復元力 $`\mathbf{f}_{\text{toku}}`$）による本来の意図とのコサイン類似度（意味論的方向性）の保持率検証 |
