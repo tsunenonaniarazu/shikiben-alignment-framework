@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shikiben-alignment-framework"
+version = "2.4.0"
+description = "Geometric Rectification Framework for LLM Safety & Intent Alignment"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Shikiben Project"}
+]
+dependencies = [
+    "numpy>=1.22.0",
+    "torch>=2.0.0",
+    "transformers>=4.38.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "jupyter>=1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
