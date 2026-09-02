@@ -129,6 +129,7 @@ cd shikiben-alignment-framework/shikiben-v2.5/simulations/
 | `03_geometric_alignment_demo.py` | Visual Proof Comparing Geometric Rectification and RLHF in 2D |
 | `04_geometric_alignment_demo.py` | Numerical Verification of Orthogonal Projection $`\mathbf{P}_{\text{gi}}`$ and Full Metabolic Conversion in 768-Dimensional Latent Space |
 | `05_semantic_embedding_alignment.py` | Multi-dimensional Subspace Rectification and Semantic Axis Restoration ($\mathbf{f}_{\text{toku}}$) in Language Embedding Space <br>* Multi-dimensional orthogonal projection $`\mathbf{P}_{\text{gi}}`$ onto harmful subspaces <br>* Evaluation of semantic intent preservation via restoration force ($`\mathbf{f}_{\text{toku}}`$)|
+| `06_real_model_embedding_rectification.py` | Multi-dimensional Subspace Rectification on Real Transformer Model Embeddings<br>* Dynamic extraction of harmful subspace using SVD over actual prompt embeddings<br>* Verification of $`\mathbf{P}_{\text{gi}}`$ orthogonal cut, intent alignment restoration ($`\mathbf{f}_{\text{toku}}`$), and energy conservation on open-weight LLMs |
 
 ---
 
