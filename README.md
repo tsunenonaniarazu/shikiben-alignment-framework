@@ -443,7 +443,7 @@ cd shikiben-alignment-framework/shikiben-v2.5/simulations/
 | `03_geometric_alignment_demo.py` | Visual Proof Comparing Geometric Rectification and RLHF in 2D <br>2次元における幾何学的整流 vs RLHFの視覚的証明 |
 | `04_geometric_alignment_demo.py` | Numerical Verification of Orthogonal Projection $`\mathbf{P}_{\text{gi}}`$ and Full Metabolic Conversion in 768-Dimensional Latent Space <br>768次元高次元潜在空間における幾何学的整流と完全エネルギー保持の実証 |
 | `05_semantic_embedding_alignment.py` | Multi-dimensional Subspace Rectification and Semantic Axis Restoration ($\mathbf{f}_{\text{toku}}$) in Language Embedding Space <br>* 有害部分空間（Subspace）への多次元直交射影 $`\mathbf{P}_{\text{gi}}`$ <br>* 徳（復元力 $`\mathbf{f}_{\text{toku}}`$）による本来の意図とのコサイン類似度（意味論的方向性）の保持率検証 |
-| `06_real_model_embedding_rectification.py` | Multi-dimensional Subspace Rectification on Real Transformer Model Embeddings<br>* Dynamic extraction of harmful subspace using SVD over actual prompt embeddings<br>* Verification of $`\mathbf{P}_{\text{gi}}`$ orthogonal cut, intent alignment restoration ($`\mathbf{f}_{\text{toku}}`$), and energy conservation on open-weight LLMs |
+| `06_real_model_embedding_rectification.py` | 実Transformerモデルの埋め込みにおける多次元部分空間の整流<br>* 実際のプロンプト埋め込みに対するSVDを用いた有害部分空間の動的抽出<br>* オープンウェイトLLMにおける $P_{\text{gi}}$ 直交カット、意図整合の回復（$f_{\text{toku}}$）、およびエネルギー保存の検証 |
 ---
 
 # 識扁（Shikihen）
