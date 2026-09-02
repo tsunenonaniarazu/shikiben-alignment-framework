@@ -6,7 +6,7 @@
 
 ---
 
-<a name="english"></a>
+<a id="english"></a>
 ## English
 
 # Shikiben (識扁)
@@ -114,13 +114,11 @@ Verify the mathematical model, metabolic convergence, and projection mechanics u
 
 ### Execution
 
-
-#### Clone the repository
-
-git clone 
-* [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git]
-* (https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
-* cd shikiben-v2.5/simulations/
+```bash
+# Clone the repository
+git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
+cd shikiben-alignment-framework/shikiben-v2.5/simulations/
+```
 
 #### Run the simulation engine
 
@@ -320,7 +318,7 @@ Each operator derived from this algebraic structure is implemented in control en
 
 ---
 
-<a name="japanese"></a>
+<a id="japanese"></a>
 ## 日本語
 
 # 識扁 (Shikiben)
@@ -427,15 +425,14 @@ Python環境で本数理モデルの挙動および幾何学射影の動作を�
 * Python 3.8+
 * NumPy, Matplotlib
 
+```markdown
 ### 実行手順
 
-
-#### リポジトリのクローン
-
-git clone 
-* [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git]
-* (https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
-* cd shikiben-v2.5/simulations/
+```bash
+# リポジトリのクローン
+git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
+cd shikiben-alignment-framework/shikiben-v2.5/simulations/
+```
 
 #### シミュレーションの実行
 | Script Name | Verification Details |
