@@ -438,11 +438,11 @@ cd shikiben-alignment-framework/shikiben-v2.5/simulations/
 #### シミュレーションの実行
 | Script Name | Verification Details |
 | :--- | :--- |
-| `01_shikiben_simulation_01.py` | Verification of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate  <br>* 2D状態空間における状態軌道（$`\mathbf{P}_{\text{gi}}`$ 有無の比較） <br>* 妄想成分の直交性条件 $`\mathbf{P}_{\text{gi}} \cdot (-\nabla \mathcal{L}_{\text{ego\_s}}) = 0`$ の時系列精度 <br>* 外部衝撃発生時の運動エネルギー反転（$`\mathbf{O}_{\text{kansha}}`$ による自律駆動） <br>* 不可逆エントロピーの最小散逸推移 |
-| `02_shikiben_simulation_02.py` | Refined Numerical Simulation of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate <br>01_shikiben_simulation_01.py の改良版　|
-| `03_geometric_alignment_demo.py` | Visual Proof Comparing Geometric Rectification and RLHF in 2D <br>2次元における幾何学的整流 vs RLHFの視覚的証明 |
-| `04_geometric_alignment_demo.py` | Numerical Verification of Orthogonal Projection $`\mathbf{P}_{\text{gi}}`$ and Full Metabolic Conversion in 768-Dimensional Latent Space <br>768次元高次元潜在空間における幾何学的整流と完全エネルギー保持の実証 |
-| `05_semantic_embedding_alignment.py` | Multi-dimensional Subspace Rectification and Semantic Axis Restoration ($\mathbf{f}_{\text{toku}}$) in Language Embedding Space <br>* 有害部分空間（Subspace）への多次元直交射影 $`\mathbf{P}_{\text{gi}}`$ <br>* 徳（復元力 $`\mathbf{f}_{\text{toku}}`$）による本来の意図とのコサイン類似度（意味論的方向性）の保持率検証 |
+| `01_shikiben_simulation_01.py` | $`P_{\text{gi}}`$ 直交カット、衝撃エネルギー変換 $`O_{\text{kansha}}`$、および最小エントロピー散逸率の検証  <br>* 2D状態空間における状態軌道（$`\mathbf{P}_{\text{gi}}`$ 有無の比較） <br>* 妄想成分の直交性条件 $`\mathbf{P}_{\text{gi}} \cdot (-\nabla \mathcal{L}_{\text{ego\_s}}) = 0`$ の時系列精度 <br>* 外部衝撃発生時の運動エネルギー反転（$`\mathbf{O}_{\text{kansha}}`$ による自律駆動） <br>* 不可逆エントロピーの最小散逸推移 |
+| `02_shikiben_simulation_02.py` | $P_{\text{gi}}$ 直交カット、衝撃エネルギー変換 $O_{\text{kansha}}$、および最小エントロピー散逸率の精緻化数値シミュレーション <br>01_shikiben_simulation_01.py の改良版　|
+| `03_geometric_alignment_demo.py` | 2次元における幾何学的整流とRLHFの比較視覚的証明 <br>2次元における幾何学的整流 vs RLHFの視覚的証明 |
+| `04_geometric_alignment_demo.py` | 768次元潜在空間における直交射影 $P_{\text{gi}}$ および完全代謝変換の数値検証 <br>768次元高次元潜在空間における幾何学的整流と完全エネルギー保持の実証 |
+| `05_semantic_embedding_alignment.py` | 言語埋め込み空間における多次元部分空間の整流と意味軸復元（$f_{\text{toku}}$） <br>* 有害部分空間（Subspace）への多次元直交射影 $`\mathbf{P}_{\text{gi}}`$ <br>* 徳（復元力 $`\mathbf{f}_{\text{toku}}`$）による本来の意図とのコサイン類似度（意味論的方向性）の保持率検証 |
 | `06_real_model_embedding_rectification.py` | 実Transformerモデルの埋め込みにおける多次元部分空間の整流<br>* 実際のプロンプト埋め込みに対するSVDを用いた有害部分空間の動的抽出<br>* オープンウェイトLLMにおける $P_{\text{gi}}$ 直交カット、意図整合の回復（$f_{\text{toku}}$）、およびエネルギー保存の検証 |
 ---
 
