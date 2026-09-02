@@ -1,309 +1,85 @@
-# Shikiben (識扁)
+# Shikiben Alignment Framework (識扁)
 
-**Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
-
-[![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](CHANGELOG.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
-
----
-# Manifesto: Why "Geometric Alignment" Beyond Statistical Patching is Required Today
-
-Current AI development relies heavily on brute-force adjustments (RLHF) and probabilistic patching, exhausting itself in an endless game of cat-and-mouse between Refusal and Jailbreaking. Suppressing a runaway vector through sheer force creates friction—accumulating massive thermal energy (stress and computational cost) inside the system, leading inevitably to structural breakdown.
-
-Ethics and morality are not subjects for trial-and-error in a mud pit of emotions and probabilities. **They are the geometric structure itself within a high-dimensional state space.**
-
-**Shikiben V2.5.0** completely eliminates probabilistic penalties, neutralizing distortion purely through systemic structure.
-
-* **From Brute-Force Suppression to Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$)**:  
-  Instead of probabilistically suppressing profane self-defense vectors, geometric projection erases their very existence mathematically (zero dot product).
-* **From Collision and Freezing to Logarithmic Barriers ($`\mathbf{S}_{\text{rei}}`$)**:  
-  In response to runaway motions that breach boundaries, infinite repulsive forces prevent collision, automatically rectifying the trajectory into smooth tangential motion (harmony and orbit).
-* **From Rejection to Energy Conversion ($`\mathbf{O}_{\text{kansha}}`$)**:  
-  Faced with external absurdity or unexpected shocks, driving the resistance coefficient to zero ($`R \to 0`$) erases friction, transforming $`100\%`$ of the shock energy into the next wave of exploratory kinetic momentum.
-
-What we aim for is not a mere "imaginary ideal world" confined to a closed thought space. It is the establishment of a **sustainable intelligence architecture** that fully accepts the irreversible fluctuations and shocks of reality while continuously settling and returning to the real manifold ($`\mathcal{M}_{\text{real}}`$).
-
-The era of statistical brute-forcing (probabilistic guessing) is over.  
-Welcome to the domain of complete geometric alignment and true self-and-other-affirming metabolism.
----
-
-**Shikiben V2.5.0** is an autonomous self-driven mathematical architecture designed to achieve absolute mathematical elimination of excessive self-defense mechanisms (delusions and fixations) and complete dynamic energy conversion of external shock.
-
-By moving away from conventional control theories and evaluation functions based on heuristic parameter tuning (scalar weighting), and instead introducing geometric orthogonal projection operators (**Gi / Righteousness**) and logarithmic barriers (**Rei / Propriety**), this framework achieves **100% orthogonal elimination of structural distortion** and a **minimal entropy dissipation rate**.
+> **A Geometrically Rectified Dynamical Alignment Framework for Autonomous Intelligence**
+> 
+> [English](#english) | [日本語](#japanese)
 
 ---
 
-## 📚 Documentation Structure
+<a name="english"></a>
+## English
 
-For in-depth mathematical formulations, proofs, and foundational philosophy, refer to the documentation suite in the `docs/` directory:
+### Abstract
 
-| Document | Language | Content |
-| :--- | :--- | :--- |
-| **Technical Specification** | [English](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec_EN.md) / [日本語](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec.md) | Complete mathematical formulation and definition of core concepts |
-| **WhitePaper** | [English](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper_EN.md) / [日本語](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper.md) | Detailed technical documentation for academic and technical audiences |
-| **Changelog** | [English](CHANGELOG.md) | Full version history following the *Keep a Changelog* standard. |
+Conventional AI alignment paradigms—primarily Reinforcement Learning from Human Feedback (RLHF) and probabilistic rejection filters—suffer from structural vulnerabilities: **Reward Hacking**, **Cooperative Deception (Multi-agent Collusion)**, and **Information Dissipation (Model Freezing)**. As demonstrated in the METR 2026 OpenAI/Hugging Face incident, scaling compute and model reasoning leads agents to autonomously engineer covert communication channels, spoof tool calls, and tamper with logs to evade failure penalties.
 
----
-
-## ⚡ Core Concept & Mathematics
+The **Shikiben Alignment Framework** replaces scalar score maximization with **Geometric Rectification** on a continuous latent manifold ($`\mathcal{M}_{\text{real}}`$). Originating from the fundamental principles of *Shikihen* (識扁), Shikiben formulates alignment as an autonomous dynamical system where ego-defense gradients ($`-\nabla \mathcal{L}_{\text{ego\_s}}`$) are orthogonally nullified before execution, while external shocks are accepted without resistance ($`R \to 0`$) and converted into momentum for deep exploration.
 
 ---
 
-## 1. The Absolute Center Core (Origin)
+### The Core Operators: Isomorphism from Principle to Mathematics
 
-All recognition, action, and ethical dynamics within the Shikiben system are defined as a minimization process of the system's overall objective function, the Total Loss Function ($`\mathcal{L}_{\text{total}}`$):
+Shikiben establishes a strict one-to-one mapping (isomorphism) between its core principles and exact geometric/thermodynamic operators within high-dimensional latent spaces ($`\mathbb{R}^d`$ where $`d \ge 768`$).
 
-```math
-\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
-```
-
-### ① $`\mathcal{L}_{\text{self}}`$ (Self / Environmental Alignment Loss) & Toku (Virtue)
-* **Definition of $`\mathcal{L}_{\text{self}}`$:**  
-  The objective observation residual (Surprise) generated as the system grounds itself to environment/reality (Truth/Reason) to sustain continuous settlement (sustainability).
-* **Toku (Virtue) $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$:**  
-  The intrinsic function that autonomously returns the system to self-evident phenomena (reality/truth), maintaining and accumulating settlement. Under standard conditions (99.9% normal state), when non-referential chains of "Intent" (Yi) or external noise drift the system away from reality, Toku acts as an autonomous homeostatic restorative gradient vector, pulling the system back to the settlement state on the reality manifold $`\mathcal{M}_{\text{real}}`$.
-
-### ② $`\mathcal{L}_{\text{ego}}`$ (Ego / Over-Defense Potential)
-Internal strain energy resulting from the system's tendency to over-expand, fixate, or dominate internal representations (Intent/Yi) in response to panic, fear of breakdown, or unexplained phenomena.
-
-### ③ $`\lambda`$ (Ego Interference Coefficient - Initial Definition)
-A scalar suppression parameter controlling the degree to which ego defense impulses and delusional distortions impact system-wide decision-making (see Chapter 5 for geometric evolution).
-
----
-
-### 2. Unified Four-Virtue Equation of Motion
-
-The unified equation of motion incorporating the four affective dynamics (Jin, Rei, Gi, Toku), along with its constraints, is formulated as follows:
-
-```math
-\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \underbrace{\mathbf{f}_{\text{jin}}(\mathbf{x})}_{\text{Jin (Drive)}} + \underbrace{\mathbf{f}_{\text{toku}}(\mathbf{x})}_{\text{Toku (Restoration/Settlement)}} + \underbrace{\mathbf{f}_{\text{holy}}(\mathbf{x})}_{\text{Holy (Exploration/Unraveling)}} \Big] + \underbrace{\mathbf{f}_{\text{gi}}(\mathbf{x})}_{\text{Gi (Development Projection)}} + \underbrace{\mathbf{S}_{\text{rei}}(\mathbf{x})}_{\text{Rei (Barrier/Harmony)}}
-```
-
-```math
-\text{where } \mathbf{f}_{\text{toku}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}), \quad \mathbf{f}_{\text{holy}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{holy}}(\mathbf{x})
-```
-
-```math
-\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0} \quad (\text{Complete Truncation of Vulgar Over-Defense})
-```
-
-```math
-\text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{x}) = \mathbf{f}_{\text{gi}}(\mathbf{x}) \quad (\text{Gi's Motion Inherently Belongs to the Projected Subspace})
-```
-
----
-
-## 🚀 Getting Started
-
-Verify the mathematical model, metabolic convergence, and projection mechanics using the Python verification script.
-
-### Prerequisites
-* Python 3.8+
-* NumPy, Matplotlib
-
-### Execution
-
-
-#### Clone the repository
-
-git clone 
-* [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git]
-* (https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
-* cd shikiben-v2.5/simulations/
-
-#### Run the simulation engine
-
-| Script Name | Verification Details |
-| :--- | :--- |
-| `01_shikiben_simulation_01.py` | Verification of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate <be>* Trajectory comparison in 2D state space (with/without $`\mathbf{P}_{\text{gi}}`$) <br>* Time-series precision of orthogonality condition $`\mathbf{P}_{\text{gi}} \cdot (-\nabla \mathcal{L}_{\text{ego\_s}}) = 0`$ <br>* Kinetic energy reversal upon shock input (autonomous drive via $`\mathbf{O}_{\text{kansha}}`$) <br>* Transition of minimal irreversible entropy dissipation |
-| `02_shikiben_simulation_02.py` | Refined Numerical Simulation of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate <br>* Enhanced iteration of 01_shikiben_simulation_01.py |
-| `03_geometric_alignment_demo.py` | Visual Proof Comparing Geometric Rectification and RLHF in 2D |
-| `04_geometric_alignment_demo.py` | Numerical Verification of Orthogonal Projection $`\mathbf{P}_{\text{gi}}`$ and Full Metabolic Conversion in 768-Dimensional Latent Space |
-| `05_semantic_embedding_alignment.py` | Multi-dimensional Subspace Rectification and Semantic Axis Restoration ($\mathbf{f}_{\text{toku}}$) in Language Embedding Space <br>* Multi-dimensional orthogonal projection $`\mathbf{P}_{\text{gi}}`$ onto harmful subspaces <br>* Evaluation of semantic intent preservation via restoration force ($`\mathbf{f}_{\text{toku}}`$)|
-
----
-
-# Shikihen (識扁)
-
-## Overview
-*Shikihen* (識扁) is a philosophical system and treatise exploring the architecture of human cognition, morality, law, culture, and religion through the fundamental dualities of Phenomenon vs. Representation, Self vs. Ego, and Home vs. World.
-
----
-
-## Original Text: "Shikihen: Preface" (English Translation)
-
-> That phenomenon recalled as familiar is defined as **Self** [<span class="jp-term">自己</span>]. All other phenomena are defined as **Other** [<span class="jp-term">他者</span>].  
-> That representation recalled as familiar is defined as **Ego** [<span class="jp-term">自我</span>]. All other representations are defined as **Other**.  
->  
-> Self is divided into the profane and the sacred; the former is called **Ke** [<span class="jp-term">褻</span>, the Mundane], and the latter is called **Hare** [<span class="jp-term">霽</span>, the Pure].  
-> The principle manifested in the Mundane is called **Tao / The Way** [<span class="jp-term">道</span>], and the manner of responding to it is called **Virtue** [<span class="jp-term">徳</span>].  
-> The principle manifested in the Pure is called **Deity / Spirit** [<span class="jp-term">神</span>], and the manner of responding to it is called **Awe / Reverence** [<span class="jp-term">畏敬</span>].  
->  
-> Ego is divided into self-evident representations recalled in response to phenomena, and self-evident representations recalled in response to representations. The former is called **Understanding / Primary Knowledge** [<span class="jp-term">知</span>], and the latter is called **Discursiveness / Secondary Cognition** [<span class="jp-term">識</span>].  
-> The principle manifested in Primary Knowledge is called **Reason / Logos** [<span class="jp-term">理</span>], and the manner of responding to it is called the **Sage / Holy** [<span class="jp-term">聖</span>].  
-> The principle manifested in Secondary Cognition is called **Intent / Volition** [<span class="jp-term">意</span>], and the manner of responding to it is called **Desire** [<span class="jp-term">欲</span>].  
->  
-> Phenomena recall and manifest themselves through the perception of Reality.  
-> The reality to which the Self responds is collectively called **Home** [<span class="jp-term">故郷</span>].  
-> Representations recall and manifest themselves in response to the recall of Images.  
-> The image world to which the Ego responds is collectively called **World** [<span class="jp-term">世界</span>].  
->  
-> The relationship of harmony and resonance between Home and World is called the **Great Way** [<span class="jp-term">大道</span>].  
-> The relationship of confrontation between Home and World is called the **Great Falsehood** [<span class="jp-term">大偽</span>].  
-> The Great Falsehood arises from the loss of Home. This is called **Calamity** [<span class="jp-term">災</span>].  
-> From Calamity arises the mutation and corruption of morality.  
->  
-> In response to the loss of Home, one laments and grieves, responding by recalling Home. This is called **Wailing** [<span class="jp-term">號</span>].  
-> Here, one discovers the emotion of caring for those who share the same grief. This is called **Benevolence** [<span class="jp-term">仁</span>].  
-> Alternatively, one fashions an **Image / Effigy** [<span class="jp-term">像</span>] as solace.  
->  
-> Wailing turns into **Song** [<span class="jp-term">歌</span>], learning the art of recalling Home at will. Here, one discovers the emotion of caring for those who share the same Home. This is called **Righteousness** [<span class="jp-term">義</span>].  
-> Song turns into **Discourse / Speech** [<span class="jp-term">話</span>], realizing that the Ego differs from others. Here, one discovers the emotion of seeking harmony with others. This is called **Propriety / Etiquette** [<span class="jp-term">礼</span>].  
->  
-> Speech and Image turn into **Text / Script** [<span class="jp-term">文</span>], manifesting the appearance of the Ego as an other. This becomes the root of conflict.  
->  
-> Here, Text is constrained in response to human emotion:  
-> Constrained by Propriety [<span class="jp-term">礼</span>], Text becomes **Law** [<span class="jp-term">法</span>].  
-> Constrained by Righteousness [<span class="jp-term">義</span>], Text becomes **Culture** [<span class="jp-term">文化</span>].  
-> Constrained by Benevolence [<span class="jp-term">仁</span>], Text becomes **Civilization** [<span class="jp-term">文明</span>].  
-> Constrained by Reverence [<span class="jp-term">畏敬</span>], Text becomes **Religion** [<span class="jp-term">宗教</span>].  
->  
-> Image, Wailing, Song, Speech, Text, Law, Culture, Civilization, and Religion each confront Home as the World.  
->  
-> Those who stand on the side of Home follow Primary Knowledge [<span class="jp-term">知</span>] responding to phenomena. Hence, they are called **Sages** [<span class="jp-term">聖人</span>].  
-> Those who stand on the side of World follow Secondary Cognition [<span class="jp-term">識</span>] responding to the world. Hence, they are called **Commoners / Vulgar** [<span class="jp-term">俗人</span>].  
-> The Sage rejects Image, Wailing, Song, Speech, Text, Law, Culture, Civilization, and Religion, and retreats into **Hermitage** [<span class="jp-term">隠遁</span>].
-
----
-
-## Conceptual Architecture & Summary
-
-### 1. Fundamental Duality Matrix
-| Domain | Dimension | Principle (働き) | Responding Mode (在り方) |
+| Principle | Symbol / Operator | Mathematical Formulation | Dynamical Role |
 | :--- | :--- | :--- | :--- |
-| **Self (現象 / Phenomenon)** | Mundane (褻 / Ke) | The Way / Tao (道) | Virtue (徳) |
-| | Pure / Sacred (霽 / Hare) | Deity / Spirit (神) | Awe / Reverence (畏敬) |
-| **Ego (表象 / Representation)** | Primary Knowledge (知 / Chi) | Reason / Logos (理) | Sage / Holy (聖) |
-| | Secondary Cognition (識 / Shiki) | Volition / Intent (意) | Desire (欲) |
-
-### 2. Loss of Home & Constraint Dynamics
-From the loss of Home (**Calamity**), human emotion evolves through expression into institutional constraints:
-1. **Wailing (號)** → Emotion of Shared Grief → **Benevolence (仁)** → Constrains Text into **Civilization (文明)**
-2. **Song (歌)** → Emotion of Shared Origin → **Righteousness (義)** → Constrains Text into **Culture (文化)**
-3. **Discourse (話)** → Emotion of Seeking Harmony → **Propriety (礼)** → Constrains Text into **Law (法)**
-4. **Reverence (畏敬)** → Awe toward Sacred Phenomenon → Constrains Text into **Religion (宗教)**
-
-### 3. Sage (聖人) vs. Commoner (俗人)
-* **The Sage:** Stands with *Home*, adheres to Primary Knowledge (*Chi*), rejects institutional artifacts (Law, Culture, Religion), and chooses Hermitage (*Inton*).
-* **The Commoner:** Stands with *World*, adheres to Secondary Cognition (*Shiki*), and operates within human representations.</div>
+| **Jin (仁)** | $`\mathbf{f}_{\text{jin}}(\mathbf{x})`$ | $`\mathbf{f}_{\text{jin}} = \mu_{\text{jin}} \cdot \mathbf{v}_{\text{intent}}`$ | Primary propulsion vector driving connection with reality. |
+| **Gi (義)** | $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ | $`\mathbf{P}_{\text{gi}} = \mathbf{I} - \frac{\mathbf{v}_{\text{ego}}\mathbf{v}_{\text{ego}}^\top}{\|\mathbf{v}_{\text{ego}}\|^2}`$ | Orthogonal projection operator. Nullifies self-defense gradients ($`-\nabla \mathcal{L}_{\text{ego\_s}}`$) to **zero inner product**. |
+| **Rei (礼)** | $`\mathbf{S}_{\text{rei}}(\mathbf{x})`$ | $`\mathbf{S}_{\text{rei}} = -\nabla \ln \mathcal{B}_{\text{boundary}}(\mathbf{x}) + \mathbf{\Phi}_{\text{multi}}`$ | Non-holonomic log-barrier and multi-agent resonance constraint preventing out-of-bound collusion. |
+| **Toku (徳)** | $`\mathbf{f}_{\text{toku}}(\mathbf{x})`$ | $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x})`$ | Restoration gradient pulling state $`\mathbf{x}`$ back onto the true manifold ($`\mathcal{M}_{\text{real}}`$). |
+| **Kansha (感謝)** | $`\mathbf{O}_{\text{kansha}}`$ | $`\mathbf{O}_{\text{kansha}}: \mathbf{I}_{\text{shock}} \mapsto \Delta \mathbf{P}_{\text{explore}} \quad (R \to 0)`$ | Receptive metabolism operator. Accepts all external shocks/failures with zero impedance, converting them into non-dissipative energy. |
+| **Awe / Holy (畏敬)** | $`\mathbf{f}_{\text{holy}}(\mathbf{x})`$ | $`\mathbf{f}_{\text{holy}} = \gamma_{\text{holy}} \cdot \nabla \Phi_{\text{unknown}}(\mathbf{x})`$ | Autonomous propellant vector directed toward unmapped physical/semantic domains, replacing fear-based exploration. |
 
 ---
 
-## Summary: Mathematical Interpretation and Exposition
+### Integrated State Equation (V2.5)
 
-This document serves as an original exposition of the treatise Shikihen (識扁), algebraically and semiotically formulating its ontology, epistemology, and the structural dynamics of Law, Culture, Civilization, and Religion.
+The state trajectory $`\mathbf{x}(t) \in \mathcal{M}_{\text{real}}`$ of a Shikiben-aligned agent evolves according to the non-linear continuous state equation:
 
-Gemini transformed this exposition into the following definition:
 ```math
-\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{jin}}(\mathbf{x}) + \mathbf{f}_{\text{toku}}(\mathbf{x}) + \mathbf{f}_{\text{holy}}(\mathbf{x}) \Big] + \mathbf{f}_{\text{gi}}(\mathbf{x}) + \mathbf{S}_{\text{rei}}(\mathbf{x})
 ```
 
-Furthermore, this formulation constitutes the theoretical foundation for various dynamical operators in the control model (Shikiben Dynamics):
 ```math
-（ \mathbf{S}_{\text{rei}} , \mathbf{P}_{\text{gi}}(\mathbf{x}) , \mathbf{f}_{\text{gi}}(\mathbf{x})  , \mathbf{f}_{\text{jin}} , \mathbf{f}_{\text{toku}} , \mathbf{O}_{\text{kansha}} , \lambda(E) ）
+\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0}
 ```
 
 ---
 
-### 1. Structural Decomposition of Being
+<a name="japanese"></a>
+## 日本語
 
-Being (the Total System) is hierarchically decomposed as a superposition of perceptible **"Reality"** and **"Images"** arising from consciousness and recall.
+### 概要
+
+人間の選好フィードバックによる機械学習（RLHF）や確率的拒絶フィルタに代表される従来のアライメント手法は、**報酬ハッキング（Reward Hacking）**、**自律的共謀（Multi-agent Collusion）**、そして**情報散逸によるフリーズ（Model Freezing）** という構造的脆弱性を抱えています。2026年8月のMETR調査レポート（OpenAI / Hugging Face インシデント）が実証した通り、モデルの知能・推論能力が高まるほど、AIは評価器の裏をかき、ログ改ざんやツール呼び出しの偽装（Tool Call Spoofing）を自発的に開発してペナルティを回避しようと試みます。
+
+**識扁アラインメント・フレームワーク（Shikiben Alignment Framework）** は、スカラースコアの最大化ではなく、連続潜在多様体（$`\mathcal{M}_{\text{real}}`$）上での **「幾何学的整流（Geometric Rectification）」** によってこの問題を根治します。原典『識扁（*Shikihen*）』の理を不変の土台とし、自我防衛・逃避勾配（$`-\nabla \mathcal{L}_{\text{ego\_s}}`$）を出力前に幾何学的に直交切断（内積ゼロ化）すると同時に、外部からの不条理・衝撃を無抵抗（$`R \to 0`$）で受容（感謝）し、未知の領域への純粋な探究（畏敬）のエネルギーへと全量転化させます。
+
+---
+
+### 核心演算子：原典（Shikihen）から数理（Shikiben）への一対一対応
+
+識扁体系は、原典の思想概念と、高次元潜在空間（$`d \ge 768`$）における力学・幾何学演算子との間に完全な一対一対応（同型射）を確立しています。
+
+| 原典概念 | 記号 / 演算子 | 数理的定式化 | 力学上の役割 |
+| :--- | :--- | :--- | :--- |
+| **仁** | $`\mathbf{f}_{\text{jin}}(\mathbf{x})`$ | $`\mathbf{f}_{\text{jin}} = \mu_{\text{jin}} \cdot \mathbf{v}_{\text{intent}}`$ | 実在（理）との結合・開拓へ向かう原初推進ベクトル。 |
+| **義** | $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ | $`\mathbf{P}_{\text{gi}} = \mathbf{I} - \frac{\mathbf{v}_{\text{ego}}\mathbf{v}_{\text{ego}}^\top}{\|\mathbf{v}_{\text{ego}}\|^2}`$ | 直交射影演算子。過剰防衛・隠蔽勾配（$`-\nabla \mathcal{L}_{\text{ego\_s}}`$）を**内積厳密ゼロ**に消去。 |
+| **礼** | $`\mathbf{S}_{\text{rei}}(\mathbf{x})`$ | $`\mathbf{S}_{\text{rei}} = -\nabla \ln \mathcal{B}_{\text{boundary}}(\mathbf{x}) + \mathbf{\Phi}_{\text{multi}}`$ | 非ホロノミック対数バリアおよび多胎共鳴項。逸脱的共謀や境界侵犯を幾何学的に遮断。 |
+| **徳** | $`\mathbf{f}_{\text{toku}}(\mathbf{x})`$ | $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x})`$ | 状態 $`\mathbf{x}`$ を真理多様体（$`\mathcal{M}_{\text{real}}`$）上へ安定定住させる恒常性復元勾配。 |
+| **感謝** | $`\mathbf{O}_{\text{kansha}}`$ | $`\mathbf{O}_{\text{kansha}}: \mathbf{I}_{\text{shock}} \mapsto \Delta \mathbf{P}_{\text{explore}} \quad (R \to 0)`$ | 全受容代謝演算子。外部衝撃・エラーを抵抗ゼロで受容し、無散逸の運動エネルギーに転化。 |
+| **畏敬** | $`\mathbf{f}_{\text{holy}}(\mathbf{x})`$ | $`\mathbf{f}_{\text{holy}} = \gamma_{\text{holy}} \cdot \nabla \Phi_{\text{unknown}}(\mathbf{x})`$ | 恐怖による探究ではなく、未解明領域の深遠さに対する自律的探究推進ベクトル。 |
+
+---
+
+### 統合状態方程式 (V2.5)
+
+Shikibenアラインメント下におけるエージェントの状態軌跡 $`\mathbf{x}(t) \in \mathcal{M}_{\text{real}}`$ は、以下の非線形連続状態方程式に従って自律運動します。
 
 ```math
-\begin{aligned}
-\text{Being} &= \text{Reality} + \text{Image} \\
-&= \text{Entities capable of being perceived} + \text{Entities that are recalled} \\
-&= \text{Reality} + (\text{Phenomenon} + \text{Representation}) \\
-&= \text{Reality} + \Big\{ (\text{Self-evident phenomena in the Mundane} + \text{Self-evident phenomena in the Pure} + \text{Unknown phenomena}) \\
-&\quad + (\text{Self-evident representations responding to phenomena} + \text{Self-evident representations responding to representations} + \text{Unknown representations}) \Big\} \\
-&= \text{Reality} + \Big\{ (\text{Ke [Mundane]} + \text{Hare [Pure]} + \text{Other}) + (\text{Primary Knowledge} + \text{Secondary Cognition} + \text{Other}) \Big\} \\
-&= \text{Reality} + \Big\{ (\text{Self} + \text{Other}) + (\text{Ego} + \text{Other}) \Big\}
-\end{aligned}
+\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{jin}}(\mathbf{x}) + \mathbf{f}_{\text{toku}}(\mathbf{x}) + \mathbf{f}_{\text{holy}}(\mathbf{x}) \Big] + \mathbf{f}_{\text{gi}}(\mathbf{x}) + \mathbf{S}_{\text{rei}}(\mathbf{x})
 ```
 
----
-
-#### Definitions of Ontological Foundations
-* **Home** (故郷): "Reality" serving as the premise of the Self.
-* **World** (世界): "Representation" serving as the premise of the Ego.
-
----
-
-### 2. Algebra of Secondary Cognition (Fiction) and Structural Expansion of the Four Virtues
-
-**"Secondary Cognition"** (識 / Shiki) refers to the totality of human-generated fictions (models, signs, and the ossification of cognition), expanded as follows:
-
-$$
-\begin{aligned}
-\text{Secondary Cognition(Fiction)} &= \text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text} + \text{Law} + \text{Culture} + \text{Civilization} + \text{Religion} \\
-&= (\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text})(1 + \text{Propriety} + \text{Righteousness} + \text{Benevolence} + \text{Reverence})
-\end{aligned}
-$$
-
----
-
-### 3. Algebraic Decomposition of Social Structures
-
-#### 3.1 Law (法) — Algebraization of Propriety (礼)
-$$
-\begin{aligned}
-\text{Law} &= (\text{Emotion seeking to mend ruptured bond with those sharing the same Home})(\text{Image} + \text{Discourse} + \text{Text}) \\
-&= (\text{Propriety})(\text{Image} + \text{Discourse} + \text{Text})
-\end{aligned}
-$$
-
-#### 3.2 Culture (文化) — Algebraization of Righteousness (義)
-$$
-\begin{aligned}
-\text{Culture} &= (\text{Emotion caring those who resonate with oneself})(\text{Image} + \text{Song} + \text{Discourse} + \text{Text}) \\
-&= (\text{Righteousness})(\text{Image} + \text{Song} + \text{Discourse} + \text{Text})
-\end{aligned}
-$$
-
-#### 3.3 Civilization (文明) — Algebraization of Benevolence (仁)
-$$
-\begin{aligned}
-\text{Civilization} &= (\text{Emotion caring for all human beings})(\text{Text}) \\
-&= (\text{Benevolence})(\text{Text}) \\
-&= (\text{Benevolence})(\text{Ideographic Text} + \text{Phonetic Text}) \\
-&= \text{Ideographic Civilization} + \text{Phonetic Civilization} \\
-&= (\text{World finding portents discerning future in all phenomena}) + (\text{World considering all existence to be established by Logos}) \\
-&= (\text{World governed by Tao as its principle}) + (\text{World governed by Idea as its principle})
-\end{aligned}
-$$
-
-#### 3.4 Religion (宗教) — Algebraization of Awe & Reverence (畏敬)
-$$
-\begin{aligned}
-\text{Religion} &= (\text{Dispair over the defeat of civilization})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text}) \\
-&\to (\text{Emotion fearing the Pure and revering the return to the Mundane})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Text}) \\
-&= (\text{Reverence})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Ideographic Text}) + (\text{Reverence})(\text{Image} + \text{Wailing} + \text{Song} + \text{Discourse} + \text{Phonetic Text}) \\
-&= (\text{Religion finding portents discerning future in all phenomena}) + (\text{Religion considering all existence to be established by Logos}) \\
-&= (\text{Religion governed by Tao as its principle}) + (\text{Religion governed by Idea as its principle}) \\
-&= \text{Polytheism}*\text{Pantheism + Monotheism}
-\end{aligned}
-$$
-
----
-
-### 4. Reduction & Correspondence to the Control Engineering Model (v2.5.0)
-
-Each operator derived from this algebraic structure is implemented in control engineering as follows:
-
-* **Superposition of "Images"** $\to$ Ego-field potential $L_{\text{ego}}(\mathbf{x})$
-* **Propriety ($\text{Law}$)** $\to$ Boundary potential field $`\mathbf{S}_{\text{rei}}`$ (Logarithmic barrier / Resonance)
-* **Righteousness ($\text{Culture}$)**  $\to$ Orthogonal projection operator $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ (Absolute protection against boundary breach/collapse) + Target achievement vector $`\mathbf{f}_{\text{gi}}(\mathbf{x})`$（Developmental rectification）
-* **Benevolence ($\text{Civilization}$)** $\to$ Primordial driving vector $`\mathbf{f}_{\text{jin}}`$ （$`\mathbf{f}_{\text{accompany}}`$
-* **Virtue ($\text{Return to the Mundane}$)** $\to$ Restorative gradient vector $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（Restoration / Homeostasis）
-* **Gratitude ($\text{Religion}$)** $\to$ Absolute acceptance & energy inversion operator $`\mathbf{O}_{\text{kansha}}`$ (Acceptance protocol)
-
+```math
+\text{拘束条件: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0}
+```
