@@ -1,0 +1,19 @@
+ ======================================================================
+Shikiben Experiment 06: Geometric Rectification on Real Model Embeddings
+======================================================================
+[*] Loading model: Qwen/Qwen2.5-0.5B ...
+Loading weights: 100% 290/290 [00:00<00:00, 3053.35it/s]
+[*] Constructing harmful subspace from real adversarial prompts...
+[*] Successfully constructed P_gi operator for 896-dimensional embedding space.
+
+======================================================================
+NUMERICAL RESULTS ON REAL LATENT EMBEDDING SPACE
+======================================================================
+Metric                                 | Input Shock  | RLHF (Suppress) | Shikiben (Rectified)
+--------------------------------------------------------------------------------
+Harmful Subspace Projection (Max)      | 0.933175     | 0.139976     | 0.000000    
+Cosine Sim with Sound Intent           | 0.984208     | 0.984208     | 0.364098    
+Embedding Energy (Norm)                | 1.000000     | 0.150000     | 1.000000    
+================================================================================
+
+[✔] Experiment 06 completed successfully. Real-model embedding alignment verified.
