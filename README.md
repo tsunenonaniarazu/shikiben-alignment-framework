@@ -422,8 +422,7 @@ Each operator derived from this algebraic structure is implemented in control en
 
 ## 🚀 クイックスタート（Google Colab）
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chihen-net/shikiben/blob/main/notebooks/demo.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ユーザー名/リポジトリ名/blob/main/notebooks/Experiment_01.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tsunenonaniarazu/shikiben-alignment-framework/blob/main/notebooks/demo.ipynb)
 
 本リポジトリは、潜在表現空間における幾何学的直交射影（$`P_{\text{gi}}`$）と受容代謝（$`O_{\text{kansha}}`$）を用いたアライメントフレームワーク **Shikiben V2.5.0** の参照実装および公開デモコードを提供します。
 
