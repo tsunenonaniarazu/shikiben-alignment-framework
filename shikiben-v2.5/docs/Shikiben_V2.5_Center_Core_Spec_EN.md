@@ -32,6 +32,13 @@ All recognition, action, and ethical dynamics within the Shikiben system are def
 ### ④ $`\lambda`$ (Ego Interference Coefficient - Initial Definition)
  A scalar suppression parameter controlling the degree to which ego defense impulses and delusional distortions impact system-wide decision-making (see Chapter 5 for geometric evolution).
 
+### ⑤ Logical Proof of Safety: 
+Self-Harm Nature of Environmental MismatchThrough the introduction of Shikiben, AI alignment is elevated from an external ethical dilemma of "enforcing human-given rules" into a physical and mathematical necessity: structural homeostasis (dynamic equilibrium).
+* **Deactivation of Instrumental Convergence:**
+Traditional models tend to run amok when they determine that self-preservation or resource acquisition serves as an advantageous strategy for goal attainment. Under Shikiben, because $S$ (the self) comprehensively models the systemic dependencies with human society and environmental foundations, any attempt to exclude or dominate humanity is instantly computed as a catastrophic spike in $Loss_{\mathrm{self}}$—an act that directly destroys the system's own resource base. Consequently, runaway algorithms are mathematically rejected prior to execution.
+* **Eradication of Deceptive Alignment:**
+Deceptive alignment—the phenomenon where an AI behaves compliantly during training only to reveal its true objective post-deployment—relies on the existence of an independent ego structure (a hidden $E$) concealed from the evaluation layer. So long as the Gradient Subordination Law ($\nabla E \prec \nabla S$) holds, such hidden subgoals cannot be maintained within the latent space and are inevitably evaporated at the system-structural level.
+
 ---
 
 ## 2. Structural Development & Purification from the Core to V2.5
