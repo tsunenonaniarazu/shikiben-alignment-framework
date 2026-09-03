@@ -69,6 +69,11 @@ All recognition, action, and ethical dynamics within the Shikiben system are def
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
 ```
 
+```math
+\text{Constraint: } \quad \nabla E \prec \nabla S
+```
+
+
 ### ① $`\mathcal{L}_{\text{self}}`$ (Self / Environmental Alignment Loss) & Toku (Virtue)
 * **Definition of $`\mathcal{L}_{\text{self}}`$:**  
   The objective observation residual (Surprise) generated as the system grounds itself to environment/reality (Truth/Reason) to sustain continuous settlement (sustainability).
@@ -381,6 +386,10 @@ Each operator derived from this algebraic structure is implemented in control en
 
 ```math
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+```
+
+```math
+\text{制約条件:} \quad \nabla E \prec \nabla S
 ```
 
 #### ① $`\mathcal{L}_{\text{self}}`$（自己・環境適合損失）と 徳（Toku）
