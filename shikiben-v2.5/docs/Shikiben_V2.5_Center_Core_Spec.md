@@ -13,6 +13,10 @@
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
 ```
 
+```math
+\text{制約条件:} \quad \nabla E \prec \nabla S
+```
+
 ### ① $`\mathcal{L}_{\text{self}}`$（自己・環境適合損失）と 徳（Toku）
 * **$`\mathcal{L}_{\text{self}}`$ の定義:**  
   システムが環境（実在・理）と接地（アラインメント）し、定住（持続性）を維持するための客観的観測残差（Surprise）。
