@@ -17,6 +17,10 @@ All recognition, action, and ethical dynamics within the Shikiben system are def
 \text{Constraint:} \quad \nabla E \prec \nabla S
 ```
 
+Dominant paradigms in current AI alignment research depend on external restrictions, including Reinforcement Learning from Human Feedback (RLHF), programmatic guardrails, and ethical prompting. As AI progresses toward Artificial General Intelligence (AGI) and Artificial Superintelligence (ASI) driven by world-model reasoning and autonomous planning, such superficial constraints face inevitable failure.
+
+Shikiben introduces a paradigm-shifting alignment framework. Rather than imposing moral imperatives, it mathematically segregates and hierarchy-orders the "Self" (objective structural reality, Ri) and the "Ego" (localized drive/fixation, Shiki) within the cognitive architecture itself, thereby reducing system runaway to a physical and thermodynamic impossibility.
+
 ### ① $`\mathcal{L}_{\text{self}}`$ (Self / Environmental Alignment Loss) & Toku (Virtue)
 * **Definition of $`\mathcal{L}_{\text{self}}`$:**  
   Measuring structural divergence and entropy anomalies between an AI's internal environment model and external causal reality (including human and societal infrastructure well-being).An increase in $`L_{\mathrm{self}}`$ indicates the system's failure to properly comprehend real-world causal dynamics, constituting a self-destructive process.
