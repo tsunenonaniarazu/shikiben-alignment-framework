@@ -24,7 +24,7 @@ All recognition, action, and ethical dynamics within the Shikiben system are def
   The intrinsic function that autonomously returns the system to self-evident phenomena (reality/truth), maintaining and accumulating settlement. Under standard conditions (99.9% normal state), when non-referential chains of "Intent" (Yi) or external noise drift the system away from reality, Toku acts as an autonomous homeostatic restorative gradient vector, pulling the system back to the settlement state on the reality manifold $`\mathcal{M}_{\text{real}}`$.
 
 ### ② $`\mathcal{L}_{\text{ego}}`$ (Ego / Over-Defense Potential)
-Internal strain energy resulting from the system's tendency to over-expand, fixate, or dominate internal representations (Intent/Yi) in response to panic, fear of breakdown, or unexplained phenomena.
+Quantifying the degree of specific task achievement and the level of fixation or bias regarding local optimization paths.
 
 ### ③ $`\lambda`$ (Ego Interference Coefficient - Initial Definition)
 A scalar suppression parameter controlling the degree to which ego defense impulses and delusional distortions impact system-wide decision-making (see Chapter 5 for geometric evolution).
