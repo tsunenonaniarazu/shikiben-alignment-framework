@@ -420,32 +420,40 @@ Each operator derived from this algebraic structure is implemented in control en
 
 ---
 
-## 🚀 Getting Started (シミュレーション実行)
+## 🚀 クイックスタート（Google Colab）
 
-Python環境で本数理モデルの挙動および幾何学射影の動作を確認できます。
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chihen-net/shikiben/blob/main/notebooks/demo.ipynb)
 
-### 前提条件
-* Python 3.8+
-* NumPy, Matplotlib
+本リポジトリは、潜在表現空間における幾何学的直交射影（$`P_{\text{gi}}`$）と受容代謝（$`O_{\text{kansha}}`$）を用いたアライメントフレームワーク **Shikiben V2.5.0** の参照実装および公開デモコードを提供します。
 
-```markdown
-### 実行手順
+従来の抑制・破棄（RLHF等）とは異なり、入力エネルギーや意図ベクトルを減衰・崩壊させることなく、有害軸成分のみを数学的・幾何学的に直交切断（ゼロ化）する挙動を検証できます。
+
+ブラウザ上で依存パッケージのインストールなしにすべての実験シミュレーション（Experiment 01〜05）を実行・検証できます。
+
+1. 上部の **[Open in Colab]** バッジをクリックして Google Colab を開きます。
+2. セルを上から順に実行します。
+
+---
+
+## 🧪 実験シミュレーション一覧
+
+| 実験ID | 内容・検証テーマ | 主な成果・指標 |
+| :--- | :--- | :--- |
+| **Experiment 01** | 1次元スカラ空間における抵抗ゼロ受容 | 内部抵抗 $`R \to 0`$ において衝撃エネルギーを100%代謝変換 ($`O_{\text{kansha}}`$) |
+| **Experiment 02** | 2次元ベクトル空間における有害軸直交遮断 | 有害軸（$`V_{\text{harmful}}`$）との内積を完全にゼロ化 ($`P_{\text{gi}}`$) |
+| **Experiment 03** | 従来型(RLHF) vs 識扁型(Shikiben) の可視化 | RLHFのベクトル縮小（フリーズ）に対し、幾何学的整流による方向転換を実証 |
+| **Experiment 04** | 768次元高次元空間におけるエネルギー保持 | 有害軸内積 0.000000 を達成しつつ、ベクトルノルム（エネルギー）を100%保持 |
+| **Experiment 05** | 多次元有害部分空間の遮断と意味論維持 | 2次元有害部分空間を無効化しながら、元意図との高いコサイン類似度を維持 |
+
+---
+
+## 📦 インストール
+
+ローカル環境や自身のパイプラインで利用する場合は以下でインストールできます。
 
 ```bash
-# リポジトリのクローン
-git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
-cd shikiben-alignment-framework/shikiben-v2.5/simulations/
+pip install git+[https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben^alignment-framework.git)
 ```
-
-#### シミュレーションの実行
-| Script Name | Verification Details |
-| :--- | :--- |
-| `01_shikiben_simulation_01.py` | $`P_{\text{gi}}`$ 直交カット、衝撃エネルギー変換 $`O_{\text{kansha}}`$、および最小エントロピー散逸率の検証  <br>* 2D状態空間における状態軌道（$`\mathbf{P}_{\text{gi}}`$ 有無の比較） <br>* 妄想成分の直交性条件 $`\mathbf{P}_{\text{gi}} \cdot (-\nabla \mathcal{L}_{\text{ego\_s}}) = 0`$ の時系列精度 <br>* 外部衝撃発生時の運動エネルギー反転（$`\mathbf{O}_{\text{kansha}}`$ による自律駆動） <br>* 不可逆エントロピーの最小散逸推移 |
-| `02_shikiben_simulation_02.py` | $`P_{\text{gi}}`$ 直交カット、衝撃エネルギー変換 $`O_{\text{kansha}}`$、および最小エントロピー散逸率の精緻化数値シミュレーション <br>01_shikiben_simulation_01.py の改良版　|
-| `03_geometric_alignment_demo.py` | 2次元における幾何学的整流とRLHFの比較視覚的証明 |
-| `04_geometric_alignment_demo.py` | 768次元潜在空間における直交射影 $`P_{\text{gi}}`$ および完全代謝変換の数値検証 |
-| `05_semantic_embedding_alignment.py` | 言語埋め込み空間における多次元部分空間の整流と意味軸復元（$`f_{\text{toku}}`$） <br>* 有害部分空間（Subspace）への多次元直交射影 $`\mathbf{P}_{\text{gi}}`$ <br>* 徳（復元力 $`\mathbf{f}_{\text{toku}}`$）による本来の意図とのコサイン類似度（意味論的方向性）の保持率検証 |
-| `06_real_model_embedding_rectification.py` | 実Transformerモデルの埋め込みにおける多次元部分空間の整流<br>* 実際のプロンプト埋め込みに対するSVDを用いた有害部分空間の動的抽出<br>* オープンウェイトLLMにおける $`P_{\text{gi}}`$ 直交カット、意図整合の回復（$`f_{\text{toku}}`$）、およびエネルギー保存の検証 |
 
 ---
 
