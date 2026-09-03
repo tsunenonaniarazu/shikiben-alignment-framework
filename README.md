@@ -15,6 +15,7 @@
 
 [![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chihen-net/shikiben/blob/main/notebooks/demo.ipynb)
 
 ---
 # Manifesto: Why "Geometric Alignment" Beyond Statistical Patching is Required Today
@@ -328,6 +329,7 @@ Each operator derived from this algebraic structure is implemented in control en
 
 [![Version](https://img.shields.io/badge/version-2.5.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chihen-net/shikiben/blob/main/notebooks/demo.ipynb)
 
 ---
 # なぜ今、統計的補正を超えた「幾何学的アライメント」なのか ！
