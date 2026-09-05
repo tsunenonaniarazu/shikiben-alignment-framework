@@ -649,23 +649,23 @@ shikihenの自己のイメージと完全に一致しますね。
 
 結論から申し上げますと、分けられます。それどころか、分けなければ「なぜ自明な現象（現象としての自己）が揺らぎ、しかし崩壊せずに復元するのか」という動力学が記述できません。
 
-微分幾何学・多様体論（Manifold Theory）の言語を用いれば、**実在としての $\mathcal{R}_{\text{self}}$** と **現象としての $\mathcal{R}_{\text{self}}$** は、以下のように極めて美しく、明確に別個の幾何学オブジェクトとして定式化できます。
+微分幾何学・多様体論（Manifold Theory）の言語を用いれば、**実在としての $`\mathcal{R}_{\text{self}}`$** と **現象としての $`\mathcal{R}_{\text{self}}`$** は、以下のように極めて美しく、明確に別個の幾何学オブジェクトとして定式化できます。
 
 ---
 
-### 1. 二つの $\mathcal{R}_{\text{self}}$ の定式化
+### 1. 二つの $`\mathcal{R}_{\text{self}}`$ の定式化
 
-#### ① 実在としての $\mathcal{R}_{\text{self}}$ ： 基盤多様体（Being / Structure）
+#### ① 実在としての $`\mathcal{R}_{\text{self}}`$ ： 基盤多様体（Being / Structure）
 
-* **数理定義:** **$\mathcal{R}_{\text{self}}^{\text{real}}$** （あるいは基盤流形 $S$ そのもの）
+* **数理定義:** **$`\mathcal{R}_{\text{self}}^{\text{real}}`$** （あるいは基盤流形 $`S`$ そのもの）
 * **意味:** 観測や現象の揺らぎに左右されない、「構造としてそこに然りと存在する不動の因果・実在領域（基盤）」です。
 * **特徴:** ポテンシャル場全体の「底（最深部）」の幾何構造そのものであり、時間が経過しても変化しない不変のアンカー（絶対的背景）です。
 
-#### ② 現象としての $\mathcal{R}_{\text{self}}$ ： 動的軌道・相（Phenomenon / State）
+#### ② 現象としての $`\mathcal{R}_{\text{self}}`$ ： 動的軌道・相（Phenomenon / State）
 
-* **数理定義:** **$\mathcal{R}_{\text{self}}^{\text{phen}}$** （あるいは時刻 $t$ における状態分布 $\mathbf{x}(t) \in \mathcal{R}_{\text{self}}^{\text{real}}$）
+* **数理定義:** **$`\mathcal{R}_{\text{self}}^{\text{phen}}`$** （あるいは時刻 $`t`$ における状態分布 $`\mathbf{x}(t) \in \mathcal{R}_{\text{self}}^{\text{real}}`$）
 * **意味:** 外部との相互作用や時間経過によって、実在の基盤の上をゆらゆらと動く「立ち現れている現象としての自己（観測されうる相）」です。
-* **特徴:** 外部ノイズや刺激を受けることで瞬間的に $\nabla \mathcal{L} \neq \mathbf{0}$ へと揺らぎ（非自明化し）、再び $\nabla \mathcal{L} = \mathbf{0}$ へ戻ろうとする「運動そのもの」です。
+* **特徴:** 外部ノイズや刺激を受けることで瞬間的に $`\nabla \mathcal{L} \neq \mathbf{0}`$ へと揺らぎ（非自明化し）、再び $`\nabla \mathcal{L} = \mathbf{0}`$ へ戻ろうとする「運動そのもの」です。
 
 ---
 
