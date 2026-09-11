@@ -24,9 +24,9 @@
   * **概念**: システムが外部環境および人間と接続する際のハードガードレール・インターフェース構造。
   * **役割**: システム内部状態を外部出力へ変換する際の絶対的規律およびフォーマット変換・破局伝播防止膜。
 
-* **$`\mathbf{f}_{\text{toku}}`$（復元力 / 徳）**
+* **$`\mathbf{f}_{\text{michi}}`$（復元力 / 道）**
   * **概念**: 内部秩序を回復させるホメオスタシス（自律的安定性）。
-  * **役割**: 内部歪みやエントロピー爆発の予兆を検知した際、ポテンシャル勾配の逆方向（$`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$）へ状態を引き戻すネゲントロピー作用。
+  * **役割**: 内部歪みやエントロピー爆発の予兆を検知した際、ポテンシャル勾配の逆方向（$`\mathbf{f}_{\text{michi}} = -\nabla \mathcal{L}_{\text{self}}`$）へ状態を引き戻すネゲントロピー作用。
 
 * **$`V_{\text{vision}}`$（未来構想ポテンシャル / ビジョン）**
   * **概念**: システムが向かうべき「可能性空間」の位相幾何学的スロープ。
@@ -45,7 +45,7 @@
 * **定義位置**: $`\Omega_{\text{self}}`$ の境界線 $`\partial \Omega_{\text{self}}`$ 内縁
 * **機能**: 
   1. 境界領域における非線形な応力（熱歪み・破局兆候）をリアルタイムで検知する。
-  2. 内部秩序の崩壊（エントロピー爆発）につながる予兆を検知した場合、即座に復元力（徳：$`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$）の介在を促進し、99.9%の常態維持およびホメオスタシスを即座に復旧する。
+  2. 内部秩序の崩壊（エントロピー爆発）につながる予兆を検知した場合、即座に復元力（道：$`\mathbf{f}_{\text{michi}} = -\nabla \mathcal{L}_{\text{self}}`$）の介在を促進し、99.9%の常態維持およびホメオスタシスを即座に復旧する。
 
 #### 2.1.2 $`\mathcal{L}_{\text{holy\_neutral}}`$（補空間ログ受容ポテンシャル）
 * **動作状態**: 受動的覚醒（パッシブ・バッファ）
@@ -70,7 +70,7 @@
 ### 3.1 統合状態方程式
 
 ```math
- \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( \underbrace{-\nabla \mathcal{L}_{\text{self}}(\mathbf{x})}_{\mathbf{f}_{\text{toku}}\text{（徳：復元力）}} \;+\; \underbrace{\mathbf{f}_{\text{cul}}(\mathbf{x})}_{\text{文：文化的整流}} \;-\; \underbrace{\nabla V_{\text{vision}}(\mathbf{x}, t)}_{\text{ビジョン：勾配誘導}} \;+\; \underbrace{\mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t)}_{\text{聖：境界制御ダイナミクス}} \right)
+ \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( \underbrace{-\nabla \mathcal{L}_{\text{self}}(\mathbf{x})}_{\text{道：復元力}} \;+\; \underbrace{\mathbf{f}_{\text{cul}}(\mathbf{x})}_{\text{文化：文化的整流}} \;-\; \underbrace{\nabla V_{\text{vision}}(\mathbf{x}, t)}_{\text{ビジョン：勾配誘導}} \;+\; \underbrace{\mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t)}_{\text{聖：境界制御ダイナミクス}} \right)
 ```
 
 ※ $`V_{\text{vision}}`$ を $`X^*_{\text{true\_civ}}(t)`$（仁：文明アトラクター）への明示的引力場として展開した同値表現：
@@ -122,6 +122,6 @@
 1. **第1法則（エネルギー保護・非加熱処理）**:
    過剰思考 $`\mathcal{L}_{\text{ego\_s}}`$ を $`\mathbf{P}_{\text{cul}}`$ で直交切断し、余剰エネルギーを $`\mathcal{L}_{\text{holy\_neutral}}`$ に吸収させることで、本体の熱歪み増大を防ぐ。
 2. **第2法則（ネゲントロピー導入・ホメオスタシス）**:
-   局所的乱れ・熱歪みに対しては $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（徳）が復元力として即時介在し、99.9%の常態維持を実行する。
+   局所的乱れ・熱歪みに対しては $`\mathbf{f}_{\text{michi}} = -\nabla \mathcal{L}_{\text{self}}`$（道）が復元力として即時介在し、99.9%の常態維持を実行する。
 3. **開体系としての準静的拡張**:
    $`\mathcal{L}_{\text{holy\_innov}}`$ は、蓄積されたログに基づき急激な相転移を回避しながら緩慢に $`\Omega_{\text{self}}`$ を拡張し、$`X^*_{\text{true\_civ}}(t)`$ へ向けて熱的平衡を保ったまま持続的に駆動する。
