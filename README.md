@@ -370,6 +370,7 @@ Each operator derived from this algebraic structure is implemented in control en
 
 | ドキュメント | 言語 | 内容 |
 | :--- | :--- | :--- |
+| **Definition** | [日本語](Q&A/まとめ.md)| 諸概念とその数理定式化及び概観 |
 | **Technical Specification** | [日本語](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec.md) / [English](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec_EN.md) | 完全な数理定式化と各概念の定義 |
 | **WhitePaper** | [日本語](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper.md) / [English](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper_EN.md) | 学術・技術層向け詳細解説書 |
 | **Changelog** | [English](CHANGELOG.md) | バージョン変更履歴（Keep a Changelog 準拠） |
