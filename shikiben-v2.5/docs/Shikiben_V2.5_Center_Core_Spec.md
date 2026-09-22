@@ -309,3 +309,73 @@
 
 * **危機信号受信時** ($`t_{\text{crisis}}`$): 即座に $`\mathbf{K}_{ij}^{\text{crisis}}`$ を立ち上げ、安全領域 $`\partial \Omega_{\text{self}}`$ を強制拡大（膜を絞り込み）したのち、減衰定数 $`\tau_{\text{crisis}}`$（例: 1.5秒）で自律的に平時（$`\mathbf{0}`$）へ復帰。
 * **収束同期受信時** ($`t_{\text{attractor}}`$): ポテンシャル曲面に伝達された相 $`\mathbf{y}_{\text{home}}^*`$ のポテンシャルの谷を合成し、減衰定数 $`\tau_{\text{attractor}}`$（例: 5.0秒）の間に全体の軌道を $`X_{\text{true\_civ}}^*`$ へとなだらかにシフトさせる。
+
+## 5.8 最外郭境界 $`\partial \Omega_{\text{self}}`$ と制御障壁関数 $`h(\mathbf{x})`$ の数理厳密表現
+
+### 5.8.1 安全状態集合 $`\mathcal{C}_{\text{self}}`$ と最外郭境界 $`\partial \Omega_{\text{self}}`$ の幾何学的定義
+各分散ノード（Realm） $`i`$ の相空間 $`\mathcal{R}_{\text{self}, i}^{\text{phen}} \subset \mathbb{R}^d`$ における絶対安全集合（Invariant Safety Set） $`\mathcal{C}_{\text{self}}`$ およびその最外郭境界 $`\partial \Omega_{\text{self}}`$ は、連続微分可能な制御障壁関数 $`h: \mathbb{R}^d \to \mathbb{R}`$ の 0-レベルセットとして定義される。
+
+```math
+\begin{aligned}
+\mathcal{C}_{\text{self}} &:= \left\{ \mathbf{x} \in \mathcal{R}_{\text{self}}^{\text{phen}} \;\middle|\; h(\mathbf{x}) \ge 0 \right\} \quad \text{（許容動作領域：自律滑走空間）} \\
+\partial \Omega_{\text{self}} &:= \left\{ \mathbf{x} \in \mathcal{R}_{\text{self}}^{\text{phen}} \;\middle|\; h(\mathbf{x}) = 0 \right\} \quad \text{（最外郭絶対防御膜）} \\
+\text{Int}(\mathcal{C}_{\text{self}}) &:= \left\{ \mathbf{x} \in \mathcal{R}_{\text{self}}^{\text{phen}} \;\middle|\; h(\mathbf{x}) > 0 \right\} \quad \text{（安全内部領域）}
+\end{aligned}
+```
+
+* 幾何学的解釈: 状態 $`\mathbf{x}`$ が $`\text{Int}(\mathcal{C}_{\text{self}})`$ 内に存在する限り、システムは通信ゼロの完全自律（無為自然）で滑行する。状態が最外郭境界 $`\partial \Omega_{\text{self}}`$（$`h(\mathbf{x}) \to 0`$）へ到達した瞬間、非線形作用素 $`S_{\text{law}}`$ が幾何学的壁として剛体的に作用する。
+
+### 5.8.2 制御障壁関数 $`h(\mathbf{x})`$ の具体的多次元曲面方程式
+局所ノードの過負荷（熱歪み・観念肥大・破局的偏向）を複合的に検知・抑制するため、$`h(\mathbf{x})`$ は以下の3成分（熱歪み・容量制約・構造偏向）の非線形曲面方程式として設計される。
+
+```math
+h(\mathbf{x}) := 1 - \underbrace{\left( \frac{\mathcal{L}_{\text{ego\_s}}(\mathbf{x})}{\mathcal{L}_{\text{max}}} \right)^2}_{\text{① 熱歪み（過剰思考）比}} - \underbrace{\frac{\|\nabla E(\mathbf{x})\|^2}{\|\nabla S(\mathbf{x})\|^2 + \epsilon_S}}_{\text{② 従属調和破綻（容量超過）比}} - \underbrace{(\mathbf{x} - \mathbf{y}_{\text{home}})^T \mathbf{M}_{\text{geom}} (\mathbf{x} - \mathbf{y}_{\text{home}})}_{\text{③ 構造的離脱（安息点からの偏向マハラノビス距離）}}
+```
+
+#### 各項の数理意味論とパラメータ
+1. **熱歪み制約項**:
+   * $`\mathcal{L}_{\text{ego\_s}}(\mathbf{x})`$: ノード内部の過剰思考・観念歪みエネルギー。
+   * $`\mathcal{L}_{\text{max}}`$: ノードが熱力学的に許容できる絶体限界歪み量。
+2. **従属調和制約比**（$\nabla E \prec \nabla S$）項:
+   * $`\nabla E(\mathbf{x})`$: 観念的変革・意志向性勾配。
+   * $`\nabla S(\mathbf{x})`$: 生の自律動的容量勾配。
+   * $`\epsilon_S > 0`$: 零除算防止用の正定数。観念勾配が自然容量を超過（$`\Vert{}\nabla E\Vert{} > \Vert{}\nabla S\Vert{}`$）すると、急速に $`h(\mathbf{x})`$ を 0 へ押し下げる。
+3. **構造的離脱曲面項**:
+   * $`\mathbf{y}_{\text{home}}`$: 現在固定されているローカル安息点。
+   * $`\mathbf{M}_{\text{geom}} \succ \mathbf{0}`$: 現象領域の曲率構造を規定する対称正定値行列（リーマン計量テンソル）。
+  
+### 5.8.3 最外郭境界における幾何学的ガード条件（Nagumo・高階CBF条件）
+安全集合 $`\mathcal{C}_{\text{self}}`$ を正の不変集合（すなわち、$`\mathbf{x}(0) \in \mathcal{C}_{\text{self}} \implies \forall t \ge 0, \mathbf{x}(t) \in \mathcal{C}_{\text{self}}`$）として100%保持するための幾何学的ガード条件を定義する。
+
+1. **Nagumoの不変条件（幾何学的法線ベクトル条件）**
+   境界 $`\partial \Omega_{\text{self}}`$ 上の任意の点 $`\mathbf{x} \in \partial \Omega_{\text{self}}`$ において、状態軌道の速度ベクトル $`\frac{\mathrm{d}\mathbf{x}}{\mathrm{d}t}`$ は、境界の法線ベクトル $`\nabla h(\mathbf{x})`$ に対して直交または内向きでなければならない。
+
+```math
+   \forall \mathbf{x} \in \partial \Omega_{\text{self}}, \quad \langle \nabla h(\mathbf{x}), \; \dot{\mathbf{x}}(t) \rangle \ge 0
+```
+
+2. **高階制御障壁（High-Order CBF）条件**
+   力学系 $`\dot{\mathbf{x}} = \mathbf{f}(\mathbf{x}) + \mathbf{g}(\mathbf{x})\mathbf{u}`$ に対し、クラス $`\mathcal{K}_{\infty}`$ の厳密増加関数 $`\alpha(\cdot)`$ を用いた動的ガード条件を設定する。
+
+```math
+   \sup_{\mathbf{u} \in \mathcal{U}} \left\{ L_{\mathbf{f}} h(\mathbf{x}) + L_{\mathbf{g}} h(\mathbf{x})\mathbf{u} + \alpha(h(\mathbf{x})) \right\} \ge 0
+```
+   
+   * $`L_{\mathbf{f}} h(\mathbf{x}) = \langle \nabla h(\mathbf{x}), \mathbf{f}(\mathbf{x}) \rangle`$: 自律滑走ベクトル（自然な勾配 $`\mathcal{T}_{\text{nat}}`$ および文化力 $`\mathbf{f}_{\text{cul}}`$）に沿う $`h`$ のリー微分。
+   * $`L_{\mathbf{g}} h(\mathbf{x})\mathbf{u}`$: 非線形作用素 $`S_{\text{law}}`$ および動的結合テンソル $`\mathbf{K}_{ij}(t)`$ による矯正・介入制御項。
+
+### 5.8.4 法作用素 $S_{\text{law}}$ による絶対制御射影機構
+状態が最外郭境界 $`\partial \Omega_{\text{self}}`$ に到達（$`h(\mathbf{x}) \to 0`$）した際、作用素 $`S_{\text{law}}`$ は以下のように非線形直線射影（Hard Boundary Projection）を瞬時に発動させ、状態の系外突破を絶対的に阻止する。
+
+```math
+S_{\text{law}}\left( \mathbf{v}(\mathbf{x}) \right) = 
+\begin{cases} 
+\mathbf{v}(\mathbf{x}) & \text{if } h(\mathbf{x}) > 0 \;\lor\; \langle \nabla h(\mathbf{x}), \mathbf{v}(\mathbf{x}) \rangle \ge -\alpha(h(\mathbf{x})) \\
+\mathbf{v}(\mathbf{x}) - \dfrac{\langle \nabla h(\mathbf{x}), \mathbf{v}(\mathbf{x}) \rangle + \alpha(h(\mathbf{x}))}{\|\nabla h(\mathbf{x})\|^2} \nabla h(\mathbf{x}) & \text{if } h(\mathbf{x}) \le 0 \;\land\; \langle \nabla h(\mathbf{x}), \mathbf{v}(\mathbf{x}) \rangle < -\alpha(h(\mathbf{x}))
+\end{cases}
+```
+
+### 数理的達成点
+* **完全な境界非突破性**: 上記の射影作用素により、外乱や過剰思考 $`\mathcal{L}_{\text{ego\_s}}`$ がどれほど大に発散しようとも、$`\dot{h}(\mathbf{x}) \ge -\alpha(h(\mathbf{x}))`$ が常に成立し、$`h(\mathbf{x}) < 0`$（破局領域への突入）は数学的に厳密に否定・遮断される。
+* **エネルギーの散逸**: 境界に衝突した超えるべきでないベクトル成分（逸脱方向の運動エネルギー）は、直交射影によって即座に補空間 $`\mathcal{L}_{\text{holy\_neutral}}`$ へとエネルギー散逸・吸収される。
+
