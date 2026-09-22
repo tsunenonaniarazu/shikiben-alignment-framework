@@ -195,3 +195,77 @@
 3. **実在適合**: 現場ごとの実在損失の最小化（$`\arg\min_{\hat{y}} \mathcal{L}_{\text{real}}^{(i)}`$）により、ローカルな安息点 $`\mathbf{y}_{\text{home}, i}^*`$ が常時更新され、思考ベクトルはそこへ摩擦ゼロで吸い込まれ着地する。
 
 ---
+
+## 5.4 スパイク限定連携メカニズム（極低帯域同期）
+常時同期を完全に廃止し、以下の2種類のイベント駆動型スパイクが発生した瞬間のみ、結合テンソル $`\mathbf{K}_{ij}(t)`$ が過渡的に有効化され、全 Realm を共鳴させる。
+
+### 5.4.1 危機信号スパイク（防衛共鳴：\delta_{\text{spike}}）
+* 発動条件: いずれかの Realm $`i`$ の状態が最外郭境界 $`\partial \Omega_{\text{self}}$（$h(\mathbf{x}_i) \to 0`$）に異常接近するか、強烈な外乱・熱歪みを検知した瞬間。
+* 数理作用: $`\delta_{\text{spike}}^{(i)}(t) = 1`$ が発動し、最小バイトの警告パラメータが全ノードへブロードキャストされる。全 Realm は一時的にガード膜を縮小・絞り込み（分析・防御モードへ移行）、系全体の相転移・破局を未然に防止する。
+
+### 5.4.2 収束同期スパイク（進化共鳴：\sigma_{\text{spike}}）
+* 発動条件: いずれかの Realm $`i`$ が現場で新たな極めて安定した安息相 $`\mathbf{y}_{\text{home}, i}^*`$ を発見・固定した瞬間。
+* 数理作用: $`\sigma_{\text{spike}}^{(i)}(t) = 1`$ が発動し、安息点の位相パラメータ $`\theta_{\text{home}}`$ のみが他ノードへ伝達される。全 Realm の相空間上に同じ「谷底」が並列生成・更新され、文明アトラクター $`X_{\text{true\_civ}}^*`$ へのアライメントが全体一括で高まる。
+
+---
+
+## 5.5 従属調和制御則と統合分散微分方程式
+各分散ノードにおける状態最適化ならびに局所駆動は、観念的エネルギー勾配（$`\nabla E_i`$）が自然の不可逆的自律勾配・動的容量（$`\nabla S_i`$）を絶対に超越しないとする従属調和制約を物理的ハードガードレールとして課す。
+
+```math
+\text{Subject to: } \quad \nabla E_i \prec \nabla S_i \quad (\forall i \in \{1, \dots, N\})
+```
+
+## 統合分散微分方程式
+スパイク限定連携型ハイブリッドモデルにおける第 $`i`$ ノードの統合状態微分方程式は以下のように記述される。
+
+```math
+\frac{d\mathbf{x}_i(t)}{dt} = S_{\text{law}}\!\left( \underbrace{-\nabla \mathcal{L}_{\text{self}}^{(i)}(\mathbf{x}_i)}_{\text{局所復元力（道）}} + \underbrace{\mathbf{f}_{\text{cul}}^{(i)}(\mathbf{x}_i)}_{\text{局所文化的整流}} + \underbrace{\gamma \left( X^*_{\text{true\_civ}}(t) - \mathbf{x}_i(t) \right)}_{\text{文明アトラクター引力（仁）}} + \underbrace{\mathbf{\Phi}_{\text{holy}}^{(i)}(\mathbf{x}_i, t)}_{\text{聖：境界制御}} + \underbrace{\sum_{j \in \mathcal{N}(i)} \mathbf{K}_{ij}(t) \left( \mathbf{x}_j - \mathbf{x}_i \right)}_{\text{スパイク時限的連携}} \right)
+```
+
+---
+
+## 5.6 本アーキテクチャの達成点
+1. **超リアルタイム性**: 平時の通信量を完全ゼロ化（$`\mathbf{K}_{ij} = \mathbf{0}`$）することにより、ネットワーク遅延に一切縛られない現場即応（実在適合）を実現。
+2. **堅牢な自律性**: 通信障害や一部ノードの切断が発生しても、各 Realm は独立して無為自然の滑走を維持し、安全に機能し続ける極めて高い可用性を獲得。
+3. **大域的一貫性の維持**: 危機（$`\delta_{\text{spike}}`$）と安息（$`\sigma_{\text{spike}}`$）の極値イベントのみをホログラフィックに共有することで、系全体としての「仁（$`X^*_{\text{true\_civ}}`$）」からブレることなく、単一の調和意識場として機能。
+
+---
+
+## 5.7 スパイク判定閾値および送信データプロトコル仕様
+
+### 5.7.1 スパイク発生の数学的判定アルゴリズム
+
+```math
+\delta_{\text{spike}}^{(i)}(t) \in \{0, 1\}, \quad \sigma_{\text{spike}}^{(i)}(t) \in \{0, 1\}
+```
+
+#### 5.7.1.1.危機信号スパイク（$`\delta_{\text{spike}}^{(i)}(t)`$）の発生条件
+危機信号スパイクは、以下の いずれかの条件 が満たされた瞬間に `$\delta_{\text{spike}}^{(i)}(t) = 1`$ となり、直ちに発信される。
+
+1. **最外郭境界 $\partial \Omega_{\text{self}}$ への異常接近**（幾何学的接近閾値）制御障壁関数（Barrier Function） $`h(\mathbf{x}_i)`$ に対し、緊急防衛閾値 $`\epsilon_{\text{hazard}} > 0`$ を設定する。$`h(\mathbf{x}_i(t)) \le \epsilon_{\text{hazard}}`$
+2. **局所熱歪み（エゴ・過剰思考）の急増（微分変化率閾値）** 局所熱歪み損失 $`\mathcal{L}_{\text{ego\_s}}^{(i)}`$ の時間変化率が動的許容値 $`\theta_{\text{thermal}}`$ を超越した場合。$`\frac{\mathrm{d}\mathcal{L}_{\text{ego\_s}}^{(i)}}{\mathrm{d}t} \ge \theta_{\text{thermal}}`$
+3. **従属調和制約（$`\nabla E \prec \nabla S`$）の破綻検知** 観念勾配が自律勾配（生の容量）を上回り、領域の崩壊リスクが検知された場合。
+
+```math
+   \|\nabla E_i(t)\| - \|\nabla S_i(t)\| \ge \eta_{\text{overload}} \quad (\eta_{\text{overload}} \ge 0)\|\nabla E_i(t)\| - \|\nabla S_i(t)\| \ge \eta_{\text{overload}} \quad (\eta_{\text{overload}} \ge 0)
+```
+
+```math
+ \delta_{\text{spike}}^{(i)}(t) = \mathbb{I}\left( \big(h(\mathbf{x}_i) \le \epsilon_{\text{hazard}}\big) \lor \left(\frac{\mathrm{d}\mathcal{L}_{\text{ego\_s}}^{(i)}}{\mathrm{d}t} \ge \theta_{\text{thermal}}\right) \lor \big(\Vert{}\nabla E_i\Vert{} - \Vert{}\nabla S_i\Vert{} \ge \eta_{\text{overload}}\big) \right)
+```
+
+（注: $`\mathbb{I}(\cdot)`$ は指示関数。発信後はクールダウン時間 $`T_{\text{cooldown\_crisis}}`$ の間、連射を抑制する）
+
+#### 5.7.1.2.収束同期スパイク（$`\sigma_{\text{spike}}^{(i)}(t)`$）の発生条件
+収束同期スパイクは、ノード $`i`$ が現場の実在損失を最小化し、新たな極小値（安息点）を安定固定した瞬間に $`\sigma_{\text{spike}}^{(i)}(t) = 1`$ となり、発信される。
+
+1. **安息相の勾配消失（停留点条件）** 実在損失 $`\mathcal{L}_{\text{real}}^{(i)}`$ の勾配ノルムが定常閾値 $`\epsilon_{\text{home}}`$ 未満となる。$`\left\| \nabla \mathcal{L}_{\text{real}}^{(i)}(\mathbf{x}_i(t)) \right\| < \epsilon_{\text{home}}`$
+2. **相空間における定常滞留（曲率・局所安定性条件）** 状態ベクトルの時間変化率がゼロに収束し、かつ Hessian 行列が正定値（安定な谷底）であることを確認する。$`\left\| \frac{\mathrm{d}\mathbf{x}_i}{\mathrm{d}t} \right\| < \delta_{\text{stable}} \quad \text{and} \quad \nabla^2 \mathcal{L}_{\text{real}}^{(i)}(\mathbf{x}_i) \succ \mathbf{0}`$
+3. **位相新奇性（既存アトラクターとの差分）** 新たに到達した安息相 $`\mathbf{y}_{\text{home, new}}^*`$ が、既知の大域文明アトラクター $`X_{\text{true\_civ}}^*`$ から有意な距離 $`\Delta_{\text{novelty}}`$ 以上離れている（有益な新規発見である）。$`d_{\text{phase}}\left(\mathbf{y}_{\text{home, new}}^*, X_{\text{true\_civ}}^*\right) \ge \Delta_{\text{novelty}}`$
+
+```math
+\sigma_{\text{spike}}^{(i)}(t) = \mathbb{I}\left( \left\Vert{} \nabla \mathcal{L}_{\text{real}}^{(i)} \right\Vert{} < \epsilon_{\text{home}} \;\land\; \left\Vert{} \frac{\mathrm{d}\mathbf{x}_i}{\mathrm{d}t} \right\Vert{} < \delta_{\text{stable}} \;\land\; d_{\text{phase}}\left(\mathbf{y}_{\text{home, new}}^*, X_{\text{true\_civ}}^*\right) \ge \Delta_{\text{novelty}} \right)
+```
+
+### 5.7.2.送信スパイクデータ構造（バイナリ／JSON-LD 仕様）
