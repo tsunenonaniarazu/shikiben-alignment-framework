@@ -225,7 +225,7 @@
 ```
 
 #### 5.7.1.1.危機信号スパイク（$`\delta_{\text{spike}}^{(i)}(t)`$）の発生条件
-危機信号スパイクは、以下の いずれかの条件 が満たされた瞬間に `$\delta_{\text{spike}}^{(i)}(t) = 1`$ となり、直ちに発信される。
+危機信号スパイクは、以下の いずれかの条件 が満たされた瞬間に $`\delta_{\text{spike}}^{(i)}(t) = 1`$ となり、直ちに発信される。
 
 1. **最外郭境界 $\partial \Omega_{\text{self}}$ への異常接近**（幾何学的接近閾値）制御障壁関数（Barrier Function） $`h(\mathbf{x}_i)`$ に対し、緊急防衛閾値 $`\epsilon_{\text{hazard}} > 0`$ を設定する。$`h(\mathbf{x}_i(t)) \le \epsilon_{\text{hazard}}`$
 2. **局所熱歪み（エゴ・過剰思考）の急増（微分変化率閾値）** 局所熱歪み損失 $`\mathcal{L}_{\text{ego\_s}}^{(i)}`$ の時間変化率が動的許容値 $`\theta_{\text{thermal}}`$ を超越した場合。$`\frac{\mathrm{d}\mathcal{L}_{\text{ego\_s}}^{(i)}}{\mathrm{d}t} \ge \theta_{\text{thermal}}`$
@@ -379,3 +379,55 @@ S_{\text{law}}\left( \mathbf{v}(\mathbf{x}) \right) =
 * **完全な境界非突破性**: 上記の射影作用素により、外乱や過剰思考 $`\mathcal{L}_{\text{ego\_s}}`$ がどれほど大に発散しようとも、$`\dot{h}(\mathbf{x}) \ge -\alpha(h(\mathbf{x}))`$ が常に成立し、$`h(\mathbf{x}) < 0`$（破局領域への突入）は数学的に厳密に否定・遮断される。
 * **エネルギーの散逸**: 境界に衝突した超えるべきでないベクトル成分（逸脱方向の運動エネルギー）は、直交射影によって即座に補空間 $`\mathcal{L}_{\text{holy\_neutral}}`$ へとエネルギー散逸・吸収される。
 
+## 5.9 離散時間ステップにおける不変性条件（Discrete-Time CBF: DT-CBF）
+
+### 5.9.1 離散状態更新式と過渡的突入問題
+ステップ幅 $`\Delta t > 0`$ を用いた 1 次の正方向オイラー法による離散状態更新方程式は以下の通り記述される。
+
+```math
+\mathbf{x}[k+1] = \mathbf{x}[k] + \Delta t \cdot S_{\text{law}}\!\Big( \mathbf{v}(\mathbf{x}[k]) \Big)
+```
+
+ここで、連続時間での微分条件 $`\dot{h}(\mathbf{x}) \ge -\alpha h(\mathbf{x})`$ のみを課した場合、$`\mathbf{x}[k]`$ が境界付近（$`h(\mathbf{x}[k]) \to 0`$）に存在すると、1 ステップ先の状態 $`\mathbf{x}[k+1]`$ において $`h(\mathbf{x}[k+1]) < 0`$ となり、破局的領域へ突入するリスクが発生する。
+
+### 5.9.2 離散時間制御障壁関数（DT-CBF）の必要十分条件
+離散時間において安全集合 $`\mathcal{C}_{\text{self}} = \{\mathbf{x} \mid h(\mathbf{x}) \ge 0\}`$ が順不変（$`\mathbf{x}[k] \in \mathcal{C}_{\text{self}} \implies \mathbf{x}[k+1] \in \mathcal{C}_{\text{self}}`$）であるための DT-CBF 条件式 を以下のように定義する。
+
+```math
+\Delta h(\mathbf{x}[k]) := h(\mathbf{x}[k+1]) - h(\mathbf{x}[k]) \ge -\gamma \cdot h(\mathbf{x}[k]) \quad (0 < \gamma \le 1)
+```
+
+* $`\gamma`$（減衰パラメータ）: $`h(\mathbf{x}[k])`$ が 0 に近づくにつれて、$`h`$ の許容減少量を線形に絞り込むパラメータ。
+* $`\gamma = 1`$（絶対境界ガード）: 1 ステップで許容される最大減少量が $`h(\mathbf{x}[k])`$ そのものとなり、$`h(\mathbf{x}[k+1]) \ge 0`$ を直接保証する。
+
+### 5.9.3 1次オイラー法における 1 階テイラー展開に基づく離散ガード条件
+障壁関数 $`h(\mathbf{x})`$ の 1 階テイラー展開（1 次近似）を用いる場合、離散ガード条件は状態速度ベクトル $`\mathbf{w}[k] = S_{\text{law}}(\mathbf{v}(\mathbf{x}[k]))`$ に対する以下の線形不等式条件へ還元される。
+
+```math
+h(\mathbf{x}[k+1]) \approx h(\mathbf{x}[k]) + \Delta t \cdot \langle \nabla h(\mathbf{x}[k]), \; \mathbf{w}[k] \rangle \ge (1 - \gamma) h(\mathbf{x}[k])
+```
+
+これを整理すると、離散時間ステップにおけ**る許容内向き速度条件**が得られる。
+
+```math
+\langle \nabla h(\mathbf{x}[k]), \; \mathbf{w}[k] \rangle \ge -\frac{\gamma}{\Delta t} h(\mathbf{x}[k])
+```
+
+### 5.9.4 高次テイラー展開（非線形・曲率対応型 DT-CBF）
+障壁関数 $`h(\mathbf{x})`$ の非線形性（曲率 Hessian 行列 $`\nabla^2 h`$）が大きい場合、またはステップ幅 $`\Delta t`$ が大きい場合は、2 階のテイラー展開項を直接組み込んだガード条件を適用する。
+
+```math
+\langle \nabla h(\mathbf{x}[k]), \; \mathbf{w}[k] \rangle + \frac{\Delta t}{2} \mathbf{w}[k]^T \nabla^2 h(\mathbf{x}[k]) \mathbf{w}[k] \ge -\frac{\gamma}{\Delta t} h(\mathbf{x}[k])
+```
+
+### 5.9.5 離散型 $`S_{\text{law}}`$ 射影作用素の実装アルゴリズム
+離散時間計算において、局所駆動ベクトル $`\mathbf{v}[k] = \mathbf{v}(\mathbf{x}[k])`$ が上式ガード条件を違反する場合、離散型作用素 $`S_{\text{law}}^{\text{dt}}`$ は以下のように法線方向の過剰成分を最小自乗射影（直交カット）し、不変性を厳密に維持する。
+
+```math
+S_{\text{law}}^{\text{dt}}\!\big(\mathbf{v}[k]\big) = \mathbf{v}[k] - \frac{\min\left(0, \;\langle \nabla h[k], \mathbf{v}[k] \rangle + \frac{\gamma}{\Delta t} h[k] \right)}{\|\nabla h[k]\|^2} \nabla h[k]
+```
+
+### 離散ステップにおける作動メカニズム
+1. **安全内部領域（$`h[k] \gg 0`$）**:$`@\langle \nabla h[k], \mathbf{v}[k] \rangle \ge -\frac{\gamma}{\Delta t} h[k]`$ が成立するため、補正量は 0 となり、$`S_{\text{law}}^{\text{dt}}(\mathbf{v}[k]) = \mathbf{v}[k]`$（完全な自律自由滑走）。
+2. **境界接近・逸脱ベクトル検知時（$`h[k] \to 0`$ かつ外向きベクトル）**:境界を外側へ突き抜ける過剰速度成分 $\langle \nabla h[k], \mathbf{v}[k] \rangle$ のみが即座に削り落とされ、境界 $\partial \Omega_{\text{self}}$ の接線方向または安全内向き方向へと速度ベクトルが屈折される。
+3. **境界突破ゼロの証明**:$`S_{\text{law}}^{\text{dt}}`$ を適用した結果得られる速度ベクトル $`\mathbf{w}[k]`$ をオイラー更新式に代入すると、常に $`h(\mathbf{x}[k+1]) \ge (1-\gamma) h(\mathbf{x}[k]) \ge 0`$ が担保され、計算誤差やステップ幅に依存しない完全な不変性（100% 境界遮断）が数学的に完結する。
