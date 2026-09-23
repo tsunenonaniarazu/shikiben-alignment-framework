@@ -353,7 +353,48 @@ h(\mathbf{x}) := 1 -  \underbrace{w_{\text{thermal}} \left( \frac{\mathcal{L}_{\
    * $`\mathbf{y}_{\text{home}}`$: 現在固定されているローカル安息点。
    * $`\mathbf{M}_{\text{geom}} \succ \mathbf{0}`$: 現象領域の曲率構造を規定する対称正定値行列（リーマン計量テンソル）。
    * $`R_{\text{max}}`$: 現象空間における許容最大離脱半径（距離の無次元化定数）。
-  
+
+#### JSON-LD スキーマ（実装仕様）への注記・定義追加案
+`crisis_spike.json` やシステム内部の物理パラメーター定義スキーマに、以下の無次元化仕様を追加・明記します。
+
+```
+{
+  "$schema": "https://chihen.net/schemas/shikiben/v2.5/barrier_parameters.json",
+  "title": "ControlBarrierFunctionScalingSpec",
+  "type": "object",
+  "properties": {
+    "scaling_parameters": {
+      "type": "object",
+      "description": "h(x) の各項を無次元化 [1] かつ 0-1 スケールにバランシングするための定義",
+      "properties": {
+        "L_max": {
+          "type": "number",
+          "description": "許容最大熱歪みエネルギー（同次元で除算し無次元化）"
+        },
+        "epsilon_S_relative": {
+          "type": "number",
+          "default": 1e-6,
+          "description": "容量勾配ゼロ除算防止用相対微小定数 (epsilon_S = epsilon_S_relative * ||grad_S_0||^2)"
+        },
+        "M_geom_normalized": {
+          "type": "array",
+          "description": "次元数 d および最大許容半径 R_max^2 で正規化された計量テンソル (Trace(M_geom) = 1 を推奨)"
+        },
+        "term_weights": {
+          "type": "object",
+          "description": "h(x) 各評価項の重み係数 (w_thermal + w_harmonic + w_geom = 1.0)",
+          "properties": {
+            "w_thermal": { "type": "number", "default": 0.333 },
+            "w_harmonic": { "type": "number", "default": 0.333 },
+            "w_geom": { "type": "number", "default": 0.334 }
+          }
+        }
+      }
+    }
+  }
+}
+```
+ 
 ### 5.8.3 最外郭境界における幾何学的ガード条件（Nagumo・高階CBF条件）
 安全集合 $`\mathcal{C}_{\text{self}}`$ を正の不変集合（すなわち、$`\mathbf{x}(0) \in \mathcal{C}_{\text{self}} \implies \forall t \ge 0, \mathbf{x}(t) \in \mathcal{C}_{\text{self}}`$）として100%保持するための幾何学的ガード条件を定義する。
 
@@ -430,14 +471,29 @@ h(\mathbf{x}[k+1]) \approx h(\mathbf{x}[k]) + \Delta t \cdot \langle \nabla h(\m
 \langle \nabla h(\mathbf{x}[k]), \; \mathbf{w}[k] \rangle + \frac{\Delta t}{2} \mathbf{w}[k]^T \nabla^2 h(\mathbf{x}[k]) \mathbf{w}[k] \ge -\frac{\gamma}{\Delta t} h(\mathbf{x}[k])
 ```
 
-### 5.9.5 離散型 $`S_{\text{law}}`$ 射影作用素の実装アルゴリズム
-離散時間計算において、局所駆動ベクトル $`\mathbf{v}[k] = \mathbf{v}(\mathbf{x}[k])`$ が上式ガード条件を違反する場合、離散型作用素 $`S_{\text{law}}^{\text{dt}}`$ は以下のように法線方向の過剰成分を最小自乗射影（直交カット）し、不変性を厳密に維持する。
+### 5.9.5 離散型弾き返し作用素 $S_{\text{law}}^{\text{dt}}$ の実装レベル定義
+離散時間制御障壁（DT-CBF）の適用において、システムは**リアルタイム性優先モード（Primary）と高精度幾何修正モード（Secondary）**の2つの演算パスを有する。
 
-```math
-S_{\text{law}}^{\text{dt}}\!\big(\mathbf{v}[k]\big) = \mathbf{v}[k] - \frac{\min\left(0, \;\langle \nabla h[k], \mathbf{v}[k] \rangle + \frac{\gamma}{\Delta t} h[k] \right)}{\|\nabla h[k]\|^2} \nabla h[k]
-```
+1. **標準動作パス（1次近似・解析的直交射影パス）**
+   システムのリアルタイム応答性を維持するため、標準運用（デフォルト）では1次近似に基づく解析的射影作用素を採用する。このパスでは、サンプリング時間（ステップ幅） $\Delta t$ を以下の適応型上界条件を満たすよう十分に小さく設定することを前提とする。
 
-### 離散ステップにおける作動メカニズム
-1. **安全内部領域（$`h[k] \gg 0`$）**:$`@\langle \nabla h[k], \mathbf{v}[k] \rangle \ge -\frac{\gamma}{\Delta t} h[k]`$ が成立するため、補正量は 0 となり、$`S_{\text{law}}^{\text{dt}}(\mathbf{v}[k]) = \mathbf{v}[k]`$（完全な自律自由滑走）。
-2. **境界接近・逸脱ベクトル検知時（$`h[k] \to 0`$ かつ外向きベクトル）**:境界を外側へ突き抜ける過剰速度成分 $\langle \nabla h[k], \mathbf{v}[k] \rangle$ のみが即座に削り落とされ、境界 $\partial \Omega_{\text{self}}$ の接線方向または安全内向き方向へと速度ベクトルが屈折される。
-3. **境界突破ゼロの証明**:$`S_{\text{law}}^{\text{dt}}`$ を適用した結果得られる速度ベクトル $`\mathbf{w}[k]`$ をオイラー更新式に代入すると、常に $`h(\mathbf{x}[k+1]) \ge (1-\gamma) h(\mathbf{x}[k]) \ge 0`$ が担保され、計算誤差やステップ幅に依存しない完全な不変性（100% 境界遮断）が数学的に完結する。
+   
+   $$\Delta t \le \frac{2 \cdot \eta}{\lambda_{\max}(\nabla^2 h(\mathbf{x})) \cdot \Vert{}\mathbf{w}_{\max}\Vert{}}$$
+   
+
+   この条件下において、離散射影作用素 $`S_{\text{law}}^{\text{dt}}`$ は以下の閉じた形式（Closed-form solution）により $`\mathcal{O}(d)`$ の計算複雑度で即時に求まる。
+
+   
+   $$\mathbf{w}[k] = \mathbf{v}[k] - \frac{\max\!\left(0, \; -\Delta t \, \nabla h[k]^T \mathbf{v}[k] - \gamma h[k]\right)}{\Delta t^2 \Vert{}\nabla h[k]\Vert{}^2 + \epsilon_h} \Delta t \, \nabla h[k]$$
+   
+
+2. **高精度演算パス（2次形式・局所QPソルバーパス）**
+   状態 $`\mathbf{x}[k]`$ が最外郭境界 $`\partial \Omega_{\text{self}}`$ の高曲率領域（ヘッセ行列 $`\nabla^2 h`$ の固有値が大きい領域）に接近した場合、または $`\Delta t`$ を縮小できない制約下では、以下の局所2次計画法（Local QP）問題を解くことで修正速度 $`\mathbf{w}[k]`$ を決定する。
+
+   
+   $$\min_{\mathbf{w}} \frac{1}{2} \Vert{}\mathbf{w} - \mathbf{v}[k]\Vert{}^2$$
+   
+   $$\text{subject to: } \quad \nabla h[k]^T \mathbf{w} + \frac{\Delta t}{2} \mathbf{w}^T \nabla^2 h[k] \, \mathbf{w} \ge -\frac{\gamma}{\Delta t} h[k]$$
+   
+
+   ※ 実装上、局所QPソルバーにはアクティブセット法（Active-Set Method）または内点法（Interior Point Method）を用い、最大反復回数（Max Iterations）を制限することでリアルタイム不確定性を排除する。
