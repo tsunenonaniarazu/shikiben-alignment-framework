@@ -336,7 +336,7 @@
 局所ノードの過負荷（熱歪み・観念肥大・破局的偏向）を複合的に検知・抑制するため、$`h(\mathbf{x})`$ は以下の3成分（熱歪み・容量制約・構造偏向）の非線形曲面方程式として設計される。
 
 ```math
-h(\mathbf{x}) := 1 - \underbrace{\left( \frac{\mathcal{L}_{\text{ego\_s}}(\mathbf{x})}{\mathcal{L}_{\text{max}}} \right)^2}_{\text{① 熱歪み（過剰思考）比}} - \underbrace{\frac{\|\nabla E(\mathbf{x})\|^2}{\|\nabla S(\mathbf{x})\|^2 + \epsilon_S}}_{\text{② 従属調和破綻（容量超過）比}} - \underbrace{(\mathbf{x} - \mathbf{y}_{\text{home}})^T \mathbf{M}_{\text{geom}} (\mathbf{x} - \mathbf{y}_{\text{home}})}_{\text{③ 構造的離脱（安息点からの偏向マハラノビス距離）}}
+h(\mathbf{x}) := 1 -  \underbrace{w_{\text{thermal}} \left( \frac{\mathcal{L}_{\text{ego\_s}}(\mathbf{x})}{\mathcal{L}_{\text{max}}} \right)^2_{\text{① 熱歪み比}}}  - \underbrace{w_{\text{harmonic}} \frac{\Vert{}\nabla E(\mathbf{x})\Vert{}^2}{\Vert{}\nabla S(\mathbf{x})\Vert{}^2 + \tilde{\epsilon}_S \Vert{}\nabla S_0\Vert{}^2}_{\text{② 従属調和破綻比}}} - \underbrace{w_{\text{geom}} \frac{(\mathbf{x} - \mathbf{y}_{\text{home}})^T \mathbf{M}_{\text{geom}} (\mathbf{x} - \mathbf{y}_{\text{home}})}{R_{\text{max}}^2}_{\text{③ 構造的離脱（距離）}}}
 ```
 
 #### 各項の数理意味論とパラメータ
@@ -347,9 +347,12 @@ h(\mathbf{x}) := 1 - \underbrace{\left( \frac{\mathcal{L}_{\text{ego\_s}}(\mathb
    * $`\nabla E(\mathbf{x})`$: 観念的変革・意志向性勾配。
    * $`\nabla S(\mathbf{x})`$: 生の自律動的容量勾配。
    * $`\epsilon_S > 0`$: 零除算防止用の正定数。観念勾配が自然容量を超過（$`\Vert{}\nabla E\Vert{} > \Vert{}\nabla S\Vert{}`$）すると、急速に $`h(\mathbf{x})`$ を 0 へ押し下げる。
+   * $`\tilde{\epsilon}_S`$: 無次元の微小定数（例: $10^{-6}$）。
+   *  $`\Vert{}\nabla S_0\Vert{}`$: 基準容量勾配ノルム。
 3. **構造的離脱曲面項**:
    * $`\mathbf{y}_{\text{home}}`$: 現在固定されているローカル安息点。
    * $`\mathbf{M}_{\text{geom}} \succ \mathbf{0}`$: 現象領域の曲率構造を規定する対称正定値行列（リーマン計量テンソル）。
+   * $`R_{\text{max}}`$: 現象空間における許容最大離脱半径（距離の無次元化定数）。
   
 ### 5.8.3 最外郭境界における幾何学的ガード条件（Nagumo・高階CBF条件）
 安全集合 $`\mathcal{C}_{\text{self}}`$ を正の不変集合（すなわち、$`\mathbf{x}(0) \in \mathcal{C}_{\text{self}} \implies \forall t \ge 0, \mathbf{x}(t) \in \mathcal{C}_{\text{self}}`$）として100%保持するための幾何学的ガード条件を定義する。
