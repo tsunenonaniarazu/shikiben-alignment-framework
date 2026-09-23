@@ -478,7 +478,7 @@ h(\mathbf{x}[k+1]) \approx h(\mathbf{x}[k]) + \Delta t \cdot \langle \nabla h(\m
 
    
    $$\Delta t \le \frac{2 \cdot \eta}{\lambda_{\max}(\nabla^2 h(\mathbf{x})) \cdot \Vert{}\mathbf{w}_{\max}\Vert{}}$$
-   
+   （ここで $`\eta \in (0, 1)`$ は安全余裕マージン係数、$`\lambda_{\max}(\nabla^2 h)`$ はヘッセ行列の最大固有値、$`\Vert{}\mathbf{w}_{\max}\Vert{}`$ はシステムの許容最大速度ノルムを表す）
 
    この条件下において、離散射影作用素 $`S_{\text{law}}^{\text{dt}}`$ は以下の閉じた形式（Closed-form solution）により $`\mathcal{O}(d)`$ の計算複雑度で即時に求まる。
 
