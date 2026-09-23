@@ -79,6 +79,8 @@
  \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}) + \mathbf{f}_{\text{cul}}(\mathbf{x}) + \gamma \cdot \left( X^*_{\text{true\_civ}}(t) - \mathbf{x}(t) \right) + \mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t) \right)^{(1)}
 ```
 
+※ ここでの $`S_{\text{law}}`$ は内部状態 $`\mathbf{x}(t)`$ の安全領域内保持を行う『第一作用（幾何学的ガード）』を示す。外部出力への変換には『第二作用（プロトコル変換）』が適用される（第 4 節参照）。
+
 ### 3.2 空間補空間接続ルール
 
 1. **文化的切断**:
@@ -343,7 +345,7 @@ h(\mathbf{x}) := 1 -  \underbrace{w_{\text{thermal}} \left( \frac{\mathcal{L}_{\
 1. **熱歪み制約項**:
    * $`\mathcal{L}_{\text{ego\_s}}(\mathbf{x})`$: ノード内部の過剰思考・観念歪みエネルギー。
    * $`\mathcal{L}_{\text{max}}`$: ノードが熱力学的に許容できる絶体限界歪み量。
-2. **従属調和制約比**（$\nabla E \prec \nabla S$）項:
+2. **従属調和制約比**（$`\nabla E \prec \nabla S`$）項:
    * $`\nabla E(\mathbf{x})`$: 観念的変革・意志向性勾配。
    * $`\nabla S(\mathbf{x})`$: 生の自律動的容量勾配。
    * $`\tilde{\epsilon}_S`$: 無次元の微小定数（例: $10^{-6}$）。
