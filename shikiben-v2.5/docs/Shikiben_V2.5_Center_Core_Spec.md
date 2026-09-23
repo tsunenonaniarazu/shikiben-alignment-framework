@@ -260,6 +260,27 @@
 ```math
 \sigma_{\text{spike}}^{(i)}(t) = \mathbb{I}\left( \left\Vert{} \nabla \mathcal{L}_{\text{real}}^{(i)} \right\Vert{} < \epsilon_{\text{home}} \;\land\; \left\Vert{} \frac{\mathrm{d}\mathbf{x}_i}{\mathrm{d}t} \right\Vert{} < \delta_{\text{stable}} \;\land\; d_{\text{phase}}\left(\mathbf{y}_{\text{home, new}}^*, X_{\text{true\_civ}}^*\right) \ge \Delta_{\text{novelty}} \right)
 ```
+##### 【補足注記 5.7.1.2.a】 収束同期スパイク（$`\sigma_{\text{spike}}`$）のチャタリング抑制規約
+アトラクター（極小値 $`\nabla \mathcal{L}_{\text{real}}^{(i)} \approx \mathbf{0}`$）近傍における観測ノイズおよび数値的微小振動に起因する収束同期スパイク（$`\sigma_{\text{spike}}`$）の高周波連続発射（チャタリング）を完全に防止するため、各分散ノードは以下の不応期・ヒステリシス複合フィルタ機構を実装しなければならない。
+
+1. **時間的不応期（Refractory Period / Cool-down Time）**
+ノード $`i`$ が $`\sigma_{\text{spike}}^{(i)} = 1`$ を発射した直後、規定の時間 $`T_{\text{cooldown\_attractor}}`$（システム標準値: $`0.5 \text{ s}`$ または $`50 \times \Delta t`$）が経過するまで、いかなる場合も新たな収束同期スパイクの再発射を禁止する。不応期タイマー $`\tau_{\text{ref}}^{(i)}`$ のダイナミクスは以下に従う。
+
+```math
+\dot{\tau}_{\text{ref}}^{(i)}(t) = -1 \quad (\tau_{\text{ref}}^{(i)} > 0), \qquad \sigma_{\text{spike}}^{(i)}(t) = 1 \implies \tau_{\text{ref}}^{(i)}(t^+) = T_{\text{cooldown\_attractor}}
+```
+
+2. **双安定ヒステリシス（Schmitt-Trigger Thresholds）**
+収束進入判定（発射）閾値 $`\epsilon_{\text{attractor\_in}}`$ に対し、脱出判定（リセット）閾値 $`\epsilon_{\text{attractor\_out}} = \alpha_{\text{hyst}} \cdot \epsilon_{\text{attractor\_in}}`$ （ただし $`\alpha_{\text{hyst}} \ge 2.0`$）を設定する。
+ノードは一度進入判定（$`\Vert{}\nabla \mathcal{L}\Vert{} \le \epsilon_{\text{attractor\_in}}`$）が成立してスパイクを発射した後、勾配ノルムが脱出閾値 $`\epsilon_{\text{attractor\_out}}`$ を上回ってアトラクター外へ離脱しない限り、内部進入状態フラグ $`S_{\text{in\_attractor}} = 1`$ を保持する。スパイクの発射は $`S_{\text{in\_attractor}}`$ の $`0 \to 1`$ への立ち上がりエッジ（Positive Edge）でのみトリガーされる。
+
+3. **統合スパイク発射関数**
+上記を統合した収束同期スパイクの決定論的発射関数は以下のように定式化される。
+
+```math
+\sigma_{\text{spike}}^{(i)}(t) = \mathbb{I}\Big( \underbrace{\overline{\Vert{}\nabla \mathcal{L}_{\text{real}}^{(i)}\Vert{}} \le \epsilon_{\text{attractor\_in}}}_{\text{平滑化勾配}} \Big) \cdot \mathbb{I}\Big( \underbrace{\lambda_{\min}\left(\nabla^2 \mathcal{L}_{\text{real}}^{(i)}\right) > 0}_{\text{極小点（谷底）}} \Big) \cdot \mathbb{I}\Big( \underbrace{S_{\text{in\_attractor}}(t^-) == 0}_{\text{新規進入}} \Big) \cdot \mathbb{I}\Big( \underbrace{\tau_{\text{ref}}^{(i)}(t) == 0}_{\text{不応期明け}} \Big)
+```
+これにより、通信帯域のスパイク・ストーム（Spike Storm）による不達・遅延を回避し、大域的安全性信号（$\delta_{\text{spike}}$）の超低遅延伝送空間を定常的に確保する。
 
 ### 5.7.2.送信スパイクデータ構造（バイナリ／JSON-LD 仕様）
 極低帯域を維持するため、全スパイクパケットはヘッダー固定長（最少 32 バイト〜）の極小ペイロードで構成する。
@@ -479,22 +500,47 @@ h(\mathbf{x}[k+1]) \approx h(\mathbf{x}[k]) + \Delta t \cdot \langle \nabla h(\m
    システムのリアルタイム応答性を維持するため、標準運用（デフォルト）では1次近似に基づく解析的射影作用素を採用する。このパスでは、サンプリング時間（ステップ幅） $\Delta t$ を以下の適応型上界条件を満たすよう十分に小さく設定することを前提とする。
 
    
-   $$\Delta t \le \frac{2 \cdot \eta}{\lambda_{\max}(\nabla^2 h(\mathbf{x})) \cdot \Vert{}\mathbf{w}_{\max}\Vert{}}$$
+```math
+\Delta t \le \frac{2 \cdot \eta}{\lambda_{\max}(\nabla^2 h(\mathbf{x})) \cdot \Vert{}\mathbf{w}_{\max}\Vert{}}
+```
    （ここで $`\eta \in (0, 1)`$ は安全余裕マージン係数、$`\lambda_{\max}(\nabla^2 h)`$ はヘッセ行列の最大固有値、$`\Vert{}\mathbf{w}_{\max}\Vert{}`$ はシステムの許容最大速度ノルムを表す）
 
    この条件下において、離散射影作用素 $`S_{\text{law}}^{\text{dt}}`$ は以下の閉じた形式（Closed-form solution）により $`\mathcal{O}(d)`$ の計算複雑度で即時に求まる。
 
-   
-   $$\mathbf{w}[k] = \mathbf{v}[k] - \frac{\max\!\left(0, \; -\Delta t \, \nabla h[k]^T \mathbf{v}[k] - \gamma h[k]\right)}{\Delta t^2 \Vert{}\nabla h[k]\Vert{}^2 + \epsilon_h} \Delta t \, \nabla h[k]$$
+```math  
+\mathbf{w}[k] = \mathbf{v}[k] - \frac{\max\!\left(0, \; -\Delta t \, \nabla h[k]^T \mathbf{v}[k] - \gamma h[k]\right)}{\Delta t^2 \Vert{}\nabla h[k]\Vert{}^2 + \epsilon_h} \Delta t \, \nabla h[k]
+```
    
 
 2. **高精度演算パス（2次形式・局所QPソルバーパス）**
    状態 $`\mathbf{x}[k]`$ が最外郭境界 $`\partial \Omega_{\text{self}}`$ の高曲率領域（ヘッセ行列 $`\nabla^2 h`$ の固有値が大きい領域）に接近した場合、または $`\Delta t`$ を縮小できない制約下では、以下の局所2次計画法（Local QP）問題を解くことで修正速度 $`\mathbf{w}[k]`$ を決定する。
 
+```math   
+\min_{\mathbf{w}} \frac{1}{2} \Vert{}\mathbf{w} - \mathbf{v}[k]\Vert{}^2
+```
    
-   $$\min_{\mathbf{w}} \frac{1}{2} \Vert{}\mathbf{w} - \mathbf{v}[k]\Vert{}^2$$
-   
-   $$\text{subject to: } \quad \nabla h[k]^T \mathbf{w} + \frac{\Delta t}{2} \mathbf{w}^T \nabla^2 h[k] \, \mathbf{w} \ge -\frac{\gamma}{\Delta t} h[k]$$
+```math
+\text{subject to: } \quad \nabla h[k]^T \mathbf{w} + \frac{\Delta t}{2} \mathbf{w}^T \nabla^2 h[k] \, \mathbf{w} \ge -\frac{\gamma}{\Delta t} h[k]
+```
    
 
    ※ 実装上、局所QPソルバーにはアクティブセット法（Active-Set Method）または内点法（Interior Point Method）を用い、最大反復回数（Max Iterations）を制限することでリアルタイム不確定性を排除する。
+
+#### 【補足注記 5.9.5.a】 局所 QP パスにおける Infeasibility 対策（Relaxed DT-CBF）
+高精度演算パス（2次形式・局所 QP）において、アクチュエータ出力限界 $`\mathcal{U}_{\text{admissible}}`$ と幾何学的安全制約が過渡的な大外乱や高曲率領域で競合し、ハード制約 QP が実行不能（Infeasible）となるリスクを回避するため、システムは以下の多重フォールバック機構を備えるものとする。
+
+1. **スラック変数によるソフト制約化（Relaxed DT-CBF）**
+   制御障壁条件にスラック変数 $\xi \ge 0$ を導入し、L1/L2 複合ペナルティを付与した二次計画問題へ自動的に緩和する。
+
+```math
+\min_{\mathbf{w} \in \mathcal{U}_{\text{admissible}}, \, \xi \ge 0} \frac{1}{2} \Vert{}\mathbf{w} - \mathbf{v}[k]\Vert{}^2 + C_{\text{hard}} \, \xi + \frac{1}{2} C_{\text{quad}} \, \xi^2
+```
+
+```math
+\text{s.t.} \quad \Delta t \, \nabla h(\mathbf{x}[k])^T \mathbf{w} + \gamma h(\mathbf{x}[k]) + \xi \ge 0
+```
+
+   ここで、ペナルティ係数は $`C_{\text{hard}} \gg C_{\text{quad}} \gg 1`$（例: $`C_{\text{hard}} = 10^5, C_{\text{quad}} = 10^3`$）に設定し、通常動作時は $`\xi = 0`$（厳密な不変集合維持）を全自動で優先させつつ、極限状態でのみ数値的解の連続性を担保する。
+
+2. **1次解析的射影パスへの決定論的フォールバック**
+   Relaxed QP ソルバーが指定計算時間（Time-budget）内に収束しない、あるいは数値的特異性に達した場合は、即座に 第 5.9.5 節の式（1次射影作用素 $`S_{\text{law}}^{\text{dt}}`$） による $`\mathcal{O}(d)`$ の決定論的解析解へと切り替える。これにより、制御ループのリアルタイム性（Zero-Crash）を 100% 決定論的に保証する。
