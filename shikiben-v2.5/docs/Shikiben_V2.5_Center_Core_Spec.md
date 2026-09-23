@@ -232,7 +232,7 @@
 3. **従属調和制約（$`\nabla E \prec \nabla S`$）の破綻検知** 観念勾配が自律勾配（生の容量）を上回り、領域の崩壊リスクが検知された場合。
 
 ```math
-   \|\nabla E_i(t)\| - \|\nabla S_i(t)\| \ge \eta_{\text{overload}} \quad (\eta_{\text{overload}} \ge 0)\|\nabla E_i(t)\| - \|\nabla S_i(t)\| \ge \eta_{\text{overload}} \quad (\eta_{\text{overload}} \ge 0)
+\|\nabla E_i(t)\| - \|\nabla S_i(t)\| \ge \eta_{\text{overload}} \quad (\eta_{\text{overload}} \ge 0)
 ```
 
 ```math
