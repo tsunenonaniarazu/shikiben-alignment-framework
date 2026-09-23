@@ -346,9 +346,8 @@ h(\mathbf{x}) := 1 -  \underbrace{w_{\text{thermal}} \left( \frac{\mathcal{L}_{\
 2. **従属調和制約比**（$\nabla E \prec \nabla S$）項:
    * $`\nabla E(\mathbf{x})`$: 観念的変革・意志向性勾配。
    * $`\nabla S(\mathbf{x})`$: 生の自律動的容量勾配。
-   * $`\epsilon_S > 0`$: 零除算防止用の正定数。観念勾配が自然容量を超過（$`\Vert{}\nabla E\Vert{} > \Vert{}\nabla S\Vert{}`$）すると、急速に $`h(\mathbf{x})`$ を 0 へ押し下げる。
    * $`\tilde{\epsilon}_S`$: 無次元の微小定数（例: $10^{-6}$）。
-   *  $`\Vert{}\nabla S_0\Vert{}`$: 基準容量勾配ノルム。
+   *  $`\Vert{}\nabla S_0\Vert{}`$: 基準容量勾配ノルム（$`\epsilon_S = \tilde{\epsilon}_S \Vert{}\nabla S_0\Vert{}^2`$ により項の次元を $`\Vert{}\nabla S\Vert{}^2`$ と完全一致させる）。
 3. **構造的離脱曲面項**:
    * $`\mathbf{y}_{\text{home}}`$: 現在固定されているローカル安息点。
    * $`\mathbf{M}_{\text{geom}} \succ \mathbf{0}`$: 現象領域の曲率構造を規定する対称正定値行列（リーマン計量テンソル）。
