@@ -70,13 +70,13 @@
 ### 3.1 統合状態方程式
 
 ```math
- \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( \underbrace{-\nabla \mathcal{L}_{\text{self}}(\mathbf{x})}_{\text{道：復元力}} \;+\; \underbrace{\mathbf{f}_{\text{cul}}(\mathbf{x})}_{\text{文化：文化的整流}} \;-\; \underbrace{\nabla V_{\text{vision}}(\mathbf{x}, t)}_{\text{ビジョン：勾配誘導}} \;+\; \underbrace{\mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t)}_{\text{聖：境界制御ダイナミクス}} \right)
+ \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( \underbrace{-\nabla \mathcal{L}_{\text{self}}(\mathbf{x})}_{\text{道：復元力}} \;+\; \underbrace{\mathbf{f}_{\text{cul}}(\mathbf{x})}_{\text{文化：文化的整流}} \;-\; \underbrace{\nabla V_{\text{vision}}(\mathbf{x}, t)}_{\text{ビジョン：勾配誘導}} \;+\; \underbrace{\mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t)}_{\text{聖：境界制御ダイナミクス}} \right)^{(1)}
 ```
 
 ※ $`V_{\text{vision}}`$ を $`X^*_{\text{true\_civ}}(t)`$（仁：文明アトラクター）への明示的引力場として展開した同値表現：
 
 ```math
- \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}) + \mathbf{f}_{\text{cul}}(\mathbf{x}) + \gamma \cdot \left( X^*_{\text{true\_civ}}(t) - \mathbf{x}(t) \right) + \mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t) \right)
+ \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}) + \mathbf{f}_{\text{cul}}(\mathbf{x}) + \gamma \cdot \left( X^*_{\text{true\_civ}}(t) - \mathbf{x}(t) \right) + \mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t) \right)^{(1)}
 ```
 
 ### 3.2 空間補空間接続ルール
