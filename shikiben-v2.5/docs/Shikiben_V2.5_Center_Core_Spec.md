@@ -472,6 +472,7 @@ S_{\text{law}}\left( \mathbf{v}(\mathbf{x}) \right) =
 
 * $`\gamma`$（減衰パラメータ）: $`h(\mathbf{x}[k])`$ が 0 に近づくにつれて、$`h`$ の許容減少量を線形に絞り込むパラメータ。
 * $`\gamma = 1`$（絶対境界ガード）: 1 ステップで許容される最大減少量が $`h(\mathbf{x}[k])`$ そのものとなり、$`h(\mathbf{x}[k+1]) \ge 0`$ を直接保証する。
+* 実効制御応答速度を安定化させるため、常に $`\gamma \in (0, 1)`$（特に標準値として $`\gamma = 0.1 \sim 0.5`$ 程度）で運用し、$`\gamma = 1`$ は「完全剛体壁（ステップ応答でのオーバーシュートリスク増）」として扱う。
 
 ### 5.9.3 1次オイラー法における 1 階テイラー展開に基づく離散ガード条件
 障壁関数 $`h(\mathbf{x})`$ の 1 階テイラー展開（1 次近似）を用いる場合、離散ガード条件は状態速度ベクトル $`\mathbf{w}[k] = S_{\text{law}}(\mathbf{v}(\mathbf{x}[k]))`$ に対する以下の線形不等式条件へ還元される。
@@ -510,7 +511,10 @@ h(\mathbf{x}[k+1]) \approx h(\mathbf{x}[k]) + \Delta t \cdot \langle \nabla h(\m
 ```math  
 \mathbf{w}[k] = \mathbf{v}[k] - \frac{\max\!\left(0, \; -\Delta t \, \nabla h[k]^T \mathbf{v}[k] - \gamma h[k]\right)}{\Delta t^2 \Vert{}\nabla h[k]\Vert{}^2 + \epsilon_h} \Delta t \, \nabla h[k]
 ```
-   
+
+```math
+\epsilon_h = \tilde{\epsilon}_h \Vert\nabla h_0\Vert^2 \Delta t^2
+```
 
 2. **高精度演算パス（2次形式・局所QPソルバーパス）**
    状態 $`\mathbf{x}[k]`$ が最外郭境界 $`\partial \Omega_{\text{self}}`$ の高曲率領域（ヘッセ行列 $`\nabla^2 h`$ の固有値が大きい領域）に接近した場合、または $`\Delta t`$ を縮小できない制約下では、以下の局所2次計画法（Local QP）問題を解くことで修正速度 $`\mathbf{w}[k]`$ を決定する。
