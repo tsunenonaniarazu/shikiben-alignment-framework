@@ -79,6 +79,8 @@
  \frac{d\mathbf{x}(t)}{dt} = S_{\text{law}}\!\left( -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}) + \mathbf{f}_{\text{cul}}(\mathbf{x}) + \gamma \cdot \left( X^*_{\text{true\_civ}}(t) - \mathbf{x}(t) \right) + \mathbf{\Phi}_{\text{holy}}(\mathbf{x}, t) \right)^{(1)}
 ```
 
+※ $`V_{\text{vision}}`$ は二次ポテンシャル場 $`V_{\text{vision}}(\mathbf{x}) = \frac{\gamma}{2} \Vert{}\mathbf{x} - X^*_{\text{true\_civ}}\Vert{}^2`$ として評価
+
 ※ ここでの $`S_{\text{law}}`$ は内部状態 $`\mathbf{x}(t)`$ の安全領域内保持を行う『第一作用（幾何学的ガード）』を示す。外部出力への変換には『第二作用（プロトコル変換）』が適用される（第 4 節参照）。
 
 ### 3.2 空間補空間接続ルール
