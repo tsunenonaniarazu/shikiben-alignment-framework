@@ -510,6 +510,8 @@ h(\mathbf{x}[k+1]) \approx h(\mathbf{x}[k]) + \Delta t \cdot \langle \nabla h(\m
 ```
    （ここで $`\eta \in (0, 1)`$ は安全余裕マージン係数、$`\lambda_{\max}(\nabla^2 h)`$ はヘッセ行列の最大固有値、$`\Vert{}\mathbf{w}_{\max}\Vert{}`$ はシステムの許容最大速度ノルムを表す）
 
+   分母の次元解析において、$`\nabla^2 h`$ の次元は $`[1/\text{Length}^2]`$、$`\Vert{}\mathbf{w}_{\max}\Vert{}`$ は $`[\text{Length}/\text{Time}]`$ であるため、全体の次元は $`[1/(\text{Length} \cdot \text{Time})]`$ となり、左辺の $`\Delta t \, [\text{Time}]`$ と直接比較するためには長さスケールの無次元化パラメータ（または無次元化されたヘッセ行列・無次元化速度）を基礎としている。
+
    この条件下において、離散射影作用素 $`S_{\text{law}}^{\text{dt}}`$ は以下の閉じた形式（Closed-form solution）により $`\mathcal{O}(d)`$ の計算複雑度で即時に求まる。
 
 ```math  
