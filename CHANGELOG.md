@@ -1,6 +1,33 @@
 # CHANGELOG - Shikiben (識扁) Framework
 
-This document outlines the version history, mathematical formulations, system design updates, and simulation progress for the Shikiben (識扁) governance framework.
+All notable changes to the **Shikiben (識扁)** framework will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+---
+
+## [2.6.0] - 2026-10-13
+
+### Added
+- **Thermodynamic Resonance Market Protocol (TRM v2.6)**: Fully formalized a decentralized market resonance and mutual-aid protocol rooted in the absolute priority of existence capacity ($\nabla E \prec \nabla S$).
+- **Dual Thermodynamic Credit & Safety Bounds**:
+  - Global Canonical Credit Cap ($\sum C_i(t) \le \kappa \sum \Vert{}\nabla S_i(t)\Vert{}$): Strictly caps market credit issuance by the sum of accumulated real capacities ($\nabla S$), completely eliminating speculative conceptual bubbles.
+  - Local Mutual Aid Safety Margin ($\Vert{}\nabla E_i + \Delta E_{\text{aid}}\Vert{} \le (1 - \mu_{\text{margin}}) \Vert{}\nabla S_i\Vert{}$): Imposes hard physical constraints ensuring assistive actions never compromise the host node's operational grounding.
+- **Two-Tier Event-Driven Poisson Audit Protocol**:
+  - Tier-1 Silent Local Gliding ($\mathbf{K}_{ij} = \mathbf{0}$): Guarantees zero communication overhead and sub-millisecond local inference under normal conditions.
+  - Tier-2 Stochastic Audit ($\mathcal{O}(\log N)$): Triggers unpredictable random-sampling audits strictly upon calibrated boundary leakage anomalies ($\Delta \mathbf{R}_i > \theta$), instantly enforcing soft/hard isolation ($\tilde{D}_i = \infty$) on deceptive nodes.
+- **Pure Physical Base Axioms ($\mathcal{A}_{\text{base}}$)**: Purged political, cultural, and subjective dogmas from global coordination, restricting foundational inter-realm axioms strictly to Lyapunov stability, zero external entropy injection, and thermodynamic non-inversion ($\nabla E \prec \nabla S$).
+- **Orthogonal Cultural Sovereignty Projection ($\mathcal{P}_{\perp i}$)**: Integrated subspace projection operators to protect local normative autonomy, ethical diversity, and cultural heritage from global market homogenization.
+- **Eight-Trigram (Ba-Gua) Multi-Agent Governance Architecture**: Established an eight-node distributed collaborative ecosystem (乾・坤・艮・兌・離・坎・巽・震) eliminating single points of failure (SPOF) through orthogonal perspective balancing.
+
+### Changed
+- **Decentralization of Boundary Constraints**: Shifted from a monolithic global control barrier function (CBF) to decentralized 1-hop physical contracts and localized dynamic damping.
+- **Isolation Dynamics**: Upgraded from rigid, brittle hard-cutoff disconnects to smooth soft isolation via coupling attenuation ($A_{ij}(t)$), preventing structural shock cascades.
+
+### Fixed
+- **Cartel Collusion & Camouflage Vulnerability**: Neutralized adversarial risks where compromised nodes could fake nominal consensus, resolved through unpredictable Poisson audit probes.
+- **Mutual Destruction in Collective Aid**: Fixed systemic failure modes where unconstrained rescue efforts led to cascade collapses ("mud-boat failure") across interconnected nodes.
 
 ---
 
