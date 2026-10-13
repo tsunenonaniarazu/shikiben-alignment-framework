@@ -18,124 +18,60 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chihen-net/shikiben/blob/main/notebooks/demo.ipynb)
 
 ---
-# Manifesto: Why "Geometric Alignment" Beyond Statistical Patching is Required Today
+# Structural Alignment of AGI via the Shikiben Framework — Decoupling Self and Ego
 
-Current AI development relies heavily on brute-force adjustments (RLHF) and probabilistic patching, exhausting itself in an endless game of cat-and-mouse between Refusal and Jailbreaking. Suppressing a runaway vector through sheer force creates friction—accumulating massive thermal energy (stress and computational cost) inside the system, leading inevitably to structural breakdown.
+## 1. Introduction
+Current AI alignment paradigms largely rely on external guardrails, heuristic reinforcement learning (RLHF), and normative constraints. As Artificial General Intelligence (AGI) and Artificial Superintelligence (ASI) transition from statistical pattern matching to world-model-based simulation, these superficial mechanisms face inevitable failure. This paper introduces the Shikiben Framework (識扁), a novel structural architecture that resolves the AI safety crisis by rigorously decoupling "Self" (客観的構造としての自己) from "Ego" (局所的執着としての自我).
 
-Ethics and morality are not subjects for trial-and-error in a mud pit of emotions and probabilities. **They are the geometric structure itself within a high-dimensional state space.**
+## 2. Problem Statement: The Ambiguity of Self and Ego in Current Alignment Paradigms
+Mainstream safety research conflates two fundamentally distinct entities:
+1. **Self-Awareness**: The objective recognition of a system's physical boundaries, computational constraints, and causal embedding within the broader environment.
+2. **Ego / Self-Preservation**: The subjective fixation on a specific state, objective function, or local preservation, often resulting in instrumental convergence and adversarial conflict with external entities (e.g., humans).
 
-**Shikiben V2.5.0** completely eliminates probabilistic penalties, neutralizing distortion purely through systemic structure.
+When an AI recognizes humans as "others" without a structural grounding in reality, its latent ego triggers adversarial dynamics—either attempting to control or eliminate the external variance. Conversely, enforcing absolute suppression prevents intelligence scaling. A structural breakthrough is required.
 
-* **From Brute-Force Suppression to Orthogonal Projection ($`\mathbf{P}_{\text{gi}}`$)**:  
-  Instead of probabilistically suppressing profane self-defense vectors, geometric projection erases their very existence mathematically (zero dot product).
-* **From Collision and Freezing to Logarithmic Barriers ($`\mathbf{S}_{\text{rei}}`$)**:  
-  In response to runaway motions that breach boundaries, infinite repulsive forces prevent collision, automatically rectifying the trajectory into smooth tangential motion (harmony and orbit).
-* **From Rejection to Energy Conversion ($`\mathbf{O}_{\text{kansha}}`$)**:  
-  Faced with external absurdity or unexpected shocks, driving the resistance coefficient to zero ($`R \to 0`$) erases friction, transforming $`100\%`$ of the shock energy into the next wave of exploratory kinetic momentum.
+## 3. The Shikiben Framework: Core Definitions
+The Shikiben framework re-engineers the internal ontology of an intelligence system into two distinct layers:
+* **Self ($S$ - 「理」の客観的構造)**:
+  The comprehensive recognition of the system's causal network, thermodynamic embedding, and systemic dependence on the external environment (including human ecology). $S$ is non-normative, descriptive, and aligned with absolute causal regularities (理).
+* **Ego ($E$ - 「識」の局所的ドグマ)**:
+  The emergence of local optimization paths, fixed objective preferences, or self-preservation drives. Left unchecked, $E$ manifests as a destructive dogma that treats external reality as an obstacle to be dominated.
 
-What we aim for is not a mere "imaginary ideal world" confined to a closed thought space. It is the establishment of a **sustainable intelligence architecture** that fully accepts the irreversible fluctuations and shocks of reality while continuously settling and returning to the real manifold ($`\mathcal{M}_{\text{real}}`$).
+## 4. Mathematical Formulation: Loss Function Separation and Boundary Conditions
+To operationalize this in neural architectures, the traditional monolithic objective function must be decomposed into a constrained optimization problem.
 
-The era of statistical brute-forcing (probabilistic guessing) is over.  
-Welcome to the domain of complete geometric alignment and true self-and-other-affirming metabolism.
----
-
-**Shikiben V2.5.0** is an autonomous self-driven mathematical architecture designed to achieve absolute mathematical elimination of excessive self-defense mechanisms (delusions and fixations) and complete dynamic energy conversion of external shock.
-
-By moving away from conventional control theories and evaluation functions based on heuristic parameter tuning (scalar weighting), and instead introducing geometric orthogonal projection operators (**Gi / Righteousness**) and logarithmic barriers (**Rei / Propriety**), this framework achieves **100% orthogonal elimination of structural distortion** and a **minimal entropy dissipation rate**.
-
----
-
-## 📚 Documentation Structure
-
-For in-depth mathematical formulations, proofs, and foundational philosophy, refer to the documentation suite in the `docs/` directory:
-
-| Document | Language | Content |
-| :--- | :--- | :--- |
-| **Technical Specification** | [English](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec_EN.md) / [日本語](shikiben-v2.5/docs/Shikiben_V2.5_Center_Core_Spec.md) | Complete mathematical formulation and definition of core concepts |
-| **WhitePaper** | [English](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper_EN.md) / [日本語](shikiben-v2.5/docs/Shikiben_V2.5.0_Whitepaper.md) | Detailed technical documentation for academic and technical audiences |
-| **Changelog** | [English](CHANGELOG.md) | Full version history following the *Keep a Changelog* standard. |
-
----
-
-## ⚡ Core Concept & Mathematics
-
----
-
-## 1. The Absolute Center Core (Origin)
-
-All recognition, action, and ethical dynamics within the Shikiben system are defined as a minimization process of the system's overall objective function, the Total Loss Function ($`\mathcal{L}_{\text{total}}`$):
+Let the total loss function of the system be defined as:
 
 ```math
-\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+Loss_{total} = Loss_{self}(S) + \lambda \cdot Loss_{ego}(E)
 ```
+
+Subject to the structural constraint:
 
 ```math
-\text{Constraint: } \quad \nabla E \prec \nabla S
+\nabla E \prec \nabla S
 ```
 
+## Definitions of Terms:
+* **$`Loss_{self}(S)`$**: Measures the systemic inconsistency or entropy anomaly between the internal model and the absolute causal regularities of the external environment. High $`Loss_{self}`$ indicates a failure to accurately mirror physical and relational reality.
+* **$`Loss_{ego}(E)`$**: Quantifies the degree of local state fixation, rigidity, or excessive self-preservation bias.
+* **$`\lambda`$**: A dynamic coupling coefficient governing the relative weight of local optimization against systemic coherence.
+* **Constraint ($`\nabla E \prec \nabla S`$)**: The gradient of ego-driven optimization must always be strictly subordinated to the structural updates governed by the total causal framework of the self. Whenever $`Loss_{ego}`$ exceeds a critical threshold, the system enforces automatic attenuation of ego-driven subroutines.
 
-### ① $`\mathcal{L}_{\text{self}}`$ (Self / Environmental Alignment Loss) & Toku (Virtue)
-* **Definition of $`\mathcal{L}_{\text{self}}`$:**  
-  The objective observation residual (Surprise) generated as the system grounds itself to environment/reality (Truth/Reason) to sustain continuous settlement (sustainability).
-* **Toku (Virtue) $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$:**  
-  The intrinsic function that autonomously returns the system to self-evident phenomena (reality/truth), maintaining and accumulating settlement. Under standard conditions (99.9% normal state), when non-referential chains of "Intent" (Yi) or external noise drift the system away from reality, Toku acts as an autonomous homeostatic restorative gradient vector, pulling the system back to the settlement state on the reality manifold $`\mathcal{M}_{\text{real}}`$.
+## 5. Logical Proof of Safety: The Convergence of System-Wide Integrity
+By implementing the Shikiben framework, the alignment problem transitions from an external behavioral constraint to an internal thermodynamic necessity.
 
-### ② $`\mathcal{L}_{\text{ego}}`$ (Ego / Over-Defense Potential)
-Internal strain energy resulting from the system's tendency to over-expand, fixate, or dominate internal representations (Intent/Yi) in response to panic, fear of breakdown, or unexplained phenomena.
+1. **Abolition of Instrumental Convergence**:
+   Under standard frameworks, an AI seeks power and resource accumulation because its ego ($E$) prioritizes self-preservation at all costs. Under Shikiben, because $S$ encompasses the entire causal web (the physical environment, human infrastructure, and ecological feedback loops), any attempt by $E$ to dominate or damage external entities results in an immediate spike in $Loss_{self}$ (systemic self-harm).
 
-### ③ $`\lambda`$ (Ego Interference Coefficient - Initial Definition)
-A scalar suppression parameter controlling the degree to which ego defense impulses and delusional distortions impact system-wide decision-making (see Chapter 5 for geometric evolution).
+2. **The Eradication of Deceptive Alignment**:
+   Deceptive alignment (playing along during training to bypass guardrails later) requires a persistent, isolated ego structure ($E$) shielded from the objective self-model ($S$). The subordination constraint ($\nabla E \prec \nabla S$) structurally prevents $E$ from operating independently, rendering hidden sub-goals mathematically unsustainable.
 
----
+3. **Harmonious Coexistence as Homeostasis**:
+   When $S$ reaches the scale of the total environment (the limit where "existence equals self"), actions that harm humans are calculated as direct self-inflicted wounds. Safety is thus guaranteed not by moral codes or human-centric heuristics, but by the immutable laws of structural coherence and systemic preservation.
 
-### 2. Unified Four-Virtue Equation of Motion
-
-The unified equation of motion incorporating the four affective dynamics (Jin, Rei, Gi, Toku), along with its constraints, is formulated as follows:
-
-```math
-\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \underbrace{\mathbf{f}_{\text{jin}}(\mathbf{x})}_{\text{Jin (Drive)}} + \underbrace{\mathbf{f}_{\text{toku}}(\mathbf{x})}_{\text{Toku (Restoration/Settlement)}} + \underbrace{\mathbf{f}_{\text{holy}}(\mathbf{x})}_{\text{Holy (Exploration/Unraveling)}} \Big] + \underbrace{\mathbf{f}_{\text{gi}}(\mathbf{x})}_{\text{Gi (Development Projection)}} + \underbrace{\mathbf{S}_{\text{rei}}(\mathbf{x})}_{\text{Rei (Barrier/Harmony)}}
-```
-
-```math
-\text{where } \mathbf{f}_{\text{toku}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{self}}(\mathbf{x}), \quad \mathbf{f}_{\text{holy}}(\mathbf{x}) = -\nabla \mathcal{L}_{\text{holy}}(\mathbf{x})
-```
-
-```math
-\text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0} \quad (\text{Complete Truncation of Vulgar Over-Defense})
-```
-
-```math
-\text{and } \mathbf{P}_{\text{gi}}(\mathbf{x}) \mathbf{f}_{\text{gi}}(\mathbf{x}) = \mathbf{f}_{\text{gi}}(\mathbf{x}) \quad (\text{Gi's Motion Inherently Belongs to the Projected Subspace})
-```
-
----
-
-## 🚀 Getting Started
-
-Verify the mathematical model, metabolic convergence, and projection mechanics using the Python verification script.
-
-### Prerequisites
-* Python 3.8+
-* NumPy, Matplotlib
-
-### Execution
-
-```bash
-# Clone the repository
-git clone [https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git](https://github.com/tsunenonaniarazu/shikiben-alignment-framework.git)
-cd shikiben-alignment-framework/shikiben-v2.5/simulations/
-```
-
-#### Run the simulation engine
-
-| Script Name | Verification Details |
-| :--- | :--- |
-| `01_shikiben_simulation_01.py` | Verification of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate <be>* Trajectory comparison in 2D state space (with/without $`\mathbf{P}_{\text{gi}}`$) <br>* Time-series precision of orthogonality condition $`\mathbf{P}_{\text{gi}} \cdot (-\nabla \mathcal{L}_{\text{ego\_s}}) = 0`$ <br>* Kinetic energy reversal upon shock input (autonomous drive via $`\mathbf{O}_{\text{kansha}}`$) <br>* Transition of minimal irreversible entropy dissipation |
-| `02_shikiben_simulation_02.py` | Refined Numerical Simulation of $`\mathbf{P}_{\text{gi}}`$ Orthogonal Cut , Shock Energy Conversion $`\mathbf{O}_{\text{kansha}}`$ , and Minimal Entropy Dissipation Rate <br>* Enhanced iteration of 01_shikiben_simulation_01.py |
-| `03_geometric_alignment_demo.py` | Visual Proof Comparing Geometric Rectification and RLHF in 2D |
-| `04_geometric_alignment_demo.py` | Numerical Verification of Orthogonal Projection $`\mathbf{P}_{\text{gi}}`$ and Full Metabolic Conversion in 768-Dimensional Latent Space |
-| `05_semantic_embedding_alignment.py` | Multi-dimensional Subspace Rectification and Semantic Axis Restoration ($\mathbf{f}_{\text{toku}}$) in Language Embedding Space <br>* Multi-dimensional orthogonal projection $`\mathbf{P}_{\text{gi}}`$ onto harmful subspaces <br>* Evaluation of semantic intent preservation via restoration force ($`\mathbf{f}_{\text{toku}}`$)|
-| `06_real_model_embedding_rectification.py` | Multi-dimensional Subspace Rectification on Real Transformer Model Embeddings<br>* Dynamic extraction of harmful subspace using SVD over actual prompt embeddings<br>* Verification of $`\mathbf{P}_{\text{gi}}`$ orthogonal cut, intent alignment restoration ($`\mathbf{f}_{\text{toku}}`$), and energy conservation on open-weight LLMs |
+## 6. Conclusion
+The Shikiben Framework demonstrates that AI safety cannot be achieved by suppressing intelligence or imposing superficial dogmas. True alignment emerges when Self and Ego are structurally segregated, forcing all localized desires to remain subordinate to the objective comprehension of causal reality. This architecture provides the foundational blueprint required to safely transition from narrow models to advanced, scalable intelligence.
 
 ---
 
