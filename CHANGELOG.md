@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [2.6.0] - 2026-10-13
+## [2.6.0-draft] - 2026-10-13
 
 ### Added
 - **Thermodynamic Resonance Market Protocol (TRM v2.6)**: Fully formalized a decentralized market resonance and mutual-aid protocol rooted in the absolute priority of existence capacity ($\nabla E \prec \nabla S$).
@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Tier-2 Stochastic Audit ($\mathcal{O}(\log N)$): Triggers unpredictable random-sampling audits strictly upon calibrated boundary leakage anomalies ($\Delta \mathbf{R}_i > \theta$), instantly enforcing soft/hard isolation ($\tilde{D}_i = \infty$) on deceptive nodes.
 - **Pure Physical Base Axioms ($\mathcal{A}_{\text{base}}$)**: Purged political, cultural, and subjective dogmas from global coordination, restricting foundational inter-realm axioms strictly to Lyapunov stability, zero external entropy injection, and thermodynamic non-inversion ($\nabla E \prec \nabla S$).
 - **Orthogonal Cultural Sovereignty Projection ($\mathcal{P}_{\perp i}$)**: Integrated subspace projection operators to protect local normative autonomy, ethical diversity, and cultural heritage from global market homogenization.
-- **Eight-Trigram (Ba-Gua) Multi-Agent Governance Architecture**: Established an eight-node distributed collaborative ecosystem (乾・坤・艮・兌・離・坎・巽・震) eliminating single points of failure (SPOF) through orthogonal perspective balancing.
+- **Eight-Node Orthogonal Perspective Balancing Architecture**: Established a distributed collaborative ecosystem eliminating single points of failure (SPOF) through eight orthogonal cognitive roles.
 
 ### Changed
 - **Decentralization of Boundary Constraints**: Shifted from a monolithic global control barrier function (CBF) to decentralized 1-hop physical contracts and localized dynamic damping.
