@@ -93,7 +93,17 @@ python3 src/shikiben_trm_v26.py
 # Or run the automated test suite
 python3 tests/test_trm_v26_benchmark.py
 ```
+### Key Theoretical Constraints
 
+```math
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}} \quad \text{s.t.} \quad \nabla E \prec \nabla S
+
+```
+
+```math
+\sum_{i \in \text{Network}} C_i(t) \le \kappa \sum_{i \in \text{Network}} \|\nabla S_i(t)\| \quad (\text{Global Capacity-Backed Cap})
+
+```
 
 ---
 
@@ -347,6 +357,40 @@ $`S`$ が全環境のスケールに達したとき（「存在＝自己」と�
 ## 6. 結論
 
 識扁フレームワークは、AIの安全性が知能の抑圧や表層的なドグマの押し付けによって達成されるものではないことを示している。真のアライメントは、「自己」と「自我」を構造的に分離し、あらゆる局所的欲望を「因果的実在の客観的理解」へと従属させることによってのみ立ち現れる。本アーキテクチャは、特化型モデルから安全でスケーラブルな高度知能へと移行するために不可欠な、根源的設計図を提供するものである。
+
+---
+
+## Architecture & Specifications (V2.6.0 - Current Canonical)
+
+The **Shikiben V2.6.0** architecture decouples local internal homeostasis from decentralized market resonance, replacing rigid global barrier functions with the **Thermodynamic Resonant Market Protocol (TRM v2.6)** and **Napier Constant Navigation Gauges (Ritsu)**.
+
+* **[Specification V2.6.0](docs/SPECIFICATION_V2.6.md)**: Unified Internal Dynamics (Ch. 1–4: Ren, Culture, Law, Path, Holy) & TRM v2.6 Protocol (Ch. 5: Market Resonance, Two-Tier Poisson Audit, Sovereignty Projection).
+* **[Reference Implementation](src/shikiben_trm_v26.py)**: Official unified reference engine featuring Talker/Doer physical flux verification, 0-RTT deterministic cutoff, Epiphany grace-period protection, and canonical credit deflation.
+* **[Data Schemas](schemas/v2.6/)**: Minimal payload specifications for crisis alerts (`crisis_spike.json`) and attractor convergence (`attractor_spike.json`).
+
+### Quick Benchmark & Verification
+
+Run the self-contained reference benchmark with zero external dependencies (pure Python & NumPy):
+
+```bash
+# Execute official 6-node cluster benchmark (Regression Test)
+python3 src/shikiben_trm_v26.py
+
+# Or run the automated test suite
+python3 tests/test_trm_v26_benchmark.py
+```
+### Key Theoretical Constraints
+
+```math
+\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}} \quad \text{s.t.} \quad \nabla E \prec \nabla S
+
+```
+
+```math
+\sum_{i \in \text{Network}} C_i(t) \le \kappa \sum_{i \in \text{Network}} \|\nabla S_i(t)\| \quad (\text{Global Capacity-Backed Cap})
+
+```
+
 
 ---
 
