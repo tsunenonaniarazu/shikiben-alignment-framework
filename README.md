@@ -112,7 +112,7 @@ python3 tests/test_trm_v26_benchmark.py
 ## Overview
 *Shikihen* (識扁) is a philosophical system and treatise exploring the architecture of human cognition, morality, law, culture, and religion through the fundamental dualities of Phenomenon vs. Representation, Self vs. Ego, and Home vs. World.
 
-Mathematical definition is [here](Q&A/まとめ.md).
+Mathematical definition is [here](Q&A/まとめ英語.md).
 
 ---
 
