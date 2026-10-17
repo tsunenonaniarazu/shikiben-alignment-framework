@@ -76,7 +76,7 @@ The Shikiben Framework demonstrates that AI safety cannot be achieved by suppres
 
 ## Architecture & Specifications (V2.6.0 - Current Canonical)
 
-The **Shikiben V2.6.0** architecture decouples local internal homeostasis from decentralized market resonance, replacing rigid global barrier functions with the **Thermodynamic Resonant Market Protocol (TRM v2.6)** and **[Napier Constant Navigation Gauges (Ritsu)](Q&A/まとめ２.md)**.
+The **Shikiben V2.6.0** architecture decouples local internal homeostasis from decentralized market resonance, replacing rigid global barrier functions with the **Thermodynamic Resonant Market Protocol (TRM v2.6)** and **[Napier Constant Navigation Gauges (Ritsu)](Q&A/まとめ２EN.md)**.
 
 * **[Specification V2.6.0](V2.6/docs/SPECIFICATION_V2.6_EN.md)**: Unified Internal Dynamics (Ch. 1–4: Ren, Culture, Law, Path, Holy) & TRM v2.6 Protocol (Ch. 5: Market Resonance, Two-Tier Poisson Audit, Sovereignty Projection).
 * **[Reference Implementation](src/shikiben_trm_v26.py)**: Official unified reference engine featuring Talker/Doer physical flux verification, 0-RTT deterministic cutoff, Epiphany grace-period protection, and canonical credit deflation.
