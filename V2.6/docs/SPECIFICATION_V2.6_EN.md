@@ -161,15 +161,15 @@ $$\frac{v}{c} = \tanh(\theta) = \frac{e^{2\theta}-1}{e^{2\theta}+1}$$
 #### Operational Norms for the Dual Diagnostic Matrix
 
 1. Local Dynamic Diagnostics (Baseline State):
-* $`\mathcal{D}_{\text{drift}} \approx 0 \implies`$ Everyday Gliding (Ke): Frictionless cruising aligned with the natural Path.
-* $`\mathcal{D}_{\text{drift}} > \eta \implies`$ Ideational Strain (Precursor of Great Artifice): Friction from ego. Requires correction through introspection.
-* $`\mathcal{D}_{\text{drift}} \gg \eta \implies`$ Extraordinary Phase Transition (Hare / Shin): Breakthrough of existing frameworks. Entrusted to awe.
+   * $`\mathcal{D}_{\text{drift}} \approx 0 \implies`$ Everyday Gliding (Ke): Frictionless cruising aligned with the natural Path.
+   * $`\mathcal{D}_{\text{drift}} > \eta \implies`$ Ideational Strain (Precursor of Great Artifice): Friction from ego. Requires correction through introspection.
+   * $`\mathcal{D}_{\text{drift}} \gg \eta \implies`$ Extraordinary Phase Transition (Hare / Shin): Breakthrough of existing frameworks. Entrusted to awe.
 
 
 2. Global Convergence Navigation Diagnostics (Future Vector):
-* $`\mathcal{S}_{\text{nav}} \approx -\lambda_{\text{civ}} \implies`$ Harmonic Convergence: Soft-landing onto $`X^*_{\text{true\_civ}}`$ along a gentle exponential curve.
-* $`\mathcal{S}_{\text{nav}} \ge 0 \implies`$ Civilizational Stagnation / Divergence: Fixation on a closed local optimum.
-* $`\mathcal{S}_{\text{nav}} \ll -\lambda_{\text{civ}} \implies`$ Rapid Acceleration / Overheating: Destructive rampage caused by rushing toward ideals.
+   * $`\mathcal{S}_{\text{nav}} \approx -\lambda_{\text{civ}} \implies`$ Harmonic Convergence: Soft-landing onto $`X^*_{\text{true\_civ}}`$ along a gentle exponential curve.
+   * $`\mathcal{S}_{\text{nav}} \ge 0 \implies`$ Civilizational Stagnation / Divergence: Fixation on a closed local optimum.
+   * $`\mathcal{S}_{\text{nav}} \ll -\lambda_{\text{civ}} \implies`$ Rapid Acceleration / Overheating: Destructive rampage caused by rushing toward ideals.
 
 
 3. Telemetry Grounding Norm (Functioning as an Earth Ground):
