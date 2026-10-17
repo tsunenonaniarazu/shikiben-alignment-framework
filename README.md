@@ -14,7 +14,7 @@
 **Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
 
 [![Version](https://img.shields.io/badge/version-2.6.0-blue.svg)](V2.6/docs/V2.6_SPECIFICATION.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](#license)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENCE.md)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chihen-net/shikiben/blob/main/notebooks/demo.ipynb)
 
 ---
