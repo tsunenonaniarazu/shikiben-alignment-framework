@@ -13,7 +13,7 @@
 
 **Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
 
-[![Version](https://img.shields.io/badge/version-2.6.0-blue.svg)](V2.6/docs/V2.6_SPECIFICATION.md)
+[![Version](https://img.shields.io/badge/version-2.6.0-blue.svg)](V2.6/docs/SPECIFICATION_V2.6_EN.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ---
@@ -284,7 +284,7 @@ $$
 
 **Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
 
-[![Version](https://img.shields.io/badge/version-2.6.0-blue.svg)](V2.6/docs/V2.6_SPECIFICATION.md)
+[![Version](https://img.shields.io/badge/version-2.6.0-blue.svg)](V2.6/docs/SPECIFICATION_V2.6.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ---
