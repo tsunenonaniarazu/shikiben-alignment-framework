@@ -75,6 +75,29 @@ The Shikiben Framework demonstrates that AI safety cannot be achieved by suppres
 
 ---
 
+## Architecture & Specifications (V2.6.0 - Current Canonical)
+
+The **Shikiben V2.6.0** architecture decouples local internal homeostasis from decentralized market resonance, replacing rigid global barrier functions with the **Thermodynamic Resonant Market Protocol (TRM v2.6)** and **Napier Constant Navigation Gauges (Ritsu)**.
+
+* **[Specification V2.6.0](docs/SPECIFICATION_V2.6.md)**: Unified Internal Dynamics (Ch. 1–4: Ren, Culture, Law, Path, Holy) & TRM v2.6 Protocol (Ch. 5: Market Resonance, Two-Tier Poisson Audit, Sovereignty Projection).
+* **[Reference Implementation](src/shikiben_trm_v26.py)**: Official unified reference engine featuring Talker/Doer physical flux verification, 0-RTT deterministic cutoff, Epiphany grace-period protection, and canonical credit deflation.
+* **[Data Schemas](schemas/v2.6/)**: Minimal payload specifications for crisis alerts (`crisis_spike.json`) and attractor convergence (`attractor_spike.json`).
+
+### Quick Benchmark & Verification
+
+Run the self-contained reference benchmark with zero external dependencies (pure Python & NumPy):
+
+```bash
+# Execute official 6-node cluster benchmark (Regression Test)
+python3 src/shikiben_trm_v26.py
+
+# Or run the automated test suite
+python3 tests/test_trm_v26_benchmark.py
+```
+
+
+---
+
 # Shikihen (識扁)
 
 ## Overview
@@ -246,18 +269,7 @@ $$
 \end{aligned}
 $$
 
----
 
-### 4. Reduction & Correspondence to the Control Engineering Model (v2.5.0)
-
-Each operator derived from this algebraic structure is implemented in control engineering as follows:
-
-* **Superposition of "Images"** $\to$ Ego-field potential $L_{\text{ego}}(\mathbf{x})$
-* **Propriety ($\text{Law}$)** $\to$ Boundary potential field $`\mathbf{S}_{\text{rei}}`$ (Logarithmic barrier / Resonance)
-* **Righteousness ($\text{Culture}$)**  $\to$ Orthogonal projection operator $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ (Absolute protection against boundary breach/collapse) + Target achievement vector $`\mathbf{f}_{\text{gi}}(\mathbf{x})`$（Developmental rectification）
-* **Benevolence ($\text{Civilization}$)** $\to$ Primordial driving vector $`\mathbf{f}_{\text{jin}}`$ （$`\mathbf{f}_{\text{accompany}}`$
-* **Virtue ($\text{Return to the Mundane}$)** $\to$ Restorative gradient vector $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（Restoration / Homeostasis）
-* **Gratitude ($\text{Religion}$)** $\to$ Absolute acceptance & energy inversion operator $`\mathbf{O}_{\text{kansha}}`$ (Acceptance protocol)
 
 ---
 
@@ -511,15 +523,3 @@ $$
 $$
 
 ---
-
-### 4. 制御工学モデル（v2.5.0）への還元対照
-
-本代数構造から導出された各作用素は、制御工学において以下のように実装される。
-
-* **「象」の積層** $\to$ エゴ場ポテンシャル $L_{\text{ego}}(\mathbf{x})$
-* **礼 $(\text{法})$** $\to$ 境界ポテンシャル場 $`\mathbf{S}_{\text{rei}}`$ (対数バリア・共鳴) 
-* **義 $(\text{文化})$** $\to$ 直交射影演算子 $`\mathbf{P}_{\text{gi}}(\mathbf{x})`$ （境界突入・破綻の絶対防護）+ 目的到達ベクトル $`\mathbf{f}_{\text{gi}}(\mathbf{x})`$（発展整流）
-* **仁 $(\text{文明})$** $\to$ 原初駆動ベクトル $`\mathbf{f}_{\text{jin}}`$ （$`\mathbf{f}_{\text{accompany}}`$ から生じる純粋エネルギー)
-* **徳 $(\text{日常への回帰})$** $\to$ 復元勾配ベクトル $`\mathbf{f}_{\text{toku}} = -\nabla \mathcal{L}_{\text{self}}`$（復元・ホメオスタシス）
-* **感謝 $(\text{宗教})$** $\to$ 完全受容・エネルギー反転演算子 $`\mathbf{O}_{\text{kansha}}`$ (受容プロトコル)
-
