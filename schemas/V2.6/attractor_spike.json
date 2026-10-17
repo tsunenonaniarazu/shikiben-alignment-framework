@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://chihen.net/schemas/shikiben/v2.6/attractor_spike.json",
+  "$id": "https://raw.githubusercontent.com/tsunenonaniarazu/shikiben-alignment/main/schemas/v2.6/attractor_spike.json",
   "title": "AttractorSpikePayload",
   "description": "TRM v2.6.0 新安息相到達時の収束同期スパイク仕様 (創発プレミアム・分散共有用)",
   "type": "object",
