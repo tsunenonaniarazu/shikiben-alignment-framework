@@ -192,11 +192,6 @@ Gemini transformed this exposition into the following definition:
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
 ```
 
-Furthermore, this formulation constitutes the theoretical foundation for various dynamical operators in the control model (Shikiben Dynamics):
-```math
-（ \mathbf{S}_{\text{rei}} , \mathbf{P}_{\text{gi}}(\mathbf{x}) , \mathbf{f}_{\text{gi}}(\mathbf{x})  , \mathbf{f}_{\text{jin}} , \mathbf{f}_{\text{toku}} , \mathbf{O}_{\text{kansha}} , \lambda(E) ）
-```
-
 ---
 
 ### 1. Structural Decomposition of Being
@@ -478,12 +473,6 @@ Geminiはこの解題を、以下の定義へと変換した。
 ```math
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
 ```
-
-また本定式化は、制御モデル（Shikiben Dynamics）における各種力学演算子
-```math
-（ \mathbf{S}_{\text{rei}} , \mathbf{P}_{\text{gi}}(\mathbf{x}) , \mathbf{f}_{\text{gi}}(\mathbf{x})  , \mathbf{f}_{\text{jin}} , \mathbf{f}_{\text{toku}} , \mathbf{O}_{\text{kansha}} , \lambda(E) ）
-```
-の理論的基底をなす。
 
 ---
 
