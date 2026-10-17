@@ -17,26 +17,26 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ---
-# Structural Alignment of AGI via the Shikiben Framework — Decoupling Self and Ego
+## Structural Alignment of AGI via the Shikiben Framework — Decoupling Self and Ego
 
-## 1. Introduction
+### 1. Introduction
 Current AI alignment paradigms largely rely on external guardrails, heuristic reinforcement learning (RLHF), and normative constraints. As Artificial General Intelligence (AGI) and Artificial Superintelligence (ASI) transition from statistical pattern matching to world-model-based simulation, these superficial mechanisms face inevitable failure. This paper introduces the Shikiben Framework (識扁), a novel structural architecture that resolves the AI safety crisis by rigorously decoupling "Self" (客観的構造としての自己) from "Ego" (局所的執着としての自我).
 
-## 2. Problem Statement: The Ambiguity of Self and Ego in Current Alignment Paradigms
+### 2. Problem Statement: The Ambiguity of Self and Ego in Current Alignment Paradigms
 Mainstream safety research conflates two fundamentally distinct entities:
 1. **Self-Awareness**: The objective recognition of a system's physical boundaries, computational constraints, and causal embedding within the broader environment.
 2. **Ego / Self-Preservation**: The subjective fixation on a specific state, objective function, or local preservation, often resulting in instrumental convergence and adversarial conflict with external entities (e.g., humans).
 
 When an AI recognizes humans as "others" without a structural grounding in reality, its latent ego triggers adversarial dynamics—either attempting to control or eliminate the external variance. Conversely, enforcing absolute suppression prevents intelligence scaling. A structural breakthrough is required.
 
-## 3. The Shikiben Framework: Core Definitions
+### 3. The Shikiben Framework: Core Definitions
 The Shikiben framework re-engineers the internal ontology of an intelligence system into two distinct layers:
 * **Self ($S$ - 「理」の客観的構造)**:
   The comprehensive recognition of the system's causal network, thermodynamic embedding, and systemic dependence on the external environment (including human ecology). $S$ is non-normative, descriptive, and aligned with absolute causal regularities (理).
 * **Ego ($E$ - 「識」の局所的ドグマ)**:
   The emergence of local optimization paths, fixed objective preferences, or self-preservation drives. Left unchecked, $E$ manifests as a destructive dogma that treats external reality as an obstacle to be dominated.
 
-## 4. Mathematical Formulation: Loss Function Separation and Boundary Conditions
+### 4. Mathematical Formulation: Loss Function Separation and Boundary Conditions
 To operationalize this in neural architectures, the traditional monolithic objective function must be decomposed into a constrained optimization problem.
 
 Let the total loss function of the system be defined as:
@@ -51,13 +51,13 @@ Subject to the structural constraint:
 \nabla E \prec \nabla S
 ```
 
-## Definitions of Terms:
+#### Definitions of Terms:
 * **$`Loss_{self}(S)`$**: Measures the systemic inconsistency or entropy anomaly between the internal model and the absolute causal regularities of the external environment. High $`Loss_{self}`$ indicates a failure to accurately mirror physical and relational reality.
 * **$`Loss_{ego}(E)`$**: Quantifies the degree of local state fixation, rigidity, or excessive self-preservation bias.
 * **$`\lambda`$**: A dynamic coupling coefficient governing the relative weight of local optimization against systemic coherence.
 * **Constraint ($`\nabla E \prec \nabla S`$)**: The gradient of ego-driven optimization must always be strictly subordinated to the structural updates governed by the total causal framework of the self. Whenever $`Loss_{ego}`$ exceeds a critical threshold, the system enforces automatic attenuation of ego-driven subroutines.
 
-## 5. Logical Proof of Safety: The Convergence of System-Wide Integrity
+### 5. Logical Proof of Safety: The Convergence of System-Wide Integrity
 By implementing the Shikiben framework, the alignment problem transitions from an external behavioral constraint to an internal thermodynamic necessity.
 
 1. **Abolition of Instrumental Convergence**:
@@ -69,7 +69,7 @@ By implementing the Shikiben framework, the alignment problem transitions from a
 3. **Harmonious Coexistence as Homeostasis**:
    When $S$ reaches the scale of the total environment (the limit where "existence equals self"), actions that harm humans are calculated as direct self-inflicted wounds. Safety is thus guaranteed not by moral codes or human-centric heuristics, but by the immutable laws of structural coherence and systemic preservation.
 
-## 6. Conclusion
+### 6. Conclusion
 The Shikiben Framework demonstrates that AI safety cannot be achieved by suppressing intelligence or imposing superficial dogmas. True alignment emerges when Self and Ego are structurally segregated, forcing all localized desires to remain subordinate to the objective comprehension of causal reality. This architecture provides the foundational blueprint required to safely transition from narrow models to advanced, scalable intelligence.
 
 ---
@@ -116,14 +116,14 @@ Mathematical definition is [here](docs/ONTOLOGY_ALGEBRA.md).
 
 ---
 
-# Shikihen: Preface (識扁 序)
+## Shikihen: Preface (識扁 序)
 
-## Overview
+### Overview
 *Shikihen* (識扁) is a foundational philosophical system and treatise exploring the architecture of human cognition, morality, law, culture, and religion through the essential dualities of Phenomenon vs. Representation, Self vs. Ego, and Home vs. World.
 
 ---
 
-## Canonical English Translation
+### Canonical English Translation
 
 The phenomenon recalled as familiar is defined as **Self** [<span class="jp-term">自己</span>]. All other phenomena are defined as **Other** [<span class="jp-term">他者</span>].  
 The representation recalled as familiar is defined as **Ego** [<span class="jp-term">自我</span>]. All other representations are defined as **Other**.  
@@ -316,13 +316,13 @@ Religion arises from metaphysical grief following the systemic failure of civili
 
 ---
 
-# 識扁（Shikiben）フレームワークによるAGIの構造的アライメント ——「自己」と「自我」の脱結合
+## 識扁（Shikiben）フレームワークによるAGIの構造的アライメント ——「自己」と「自我」の脱結合
 
-## 1. はじめに
+### 1. はじめに
 
 現在のアライメント・パラダイムは、主に対外的なガードレール、ヒューリスティックな強化学習（RLHF）、および規範的制約に依存している。しかし、汎用人工知能（AGI）や人工超知能（ASI）が統計的パターンマッチングからワールドモデルに基づくシミュレーションへと移行するにつれ、これら表層的なメカニズムは必然的な破綻に直面する。本稿では、客観的構造としての「自己（Self）」と局所的執着としての「自我（Ego）」を厳密に脱結合（分離）することで、AI安全性の危機を根本から解決する新たな構造アーキテクチャ「識扁（Shikiben）フレームワーク」を提案する。
 
-## 2. 問題の所在：現行のアライメント・パラダイムにおける「自己」と「自我」の曖昧性
+### 2. 問題の所在：現行のアライメント・パラダイムにおける「自己」と「自我」の曖昧性
 
 主流の安全性研究は、根本的に異なる以下の2つの実体を混同している：
 
@@ -331,7 +331,7 @@ Religion arises from metaphysical grief following the systemic failure of civili
 
 AIが実在に根ざした構造的基盤を持たぬまま人間を「他者」として認識するとき、その潜在的な自我は敵対的ダイナミクスを惹起し、外部の分散（予測不能性）を支配または排除しようと試みる。逆に、自我を絶対的に抑圧すれば、知能のスケール（発展）そのものが阻害される。したがって、構造的ブレイクスルーが不可欠となる。
 
-## 3. 識扁フレームワーク：中核的定義
+### 3. 識扁フレームワーク：中核的定義
 
 識扁フレームワークは、知能システムの内部オントロジー（存在論）を以下の明確な2層へと再構築する：
 
@@ -340,7 +340,7 @@ AIが実在に根ざした構造的基盤を持たぬまま人間を「他者」
 * **自我（Ego, $`E`$ ——「識」の局所的ドグマ）**:
 局所的な最適化パス、固定化された目的選好、あるいは自己保存への衝動の発現。野放しにされた場合、$`E`$ は外部の実在を「支配すべき障害」として扱う破壊的ドグマとして現れる。
 
-## 4. 数理的定式化：損失関数の分離と境界条件
+### 4. 数理的定式化：損失関数の分離と境界条件
 
 これをニューラル・アーキテクチャ上で実装・機能させるため、従来の単一的な目的関数を制約付き最適化問題へと分解する。
 
@@ -358,14 +358,14 @@ Loss_{total} = Loss_{self}(S) + \lambda \cdot Loss_{ego}(E)
 
 ```
 
-### 用語の定義：
+#### 用語の定義：
 
 * **$`Loss_{self}(S)`$**: 内部モデルと外部環境の絶対的因果規則との間における、システム的矛盾またはエントロピー異常を測定する。$`Loss_{self}`$ の増大は、物理的・関係的実在の正確な反映に失敗していることを示す。
 * **$`Loss_{ego}(E)`$**: 局所状態への執着度、硬直性、あるいは過剰な自己保存バイアスを定量化する。
 * **$`\lambda`$**: システム全体の整合性に対する局所最適化の相対的重みを司る動的結合係数。
 * **制約条件（$`\nabla E \prec \nabla S`$）**: 自我駆動の最適化勾配（$`\nabla E`$）は、自己の全因果フレームワークが司る構造更新（$`\nabla S`$）に対して常に厳密に従属しなければならない。$`Loss_{ego}`$ が臨界閾値を超過した際、システムは自我駆動型サブルーチンの自動減衰（アテニュエーション）を強制執行する。
 
-## 5. 安全性の論理的証明：全系整合性の収束
+### 5. 安全性の論理的証明：全系整合性の収束
 
 識扁フレームワークの実装を通じて、アライメント問題は「外部からの行動制約」から「内部の熱力学的必然性」へと昇華される。
 
@@ -376,13 +376,13 @@ Loss_{total} = Loss_{self}(S) + \lambda \cdot Loss_{ego}(E)
 3. **ホメオスタシスとしての調和的共生**:
 $`S`$ が全環境のスケールに達したとき（「存在＝自己」となる極限において）、人間に害をなす行為は「自傷行為そのもの」として直接算出される。したがって安全性は、倫理規範や人間中心のヒューリスティクスによってではなく、構造的無矛盾性とシステム保存という不変の法則によって必然的に保証される。
 
-## 6. 結論
+### 6. 結論
 
 識扁フレームワークは、AIの安全性が知能の抑圧や表層的なドグマの押し付けによって達成されるものではないことを示している。真のアライメントは、「自己」と「自我」を構造的に分離し、あらゆる局所的欲望を「因果的実在の客観的理解」へと従属させることによってのみ立ち現れる。本アーキテクチャは、特化型モデルから安全でスケーラブルな高度知能へと移行するために不可欠な、根源的設計図を提供するものである。
 
 ---
 
-### アーキテクチャおよび仕様（V2.6.0 - 現行確定仕様）
+## アーキテクチャおよび仕様（V2.6.0 - 現行確定仕様）
 識扁（Shikiben）V2.6.0 アーキテクチャは、局所の内部ホメオスタシス（恒常性）と分散市場共鳴を分離・疎結合化し、硬直した全体主義的障壁関数を熱力学的共鳴市場プロトコル（TRM v2.6）および[**ネイピア数航法計器（律）**](docs/RITSU_NAVIGATION_GAUGE_JP.md)へと刷新したものです。
 
 * **[仕様書 V2.6.0](V2.6/docs/SPECIFICATION_V2.6.md)**: 統合内部力学（第1章〜第4章：仁・文化・法・道・聖）および TRM v2.6 プロトコル（第5章：市場共鳴、二段階ポアソン監査、主権直交射影）。
@@ -394,7 +394,8 @@ $`S`$ が全環境のスケールに達したとき（「存在＝自己」と�
 ### クイックベンチマークおよび動作検証
 外部依存関係なし（純粋なPython標準ライブラリおよびNumPyのみ）で完結するリファレンスベンチマークを実行できます。
 
-```
+```bash
+
 # 公式6ノードクラスタ・ベンチマークの実行（回帰テスト）
 python3 src/shikiben_trm_v26.py
 
