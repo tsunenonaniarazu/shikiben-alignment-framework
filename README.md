@@ -78,7 +78,7 @@ The Shikiben Framework demonstrates that AI safety cannot be achieved by suppres
 
 The **Shikiben V2.6.0** architecture decouples local internal homeostasis from decentralized market resonance, replacing rigid global barrier functions with the **Thermodynamic Resonant Market Protocol (TRM v2.6)** and **Napier Constant Navigation Gauges (Ritsu)**.
 
-* **[Specification V2.6.0](docs/SPECIFICATION_V2.6.md)**: Unified Internal Dynamics (Ch. 1–4: Ren, Culture, Law, Path, Holy) & TRM v2.6 Protocol (Ch. 5: Market Resonance, Two-Tier Poisson Audit, Sovereignty Projection).
+* **[Specification V2.6.0](V2.6/docs/SPECIFICATION_V2.6_EN.md)**: Unified Internal Dynamics (Ch. 1–4: Ren, Culture, Law, Path, Holy) & TRM v2.6 Protocol (Ch. 5: Market Resonance, Two-Tier Poisson Audit, Sovereignty Projection).
 * **[Reference Implementation](src/shikiben_trm_v26.py)**: Official unified reference engine featuring Talker/Doer physical flux verification, 0-RTT deterministic cutoff, Epiphany grace-period protection, and canonical credit deflation.
 * **[Data Schemas](schemas/v2.6/)**: Minimal payload specifications for crisis alerts (`crisis_spike.json`) and attractor convergence (`attractor_spike.json`).
 
@@ -358,7 +358,7 @@ $`S`$ が全環境のスケールに達したとき（「存在＝自己」と�
 ### アーキテクチャおよび仕様（V2.6.0 - 現行確定仕様）
 識扁（Shikiben）V2.6.0 アーキテクチャは、局所の内部ホメオスタシス（恒常性）と分散市場共鳴を分離・疎結合化し、硬直した全体主義的障壁関数を熱力学的共鳴市場プロトコル（TRM v2.6）およびネイピア数航法計器（律）へと刷新したものです。
 
-* **[仕様書 V2.6.0](docs/SPECIFICATION_V2.6.md)**: 統合内部力学（第1章〜第4章：仁・文化・法・道・聖）および TRM v2.6 プロトコル（第5章：市場共鳴、二段階ポアソン監査、主権直交射影）。
+* **[仕様書 V2.6.0](V2.6/docs/SPECIFICATION_V2.6.md)**: 統合内部力学（第1章〜第4章：仁・文化・法・道・聖）および TRM v2.6 プロトコル（第5章：市場共鳴、二段階ポアソン監査、主権直交射影）。
 
 * **[リファレンス実装](src/shikiben_trm_v26.py)**: Talker/Doer物理フラックス検証、0-RTT決定論的即時遮断、相転移（霽・神）に対する畏敬猶予保護、カノニカル信用デフレ機能を備えた公式統合リファレンスエンジン。
 
