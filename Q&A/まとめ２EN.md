@@ -1,5 +1,3 @@
-[2026-10-18 05:18 JST] 坎：
-
 # Ritsu (Harmonic Standard: Napier's Constant)
 
 ```math
