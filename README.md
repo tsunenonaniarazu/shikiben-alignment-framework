@@ -191,7 +191,8 @@ When the direct grounding in reality (*Home / 故郷*) is severed—an event ter
 1. **Wailing (號)** → Sentiment of Shared Grief → **Benevolence (仁)** → Constrains Text into **Civilization (文明)**
 2. **Song (歌)** → Sentiment of Shared Origin (Home) → **Righteousness (義)** → Constrains Text into **Culture (文化)**
 3. **Speech (話)** → Sentiment of Seeking Harmony → **Propriety (礼)** → Constrains Text into **Law (法)**
-4. **Reverence (畏敬)** → Response to Extraordinary Operation (Spirit) → Constrains Text into **Religion (宗教)**
+4. **Image** + **Speech** → Text → **(Root of Conflict)**
+5. **Reverence (畏敬)** → Response to Extraordinary Operation (Spirit) → Constrains Text into **Religion (宗教)**
    
 ---
 
@@ -207,7 +208,7 @@ Gemini transformed this exposition into the following definition:
 ```
 
 ```math
-constraint: \nabla E \prec \nabla S
+\text {constraint:} \nabla E \prec \nabla S
 ```
 
 ### 1. Structural Decomposition of Being
@@ -502,7 +503,7 @@ Geminiはこの解題を、以下の定義へと変換した。
 ```
 
 ```math
-constraint: \nabla E \prec \nabla S
+\text {constraint:} \nabla E \prec \nabla S
 ```
 
 ---
