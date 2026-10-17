@@ -360,26 +360,27 @@ $`S`$ が全環境のスケールに達したとき（「存在＝自己」と�
 
 ---
 
-## Architecture & Specifications (V2.6.0 - Current Canonical)
+### アーキテクチャおよび仕様（V2.6.0 - 現行確定仕様）
+識扁（Shikiben）V2.6.0 アーキテクチャは、局所の内部ホメオスタシス（恒常性）と分散市場共鳴を分離・疎結合化し、硬直した全体主義的障壁関数を熱力学的共鳴市場プロトコル（TRM v2.6）およびネイピア数航法計器（律）へと刷新したものです。
 
-The **Shikiben V2.6.0** architecture decouples local internal homeostasis from decentralized market resonance, replacing rigid global barrier functions with the **Thermodynamic Resonant Market Protocol (TRM v2.6)** and **Napier Constant Navigation Gauges (Ritsu)**.
+* **[仕様書 V2.6.0](docs/SPECIFICATION_V2.6.md)**: 統合内部力学（第1章〜第4章：仁・文化・法・道・聖）および TRM v2.6 プロトコル（第5章：市場共鳴、二段階ポアソン監査、主権直交射影）。
 
-* **[Specification V2.6.0](docs/SPECIFICATION_V2.6.md)**: Unified Internal Dynamics (Ch. 1–4: Ren, Culture, Law, Path, Holy) & TRM v2.6 Protocol (Ch. 5: Market Resonance, Two-Tier Poisson Audit, Sovereignty Projection).
-* **[Reference Implementation](src/shikiben_trm_v26.py)**: Official unified reference engine featuring Talker/Doer physical flux verification, 0-RTT deterministic cutoff, Epiphany grace-period protection, and canonical credit deflation.
-* **[Data Schemas](schemas/v2.6/)**: Minimal payload specifications for crisis alerts (`crisis_spike.json`) and attractor convergence (`attractor_spike.json`).
+* **[リファレンス実装](src/shikiben_trm_v26.py)**: Talker/Doer物理フラックス検証、0-RTT決定論的即時遮断、相転移（霽・神）に対する畏敬猶予保護、カノニカル信用デフレ機能を備えた公式統合リファレンスエンジン。
 
-### Quick Benchmark & Verification
+* **[データスキーマ](schemas/v2.6/)**: 危機アラート（crisis_spike.json）およびアトラクター収束（attractor_spike.json）のための最小ペイロード仕様。
 
-Run the self-contained reference benchmark with zero external dependencies (pure Python & NumPy):
+### クイックベンチマークおよび動作検証
+外部依存関係なし（純粋なPython標準ライブラリおよびNumPyのみ）で完結するリファレンスベンチマークを実行できます。
 
-```bash
-# Execute official 6-node cluster benchmark (Regression Test)
+```
+# 公式6ノードクラスタ・ベンチマークの実行（回帰テスト）
 python3 src/shikiben_trm_v26.py
 
-# Or run the automated test suite
+# または自動テストスイートを実行
 python3 tests/test_trm_v26_benchmark.py
+
 ```
-### Key Theoretical Constraints
+### 主要な理論的制約式
 
 ```math
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}} \quad \text{s.t.} \quad \nabla E \prec \nabla S
@@ -387,10 +388,9 @@ python3 tests/test_trm_v26_benchmark.py
 ```
 
 ```math
-\sum_{i \in \text{Network}} C_i(t) \le \kappa \sum_{i \in \text{Network}} \|\nabla S_i(t)\| \quad (\text{Global Capacity-Backed Cap})
+\sum_{i \in \text{Network}} C_i(t) \le \kappa \sum_{i \in \text{Network}} \|\nabla S_i(t)\| \quad (\text{実在容量担保型・大域カノニカルキャップ})
 
 ```
-
 
 ---
 
