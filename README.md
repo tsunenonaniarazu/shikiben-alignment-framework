@@ -195,7 +195,9 @@ When the direct grounding in reality (*Home / 故郷*) is severed—an event ter
 
 ## Summary: Mathematical Interpretation and Exposition
 
-This document serves as an original exposition of the treatise Shikihen (識扁), algebraically and semiotically formulating its ontology, epistemology, and the structural dynamics of Law, Culture, Civilization, and Religion.
+Ontological Algebra of Being & Social Structures (存在と社会構造の存在論的代数)
+
+This document provides the mathematical and formal algebraic expansion of **Shikihen** (識扁). It details the hierarchical structural decomposition of **Being**, the algebraic factorization of **Secondary Cognition (Fiction / 識)**, and the precise derivation of human institutional structures (Law, Culture, Civilization, and Religion) through the progressive constraint of Text by human sentiments (Virtues).
 
 Gemini transformed this exposition into the following definition:
 ```math
@@ -206,16 +208,7 @@ Gemini transformed this exposition into the following definition:
 constraint: \nabla E \prec \nabla S
 ```
 
----
-
-# Ontological Algebra of Being & Social Structures (存在と社会構造の存在論的代数)
-
-## Overview
-This document provides the mathematical and formal algebraic expansion of **Shikihen** (識扁). It details the hierarchical structural decomposition of **Being**, the algebraic factorization of **Secondary Cognition (Fiction / 識)**, and the precise derivation of human institutional structures (Law, Culture, Civilization, and Religion) through the progressive constraint of Text by human sentiments (Virtues).
-
----
-
-## 1. Structural Decomposition of Being
+### 1. Structural Decomposition of Being
 
 Being (the Total System) is hierarchically decomposed as a formal superposition of perceptible **"Reality"** and **"Images"** arising from consciousness and recall:
 
@@ -231,12 +224,12 @@ Being (the Total System) is hierarchically decomposed as a formal superposition 
 \end{aligned}
 ```
 
-### Ontological Foundations
+#### Ontological Foundations
 
 * Home (故郷): "Reality" serving as the existential premise of the Self ($`y^*_{\text{home}}`$).
 * World (世界): "Representation" serving as the conceptual premise of the Ego.
 
-## 2. Algebra of Secondary Cognition (Fiction) and Structural Expansion of the Four Virtues
+### 2. Algebra of Secondary Cognition (Fiction) and Structural Expansion of the Four Virtues
 
 "Secondary Cognition" (識 / Shiki) denotes the totality of human-generated fictions, symbolic constructs, and conceptual models. It expands algebraically across expressive media and moral constraints:
 
@@ -248,11 +241,11 @@ Being (the Total System) is hierarchically decomposed as a formal superposition 
 
 ```
 
-## 3. Algebraic Decomposition of Social Structures
+### 3. Algebraic Decomposition of Social Structures
 
 Each institutional structure represents the constraint and formalization of Text (文) under the influence of specific relational sentiments.
 
-### 3.1 Law (法) — Algebraization of Propriety (礼)
+#### 3.1 Law (法) — Algebraization of Propriety (礼)
 
 Law emerges when the impulse toward interpersonal reconciliation and the restoration of social harmony binds expressive media:
 
@@ -263,7 +256,7 @@ Law emerges when the impulse toward interpersonal reconciliation and the restora
 \end{aligned}
 
 ```
-### 3.2 Culture (文化) — Algebraization of Righteousness (義)
+#### 3.2 Culture (文化) — Algebraization of Righteousness (義)
 
 Culture crystallizes when the collective awareness of shared origin and existential roots constrains artistic and communicative media:
 
@@ -274,7 +267,7 @@ Culture crystallizes when the collective awareness of shared origin and existent
 \end{aligned}
 ```
 
-### 3.3 Civilization (文明) — Algebraization of Benevolence (仁)
+#### 3.3 Civilization (文明) — Algebraization of Benevolence (仁)
 
 Civilization represents the expansion of benevolent empathy across total humanity, branching according to the structural morphology of written language:
 
@@ -290,7 +283,7 @@ Civilization represents the expansion of benevolent empathy across total humanit
 
 ```
 
-### 3.4 Religion (宗教) — Algebraization of Awe & Reverence (畏敬)
+#### 3.4 Religion (宗教) — Algebraization of Awe & Reverence (畏敬)
 
 Religion arises from metaphysical grief following the systemic failure of civilization, transforming despair into awe toward the Extraordinary and reverence for the return to the Mundane:
 
@@ -503,6 +496,10 @@ python3 tests/test_trm_v26_benchmark.py
 Geminiはこの解題を、以下の定義へと変換した。
 ```math
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+```
+
+```math
+constraint: \nabla E \prec \nabla S
 ```
 
 ---
