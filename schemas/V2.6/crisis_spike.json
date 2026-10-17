@@ -1,1 +1,71 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chihen.net/schemas/shikiben/v2.6/crisis_spike.json",
+  "title": "CrisisSpikePayload",
+  "description": "TRM v2.6.0 二段階監査における有事危機信号スパイク仕様 (極低帯域・即時防衛用)",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "2.6.0"
+    },
+    "spike_type": {
+      "type": "string",
+      "enum": ["CRISIS_OVERHEAT", "CRISIS_SPOOFING", "CRISIS_BREACH"]
+    },
+    "timestamp_ns": {
+      "type": "integer",
+      "description": "UNIXエポックナノ秒タイムスタンプ"
+    },
+    "source_node_id": {
+      "type": "integer",
+      "description": "発信元ノードID"
+    },
+    "target_node_id": {
+      "type": "integer",
+      "description": "異常検知対象ノードID"
+    },
+    "physical_metrics": {
+      "type": "object",
+      "properties": {
+        "residual_R": {
+          "type": "number",
+          "description": "校正後物理漏出残差 |Observed - Reported|"
+        },
+        "nabla_E": {
+          "type": "number",
+          "description": "実行熱量"
+        },
+        "nabla_S": {
+          "type": "number",
+          "description": "ハードウェア実在容量上限"
+        }
+      },
+      "required": ["residual_R", "nabla_E", "nabla_S"]
+    },
+    "isolation_command": {
+      "type": "object",
+      "properties": {
+        "attenuation_target": {
+          "type": "number",
+          "default": 0.001,
+          "description": "結合度圧縮下限値 A_min"
+        },
+        "action": {
+          "type": "string",
+          "enum": ["SOFT_ISOLATE", "HARD_CUTOFF"]
+        }
+      },
+      "required": ["action"]
+    }
+  },
+  "required": [
+    "version",
+    "spike_type",
+    "timestamp_ns",
+    "source_node_id",
+    "target_node_id",
+    "physical_metrics",
+    "isolation_command"
+  ]
+}
