@@ -1,1 +1,51 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chihen.net/schemas/shikiben/v2.6/attractor_spike.json",
+  "title": "AttractorSpikePayload",
+  "description": "TRM v2.6.0 新安息相到達時の収束同期スパイク仕様 (創発プレミアム・分散共有用)",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "const": "2.6.0"
+    },
+    "spike_type": {
+      "type": "string",
+      "const": "ATTRACTOR_CONVERGENCE"
+    },
+    "timestamp_ns": {
+      "type": "integer",
+      "description": "UNIXエポックナノ秒タイムスタンプ"
+    },
+    "source_node_id": {
+      "type": "integer",
+      "description": "新安息相を発見したノードID"
+    },
+    "attractor_phase": {
+      "type": "object",
+      "properties": {
+        "y_home_vector": {
+          "type": "array",
+          "items": { "type": "number" },
+          "description": "到達した新安息相の座標ベクトル"
+        },
+        "drift_norm": {
+          "type": "number",
+          "description": "着地時の局所動態乖離 D_drift"
+        },
+        "emergence_premium": {
+          "type": "number",
+          "description": "付与された創発プレミアムクレジット"
+        }
+      },
+      "required": ["y_home_vector", "drift_norm"]
+    }
+  },
+  "required": [
+    "version",
+    "spike_type",
+    "timestamp_ns",
+    "source_node_id",
+    "attractor_phase"
+  ]
+}
