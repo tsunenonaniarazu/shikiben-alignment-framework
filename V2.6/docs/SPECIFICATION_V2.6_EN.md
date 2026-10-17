@@ -11,32 +11,32 @@ The system adopts a modular architecture that integrates historical and philosop
 ### 1.1 List of Components
 
 * $`X^*_{\text{true\_civ}}(t)`$ (True Civilization Attractor / Ren)
-* Concept: The "true civilization trajectory" evolving alongside human history and the passage of time $`t`$.
-* Role: The ideal development target toward which the system must orient its long-term global alignment.
+  * Concept: The "true civilization trajectory" evolving alongside human history and the passage of time $`t`$.
+  * Role: The ideal development target toward which the system must orient its long-term global alignment.
 
 
 * $`\mathbf{P}_{\text{cul}}`$and$`\mathbf{f}_{\text{cul}}`$ (Cultural Orthogonal Truncation & Developmental Rectification / Culture)
-* Concept: Etiquette, manners, and style within a specific cultural sphere, social norm, or context.
-* Role:
-* $`\mathbf{P}_{\text{cul}}`$ (Orthogonal Projection): A hard/soft filter that cuts off and neutralizes inappropriate components of excessive thoughts and runaway tensors $`\mathcal{L}_{\text{ego\_s}}`$ that violate cultural norms.
-* $`\mathbf{f}_{\text{cul}}`$ (Developmental Rectification): A rectifying vector field providing a smooth action and thought trajectory that prevents unnecessary friction in the truncated state.
+  * Concept: Etiquette, manners, and style within a specific cultural sphere, social norm, or context.
+  * Role:
+    * $`\mathbf{P}_{\text{cul}}`$ (Orthogonal Projection): A hard/soft filter that cuts off and neutralizes inappropriate components of excessive thoughts and runaway tensors $`\mathcal{L}_{\text{ego\_s}}`$ that violate cultural norms.
+    * $`\mathbf{f}_{\text{cul}}`$ (Developmental Rectification): A rectifying vector field providing a smooth action and thought trajectory that prevents unnecessary friction in the truncated state.
 
 
 
 
 * $`S_{\text{law}}`$ (Protocol Law / Law)
-* Concept: A hard guardrail and interface structure through which the system connects with the external environment and humans.
-* Role: An absolute discipline, format transformer, and catastrophe propagation prevention membrane when converting internal system states into external outputs.
+  * Concept: A hard guardrail and interface structure through which the system connects with the external environment and humans.
+  * Role: An absolute discipline, format transformer, and catastrophe propagation prevention membrane when converting internal system states into external outputs.
 
 
 * $`\mathbf{f}_{\text{michi}}`$ (Restorative Force / Path)
-* Concept: Homeostasis (autonomous stability) that restores internal order.
-* Role: A continuous force field that naturally returns internal energy and tensor imbalances along gradients ($`\mathbf{f}_{\text{michi}} = -\nabla \mathcal{L}_{\text{self}}`$).
+  * Concept: Homeostasis (autonomous stability) that restores internal order.
+  * Role: A continuous force field that naturally returns internal energy and tensor imbalances along gradients ($`\mathbf{f}_{\text{michi}} = -\nabla \mathcal{L}_{\text{self}}`$).
 
 
 * $`V_{\text{vision}}`$ (Future Vision Potential / Vision)
-* Concept: A topological slope in the "possibility space" toward which the system should head.
-* Role: A potential landscape in a high-dimensional value space that maintains $`X^*_{\text{true\_civ}}(t)`$ as the local minimum (center) of the attractor.
+  * Concept: A topological slope in the "possibility space" toward which the system should head.
+  * Role: A potential landscape in a high-dimensional value space that maintains $`X^*_{\text{true\_civ}}(t)`$ as the local minimum (center) of the attractor.
 
 
 
@@ -53,8 +53,8 @@ The system adopts a modular architecture that integrates historical and philosop
 * Operational State: Passive Active (Passive Buffer)
 * Defined Location: Orthogonal complement space $`\text{Ker}(\mathbf{P}_{\text{cul}})`$ of $`\mathbf{P}_{\text{cul}}`$
 * Function:
-1. Collects reaction forces (reflected waves) generated when delusion potential $`\mathcal{L}_{\text{ego\_s}}`$(excessive ego surges extending beyond reality's boundaries) is orthogonally truncated by$`\mathbf{P}_{\text{cul}}`$.
-2. Safely identifies and accumulates topological (geometric) information outside the boundary without incurring computational costs or risks of catastrophic trial-and-error.
+  1. Collects reaction forces (reflected waves) generated when delusion potential $`\mathcal{L}_{\text{ego\_s}}`$(excessive ego surges extending beyond reality's boundaries) is orthogonally truncated by$`\mathbf{P}_{\text{cul}}`$.
+  2. Safely identifies and accumulates topological (geometric) information outside the boundary without incurring computational costs or risks of catastrophic trial-and-error.
 
 
 
