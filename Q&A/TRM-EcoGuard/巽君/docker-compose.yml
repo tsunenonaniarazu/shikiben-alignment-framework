@@ -1,1 +1,65 @@
+version: '3.8'
 
+services:
+  # ========================================================
+  # 1. バックエンド推論エンジン (vLLM 実体)
+  # ========================================================
+  vllm-engine:
+    image: vllm/vllm-openai:latest
+    container_name: vllm-backend
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - ~/.cache/huggingface:/root/.cache/huggingface
+    command: >
+      --model meta-llama/Llama-3.1-8B-Instruct
+      --port 8001
+      --host 0.0.0.0
+      --disable-log-requests
+    networks:
+      - trm-internal
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  # ========================================================
+  # 2. TRM-EcoGuard サイドカー (Phase 1 確定実戦配備)
+  # ========================================================
+  trm-sidecar:
+    build:
+      context: .
+      dockerfile: Dockerfile.sidecar
+    container_name: trm-ecoguard-proxy
+    runtime: nvidia
+    # 震ちゃんパッチ③: vLLMとPID空間を完全共有 (他コンテナ巻き添え防止)
+    pid: "service:vllm-engine"
+    ports:
+      - "8000:8000"
+    environment:
+      - UPSTREAM_URL=http://vllm-backend:8001
+      - PROXY_PORT=8000
+      - P_IDLE_INIT=45.0
+      - P_MAX_CAPACITY=300.0
+      - THETA_AUDIT=0.35
+      - MU_MARGIN=0.15
+      # 震ちゃんパッチ①: NVML管理ライブラリの確実なコンテナ内透過
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    volumes:
+      - /sys:/sys:ro
+    networks:
+      - trm-internal
+    depends_on:
+      - vllm-engine
+    restart: unless-stopped
+
+networks:
+  trm-internal:
+    driver: bridge
