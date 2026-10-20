@@ -1,0 +1,22 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# 最小限のシステムライブラリ
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# 依存ライブラリ (aiohttp と pynvml のみ)
+RUN pip install --no-cache-dir aiohttp==3.9.5 pynvml==11.5.0
+
+COPY hardware_harvester_v2.py /app/
+COPY trm_proxy.py /app/
+
+# ヘルスチェック
+HEALTHCHECK --interval=10s --timeout=3s --retries=3 \
+  CMD curl -f http://localhost:8000/v1/models || exit 1
+
+EXPOSE 8000
+
+CMD ["python", "-u", "trm_proxy.py"]
