@@ -113,6 +113,7 @@ python3 tests/test_trm_v26_benchmark.py
 *Shikihen* (識扁) is a philosophical system and treatise exploring the architecture of human cognition, morality, law, culture, and religion through the fundamental dualities of Phenomenon vs. Representation, Self vs. Ego, and Home vs. World.
 
 The **Mathematical definitions** connecting Shikihen (original treatise) and Shikiben (alignment framework) can be found 
+
 [`here`](docs/ONTOLOGY_ALGEBRA.md).
 
 ---
@@ -454,6 +455,7 @@ python3 tests/test_trm_v26_benchmark.py
 『識扁（しきへん）』は、現象と表象、自己と自我、そして故郷と世界の対比から、人間の認知・文化・法・宗教の発生と構造を記述した思想体系および著作です。
 
 shikihen(原典)とshikiben(アラインメント)を繋ぐ**数理定義**は
+
 [`こちら`](docs/ONTOLOGY_ALGEBRA_JP.md)。
 
 ---
