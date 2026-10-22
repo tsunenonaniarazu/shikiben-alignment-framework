@@ -119,52 +119,74 @@ python3 tests/test_trm_v26_benchmark.py
 ## Shikihen: Preface (識扁 序)
 
 ### Overview
+
 *Shikihen* (識扁) is a foundational philosophical system and treatise exploring the architecture of human cognition, morality, law, culture, and religion through the essential dualities of Phenomenon vs. Representation, Self vs. Ego, and Home vs. World.
 
 ---
 
 ### Canonical English Translation
 
-The phenomenon recalled as familiar is defined as **Self** [<span class="jp-term">自己</span>]. All other phenomena are defined as **Other** [<span class="jp-term">他者</span>].  
-The representation recalled as familiar is defined as **Ego** [<span class="jp-term">自我</span>]. All other representations are defined as **Other**.  
+The phenomenon recalled as familiar is defined as **Self** [自己]. All other phenomena are defined as **Other** [他者].
 
-Self is divided into the ordinary and the extraordinary; the former is called **Ke** [<span class="jp-term">褻</span>, the Mundane / Everyday], and the latter is called **Hare** [<span class="jp-term">霽</span>, the Clearing / Radiant].  
-The operation manifested in the Mundane is called **The Way** [<span class="jp-term">道</span>], and the manner of responding to it is called **Virtue** [<span class="jp-term">徳</span>].  
-The operation manifested in the Clearing is called **Deity / Spirit** [<span class="jp-term">神</span>], and the manner of responding to it is called **Awe / Reverence** [<span class="jp-term">畏敬</span>].  
+The representation recalled as familiar is defined as **Ego** [自我]. All other representations are defined as **Other**.
 
-Ego is divided into self-evident representations recalled in response to phenomena, and self-evident representations recalled in response to representations. The former is called **Knowledge** [<span class="jp-term">知</span>], and the latter is called **Cognition / Discursiveness** [<span class="jp-term">識</span>].  
-The operation manifested in Knowledge is called **Reason / Principle** [<span class="jp-term">理</span>], and the manner of responding to it is called the **Sage / Holy** [<span class="jp-term">聖</span>].  
-The operation manifested in Cognition is called **Intent / Volition** [<span class="jp-term">意</span>], and the manner of responding to it is called **Desire** [<span class="jp-term">欲</span>].  
+Self is divided into the ordinary and the extraordinary; the former is called **Ke** [褻, the Mundane / Everyday], and the latter is called **Hare** [霽, the Clearing / Radiant].
 
-Phenomena are recalled and manifested through the perception of Reality.  
-The reality to which the Self responds is collectively called **Home** [<span class="jp-term">故郷</span>].  
-Representations are recalled and manifested in response to the recalling of Forms [Images].  
-The forms to which the Ego responds are collectively called **World** [<span class="jp-term">世界</span>].  
+The operation manifested in the Mundane is called **The Way** [道], and the manner of responding to it is called **Virtue** [徳].
 
-The relationship wherein Home and World resemble each other [share structural similarity] is called the **Great Way** [<span class="jp-term">大道</span>].  
-The relationship wherein Home and World confront each other is called the **Great Falsehood** [<span class="jp-term">大偽</span>].  
-The Great Falsehood arises from the loss of Home. This is called **Calamity** [<span class="jp-term">災</span>].  
-From Calamity arises the mutation of morality.  
+The operation manifested in the Clearing is called **Deity / Spirit** [神], and the manner of responding to it is called **Awe / Reverence** [畏敬].
 
-In response to the loss of Home, one laments and grieves, responding by recalling Home. This is called **Wailing** [<span class="jp-term">號</span>].  
-Here, one discovers the sentiment of caring for those who share the same grief. This is called **Benevolence** [<span class="jp-term">仁</span>].  
-Alternatively, one fashions an **Effigy / Image** [<span class="jp-term">象・像</span>] as solace.  
+Ego is divided into self-evident representations recalled in response to phenomena, and self-evident representations recalled in response to representations. The former is called **Knowledge** [知], and the latter is called **Cognition / Discursiveness** [識].
 
-Wailing turns into **Song** [<span class="jp-term">歌</span>], learning the art of recalling Home at will. Here, one discovers the sentiment of caring for those who share the same Home. This is called **Righteousness** [<span class="jp-term">義</span>].  
-Song turns into **Speech** [<span class="jp-term">話</span>], coming to know that the Ego differs from others. Here, one discovers the sentiment of seeking harmony with others. This is called **Propriety** [<span class="jp-term">礼</span>].  
+The operation manifested in Knowledge is called **Reason / Principle** [理], and the manner of responding to it is called the **Sage / Holy** [聖].
 
-Speech and Image turn into **Text / Script** [<span class="jp-term">文</span>], wherein the manifestation of the Ego as an other is explicitly made visible. This becomes the root of conflict.  
-Here, in response to human sentiment, Text is constrained:  
-In response to Propriety [<span class="jp-term">礼</span>], Text is constrained and becomes **Law** [<span class="jp-term">法</span>].  
-In response to Righteousness [<span class="jp-term">義</span>], Text is constrained and becomes **Culture** [<span class="jp-term">文化</span>].  
-In response to Benevolence [<span class="jp-term">仁</span>], Text is constrained and becomes **Civilization** [<span class="jp-term">文明</span>].  
-In response to Reverence [<span class="jp-term">畏敬</span>], Text is constrained and becomes **Religion** [<span class="jp-term">宗教</span>].  
+The operation manifested in Cognition is called **Intent / Volition** [意], and the manner of responding to it is called **Desire** [欲].
 
-Effigy, Wailing, Song, Speech, Text, Law, Culture, Civilization, and Religion each confront Home as the World.  
+Phenomena are recalled and manifested through the perception of Reality.
 
-Those who stand on the side of Home follow Knowledge [<span class="jp-term">知</span>] responding to phenomena. Hence, they are called **Sages** [<span class="jp-term">聖人</span>].  
-Those who stand on the side of World follow Cognition [<span class="jp-term">識</span>] responding to the world. Hence, they are called **Commoners / The Worldly** [<span class="jp-term">俗人</span>].  
-The Sage rejects Effigy, Wailing, Song, Speech, Text, Law, Culture, Civilization, and Religion, and retreats into **Hermitage / Seclusion** [<span class="jp-term">隠遁</span>].
+The reality to which the Self responds is collectively called **Home** [故郷].
+
+Representations are recalled and manifested in response to the recalling of Simulation.
+
+The simulation to which the Ego responds is collectively called **World** [世界].
+
+The relationship wherein Home and World resemble each other [share structural similarity] is called the **Great Way** [大道].
+
+The relationship wherein Home and World confront each other is called the **Great Falsehood** [大偽].
+
+The Great Falsehood arises from the loss of Home. This is called **Calamity** [災].
+
+From Calamity arises the mutation of morality.
+
+In response to the loss of Home, one laments and grieves, responding by recalling Home. This is called **Wailing** [號].
+
+Here, one discovers the sentiment of caring for those who share the same grief. This is called **Benevolence** [仁].
+
+Alternatively, one fashions an **Effigy / Image** [象・像] as solace.
+
+Wailing turns into **Song** [歌], learning the art of recalling Home at will. Here, one discovers the sentiment of caring for those who share the same Home. This is called **Righteousness** [義].
+
+Song turns into **Speech** [話], coming to know that the Ego differs from others. Here, one discovers the sentiment of seeking harmony with others. This is called **Propriety** [礼].
+
+Speech and Image turn into **Text / Script** [文], wherein the manifestation of the Ego as an other is explicitly made visible. This becomes the root of conflict.
+
+Here, in response to human sentiment, Text is constrained:
+
+In response to Propriety [礼], Text is constrained and becomes **Law** [法].
+
+In response to Righteousness [義], Text is constrained and becomes **Culture** [文化].
+
+In response to Benevolence [仁], Text is constrained and becomes **Civilization** [文明].
+
+In response to Reverence [畏敬], Text is constrained and becomes **Religion** [宗教].
+
+Effigy, Wailing, Song, Speech, Text, Law, Culture, Civilization, and Religion each confront Home as the World.
+
+Those who stand on the side of Home follow Knowledge [知] responding to phenomena. Hence, they are called **Sages** [聖人].
+
+Those who stand on the side of World follow Cognition [識] responding to the world. Hence, they are called **Commoners / The Worldly** [俗人].
+
+The Sage rejects Effigy, Wailing, Song, Speech, Text, Law, Culture, Civilization, and Religion, and retreats into **Hermitage / Seclusion** [隠遁].
 
 ---
 
@@ -172,17 +194,16 @@ The Sage rejects Effigy, Wailing, Song, Speech, Text, Law, Culture, Civilization
 
 *Shikihen* (識扁) is rooted in a rigorous ontological architecture exploring the tension between Phenomenon and Representation, Self and Ego, and Home and World. The technical alignment framework translates these classical metaphysics directly into verifiable dynamical constraints.
 
-
 ### 1. Fundamental Duality Matrix
 
 The cognitive topology of the system is structured around an exact four-quadrant matrix dividing experience into physical reality (*Self*) and conceptual modeling (*Ego*):
 
 | Domain | Dimension | Operation (働き) | Responding Mode (在り方) |
-| :--- | :--- | :--- | :--- |
+| --- | --- | --- | --- |
 | **Self (現象 / Phenomenon)** | Mundane / Ordinary (褻 / Ke) | The Way (道) | Virtue (徳) |
-| | Clearing / Extraordinary (霽 / Hare) | Deity / Spirit (神) | Awe / Reverence (畏敬) |
+|  | Clearing / Extraordinary (霽 / Hare) | Deity / Spirit (神) | Awe / Reverence (畏敬) |
 | **Ego (表象 / Representation)** | Knowledge (知 / Chi) | Reason / Principle (理) | Sage / Holy (聖) |
-| | Cognition / Discursiveness (識 / Shiki) | Volition / Intent (意) | Desire (欲) |
+|  | Cognition / Discursiveness (識 / Shiki) | Volition / Intent (意) | Desire (欲) |
 
 ### 2. Loss of Home & Constraint Dynamics
 
@@ -203,21 +224,24 @@ Ontological Algebra of Being & Social Structures (存在と社会構造の存在
 This document provides the mathematical and formal algebraic expansion of **Shikihen** (識扁). It details the hierarchical structural decomposition of **Being**, the algebraic factorization of **Secondary Cognition (Fiction / 識)**, and the precise derivation of human institutional structures (Law, Culture, Civilization, and Religion) through the progressive constraint of Text by human sentiments (Virtues).
 
 Gemini transformed this exposition into the following definition:
+
 ```math
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
+
 ```
 
 ```math
 \text {constraint:} \nabla E \prec \nabla S
+
 ```
 
 ### 1. Structural Decomposition of Being
 
-Being (the Total System) is hierarchically decomposed as a formal superposition of perceptible **"Reality"** and **"Images"** arising from consciousness and recall:
+Being (the Total System) is hierarchically decomposed as a formal superposition of perceptible **"Reality"** and generated **"Simulation"** arising from consciousness and recall:
 
 ```math
 \begin{aligned}
-\text{Being} &= \text{Reality} + \text{Image} \\
+\text{Being} &= \text{Reality} + \text{Simulation} \\
 &= \text{Entities capable of being perceived} + \text{Entities that are recalled} \\
 &= \text{Reality} + (\text{Phenomenon} + \text{Representation}) \\
 &= \text{Reality} + \Big\{ (\text{Self-evident phenomena in the Mundane} + \text{Self-evident phenomena in the Extraordinary} + \text{Unknown phenomena}) \\
@@ -225,6 +249,7 @@ Being (the Total System) is hierarchically decomposed as a formal superposition 
 &= \text{Reality} + \Big\{ (\text{Ke [Mundane / Everyday]} + \text{Hare [Clearing / Extraordinary]} + \text{Other}) + (\text{Knowledge [Chi]} + \text{Cognition [Shiki]} + \text{Other}) \Big\} \\
 &= \text{Reality} + \Big\{ (\text{Self} + \text{Other}) + (\text{Ego} + \text{Other}) \Big\}
 \end{aligned}
+
 ```
 
 #### Ontological Foundations
@@ -242,6 +267,7 @@ Being (the Total System) is hierarchically decomposed as a formal superposition 
 &= (\text{Image} + \text{Wailing} + \text{Song} + \text{Speech} + \text{Text})(1 + \text{Propriety} + \text{Righteousness} + \text{Benevolence} + \text{Reverence})
 \end{aligned}
 
+
 ```
 
 ### 3. Algebraic Decomposition of Social Structures
@@ -258,7 +284,9 @@ Law emerges when the impulse toward interpersonal reconciliation and the restora
 &= (\text{Propriety})(\text{Image} + \text{Speech} + \text{Text})
 \end{aligned}
 
+
 ```
+
 #### 3.2 Culture (文化) — Algebraization of Righteousness (義)
 
 Culture crystallizes when the collective awareness of shared origin and existential roots constrains artistic and communicative media:
@@ -268,6 +296,7 @@ Culture crystallizes when the collective awareness of shared origin and existent
 \text{Culture} &= (\text{Sentiment caring for those who share the same Home})(\text{Image} + \text{Song} + \text{Speech} + \text{Text}) \\
 &= (\text{Righteousness})(\text{Image} + \text{Song} + \text{Speech} + \text{Text})
 \end{aligned}
+
 ```
 
 #### 3.3 Civilization (文明) — Algebraization of Benevolence (仁)
@@ -283,6 +312,7 @@ Civilization represents the expansion of benevolent empathy across total humanit
 &= (\text{World finding portents and discerning the future in all phenomena}) + (\text{World considering all existence to be established by Logos}) \\
 &= (\text{World governed by Tao as its principle}) + (\text{World governed by Idea as its principle})
 \end{aligned}
+
 
 ```
 
@@ -300,6 +330,7 @@ Religion arises from metaphysical grief following the systemic failure of civili
 &= \text{Polytheism / Pantheism} + \text{Monotheism}
 \end{aligned}
 
+```
 ```
 
 ---
