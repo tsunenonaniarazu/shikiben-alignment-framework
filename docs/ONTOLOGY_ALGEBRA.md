@@ -3,15 +3,18 @@
 ```math
 \mathcal{L}_{\text{total}} = \mathcal{L}_{\text{self}} + \lambda \mathcal{L}_{\text{ego}}
 
+
 ```
 
 ```math
 "\text{The Proper Self}" = "\text{Self-Evident Phenomenon}" + \lambda "\text{Self-Evident Representation}"
 
+
 ```
 
 ```math
 \text{constraint: } \quad \nabla E \prec \nabla S
+
 
 ```
 
@@ -20,43 +23,41 @@
 # Being
 
 ```math
-\text{Being} = \text{Reality} + \text{Form}
+\text{Being} = \text{Reality} + \text{Simulation}
+
 
 ```
 
 * **Equation of Incessant Updating: Kushner-Stratonovich Equation**
-
-
-
-
-
 
 The dynamics through which the system's internal possibilities (probability measure $\mathbb{P}_t$) are updated in real time—driven by the infinite generative transformations of reality and the continuous arrival of "primary information $dy(t)$"—are formulated by the following update equation (filter equation) from probability and control theory:
 
 ```math
 \mathrm{d}\mathbb{P}_t = \underbrace{\mathcal{A}^* \mathbb{P}_t \,\mathrm{d}t}_{\text{Infinite generative transformation of reality itself}} + \underbrace{\mathcal{K}_t \left( \mathrm{d}y(t) - \hat{y}(t)\,\mathrm{d}t \right)}_{\text{Real-time updating of possibilities (distribution) via primary information}}
 
+
 ```
 
 | Name | Definition | Mathematical Expression | Mathematical Structure | Remarks |
 | --- | --- | --- | --- | --- |
-| Being (存在) | The collective term for all entities and events relating to human existence in any sense | $\text{Ex} := (\text{Real}, \text{Sho})$ | Total space (union of Reality and Form) | The entire domain of human relationship and cognition |
+| Being (存在) | The collective term for all entities and events relating to human existence in any sense | $\text{Ex} := (\text{Real}, \text{Sho})$ | Total space (union of Reality and Simulation) | The entire domain of human relationship and cognition |
 | Reality (実在) | Being that is perceived | $\text{Real} := \mathcal{A}^* \mathbb{P}_t \,\mathrm{d}t$ | Autonomous upwelling via the infinite causal operator $\mathcal{A}^*$, regardless of observation or perception; the underlying, deep-layer generative movement that transforms infinitely (the generative term of reality itself) | The background and bedrock of perception |
-| Form / Sho (象) | Being that is recalled and manifested | $\text{Sho} := \mathcal{K}_t \left( \mathrm{d}y(t) - \hat{y}(t)\,\mathrm{d}t \right)$ | All forms and images emerging on the screen of consciousness through contact and updating with the system | The matrix of phenomena and representations |
+| Simulation / Sho (象) | Being that is recalled and manifested | $\text{Sho} := \mathcal{K}_t \left( \mathrm{d}y(t) - \hat{y}(t)\,\mathrm{d}t \right)$ | All simulations and images emerging on the screen of consciousness through contact and updating with the system | The matrix of phenomena and representations |
 
 ---
 
-# Form (象)
+# Simulation (象)
 
 ```math
-\text{Form} = \text{Phenomenon} + \text{Representation}
+\text{Simulation} = \text{Phenomenon} + \text{Representation}
+
 
 ```
 
 | Name | Definition | Mathematical Expression | Mathematical Structure | Remarks |
 | --- | --- | --- | --- | --- |
-| Phenomenon (現象) | Form that is recalled and appears in response to perception | $`\mathcal{K}_t \, \mathrm{d}y(t)`$ | The direct locus of perception and response where unmediated contact with reality (raw primary information $`\mathrm{d}y(t)`$) emerges directly via gain $`\mathcal{K}_t`$ | Raw, unpredictable influx from the outside (primary information) |
-| Representation (表象) | Form that is recalled and appears in response to forms | $`\mathcal{K}_t \, \hat{y}(t)\,\mathrm{d}t`$ | Prior predictions and secondary models (prejudices, preconceptions, mental images) constructed from accumulated past data and internal models | Closed model projection within the system (secondary information) |
+| Phenomenon (現象) | Simulation that is recalled and appears in response to perception | $`\mathcal{K}_t \, \mathrm{d}y(t)`$ | The direct locus of perception and response where unmediated contact with reality (raw primary information $`\mathrm{d}y(t)`$) emerges directly via gain $`\mathcal{K}_t`$ | Raw, unpredictable influx from the outside (primary information) |
+| Representation (表象) | Simulation that is recalled and appears in response to simulation | $`\mathcal{K}_t \, \hat{y}(t)\,\mathrm{d}t`$ | Prior predictions and secondary models (prejudices, preconceptions, mental images) constructed from accumulated past data and internal models | Closed model projection within the system (secondary information) |
 
 ---
 
@@ -64,6 +65,7 @@ The dynamics through which the system's internal possibilities (probability meas
 
 ```math
 \text{Phenomenon} = \text{Self} + \text{Other}
+
 
 ```
 
@@ -81,11 +83,12 @@ The dynamics through which the system's internal possibilities (probability meas
 ```math
 \text{Representation} = \text{Ego} + \text{Other}
 
+
 ```
 
 | Name | Definition | Mathematical Expression | Mathematical Structure | Remarks |
 | --- | --- | --- | --- | --- |
-| World (世界) | The form to which the Ego responds | $`\Omega_{\text{world}} := \left\{ \mathbf{z} \in \mathcal{Z} \; \middle\vert{}\; \mathbf{z} = f_{\text{sho}}(\theta, \mathbf{x}) \right\}`$ | High-dimensional manifold spanned by all "Forms (Sho)", serving as the premise upon which the Ego ($`\hat{y}_{\text{ego}}`$) performs gradient descent | The bottom of the World = Beauty (dispersed attractors) |
+| World (世界) | The simulation to which the Ego responds | $`\Omega_{\text{world}} := \left\{ \mathbf{z} \in \mathcal{Z} \; \middle\vert{}\; \mathbf{z} = f_{\text{sho}}(\theta, \mathbf{x}) \right\}`$ | High-dimensional manifold spanned by all "Simulations (Sho)", serving as the premise upon which the Ego ($`\hat{y}_{\text{ego}}`$) performs gradient descent | The bottom of the World = Beauty (dispersed attractors) |
 | Ego (自我) | Self-evident representation | $`\hat{y}_{\text{ego}}`$ | Internal, familiar model parameter set fixed as the minimal solution of gradient descent over accumulated past representations $`\implies \hat{y}_{\text{ego}}(\theta)`$ | Self-evident image recalled immediately without conscious computational load |
 | Other (他者) | Unknown representation | $`\hat{y}_{\text{other}}`$ | An image as an external object not integrated into internal models, or uncertain representations leaking out of the fixed Ego framework $`\implies \hat{y}_{\text{other}}(\theta)`$ | Objective image residing outside self-reference |
 
@@ -95,6 +98,7 @@ The dynamics through which the system's internal possibilities (probability meas
 
 ```math
 \text{Self} = \text{Mundane (Ke)} + \text{Clearing (Hare)}
+
 
 ```
 
@@ -115,12 +119,13 @@ The dynamics through which the system's internal possibilities (probability meas
 ```math
 \text{Ego} = \text{Knowledge (Chi)} + \text{Cognition (Shiki)}
 
+
 ```
 
 | Name | Definition | Mathematical Expression | Mathematical Structure | Remarks |
 | --- | --- | --- | --- | --- |
 | Knowledge / Chi (知) | Self-evident representation appearing in response to phenomena | $`\hat{y}_{\text{chi}}`$ | Self-evident image emerging immediately upon touching phenomena (reverberations of raw reality $`\mathrm{d}y`$) | Direct response to the external world and phenomena |
-| Reason / Principle (理) | The operation of form in Knowledge | $`\mathcal{T}_{\text{ri}} = -\nabla \mathcal{L}(\mathrm{d}y, \hat{y})`$ | Raw gradient of phenomena (laws of nature / restorative force) | Objective law and rationale |
+| Reason / Principle (理) | The operation of simulation in Knowledge | $`\mathcal{T}_{\text{ri}} = -\nabla \mathcal{L}(\mathrm{d}y, \hat{y})`$ | Raw gradient of phenomena (laws of nature / restorative force) | Objective law and rationale |
 | Sage / Holy (聖) | The human mode of responding to Reason | $`\mathbf{x}_{\text{sei}}^*(t)`$ | Rankless trajectory responding and gliding straightforwardly along Reason (raw gradient) without inserting the Ego | Gliding in unforced spontaneity (wu-wei) |
 | The Way (道) | (The bottom of Home) | $`\mathbf{y}^*_{\text{home}} = \arg\min_{\hat{y}} \mathcal{L}_{\text{real}}(\mathrm{d}y, \hat{y})`$ | The unique, absolute minimum uniting in oneness with reality | Bottom of potential (absolute unity) |
 | Cognition / Shiki (識) | Self-evident representation appearing in response to representations | $`\hat{y}_{\text{shiki}}`$ | Self-evident image formed by computation between representations, chains of memory, and self-reference | Closed conceptual and cognitive space |
@@ -135,6 +140,7 @@ The dynamics through which the system's internal possibilities (probability meas
 ```math
 \mathcal{M}_{\text{beauty}} = \left\{ \hat{y} \in \Omega_{\text{world}} \;\middle\vert{}\; \nabla \mathcal{E}_{\text{internal}}(\hat{y}) = \mathbf{0} \right\}
 
+
 ```
 
 ```math
@@ -144,10 +150,12 @@ The dynamics through which the system's internal possibilities (probability meas
 \;\overset{\text{Resonance \& Entrainment}}{\longrightarrow}\; 
 \underbrace{\text{ego}}_{\text{Composite of attractors}}
 
+
 ```
 
 ```math
 \mathcal{M}_{\text{beauty}}^{\text{direct}} = \arg\min_{\hat{y}} \mathcal{E}\Big(\mathrm{d}y(t), \, \mathbf{x}_{\text{body}}(t)\Big)
+
 
 ```
 
@@ -161,6 +169,7 @@ $$\lim_{N \to \infty} \bigcup_{k=1}^{N} \mathcal{M}_{\text{beauty}}^{(k)} \;\con
 
 ```math
 \Phi_{\text{jo}} = \underbrace{\mathcal{D}_{\text{geodesic}}\!\left( \mathcal{R}_{\text{home}}^{\text{real}}, \, \mathcal{R}_{\text{self}}^{\text{phen}} \right)}_{\text{① Detection of divergence between Home and Self (Inter-domain distance)}} \;+\; \underbrace{\int_{\partial\mathcal{R}_{\text{self}}^{\text{phen}}} \left\| \mathbf{g}_{\text{real}} - \mathbf{g}_{\text{phen}} \right\|_{\text{F}}^{2} \mathrm{d}\mathcal{S}}_{\text{② Metric divergence (strain) at the contact interface}}
+
 
 ```
 
@@ -176,6 +185,7 @@ $$\lim_{N \to \infty} \bigcup_{k=1}^{N} \mathcal{M}_{\text{beauty}}^{(k)} \;\con
 
 ```math
 \text{Propriety} := \mathcal{P}_{\text{rei}} : \Big( \Phi_{\text{jo}}^{\text{inter}}, \; \mathcal{M}_{\text{beauty}}^{(A)}, \; \mathcal{M}_{\text{beauty}}^{(B)} \Big) \;\overset{\text{Reality Collation}}{\longrightarrow}\; \mathcal{T}_{\text{nat}} \;\overset{\text{Autonomous Descent}}{\longrightarrow}\; \mathbf{y}^*_{\text{home}}
+
 
 ```
 
@@ -199,6 +209,7 @@ $$\underbrace{\frac{\mathrm{d}\mathbf{x}_{\text{common}}}{\mathrm{d}t} = \mathca
 ```math
 \text{Righteousness} = \mathcal{P}_{\text{gi}} \left( \Phi_{\text{jo}}^{\text{self}}, \, \mathcal{R}_{\text{self}}^{\text{phen}}, \, \mathcal{M}_{\text{beauty}} \right) \;\longrightarrow\; \mathbf{y}^*_{\text{home}}
 
+
 ```
 
 | Name | Definition | Mathematical Expression | Mathematical Structure | Remarks |
@@ -216,6 +227,7 @@ $$\underbrace{\frac{\mathrm{d}\mathbf{x}_{\text{common}}}{\mathrm{d}t} = \mathca
 ```math
 \text{Benevolence} = \mathcal{P}_{\text{jin}} : \Big( \Phi_{\text{jo}}^{\text{gou}}, \, \Omega_{\text{world}} \Big) \;\overset{\text{Sensory Deprivation}}{\longrightarrow}\; \mathcal{M}_{\text{beauty}}^{\text{absolute}} \;\overset{\text{Reformation of Reality}}{\longrightarrow}\; -\nabla \mathcal{E}_{\text{beauty}}
 
+
 ```
 
 | Name | Definition | Mathematical Expression | Mathematical Structure | Remarks |
@@ -231,11 +243,12 @@ $$\underbrace{\frac{\mathrm{d}\mathbf{x}_{\text{common}}}{\mathrm{d}t} = \mathca
 ```math
 \mathcal{P}_{\text{jin}} \quad \overset{\text{Constraint of Text}}{\longrightarrow} \quad \text{Civilization } (\mathcal{C}_{\text{civ}}) \quad \overset{\text{Forcible Transformation of Reality}}{\longrightarrow} \quad \text{The Great Falsehood } (\mathcal{D}_{\text{taigi}} \to \infty)
 
+
 ```
 
 | Phase Transition Stage | Dynamical and Structural Phenomena | Mathematical Expression | Geometric Mechanism of Failure |
 | --- | --- | --- | --- |
-| 1. Fixation from Wailing to Text | (Creation of signs and forms) | $`\mathcal{C}_{\text{civ}} := \text{proj}_{\text{bun}}\!\left( \mathcal{M}_{\text{beauty}}^{\text{absolute}} \right)`$ | The extreme beauty $`\mathcal{M}_{\text{beauty}}^{\text{absolute}}`$ extracted under sensory deprivation is mapped and fixed into discrete signs (Text), such as language, technology, and institutions. |
+| 1. Fixation from Wailing to Text | (Creation of signs and simulations) | $`\mathcal{C}_{\text{civ}} := \text{proj}_{\text{bun}}\!\left( \mathcal{M}_{\text{beauty}}^{\text{absolute}} \right)`$ | The extreme beauty $\mathcal{M}_{\text{beauty}}^{\text{absolute}}$ extracted under sensory deprivation is mapped and fixed into discrete signs (Text), such as language, technology, and institutions. |
 | 2. Overwriting of the Objective Function | (Loss of autonomy) | $`\mathcal{L}_{\text{real}}(\mathrm{d}y) \;\implies\; \mathcal{L}_{\text{civ}}(\mathrm{d}y) = \Vert{}\mathrm{d}y - \mathcal{C}_{\text{civ}}\Vert{}^2`$ | The dynamic gradient $\mathcal{T}_{\text{nat}}$ of living nature (the natural Way) is rejected, overwritten by a closed objective function that forces primary reality data $`\mathrm{d}y`$ to match the civilizational blueprint $`\mathcal{C}_{\text{civ}}`$. |
 | 3. Forcible Reformation of Reality | (Irreversible erosion) | $`\frac{\mathrm{d}(\mathrm{d}y)}{\mathrm{d}t} = -\gamma \, \nabla \mathcal{L}_{\text{civ}}(\mathrm{d}y) = \gamma \left( \mathcal{C}_{\text{civ}} - \mathrm{d}y \right)`$ | Irreversible external driving forces (coercive transformation motions) are continuously applied to environmental, physical, and biological systems to eliminate differences against the blueprint $`\mathcal{C}_{\text{civ}}`$. |
 | 4. The Great Falsehood and Collapse | (Non-linear runaway of inconsistency) | $`\mathcal{D}_{\text{taigi}}(t) = \int_{0}^{t} \left\Vert{} \mathcal{T}_{\text{nat}}(\mathrm{d}y) - \frac{\mathrm{d}(\mathrm{d}y)}{\mathrm{d}\tau} \right\Vert{}^2 \mathrm{d}\tau \;\to\; \infty`$ | Strain accumulates between the autonomous dynamics of nature $`\mathcal{T}_{\text{nat}}`$ and civilizational transformation vectors. With feedback disconnected, distortion explodes exponentially rather than linearly, driving the total system toward catastrophic ruin (Great Calamity). |
@@ -246,6 +259,7 @@ $$\underbrace{\frac{\mathrm{d}\mathbf{x}_{\text{common}}}{\mathrm{d}t} = \mathca
 
 ```math
 \text{仁}_{\text{rectified}} = \mathcal{P}_{\text{jin}}^{\text{true}} : \left( \Phi_{\text{jo}}^{\text{gratitude}}, \, \mathbf{y}^*_{\text{home}} \right) \;\overset{\text{Total Acceptance \& Opening}}{\longrightarrow}\; \sum_{i} \mathcal{R}_{\text{self}, i}^{\text{phen}} \;\overset{\text{Decentralized Coordination}}{\longrightarrow}\; \mathcal{L}_{\text{total}} \quad \text{s.t.} \quad \nabla E \prec \nabla S
+
 
 ```
 
