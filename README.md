@@ -333,7 +333,6 @@ Religion arises from metaphysical grief following the systemic failure of civili
 \end{aligned}
 
 ```
-```
 
 ---
 
