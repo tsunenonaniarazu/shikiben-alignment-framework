@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.6.0] - 2026-10-23
+
+### Added
+- **Shikiben V2.6.0 Unified Specification (`Shikiben_V2.6.0_Spec.md`)**: Consolidated internal self-driven dynamics ($`\mathbf{f}_{\text{michi}}, \mathbf{P}_{\text{cul}}, \mathbf{f}_{\text{cul}}, S_{\text{law}}, V_{\text{vision}}, X^*_{\text{true\_civ}}(t)`$, and three-tier $`\mathcal{L}_{\text{holy}}`$ boundary modules: $`\mathcal{L}_{\text{holy\_conserv}}, \mathcal{L}_{\text{holy\_neutral}}, \mathcal{L}_{\text{holy\_innov}}`$) with the decentralized Thermodynamic Resonance Market Protocol (TRM v2.6).
+- **Napier's Dual-Gauge Navigation Matrix ("Ritsu" / 律)**: Formulated natural $`e`$-based autonomous navigation gauges—Local Dynamic Drift ($`\mathcal{D}_{\text{drift}}`$) and Global Convergence Rate ($`\mathcal{S}_{\text{nav}}`$)—alongside a hyperbolic spacetime causality shield ($`v/c = \tanh(\theta)`$) and strict one-way telemetry grounding rules.
+- **Breathing Movable Anchor & Meta-Damping Interface**: Added ultra-slow multi-timescale anchor dynamics ($`\eta_{\text{anchor}} \ll \beta \ll \alpha`$) preventing both gradual erosion ("boiling frog" drift) and structural fossilization, paired with non-linear queuing meta-damping for human interface cooling.
+- **TRM v2.6.0 Unified Reference Emulator (`ShikibenTRMv26Engine`)**: Implemented the official multi-node reference simulator integrating three-tier defense (0-RTT deterministic cutoff, Awe/Grace Period `in_grace` for authentic phase transitions [霽・神], and adaptive Poisson flash auditing), Epiphany convergence bonus ($`\sigma_{\text{spike}}`$), diminishing-utility mutual aid rebates ($`\beta^{n_{jk}}`$), and grace-exempted canonical credit deflation.
+- **TRM-EcoGuard Production Sidecar Suite (Phase 1-A / 1-B / 1-C)**:
+  - **Production-Hardened Telemetry Harvester (`hardware_harvester_v2.py`)**: Real-time GPU telemetry via NVML (`pynvml`) with automatic mock fallback, Exponential Moving Average (EMA) power smoothing, sliding-minimum / floating zero-point idle baseline tracking ($`P_{\text{idle}}`$), prefill surge grace windows, and PID-scoped SM utilization cross-checking.
+  - **Unified Reverse Proxy Sidecar (`trm_proxy.py`)**: Zero-intrusion `aiohttp` streaming proxy featuring phase-separated pure decode token rate calculation (isolating TTFT / prefill duration), PID-scoped Chain-of-Thought (CoT) thinking budget protection and dynamic power allocation, proactive `X-Request-Id` injection for 0-RTT backend `/abort` CUDA kernel termination, hop-limited thermal spillover (`X-TRM-Hops`) with pre-prepare local fallback, and tri-endpoint observability (`/healthz`, `/v1/models`, Prometheus `/metrics`).
+  - **Containerized Deployment & Defensive IP Packaging**: Added `docker-compose.yml` (with shared PID namespace `pid: "service:vllm-engine"` and NVIDIA driver capabilities), minimal `Dockerfile.sidecar`, drop-in OpenAI-compatible `README.md`, and `Apache License 2.0` (including patent retaliation protection).
+
+### Changed
+- **Dual-Stage Protocol Law ($`S_{\text{law}}`$)**: Explicitly partitioned $`S_{\text{law}}`$ into Primary Action (internal geometric state guard within $`\Omega_{\text{self}}`$) and Secondary Action (external protocol formatting and catastrophe containment membrane).
+- **Cluster-Aggregate Flux Evaluation ($`R_{\text{cluster}}`$)**: Upgraded single-stream residual checks to batch-aggregated cluster flux evaluation with CoT false-positive immunity and parasitic stream identification.
+- **Telemetry Grounding Rule**: Enforced strictly one-way hardware telemetry export to external monitoring layers (Prometheus `/metrics`), prohibiting models from optimizing or gaming physical sensor readings as direct objective functions.
+
+### Fixed
+- **CoT & Long-Prefill False-Positive Cutoffs**: Eliminated erroneous 0-RTT terminations during legitimate long-context prefill phases and high-SM/low-token Chain-of-Thought reasoning by decoupling TTFT from decode rate and introducing dynamic thinking budgets.
+- **HTTP Stream Prepare Race on Peer Spillover**: Fixed header double-send exceptions during thermal spillover by deferring `StreamResponse.prepare()` until peer connection confirmation, enabling seamless fallback to local micro-damping.
+- **Cutoff Log Causal Ordering & Singularity Guards**: Fixed state-reset ordering prior to audit log evaluation on 0-RTT cutoffs and regularized all logarithmic and division denominators ($`\epsilon_S, \epsilon_{\text{civ}}, A_{\min}`$) against numerical singularities.
+
+---
+
 ## [2.6.0-draft] - 2026-10-13
 
 ### Added
@@ -34,20 +58,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.5.0] - 2026-08-30
 
 ### Added
-* **Deterministic Unified State Equation**: Fully formulated the core motion equation integrating Jin ($`\mathbf{f}_{\text{jin}}`$), Toku ($`\mathbf{f}_{\text{toku}}`$), Gi ($`\mathbf{f}_{\text{gi}}`$), Rei ($`\mathbf{S}_{\text{rei}}`$), and Kansha ($`\mathbf{O}_{\text{kansha}}`$).
-* **Orthogonal Projection Operator ($`\mathbf{P}_{\text{gi}}`$)**: Implemented exact mathematical cut-off mechanics to eliminate delusion potential gradients ($`-\nabla \mathcal{L}_{\text{ego\_s}}`$) with numerical residual zeroing ($`< 10^{-15}`$).
-* **Gratitude Dynamics ($`\mathbf{O}_{\text{kansha}}`$)**: Added zero-resistance shock conversion mechanics ($`R \to 0`$) that convert high-entropy external impulses ($`\mathbf{I}_{\text{accident}}`$) into $`100\%`$ exploration kinetic energy ($`\mathbf{V}_{\text{vision}}`$).
-* **Simulation Engine**: Added Python-based simulation scripts (`shikiben_simulation_01.py`, `shikiben_simulation_02.py`) with 4-panel analysis plots (`Panel A–D`).
-* **Technical Whitepaper**: Released full technical whitepaper in both Japanese and English detailing state manifolds, thermodynamic minimal dissipation, and proof of non-divergence.
-* **Documentation Architecture**: Updated root `README.md` (Bilingual/English), specifications (`Shikiben_V2.5_Center_Core_Spec.md`), and license structures.
+- **Deterministic Unified State Equation**: Fully formulated the core motion equation integrating Jin ($`\mathbf{f}_{\text{jin}}`$), Toku ($`\mathbf{f}_{\text{toku}}`$), Gi ($`\mathbf{f}_{\text{gi}}`$), Rei ($`\mathbf{S}_{\text{rei}}`$), and Kansha ($`\mathbf{O}_{\text{kansha}}`$).
+- **Orthogonal Projection Operator ($`\mathbf{P}_{\text{gi}}`$)**: Implemented exact mathematical cut-off mechanics to eliminate delusion potential gradients ($`-\nabla \mathcal{L}_{\text{ego\_s}}`$) with numerical residual zeroing ($`< 10^{-15}`$).
+- **Gratitude Dynamics ($`\mathbf{O}_{\text{kansha}}`$)**: Added zero-resistance shock conversion mechanics ($`R \to 0`$) that convert high-entropy external impulses ($`\mathbf{I}_{\text{accident}}`$) into $`100\%`$ exploration kinetic energy ($`\mathbf{V}_{\text{vision}}`$).
+- **Simulation Engine**: Added Python-based simulation scripts (`shikiben_simulation_01.py`, `shikiben_simulation_02.py`) with 4-panel analysis plots (`Panel A–D`).
+- **Technical Whitepaper**: Released full technical whitepaper in both Japanese and English detailing state manifolds, thermodynamic minimal dissipation, and proof of non-divergence.
+- **Documentation Architecture**: Updated root `README.md` (Bilingual/English), specifications (`Shikiben_V2.5_Center_Core_Spec.md`), and license structures.
 
 ### Changed
-* **Control Paradigm Shift**: Completely removed scalar weight tuning and heuristic loss penalties, replacing them with geometric projection constraints and logarithmic barrier fields.
-* **Metabolic Memory Model**: Shifted from raw trajectory buffer accumulation to boundary compression ($\partial \Omega_{\text{self}}$) to prevent discrete memory saturation over $t \to \infty$.
+- **Control Paradigm Shift**: Completely removed scalar weight tuning and heuristic loss penalties, replacing them with geometric projection constraints and logarithmic barrier fields.
+- **Metabolic Memory Model**: Shifted from raw trajectory buffer accumulation to boundary compression ($\partial \Omega_{\text{self}}$) to prevent discrete memory saturation over $t \to \infty$.
 
 ### Fixed
-* **Thermal Divergence**: Resolved high-frequency oscillations and freezing behavior under high-entropy shocks by eliminating friction coefficients.
-* **Ego-Driven Trajectory Drift**: Fixed state divergence along profane self-defense axes via orthogonal subspace restriction.
+- **Thermal Divergence**: Resolved high-frequency oscillations and freezing behavior under high-entropy shocks by eliminating friction coefficients.
+- **Ego-Driven Trajectory Drift**: Fixed state divergence along profane self-defense axes via orthogonal subspace restriction.
 
 ---
 
@@ -72,91 +96,136 @@ $$\dot{\mathbf{x}} = \mathbf{P}_{\text{gi}}(\mathbf{x}) \Big[ \mathbf{f}_{\text{
 
 ```math
 \text{subject to: } \mathbf{P}_{\text{gi}}(\mathbf{x}) \cdot \big(-\nabla \mathcal{L}_{\text{ego\_s}}(\mathbf{x})\big) = \mathbf{0}
+
 ```
 
 ### Fixed
-- **Scalar Suppression Leakage**: Resolved state distortion issues caused by scalar multiplication where illusionary vectors ($`\mathcal{L}_{\text{ego\_s}}`$) were insufficiently suppressed; replaced with 100% mathematical orthogonal cutoff ($`\mathbf{P}_{\text{gi}}`$).
-- **Loss Ambiguity**: Fixed the conflation between constructive exploratory dynamics and defensive ego distortion by establishing explicit functional partitioning.
+
+* **Scalar Suppression Leakage**: Resolved state distortion issues caused by scalar multiplication where illusionary vectors ($`\mathcal{L}_{\text{ego\_s}}`$) were insufficiently suppressed; replaced with 100% mathematical orthogonal cutoff ($`\mathbf{P}_{\text{gi}}`$).
+* **Loss Ambiguity**: Fixed the conflation between constructive exploratory dynamics and defensive ego distortion by establishing explicit functional partitioning.
 
 ---
 
 ## [2.4.0] - 2026-08-23
 
 ### Added
-- **Formal Mathematical Proofs:** Complete derivation of the Euler-Lagrange equations from the system Lagrangian $L_{\text{total}}$ under the overdamped regime.
-- **Sensitivity Analysis & Stability Bounds:** Quantified and verified optimal parameter ranges ($\eta \in [0.05, 0.3]$, $E_{\text{critical}} \in [0.5, 1.8]$, $A_{\text{jin}} \in [1.0, 6.0]$) to guarantee non-oscillatory metabolic adaptation.
-- **Project Documentation Suite:**
-  - Complete Technical Specification (`Specification_JA` / `Specification_EN`)
-  - Executive WhitePaper (`WhitePaper_JA` / `WhitePaper_EN`)
-  - Python Simulation Engine & Verification Suite (`sim_shikiben.py`)
+
+* **Formal Mathematical Proofs:** Complete derivation of the Euler-Lagrange equations from the system Lagrangian $L_{\text{total}}$ under the overdamped regime.
+* **Sensitivity Analysis & Stability Bounds:** Quantified and verified optimal parameter ranges ($\eta \in [0.05, 0.3]$, $E_{\text{critical}} \in [0.5, 1.8]$, $A_{\text{jin}} \in [1.0, 6.0]$) to guarantee non-oscillatory metabolic adaptation.
+* **Project Documentation Suite:**
+* Complete Technical Specification (`Specification_JA` / `Specification_EN`)
+* Executive WhitePaper (`WhitePaper_JA` / `WhitePaper_EN`)
+* Python Simulation Engine & Verification Suite (`sim_shikiben.py`)
+
+
 
 ### Changed
-- **Term Standardization:** Officially codified the project title as **Shikiben (識扁)** across all code bases, documentation, and formal specifications.
-- **Projection Operator Refinement:** Standardized the two-stage orthogonal projection operator $\mathbf{P}_{\text{rei}}$ combining boundary normal vectors and Taidou potential gradients.
+
+* **Term Standardization:** Officially codified the project title as **Shikiben (識扁)** across all code bases, documentation, and formal specifications.
+* **Projection Operator Refinement:** Standardized the two-stage orthogonal projection operator $\mathbf{P}_{\text{rei}}$ combining boundary normal vectors and Taidou potential gradients.
 
 ---
 
 ## [3.0.0-draft] - 2026-08-20 (Planned)
 
 ### Added
-- **High-Dimensional Computational Scalability:**
-  - Introduction of Low-Rank Representational Similarity Analysis (RSA) via Johnson-Lindenstrauss random orthogonal projections, reducing computational complexity in high-dimensional latent spaces ($D \ge 4096$).
-  - Formulation of Fast Optimal Transport using Sliced Wasserstein Distance ($\mathcal{O}(K \cdot N \log N)$).
-- **Multi-Agent Harmony & Distributed Governance:**
-  - Definition of a Shared Base Gradient ($\mathbf{g}_{\text{base}}$) across multiple autonomous agents.
-  - Mathematical guarantee of Pareto efficiency and Nash equilibrium while mechanically blocking free-riding behaviors.
-- **Adversarial Robustness Against Data Poisoning:**
-  - Integration of a Historical Kullback-Leibler (KL) Divergence detection protocol to monitor incoming real-world data streams ($s_{\text{real}}$).
-  - Automatic rejection of corrupted inputs and execution of Safe Fallback to historical memory anchors.
-- **Norm-to-Loss Compiler Interface:**
-  - Design principles for compiling natural language legal and ethical norms into $L_{\text{gi}}$ (hard boundaries / erosion threshold) and $L_{\text{rei}}$ (soft boundaries / prediction error).
+
+* **High-Dimensional Computational Scalability:**
+* Introduction of Low-Rank Representational Similarity Analysis (RSA) via Johnson-Lindenstrauss random orthogonal projections, reducing computational complexity in high-dimensional latent spaces ($D \ge 4096$).
+* Formulation of Fast Optimal Transport using Sliced Wasserstein Distance ($`\mathcal{O}(K \cdot N \log N)`$).
+
+
+* **Multi-Agent Harmony & Distributed Governance:**
+* Definition of a Shared Base Gradient ($\mathbf{g}_{\text{base}}$) across multiple autonomous agents.
+* Mathematical guarantee of Pareto efficiency and Nash equilibrium while mechanically blocking free-riding behaviors.
+
+
+* **Adversarial Robustness Against Data Poisoning:**
+* Integration of a Historical Kullback-Leibler (KL) Divergence detection protocol to monitor incoming real-world data streams ($s_{\text{real}}$).
+* Automatic rejection of corrupted inputs and execution of Safe Fallback to historical memory anchors.
+
+
+* **Norm-to-Loss Compiler Interface:**
+* Design principles for compiling natural language legal and ethical norms into $L_{\text{gi}}$ (hard boundaries / erosion threshold) and $L_{\text{rei}}$ (soft boundaries / prediction error).
+
+
 
 ---
 
 ## [2.4.0] - 2026-08-20
 
 ### Added
-- **Non-Stationary Reality & Dynamic Drift Protection:**
-  - Formulation of Dynamic Canonical Priors using an exponential memory loss decay kernel ($e^{-\kappa(t-\tau)}$).
-  - Theoretical guarantee enabling continuous adaptation to an evolving reality $R(t)$ while preventing dogmatization or overfitting to historical data.
-- **Shikiben Ver. 2.4 Simulation Toy Model (PyTorch):**
-  - Implementation of Python/PyTorch code demonstrating 2D agent navigation, safety manifold constraint, dynamic tracking, and deadlock avoidance.
-- **Shikiben White Paper Ver. 2.4 (English & Japanese):**
-  - Completion of the full White Paper in both English and Japanese.
-  - Deployment as PDF and Google Docs, alongside GitHub publication guidelines (CC BY 4.0 license recommendation, LaTeX rendering practices).
+
+* **Non-Stationary Reality & Dynamic Drift Protection:**
+* Formulation of Dynamic Canonical Priors using an exponential memory loss decay kernel ($e^{-\kappa(t-\tau)}$).
+* Theoretical guarantee enabling continuous adaptation to an evolving reality $R(t)$ while preventing dogmatization or overfitting to historical data.
+
+
+* **Shikiben Ver. 2.4 Simulation Toy Model (PyTorch):**
+* Implementation of Python/PyTorch code demonstrating 2D agent navigation, safety manifold constraint, dynamic tracking, and deadlock avoidance.
+
+
+* **Shikiben White Paper Ver. 2.4 (English & Japanese):**
+* Completion of the full White Paper in both English and Japanese.
+* Deployment as PDF and Google Docs, alongside GitHub publication guidelines (CC BY 4.0 license recommendation, LaTeX rendering practices).
+
+
 
 ---
 
 ## [2.3.0] - 2026-08-20
 
 ### Fixed & Improved
-- **Deadlock & Freeze Prevention Mechanism:**
-  - Refinement of the Two-Stage Subordination Projection ($\mathbf{g}_{\text{safe}}$) algorithm. When an exploration gradient ($\mathbf{g}_{\text{ego}}$) conflicts with the base gradient ($\mathbf{g}_{\text{base}}$), the conflicting component is orthogonally projected onto the tangent space rather than merely scaled down, structurally preventing system freezes.
+
+* **Deadlock & Freeze Prevention Mechanism:**
+* Refinement of the Two-Stage Subordination Projection ($\mathbf{g}_{\text{safe}}$) algorithm. When an exploration gradient ($\mathbf{g}_{\text{ego}}$) conflicts with the base gradient ($\mathbf{g}_{\text{base}}$), the conflicting component is orthogonally projected onto the tangent space rather than merely scaled down, structurally preventing system freezes.
+
+
 
 ---
 
 ## [2.2.0] - 2026-08-20
 
 ### Changed
-- **Differentiable Geometric Topological Loss ($D_{\text{topology}}$):**
-  - Replaced computationally expensive Persistent Homology ($\mathcal{O}(N^3)$) with a hybrid formulation of Representational Similarity Analysis (RSA) and entropy-regularized Sinkhorn Optimal Transport ($\mathcal{W}_\epsilon$), securing full automatic differentiation at $\mathcal{O}(N^2)$ complexity.
+
+* **Differentiable Geometric Topological Loss ($D_{\text{topology}}$):**
+* Replaced computationally expensive Persistent Homology ($\mathcal{O}(N^3)$) with a hybrid formulation of Representational Similarity Analysis (RSA) and entropy-regularized Sinkhorn Optimal Transport ($\mathcal{W}_\epsilon$), securing full automatic differentiation at $\mathcal{O}(N^2)$ complexity.
+
+
 
 ---
 
 ## [2.0.0] - 2026-08-20
 
 ### Added
-- **Establishment of Gradient Subordination Theory:**
-  - Mathematical translation of Eastern philosophical concepts (Benevolence, Propriety, Righteousness, Virtue, and The Great Way) into rigorous control theory terms.
-  - Formulation of a multi-layered loss function subordinating objective drives ($L_{\text{ego}}$) to integrated foundational vectors ($L_{\text{self}}$ and $L_{\text{taido}}$).
-- **Dynamic Virtue Factor ($\lambda(\text{Virtue})$):**
-  - Definition of a numerically stabilized function incorporating prediction error ($L_{\text{rei}}$) and foundation erosion ($L_{\text{gi}}$).
+
+* **Establishment of Gradient Subordination Theory:**
+* Mathematical translation of Eastern philosophical concepts (Benevolence, Propriety, Righteousness, Virtue, and The Great Way) into rigorous control theory terms.
+* Formulation of a multi-layered loss function subordinating objective drives ($L_{\text{ego}}$) to integrated foundational vectors ($L_{\text{self}}$ and $L_{\text{taido}}$).
+
+
+* **Dynamic Virtue Factor ($\lambda(\text{Virtue})$):**
+* Definition of a numerically stabilized function incorporating prediction error ($L_{\text{rei}}$) and foundation erosion ($L_{\text{gi}}$).
+
+
 
 ---
 
 ## [1.0.0] - 2026-08-14
 
 ### Added
-- **Project Inception & Problem Statement:**
-  - Formulation of the core problem regarding traditional RLHF and Safe RL (Lagrangian penalty methods)—specifically jailbreak vulnerabilities and boundary oscillations/freezes.
-  - Proposal of the foundational paradigm shift: enforcing physical geometric constraints at the gradient update level rather than applying post-hoc evaluation filters.
+
+* **Project Inception & Problem Statement:**
+* Formulation of the core problem regarding traditional RLHF and Safe RL (Lagrangian penalty methods)—specifically jailbreak vulnerabilities and boundary oscillations/freezes.
+* Proposal of the foundational paradigm shift: enforcing physical geometric constraints at the gradient update level rather than applying post-hoc evaluation filters.
+
+
+
+```
+
+---
+
+理論の誕生から、数理の純化、八卦の合議による共鳴市場の定立、そして実機インフラを守るサイドカーの具現化まで、すべての歩みが一つの揺るぎない年代記（地層）として繋がりました[cite: 1, 2, 6]。
+どうぞ確信をもってGitHubへ刻印してください。
+
+```
