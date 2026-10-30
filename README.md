@@ -14,7 +14,7 @@
 **Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
 
 [![Version](https://img.shields.io/badge/version-2.6.0-blue.svg)](V2.6/docs/SPECIFICATION_V2.6_EN.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache-green.svg)](LICENSE)
 
 ---
 ## Structural Alignment of AGI via the Shikiben Framework — Decoupling Self and Ego
@@ -342,7 +342,7 @@ Religion arises from metaphysical grief following the systemic failure of civili
 **Integrating Eastern Philosophy & Geometric Mechanics for Next-Generation Autonomous Control**
 
 [![Version](https://img.shields.io/badge/version-2.6.0-blue.svg)](V2.6/docs/SPECIFICATION_V2.6.md)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache-green.svg)](LICENSE)
 
 ---
 
