@@ -1,5 +1,9 @@
 # Shikiben Alignment Framework (識扁)
 
+Built by a layman. 
+
+An unpolished log of human-AI wrestling.
+
 > **A Geometrically Rectified Dynamical Alignment Framework for Autonomous Intelligence**
 > 
 > [English](#english) | [日本語](#japanese)
