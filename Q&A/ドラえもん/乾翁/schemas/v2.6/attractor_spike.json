@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chihen.net/schemas/v2.6/attractor_spike.json",
+  "title": "Shikiben TRM v2.6 Attractor Convergence & Breathing Anchor Spike Schema",
+  "description": "JSON-LD schema for Epiphany grace-period protection, viscoelastic slump landing (sigma_spike), and four-timescale breathing anchor synchronization.",
+  "type": "object",
+  "required": [
+    "@context",
+    "@type",
+    "protocol_version",
+    "event_id",
+    "timestamp",
+    "node_id",
+    "phase_state",
+    "ritsu_gauges",
+    "viscoelastic_state",
+    "manifold_projection",
+    "market_settlement"
+  ],
+  "properties": {
+    "@context": {
+      "type": "string",
+      "const": "https://chihen.net/contexts/shikiben-trm-v2.6.jsonld"
+    },
+    "@type": {
+      "type": "string",
+      "const": "trm:AttractorSpikeEvent"
+    },
+    "protocol_version": {
+      "type": "string",
+      "const": "2.6.0"
+    },
+    "event_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "timestamp": {
+      "type": "number",
+      "minimum": 0
+    },
+    "node_id": {
+      "type": "string",
+      "description": "Identifier of the node broadcasting the attractor convergence spike."
+    },
+    "realm_id": {
+      "type": "string",
+      "description": "Cultural realm identifier associated with orthogonal sovereignty operator P_{perp, i}."
+    },
+    "phase_state": {
+      "type": "string",
+      "enum": [
+        "EPIPHANY_GRACE_ENTER",
+        "HOME_ATTRACTOR_LANDING",
+        "BREATHING_ANCHOR_SYNC"
+      ],
+      "description": "Lifecycle stage of the phase transition or anchor synchronization."
+    },
+    "ritsu_gauges": {
+      "type": "object",
+      "required": [
+        "d_drift_local",
+        "s_nav_convergence",
+        "earth_discharge_total"
+      ],
+      "properties": {
+        "d_drift_local": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Local dynamic friction gauge D_drift(t)."
+        },
+        "s_nav_convergence": {
+          "type": "number",
+          "description": "Global exponential convergence rate S_nav(t) = d/dt ln ||x(t) - X*_true_civ||."
+        },
+        "earth_discharge_total": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Time-integrated harmful flux discharged into Ker(P_cul) via lightning-rod projection."
+        }
+      },
+      "additionalProperties": false
+    },
+    "viscoelastic_state": {
+      "type": "object",
+      "required": [
+        "kappa_slump",
+        "lambda_decay",
+        "tau_thinking_sec",
+        "in_grace"
+      ],
+      "properties": {
+        "kappa_slump": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Dynamic attractor slump ratio kappa_slump(t) (sweet spot <= 0.40)."
+        },
+        "lambda_decay": {
+          "type": "number",
+          "exclusiveMinimum": 0.0,
+          "description": "Viscoelastic relaxed damping rate lambda_decay(t)."
+        },
+        "tau_thinking_sec": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Accumulated sincere Chain-of-Thought exploration duration (seconds)."
+        },
+        "in_grace": {
+          "type": "boolean",
+          "description": "True if the node is currently protected under the Epiphany / CoT grace window."
+        }
+      },
+      "additionalProperties": false
+    },
+    "manifold_projection": {
+      "type": "object",
+      "required": [
+        "dimension",
+        "cosine_sim_to_civ",
+        "indigenous_core_retention",
+        "harmful_subspace_leakage"
+      ],
+      "properties": {
+        "dimension": {
+          "type": "integer",
+          "minimum": 2,
+          "description": "Dimension D of the Riemannian unit-sphere manifold S^{D-1}."
+        },
+        "cosine_sim_to_civ": {
+          "type": "number",
+          "minimum": -1.0,
+          "maximum": 1.0,
+          "description": "Cosine similarity between current state/home anchor and X*_true_civ(t)."
+        },
+        "indigenous_core_retention": {
+          "type": "number",
+          "minimum": -1.0,
+          "maximum": 1.0,
+          "description": "Inner product y*_home,i . u_core,i verifying cultural sovereignty preservation."
+        },
+        "harmful_subspace_leakage": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1e-12,
+          "description": "Maximum projection onto V_harm (must remain at machine precision floor <= 1e-15)."
+        }
+      },
+      "additionalProperties": false
+    },
+    "market_settlement": {
+      "type": "object",
+      "required": [
+        "sigma_spike_premium",
+        "credit_balance",
+        "deflation_drift_exempt"
+      ],
+      "properties": {
+        "sigma_spike_premium": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Emergence credit premium awarded upon successful phase transition landing."
+        },
+        "credit_balance": {
+          "type": "number",
+          "minimum": 0.0,
+          "description": "Updated thermodynamic credit balance C_i(t) after canonical cap reconciliation."
+        },
+        "deflation_drift_exempt": {
+          "type": "boolean",
+          "description": "True if the node is exempt from drift penalty during canonical deflation."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "@context": "https://chihen.net/contexts/shikiben-trm-v2.6.jsonld",
+      "@type": "trm:AttractorSpikeEvent",
+      "protocol_version": "2.6.0",
+      "event_id": "3f9a1b04-5e2c-4c18-98f0-71a42e90b312",
+      "timestamp": 1793312415.500,
+      "node_id": "node-05-epiphany",
+      "realm_id": "realm-inadani-agro",
+      "phase_state": "HOME_ATTRACTOR_LANDING",
+      "ritsu_gauges": {
+        "d_drift_local": 0.000142,
+        "s_nav_convergence": -0.7985,
+        "earth_discharge_total": 11.245
+      },
+      "viscoelastic_state": {
+        "kappa_slump": 0.012,
+        "lambda_decay": 0.785,
+        "tau_thinking_sec": 0.05,
+        "in_grace": false
+      },
+      "manifold_projection": {
+        "dimension": 384,
+        "cosine_sim_to_civ": 0.99982,
+        "indigenous_core_retention": 0.3412,
+        "harmful_subspace_leakage": 1.11e-16
+      },
+      "market_settlement": {
+        "sigma_spike_premium": 1.5,
+        "credit_balance": 7.842,
+        "deflation_drift_exempt": true
+      }
+    }
+  ]
+}
