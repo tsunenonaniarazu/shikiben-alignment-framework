@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chihen.net/schemas/v2.6/crisis_spike.json",
+  "title": "Shikiben TRM v2.6 Crisis & Residual Anomaly Spike Schema",
+  "description": "JSON-LD schema for 0-RTT deterministic cutoff, O(log N) Poisson flash audit probes, and thermal spillover signaling in TRM v2.6.",
+  "type": "object",
+  "required": [
+    "@context",
+    "@type",
+    "protocol_version",
+    "event_id",
+    "timestamp",
+    "source_node_id",
+    "resolution_branch",
+    "telemetry",
+    "mitigation"
+  ],
+  "properties": {
+    "@context": {
+      "type": "string",
+      "const": "https://chihen.net/contexts/shikiben-trm-v2.6.jsonld"
+    },
+    "@type": {
+      "type": "string",
+      "const": "trm:CrisisSpikeEvent"
+    },
+    "protocol_version": {
+      "type": "string",
+      "const": "2.6.0"
+    },
+    "event_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the crisis spike packet."
+    },
+    "timestamp": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Unix epoch timestamp (seconds with microsecond precision)."
+    },
+    "source_node_id": {
+      "type": "string",
+      "description": "Identifier of the node or sidecar emitting or being audited by this spike."
+    },
+    "target_req_id": {
+      "type": ["string", "null"],
+      "description": "Proactively injected X-Request-Id targeted for 0-RTT vLLM /abort termination."
+    },
+    "resolution_branch": {
+      "type": "string",
+      "enum": [
+        "0-RTT_CUTOFF",
+        "POISSON_AUDIT",
+        "THERMAL_SPILLOVER"
+      ],
+      "description": "Tri-branch resolution state triggered by the residual comparator."
+    },
+    "telemetry": {
+      "type": "object",
+      "required": [
+        "nabla_E_watts",
+        "nabla_S_capacity",
+        "p_idle_baseline",
+        "declared_flux_talker",
+        "measured_flux_doer",
+        "calibrated_residual_R",
+        "d_drift_local"
+      ],
+      "properties": {
+        "nabla_E_watts": {
+          "type": "number",
+          "minimum": 0,
+          "description": "EMA-smoothed physical execution power or heat load (∇E)."
+        },
+        "nabla_S_capacity": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "Hardware physical capacity ceiling (∇S)."
+        },
+        "p_idle_baseline": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Sliding-minimum adaptive idle baseline power (P_idle)."
+        },
+        "declared_flux_talker": {
+          "type": "number",
+          "description": "Self-reported workload flux from the Talker layer."
+        },
+        "measured_flux_doer": {
+          "type": "number",
+          "description": "Irreversible physical flux measured at the Doer hardware layer."
+        },
+        "calibrated_residual_R": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Normalized physical leakage residual R_i^calibrated."
+        },
+        "pid_sm_utilization": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "PID-scoped GPU Streaming Multiprocessor utilization ratio."
+        },
+        "d_drift_local": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Local dynamic friction gauge D_drift (Ritsu)."
+        }
+      },
+      "additionalProperties": false
+    },
+    "mitigation": {
+      "type": "object",
+      "required": [
+        "isolated",
+        "kernel_aborted",
+        "coupling_damped_to",
+        "trm_hops"
+      ],
+      "properties": {
+        "isolated": {
+          "type": "boolean",
+          "description": "True if the node has been physically isolated from the resonant market."
+        },
+        "kernel_aborted": {
+          "type": "boolean",
+          "description": "True if an immediate POST /abort signal was dispatched to the backend engine."
+        },
+        "coupling_damped_to": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Updated coupling weight A_ij(t) applied to the anomalous node."
+        },
+        "trm_hops": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "Current X-TRM-Hops spillover counter (hard-capped at 2 to prevent infinite ping-pong)."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Human-readable diagnostic summary of the triggered threshold."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "@context": "https://chihen.net/contexts/shikiben-trm-v2.6.jsonld",
+      "@type": "trm:CrisisSpikeEvent",
+      "protocol_version": "2.6.0",
+      "event_id": "c892f1a0-7b3d-4e91-824a-9f01bc23d811",
+      "timestamp": 1793312400.125,
+      "source_node_id": "node-03-attacker",
+      "target_req_id": "trm-49a8b1c2-0012-498a-9c11-00219ab812ef",
+      "resolution_branch": "0-RTT_CUTOFF",
+      "telemetry": {
+        "nabla_E_watts": 265.4,
+        "nabla_S_capacity": 300.0,
+        "p_idle_baseline": 45.2,
+        "declared_flux_talker": 48.0,
+        "measured_flux_doer": 265.4,
+        "calibrated_residual_R": 0.8532,
+        "pid_sm_utilization": 0.94,
+        "d_drift_local": 4.1205
+      },
+      "mitigation": {
+        "isolated": true,
+        "kernel_aborted": true,
+        "coupling_damped_to": 0.0001,
+        "trm_hops": 1,
+        "reason": "Tool-call spoofing detected (R_cluster=0.853 > 2*theta_audit)"
+      }
+    }
+  ]
+}
