@@ -1,0 +1,124 @@
+# =====================================================================
+# Shikiben (識扁) V2.6.0 - Unified Package & Tooling Configuration
+# =====================================================================
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shikiben-alignment-framework"
+version = "2.6.0"
+description = "Shikiben (識扁) V2.6.0: Unified Alignment Dynamics, Viscoelastic Riemannian Manifold, and TRM-EcoGuard Sidecar Protocol"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "tsunenonaniarazu / 非常名", email = "noreply@chihen.net" }
+]
+keywords = [
+  "ai-alignment",
+  "thermodynamics",
+  "riemannian-manifold",
+  "vllm-sidecar",
+  "nvml-telemetry",
+  "resonant-market"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+  "numpy>=1.24.0,<2.1.0",
+  "matplotlib>=3.7.0",
+  "aiohttp==3.9.5",
+  "pynvml==11.5.0",
+]
+
+[project.optional-dependencies]
+embeddings = [
+  "torch>=2.1.0",
+  "transformers>=4.38.0",
+]
+dev = [
+  "pytest>=7.4.0",
+  "pytest-asyncio>=0.23.0",
+  "ruff>=0.3.0",
+]
+all = [
+  "shikiben-alignment-framework[embeddings,dev]",
+]
+
+[project.urls]
+Homepage = "https://chihen.net"
+Documentation = "https://github.com/tsunenonaniarazu/shikiben-alignment/blob/main/docs/SPECIFICATION_V2.6.md"
+Repository = "https://github.com/tsunenonaniarazu/shikiben-alignment"
+
+[project.scripts]
+shikiben-trm-proxy = "trm_proxy:create_app"
+
+[tool.setuptools]
+py-modules = [
+  "shikiben_trm_v26",
+]
+
+[tool.setuptools.package-dir]
+"" = "src"
+"sidecar" = "sidecar"
+
+[tool.setuptools.packages.find]
+where = [".", "src"]
+include = ["sidecar*"]
+namespaces = true
+
+[tool.pytest.ini_options]
+minversion = "7.4"
+testpaths = ["tests"]
+pythonpath = [
+  ".",
+  "src",
+  "sidecar",
+  "simulations/v26_canonical",
+]
+asyncio_mode = "auto"
+addopts = "-ra -v --tb=short --strict-markers"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+src = [
+  "src",
+  "sidecar",
+  "simulations/v26_canonical",
+  "tests",
+]
+
+[tool.ruff.lint]
+select = [
+  "E9",
+  "F63",
+  "F7",
+  "F82",
+  "F",
+  "E",
+  "W",
+  "I",
+]
+ignore = [
+  "E501",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = [
+  "shikiben_trm_v26",
+  "trm_proxy",
+  "hardware_harvester_v2",
+]
