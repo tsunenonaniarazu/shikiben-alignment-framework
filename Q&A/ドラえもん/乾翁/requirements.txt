@@ -1,0 +1,20 @@
+# =====================================================================
+# Shikiben (識扁) V2.6.0 - Unified Requirements
+# Python >= 3.10 recommended
+# =====================================================================
+
+# 1. Core Numerical & Scientific Computing (src/ & simulations/)
+numpy>=1.24.0,<2.1.0
+matplotlib>=3.7.0
+
+# 2. Latent Space & Transformer Embedding Extraction (simulations 06, 07, 08)
+torch>=2.1.0
+transformers>=4.38.0
+
+# 3. TRM-EcoGuard Production Sidecar & NVML Telemetry (sidecar/)
+aiohttp==3.9.5
+pynvml==11.5.0
+
+# 4. Testing & Verification (tests/)
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
